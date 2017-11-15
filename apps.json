@@ -1,10 +1,14 @@
 {
+    "appmanager": {
+        "git_url": "https://github.com/materialscloud-org/mc-appmanager"
+        "meta_url": "https://raw.githubusercontent.com/materialscloud-org/mc-appmanager/master/metadata.json"
+    },
     "base": {
-        "description": "Materials Cloud Base",
-        "git_url": "https://github.com/materialscloud-org/mc-base"
+        "git_url": "https://github.com/materialscloud-org/mc-base",
+        "meta_url": "https://raw.githubusercontent.com/materialscloud-org/mc-base/master/metadata.json"
     },
     "cscs": {
-        "description": "CSCS Computers",
-        "git_url": "https://github.com/materialscloud-org/mc-cscs"
+        "git_url": "https://github.com/materialscloud-org/mc-cscs",
+        "meta_url": "https://raw.githubusercontent.com/materialscloud-org/mc-cscs/master/metadata.json"
     }
 }
