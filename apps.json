@@ -1,0 +1,10 @@
+{
+    "base": {
+        "description": "Materials Cloud Base",
+        "git_url": "https://github.com/materialscloud-org/mc-base"
+    },
+    "cscs": {
+        "description": "CSCS Computers",
+        "git_url": "https://github.com/materialscloud-org/mc-cscs"
+    }
+}
