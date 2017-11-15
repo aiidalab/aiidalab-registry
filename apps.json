@@ -7,6 +7,10 @@
         "git_url": "https://github.com/materialscloud-org/mc-base",
         "meta_url": "https://raw.githubusercontent.com/materialscloud-org/mc-base/master/metadata.json"
     },
+    "aiida": {
+        "git_url": "https://github.com/materialscloud-org/mc-aiida",
+        "meta_url": "https://raw.githubusercontent.com/materialscloud-org/mc-aiida/master/metadata.json"
+    },
     "cscs": {
         "git_url": "https://github.com/materialscloud-org/mc-cscs",
         "meta_url": "https://raw.githubusercontent.com/materialscloud-org/mc-cscs/master/metadata.json"
