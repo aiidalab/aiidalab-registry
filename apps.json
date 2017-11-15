@@ -1,6 +1,6 @@
 {
     "appmanager": {
-        "git_url": "https://github.com/materialscloud-org/mc-appmanager"
+        "git_url": "https://github.com/materialscloud-org/mc-appmanager",
         "meta_url": "https://raw.githubusercontent.com/materialscloud-org/mc-appmanager/master/metadata.json"
     },
     "base": {
