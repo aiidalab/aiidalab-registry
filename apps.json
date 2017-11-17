@@ -1,11 +1,7 @@
 {
-    "appmanager": {
-        "git_url": "https://github.com/materialscloud-org/mc-appmanager",
-        "meta_url": "https://raw.githubusercontent.com/materialscloud-org/mc-appmanager/master/metadata.json"
-    },
-    "base": {
-        "git_url": "https://github.com/materialscloud-org/mc-base",
-        "meta_url": "https://raw.githubusercontent.com/materialscloud-org/mc-base/master/metadata.json"
+    "home": {
+        "git_url": "https://github.com/materialscloud-org/mc-home",
+        "meta_url": "https://raw.githubusercontent.com/materialscloud-org/mc-home/master/metadata.json"
     },
     "aiida": {
         "git_url": "https://github.com/materialscloud-org/mc-aiida",
