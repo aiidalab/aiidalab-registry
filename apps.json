@@ -31,4 +31,8 @@
         "git_url": "https://github.com/materialscloud-org/mc-backup",
         "meta_url": "https://raw.githubusercontent.com/materialscloud-org/mc-backup/master/metadata.json"
     }
+    "structure": {
+        "git_url": "https://github.com/materialscloud-org/mc-structure",
+        "meta_url": "https://raw.githubusercontent.com/materialscloud-org/mc-structure/master/metadata.json"
+    }
 }
