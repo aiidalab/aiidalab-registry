@@ -1,38 +1,47 @@
 {
     "home": {
         "git_url": "https://github.com/materialscloud-org/mc-home",
-        "meta_url": "https://raw.githubusercontent.com/materialscloud-org/mc-home/master/metadata.json"
+        "meta_url": "https://raw.githubusercontent.com/materialscloud-org/mc-home/master/metadata.json",
+        "label": "home"
     },
     "aiida": {
         "git_url": "https://github.com/materialscloud-org/mc-aiida",
-        "meta_url": "https://raw.githubusercontent.com/materialscloud-org/mc-aiida/master/metadata.json"
+        "meta_url": "https://raw.githubusercontent.com/materialscloud-org/mc-aiida/master/metadata.json",
+        "label": "aiida"
     },
     "cscs": {
         "git_url": "https://github.com/materialscloud-org/mc-cscs",
-        "meta_url": "https://raw.githubusercontent.com/materialscloud-org/mc-cscs/master/metadata.json"
+        "meta_url": "https://raw.githubusercontent.com/materialscloud-org/mc-cscs/master/metadata.json",
+        "label": "cscs"
     },
     "epfl": {
         "git_url": "https://github.com/materialscloud-org/mc-epfl",
-        "meta_url": "https://raw.githubusercontent.com/materialscloud-org/mc-epfl/master/metadata.json"
+        "meta_url": "https://raw.githubusercontent.com/materialscloud-org/mc-epfl/master/metadata.json",
+        "label": "epfl"
     },
     "surfaces": {
         "git_url": "https://github.com/cpignedoli/mc-empa-surfaces",
-        "meta_url": "https://raw.githubusercontent.com/cpignedoli/mc-empa-surfaces/master/metadata.json"
+        "meta_url": "https://raw.githubusercontent.com/cpignedoli/mc-empa-surfaces/master/metadata.json",
+        "label": "surfaces"
     },
     "reactions": {
         "git_url": "https://github.com/edditler/mc-empa-reactions",
-        "meta_url": "https://raw.githubusercontent.com/edditler/mc-empa-reactions/master/metadata.json"
+        "meta_url": "https://raw.githubusercontent.com/edditler/mc-empa-reactions/master/metadata.json",
+        "label": "reactions"
     },
     "units": {
         "git_url": "https://github.com/materialscloud-org/mc-units",
-        "meta_url": "https://raw.githubusercontent.com/materialscloud-org/mc-units/master/metadata.json"
+        "meta_url": "https://raw.githubusercontent.com/materialscloud-org/mc-units/master/metadata.json",
+        "label": "units"
     },
     "backup": {
         "git_url": "https://github.com/materialscloud-org/mc-backup",
-        "meta_url": "https://raw.githubusercontent.com/materialscloud-org/mc-backup/master/metadata.json"
+        "meta_url": "https://raw.githubusercontent.com/materialscloud-org/mc-backup/master/metadata.json",
+        "label": "backup"
     },
-    "structure importer": {
+    "structureimporter": {
         "git_url": "https://github.com/materialscloud-org/mc-structure",
-        "meta_url": "https://raw.githubusercontent.com/materialscloud-org/mc-structure/master/metadata.json"
+        "meta_url": "https://raw.githubusercontent.com/materialscloud-org/mc-structure/master/metadata.json",
+        "label": "structure importer"
     }
 }
