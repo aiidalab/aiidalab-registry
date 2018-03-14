@@ -48,7 +48,7 @@
         "git_url": "https://github.com/materialscloud-org/mc-calculation-examples.git",
         "meta_url": "https://raw.githubusercontent.com/materialscloud-org/mc-calculation-examples/master/metadata.json",
         "label": "calculation examples"
-    }
+    },
     "lsmo": {
         "git_url": "https://github.com/yakutovicha/mc-epfl-lsmo.git",
         "meta_url": "https://raw.githubusercontent.com/yakutovicha/mc-epfl-lsmo/master/metadata.json",
