@@ -53,5 +53,10 @@
         "git_url": "https://github.com/yakutovicha/mc-epfl-lsmo.git",
         "meta_url": "https://raw.githubusercontent.com/yakutovicha/mc-epfl-lsmo/master/metadata.json",
         "label": "LSMO apps"
+    },
+    "aiida-tutorials": {
+        "git_url": "https://github.com/aiidateam/aiida_demos.git",
+        "meta_url": "https://raw.githubusercontent.com/aiidateam/aiida_demos/master/metadata.json",
+        "label": "AiiDA Tutorials"
     }
 }
