@@ -59,7 +59,7 @@
         "meta_url": "https://raw.githubusercontent.com/aiidateam/aiida_demos/master/metadata.json",
         "label": "AiiDA Tutorials"
     },
-    "quantum-mobile": {
+    "mc-quantum-mobile": {
         "git_url": "https://github.com/materialscloud-org/mc-quantum-mobile.git",
         "meta_url": "https://raw.githubusercontent.com/materialscloud-org/mc-quantum-mobile/master/metadata.json",
         "label": "Quantum Mobile"
