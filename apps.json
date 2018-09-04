@@ -28,6 +28,11 @@
         "git_url": "https://github.com/edditler/mc-empa-reactions",
         "meta_url": "https://raw.githubusercontent.com/edditler/mc-empa-reactions/master/metadata.json",
         "label": "reactions"
+    },    
+    "scanning_probe": {
+        "git_url": "https://github.com/eimrek/mc-empa-scanning-probe",
+        "meta_url": "https://raw.githubusercontent.com/eimrek/mc-empa-scanning-probe/master/metadata.json",
+        "label": "Empa scanning probe"
     },
     "units": {
         "git_url": "https://github.com/materialscloud-org/mc-units",
