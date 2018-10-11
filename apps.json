@@ -1,27 +1,27 @@
 {
     "home": {
-        "git_url": "https://github.com/materialscloud-org/mc-home",
-        "meta_url": "https://raw.githubusercontent.com/materialscloud-org/mc-home/master/metadata.json",
+        "git_url": "https://github.com/aiidalab/aiidalab-home",
+        "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-home/master/metadata.json",
         "label": "home"
     },
     "aiida": {
-        "git_url": "https://github.com/materialscloud-org/mc-aiida",
-        "meta_url": "https://raw.githubusercontent.com/materialscloud-org/mc-aiida/master/metadata.json",
+        "git_url": "https://github.com/aiidalab/aiidalab-aiida",
+        "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-aiida/master/metadata.json",
         "label": "aiida"
     },
     "cscs": {
-        "git_url": "https://github.com/materialscloud-org/mc-cscs",
-        "meta_url": "https://raw.githubusercontent.com/materialscloud-org/mc-cscs/master/metadata.json",
+        "git_url": "https://github.com/aiidalab/aiidalab-cscs",
+        "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-cscs/master/metadata.json",
         "label": "cscs"
     },
     "epfl": {
-        "git_url": "https://github.com/materialscloud-org/mc-epfl",
-        "meta_url": "https://raw.githubusercontent.com/materialscloud-org/mc-epfl/master/metadata.json",
+        "git_url": "https://github.com/aiidalab/aiidalab-epfl-supercomputers",
+        "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-epfl-supercomputers/master/metadata.json",
         "label": "epfl"
     },
     "surfaces": {
-        "git_url": "https://github.com/cpignedoli/mc-empa-surfaces",
-        "meta_url": "https://raw.githubusercontent.com/cpignedoli/mc-empa-surfaces/master/metadata.json",
+        "git_url": "https://github.com/cpignedoli/aiidalab-empa-surfaces",
+        "meta_url": "https://raw.githubusercontent.com/cpignedoli/aiidalab-empa-surfaces/master/metadata.json",
         "label": "surfaces"
     },
     "reactions": {
@@ -30,28 +30,28 @@
         "label": "reactions"
     },
     "units": {
-        "git_url": "https://github.com/materialscloud-org/mc-units",
-        "meta_url": "https://raw.githubusercontent.com/materialscloud-org/mc-units/master/metadata.json",
+        "git_url": "https://github.com/aiidalab/aiidalab-units",
+        "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-units/master/metadata.json",
         "label": "units"
     },
     "backup": {
-        "git_url": "https://github.com/materialscloud-org/mc-backup",
-        "meta_url": "https://raw.githubusercontent.com/materialscloud-org/mc-backup/master/metadata.json",
+        "git_url": "https://github.com/aiidalab/aiidalab-backup",
+        "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-backup/master/metadata.json",
         "label": "backup"
     },
     "structureimporter": {
-        "git_url": "https://github.com/materialscloud-org/mc-structure",
-        "meta_url": "https://raw.githubusercontent.com/materialscloud-org/mc-structure/master/metadata.json",
+        "git_url": "https://github.com/aiidalab/aiidalab-manage-structures",
+        "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-manage-structures/master/metadata.json",
         "label": "structure importer"
     },
     "calcexamples": {
-        "git_url": "https://github.com/materialscloud-org/mc-calculation-examples.git",
-        "meta_url": "https://raw.githubusercontent.com/materialscloud-org/mc-calculation-examples/master/metadata.json",
+        "git_url": "https://github.com/aiidalab/aiidalab-calculation-examples.git",
+        "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-calculation-examples/master/metadata.json",
         "label": "calculation examples"
     },
     "lsmo": {
-        "git_url": "https://github.com/yakutovicha/mc-epfl-lsmo.git",
-        "meta_url": "https://raw.githubusercontent.com/yakutovicha/mc-epfl-lsmo/master/metadata.json",
+        "git_url": "https://github.com/yakutovicha/aiidalab-epfl-lsmo.git",
+        "meta_url": "https://raw.githubusercontent.com/yakutovicha/aiidalab-epfl-lsmo/master/metadata.json",
         "label": "LSMO apps"
     },
     "aiida-tutorials": {
@@ -59,9 +59,9 @@
         "meta_url": "https://raw.githubusercontent.com/aiidateam/aiida_demos/master/metadata.json",
         "label": "AiiDA Tutorials"
     },
-    "mc-quantum-mobile": {
-        "git_url": "https://github.com/materialscloud-org/mc-quantum-mobile.git",
-        "meta_url": "https://raw.githubusercontent.com/materialscloud-org/mc-quantum-mobile/master/metadata.json",
+    "aiidalab-quantum-mobile": {
+        "git_url": "https://github.com/aiidalab/aiidalab-quantum-mobile.git",
+        "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-quantum-mobile/master/metadata.json",
         "label": "Quantum Mobile"
     },
         "mc-vasp-example": {
