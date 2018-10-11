@@ -28,6 +28,11 @@
         "git_url": "https://github.com/edditler/mc-empa-reactions",
         "meta_url": "https://raw.githubusercontent.com/edditler/mc-empa-reactions/master/metadata.json",
         "label": "reactions"
+    },    
+    "scanning_probe": {
+        "git_url": "https://github.com/eimrek/mc-empa-scanning-probe",
+        "meta_url": "https://raw.githubusercontent.com/eimrek/mc-empa-scanning-probe/master/metadata.json",
+        "label": "Empa scanning probe"
     },
     "units": {
         "git_url": "https://github.com/aiidalab/aiidalab-units",
@@ -63,6 +68,16 @@
         "git_url": "https://github.com/aiidalab/aiidalab-quantum-mobile.git",
         "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-quantum-mobile/master/metadata.json",
         "label": "Quantum Mobile"
+    },
+    "mc-persistence-homology": {
+        "git_url": "https://github.com/materialscloud-org/mc-persistence-homology.git",
+        "meta_url": "https://raw.githubusercontent.com/materialscloud-org/mc-persistence-homology/master/metadata.json",
+        "label": "Persistence Homology"
+    },
+    "mc-aiida-widgets": {
+        "git_url": "https://github.com/materialscloud-org/mc-aiida-widgets.git",
+        "meta_url": "https://raw.githubusercontent.com/materialscloud-org/mc-aiida-widgets/master/metadata.json",
+        "label": "AiiDA Widgets"
     },
         "mc-vasp-example": {
         "git_url": "https://github.com/DropD/mc-vasp-example.git",
