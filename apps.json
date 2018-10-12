@@ -25,8 +25,8 @@
         "label": "surfaces"
     },
     "reactions": {
-        "git_url": "https://github.com/edditler/mc-empa-reactions",
-        "meta_url": "https://raw.githubusercontent.com/edditler/mc-empa-reactions/master/metadata.json",
+        "git_url": "https://github.com/edditler/aiidalab-empa-reactions",
+        "meta_url": "https://raw.githubusercontent.com/edditler/aiidalab-empa-reactions/master/metadata.json",
         "label": "reactions"
     },    
     "scanning_probe": {
