@@ -2,86 +2,103 @@
     "home": {
         "git_url": "https://github.com/aiidalab/aiidalab-home",
         "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-home/master/metadata.json",
-        "label": "home"
+        "label": "home",
+	"groups": ["utils"]
     },
     "aiida": {
         "git_url": "https://github.com/aiidalab/aiidalab-aiida",
         "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-aiida/master/metadata.json",
-        "label": "aiida"
+        "label": "aiida",
+	"groups": ["aiida"]
     },
     "cscs": {
         "git_url": "https://github.com/aiidalab/aiidalab-cscs",
         "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-cscs/master/metadata.json",
-        "label": "cscs"
+        "label": "cscs",
+	"groups": ["configuration"]
     },
     "epfl": {
         "git_url": "https://github.com/aiidalab/aiidalab-epfl-supercomputers",
         "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-epfl-supercomputers/master/metadata.json",
-        "label": "epfl"
+        "label": "Setup epfl computers",
+	"groups": ["configuration"]
     },
     "surfaces": {
         "git_url": "https://github.com/cpignedoli/aiidalab-empa-surfaces",
         "meta_url": "https://raw.githubusercontent.com/cpignedoli/aiidalab-empa-surfaces/master/metadata.json",
-        "label": "surfaces"
+        "label": "surfaces",
+	"groups": ["calculations"]
     },
     "reactions": {
         "git_url": "https://github.com/edditler/aiidalab-empa-reactions",
         "meta_url": "https://raw.githubusercontent.com/edditler/aiidalab-empa-reactions/master/metadata.json",
-        "label": "reactions"
+        "label": "reactions",
+	"groups": ["calculations"]
     },    
     "scanning_probe": {
         "git_url": "https://github.com/eimrek/aiidalab-empa-scanning-probe",
         "meta_url": "https://raw.githubusercontent.com/eimrek/aiidalab-empa-scanning-probe/master/metadata.json",
-        "label": "Empa scanning probe"
+        "label": "Empa scanning probe",
+	"groups": ["calculations"]
     },
     "units": {
         "git_url": "https://github.com/aiidalab/aiidalab-units",
         "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-units/master/metadata.json",
-        "label": "units"
+        "label": "units",
+	"groups": ["utilities"]
     },
     "backup": {
         "git_url": "https://github.com/aiidalab/aiidalab-backup",
         "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-backup/master/metadata.json",
-        "label": "backup"
+        "label": "backup",
+	"groups": ["utilities"]
     },
     "structureimporter": {
         "git_url": "https://github.com/aiidalab/aiidalab-manage-structures",
         "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-manage-structures/master/metadata.json",
-        "label": "structure importer"
+        "label": "structure importer",
+	"groups": ["utilities"]
     },
     "calcexamples": {
         "git_url": "https://github.com/aiidalab/aiidalab-calculation-examples.git",
         "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-calculation-examples/master/metadata.json",
-        "label": "calculation examples"
+        "label": "calculation examples",
+	"groups": ["tutorial"]
     },
     "lsmo": {
         "git_url": "https://github.com/yakutovicha/aiidalab-epfl-lsmo.git",
         "meta_url": "https://raw.githubusercontent.com/yakutovicha/aiidalab-epfl-lsmo/master/metadata.json",
-        "label": "LSMO apps"
+        "label": "LSMO apps",
+	"groups": ["calculations"]
     },
     "aiida-tutorials": {
         "git_url": "https://github.com/aiidateam/aiida_demos.git",
         "meta_url": "https://raw.githubusercontent.com/aiidateam/aiida_demos/master/metadata.json",
-        "label": "AiiDA Tutorials"
+        "label": "AiiDA Tutorials",
+	"groups": ["tutorial"]
     },
     "aiidalab-quantum-mobile": {
         "git_url": "https://github.com/aiidalab/aiidalab-quantum-mobile.git",
         "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-quantum-mobile/master/metadata.json",
-        "label": "Quantum Mobile"
+        "label": "Quantum Mobile",
+	"groups": ["configuration"]
     },
     "aiidalab-persistence-homology": {
         "git_url": "https://github.com/aiidalab/aiidalab-persistence-homology.git",
         "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-persistence-homology/master/metadata.json",
-        "label": "Persistence Homology"
+        "label": "Persistence Homology",
+	"groups": ["calculations"]
     },
     "aiidalab-widgets-base": {
         "git_url": "https://github.com/aiidalab/aiidalab-widgets-base.git",
         "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-widgets-base/master/metadata.json",
-        "label": "AiiDA Widgets"
+        "label": "AiiDA Widgets",
+	"groups": ["utilities"]
     },
         "mc-vasp-example": {
         "git_url": "https://github.com/DropD/mc-vasp-example.git",
         "meta_url": "https://raw.githubusercontent.com/DropD/mc-vasp-example/master/metadata.json",
-        "label": "Vasp example"
+        "label": "Vasp example",
+	"groups": ["calculations"]
     }
 }
