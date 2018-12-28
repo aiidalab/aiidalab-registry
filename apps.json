@@ -3,13 +3,13 @@
         "git_url": "https://github.com/aiidalab/aiidalab-home",
         "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-home/master/metadata.json",
         "label": "home",
-	"groups": ["utils"]
+	"groups": ["utilities"]
     },
     "aiida": {
         "git_url": "https://github.com/aiidalab/aiidalab-aiida",
         "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-aiida/master/metadata.json",
         "label": "aiida",
-	"groups": ["aiida"]
+	"groups": ["aiida", "utilities"]
     },
     "cscs": {
         "git_url": "https://github.com/aiidalab/aiidalab-cscs",
