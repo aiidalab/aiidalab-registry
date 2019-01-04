@@ -3,20 +3,15 @@
 import codecs
 import json
 import os
-import re
 import shutil
 import sys
-from urlparse import urlparse
 from collections import OrderedDict, defaultdict
 
-
 ## Requires jinja2 >= 2.9
-import jinja2
 from jinja2 import Environment, PackageLoader, select_autoescape
 from kitchen.text.converters import getwriter
 # see https://pythonhosted.org/kitchen/unicode-frustrations.html
-from kitchen.text.converters import to_bytes
-
+#from kitchen.text.converters import to_bytes
 
 ### BEGIN configuration
 pwd = os.path.split(os.path.abspath(__file__))[0]
@@ -33,6 +28,7 @@ html_subfolder_name = 'apps'
 UTF8Writer = getwriter('utf8')
 sys.stdout = UTF8Writer(sys.stdout)
 
+
 def get_html_app_fname(app_name):
     import string
     valid_characters = set(string.ascii_letters + string.digits + '_-')
@@ -41,11 +37,13 @@ def get_html_app_fname(app_name):
 
     return "{}.html".format(simple_string)
 
+
 def get_hosted_on(url):
+    from urlparse import urlparse
     try:
         netloc = urlparse(app_data['code_home']).netloc
     except Exception as e:
-    	print e
+        print e
         return None
 
     # Remove port (if any)
@@ -57,23 +55,25 @@ def get_hosted_on(url):
 
     return netloc
 
-def get_meta_info(json_url):
-	import urllib2
-	try:
-		response = urllib2.urlopen(json_url)
-		json_txt = response.read()
-	except Exception as e:
-		import traceback
-		print "  >> UNABLE TO RETRIEVE THE JSON URL: {}".format(json_url)
-		print traceback.print_exc(file=sys.stdout)
-		return None
-	try:
-		json_data = json.loads(json_txt)
-	except ValueError:
-		print "  >> WARNING! Unable to parse JSON"
-		return None
 
-	return json_data
+def get_meta_info(json_url):
+    import urllib2
+    try:
+        response = urllib2.urlopen(json_url)
+        json_txt = response.read()
+    except Exception as e:
+        import traceback
+        print "  >> UNABLE TO RETRIEVE THE JSON URL: {}".format(json_url)
+        print traceback.print_exc(file=sys.stdout)
+        return None
+    try:
+        json_data = json.loads(json_txt)
+    except ValueError:
+        print "  >> WARNING! Unable to parse JSON"
+        return None
+
+    return json_data
+
 
 def validate_meta_info(app_name, meta_info):
     if not 'state' in meta_info.keys():
@@ -83,6 +83,7 @@ def validate_meta_info(app_name, meta_info):
         meta_info['title'] = app_name
 
     return meta_info
+
 
 if __name__ == "__main__":
     outdir_abs = os.path.join(pwd, out_folder)
@@ -124,19 +125,19 @@ if __name__ == "__main__":
 
         html_app_fname = get_html_app_fname(app_name)
         subpage_name = os.path.join(html_subfolder_name,
-            get_html_app_fname(app_name))
+                                    get_html_app_fname(app_name))
         subpage_abspath = os.path.join(outdir_abs, subpage_name)
         hosted_on = get_hosted_on(app_data['git_url'])
 
-        # Get meta.json from the project; 
+        # Get meta.json from the project;
         # set to None if not retrievable
         try:
-        	meta_url = app_data['meta_url']
+            meta_url = app_data['meta_url']
         except KeyError:
-        	print "  >> WARNING: Missing meta_url!!!"
-        	meta_info = None
+            print "  >> WARNING: Missing meta_url!!!"
+            meta_info = None
         else:
-	        meta_info = get_meta_info(meta_url)
+            meta_info = get_meta_info(meta_url)
 
         app_data['metainfo'] = validate_meta_info(app_name, meta_info)
         app_data['subpage'] = subpage_name

@@ -14,8 +14,8 @@
    viewBox="0 0 286.07144 85.357139"
    id="svg4563"
    version="1.1"
-   inkscape:version="0.91 r13725"
-   sodipodi:docname="button.svg">
+   inkscape:version="0.92.2 2405546, 2018-03-11"
+   sodipodi:docname="gotobutton.svg">
   <defs
      id="defs4565" />
   <sodipodi:namedview
@@ -26,7 +26,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2.8"
-     inkscape:cx="147.65729"
+     inkscape:cx="83.728719"
      inkscape:cy="31.071419"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -35,11 +35,11 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="1680"
-     inkscape:window-height="940"
-     inkscape:window-x="0"
-     inkscape:window-y="1"
-     inkscape:window-maximized="1" />
+     inkscape:window-width="1793"
+     inkscape:window-height="931"
+     inkscape:window-x="91"
+     inkscape:window-y="29"
+     inkscape:window-maximized="0" />
   <metadata
      id="metadata4568">
     <rdf:RDF>
@@ -48,7 +48,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -68,26 +68,25 @@
        ry="7.2857141" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:Verdana, Geneva, sans-serif;-inkscape-font-specification:'Verdana, Geneva, sans-serif';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:Verdana, Geneva, sans-serif;-inkscape-font-specification:'Verdana, Geneva, sans-serif';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="285.862"
        y="228.86211"
-       id="text5113"
-       sodipodi:linespacing="125%"><tspan
+       id="text5113"><tspan
          sodipodi:role="line"
          id="tspan5115"
          x="285.862"
-         y="228.86211">Go to the AiiDA plugin registry</tspan></text>
+         y="228.86211"
+         style="font-size:17.5px;line-height:1.25">Go to AiiDA Lab app registry</tspan></text>
     <text
-       sodipodi:linespacing="125%"
        id="text5117"
        y="251.93353"
        x="285.71429"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;line-height:125%;font-family:Verdana, Geneva, sans-serif;-inkscape-font-specification:'Verdana, Geneva, sans-serif';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:Verdana, Geneva, sans-serif;-inkscape-font-specification:'Verdana, Geneva, sans-serif';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        xml:space="preserve"><tspan
          y="251.93353"
          x="285.71429"
          id="tspan5119"
          sodipodi:role="line"
-         style="font-size:12.5px">http://aiidateam.github.io/aiida-registry</tspan></text>
+         style="font-size:12.5px;line-height:1.25">http://aiidalab.github.io/aiidalab-registry</tspan></text>
   </g>
 </svg>
