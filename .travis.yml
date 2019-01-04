@@ -1,0 +1,25 @@
+language: python
+
+python:
+  - "2.7"
+
+cache: pip
+
+# We are using travis in order to build and deploy the page to the gh-pages branch.
+# Using encrypted deploy key as described here:
+# https://gist.github.com/domenic/ec8b0fc8ab45f39403dd#get-encrypted-credentials
+env: 
+  global: 
+  - ENCRYPTION_LABEL: "b78f01f07a2c"
+  - COMMIT_AUTHOR_EMAIL: deploy@travis-ci.org
+
+before_install:
+  - cd make_ghpages
+
+install:
+  # Install needed dependencies
+  - pip install -r requirements.txt
+
+script: 
+  - ./make_pages.py  
+  - cd ../.travis-data && ./deploy.sh
