@@ -75,6 +75,11 @@ def get_meta_info(json_url):
 
     return json_data
 
+def get_git_branches(git_url):
+    from dulwich.client import get_transport_and_path_from_url
+    t, p = get_transport_and_path_from_url(git_url)
+    branches = t.get_refs(p)
+    return branches
 
 def validate_meta_info(app_name, meta_info):
     if not 'state' in meta_info.keys():
@@ -142,6 +147,7 @@ if __name__ == "__main__":
             meta_info = get_meta_info(meta_url)
 
         app_data['metainfo'] = validate_meta_info(app_name, meta_info)
+        app_data['gitinfo'] = get_git_branches(app_data['git_url'])
         app_data['subpage'] = subpage_name
         app_data['hosted_on'] = hosted_on
 
