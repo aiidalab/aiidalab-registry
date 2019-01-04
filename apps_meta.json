@@ -1,0 +1,277 @@
+{
+  "apps": {
+    "aiida": {
+      "name": "aiida", 
+      "hosted_on": "github.com", 
+      "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-aiida/master/metadata.json", 
+      "metainfo": {
+        "state": "registered", 
+        "description": "AiiDA tools", 
+        "title": "AiiDA"
+      }, 
+      "subpage": "apps/aiida.html", 
+      "git_url": "https://github.com/aiidalab/aiidalab-aiida", 
+      "groups": [
+        "aiida", 
+        "utilities"
+      ], 
+      "label": "aiida"
+    }, 
+    "aiida-tutorials": {
+      "name": "aiida-tutorials", 
+      "hosted_on": "github.com", 
+      "meta_url": "https://raw.githubusercontent.com/aiidateam/aiida_demos/master/metadata.json", 
+      "metainfo": {
+        "state": "registered", 
+        "description": "jupyter notebooks demonstrating how to use AiiDA", 
+        "title": "AiiDA Tutorials"
+      }, 
+      "subpage": "apps/aiida-tutorials.html", 
+      "git_url": "https://github.com/aiidateam/aiida_demos.git", 
+      "groups": [
+        "tutorial"
+      ], 
+      "label": "AiiDA Tutorials"
+    }, 
+    "aiidalab-persistence-homology": {
+      "name": "aiidalab-persistence-homology", 
+      "hosted_on": "github.com", 
+      "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-persistence-homology/master/metadata.json", 
+      "metainfo": {
+        "state": "registered", 
+        "description": "Materials Cloud App for persistence homology analysis of nanoporous materials.", 
+        "title": "Persistence Homology"
+      }, 
+      "subpage": "apps/aiidalab-persistence-homology.html", 
+      "git_url": "https://github.com/aiidalab/aiidalab-persistence-homology.git", 
+      "groups": [
+        "calculations"
+      ], 
+      "label": "Persistence Homology"
+    }, 
+    "aiidalab-quantum-mobile": {
+      "name": "aiidalab-quantum-mobile", 
+      "hosted_on": "github.com", 
+      "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-quantum-mobile/master/metadata.json", 
+      "metainfo": {
+        "state": "registered", 
+        "description": "Test virtual machine based on QuantumMobile", 
+        "title": "Quantum Mobile"
+      }, 
+      "subpage": "apps/aiidalab-quantum-mobile.html", 
+      "git_url": "https://github.com/aiidalab/aiidalab-quantum-mobile.git", 
+      "groups": [
+        "configuration"
+      ], 
+      "label": "Quantum Mobile"
+    }, 
+    "aiidalab-widgets-base": {
+      "name": "aiidalab-widgets-base", 
+      "hosted_on": "github.com", 
+      "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-widgets-base/master/metadata.json", 
+      "metainfo": {
+        "state": "registered", 
+        "description": "Reusable AiiDA Lab widgets for applications in the AiiDA Lab.", 
+        "title": "AiiDA Lab Widgets"
+      }, 
+      "subpage": "apps/aiidalab-widgets-base.html", 
+      "git_url": "https://github.com/aiidalab/aiidalab-widgets-base.git", 
+      "groups": [
+        "utilities"
+      ], 
+      "label": "AiiDA Widgets"
+    }, 
+    "backup": {
+      "name": "backup", 
+      "hosted_on": "github.com", 
+      "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-backup/master/metadata.json", 
+      "metainfo": {
+        "state": "registered", 
+        "description": "Materials Cloud Backup App", 
+        "title": "Backup"
+      }, 
+      "subpage": "apps/backup.html", 
+      "git_url": "https://github.com/aiidalab/aiidalab-backup", 
+      "groups": [
+        "utilities"
+      ], 
+      "label": "backup"
+    }, 
+    "calcexamples": {
+      "name": "calcexamples", 
+      "hosted_on": "github.com", 
+      "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-calculation-examples/master/metadata.json", 
+      "metainfo": {
+        "state": "registered", 
+        "description": "Calculation examples", 
+        "title": "Calculation examples"
+      }, 
+      "subpage": "apps/calcexamples.html", 
+      "git_url": "https://github.com/aiidalab/aiidalab-calculation-examples.git", 
+      "groups": [
+        "tutorial"
+      ], 
+      "label": "calculation examples"
+    }, 
+    "cscs": {
+      "name": "cscs", 
+      "hosted_on": "github.com", 
+      "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-cscs/master/metadata.json", 
+      "metainfo": {
+        "state": "registered", 
+        "description": "CSCS Computers", 
+        "title": "CSCS"
+      }, 
+      "subpage": "apps/cscs.html", 
+      "git_url": "https://github.com/aiidalab/aiidalab-cscs", 
+      "groups": [
+        "configuration"
+      ], 
+      "label": "cscs"
+    }, 
+    "epfl": {
+      "name": "epfl", 
+      "hosted_on": "github.com", 
+      "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-epfl-supercomputers/master/metadata.json", 
+      "metainfo": {
+        "state": "registered", 
+        "description": "Set up supercomputers at EPFL, Switzerland for use in AiiDA", 
+        "title": "EPFL Supercomputers"
+      }, 
+      "subpage": "apps/epfl.html", 
+      "git_url": "https://github.com/aiidalab/aiidalab-epfl-supercomputers", 
+      "groups": [
+        "configuration"
+      ], 
+      "label": "Setup epfl computers"
+    }, 
+    "home": {
+      "name": "home", 
+      "hosted_on": "github.com", 
+      "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-home/master/metadata.json", 
+      "metainfo": {
+        "state": "registered", 
+        "description": "AiiDA Lab Home", 
+        "title": "Home"
+      }, 
+      "subpage": "apps/home.html", 
+      "git_url": "https://github.com/aiidalab/aiidalab-home", 
+      "groups": [
+        "utilities"
+      ], 
+      "label": "home"
+    }, 
+    "lsmo": {
+      "name": "lsmo", 
+      "hosted_on": "github.com", 
+      "meta_url": "https://raw.githubusercontent.com/yakutovicha/aiidalab-epfl-lsmo/master/metadata.json", 
+      "metainfo": {
+        "state": "registered", 
+        "description": "Applications from the LSMO group", 
+        "title": "LSMO apps"
+      }, 
+      "subpage": "apps/lsmo.html", 
+      "git_url": "https://github.com/yakutovicha/aiidalab-epfl-lsmo.git", 
+      "groups": [
+        "calculations"
+      ], 
+      "label": "LSMO apps"
+    }, 
+    "mc-vasp-example": {
+      "name": "mc-vasp-example", 
+      "hosted_on": "github.com", 
+      "meta_url": "https://raw.githubusercontent.com/DropD/mc-vasp-example/master/metadata.json", 
+      "metainfo": {
+        "state": "registered", 
+        "description": "Compute a band structure using the AiiDA-VASP plugin", 
+        "title": "AiiDA-VASP Demo"
+      }, 
+      "subpage": "apps/mc-vasp-example.html", 
+      "git_url": "https://github.com/DropD/mc-vasp-example.git", 
+      "groups": [
+        "calculations"
+      ], 
+      "label": "Vasp example"
+    }, 
+    "reactions": {
+      "name": "reactions", 
+      "hosted_on": "github.com", 
+      "meta_url": "https://raw.githubusercontent.com/edditler/aiidalab-empa-reactions/master/metadata.json", 
+      "metainfo": {
+        "state": "registered", 
+        "description": "Empa nanotech@surfaces Laboratory", 
+        "title": "Empa nanotech@surfaces Laboratory - Reactions"
+      }, 
+      "subpage": "apps/reactions.html", 
+      "git_url": "https://github.com/edditler/aiidalab-empa-reactions", 
+      "groups": [
+        "calculations"
+      ], 
+      "label": "reactions"
+    }, 
+    "scanning_probe": {
+      "name": "scanning_probe", 
+      "hosted_on": "github.com", 
+      "meta_url": "https://raw.githubusercontent.com/eimrek/aiidalab-empa-scanning-probe/master/metadata.json", 
+      "metainfo": {
+        "state": "registered", 
+        "description": "Empa nanotech@surfaces Laboratory", 
+        "title": "Empa nanotech@surfaces Laboratory - Scanning Probe Microscopy"
+      }, 
+      "subpage": "apps/scanning_probe.html", 
+      "git_url": "https://github.com/eimrek/aiidalab-empa-scanning-probe", 
+      "groups": [
+        "calculations"
+      ], 
+      "label": "Empa scanning probe"
+    }, 
+    "structureimporter": {
+      "name": "structureimporter", 
+      "hosted_on": "github.com", 
+      "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-manage-structures/master/metadata.json", 
+      "metainfo": {
+        "state": "registered", 
+        "description": "Application to upload structures from your personal computer or from databases", 
+        "title": "Structure Importer"
+      }, 
+      "subpage": "apps/structureimporter.html", 
+      "git_url": "https://github.com/aiidalab/aiidalab-manage-structures", 
+      "groups": [
+        "utilities"
+      ], 
+      "label": "structure importer"
+    }, 
+    "surfaces": {
+      "name": "surfaces", 
+      "hosted_on": "github.com", 
+      "meta_url": "https://raw.githubusercontent.com/cpignedoli/aiidalab-empa-surfaces/master/metadata.json", 
+      "metainfo": {
+        "state": "registered", 
+        "description": "Tools for graphene nanoribbons, developed at the nanotech@surfaces laboratory, Empa", 
+        "title": "Empa nanotech@surfaces Laboratory - Graphene nanoribbons"
+      }, 
+      "subpage": "apps/surfaces.html", 
+      "git_url": "https://github.com/cpignedoli/aiidalab-empa-surfaces", 
+      "groups": [
+        "calculations"
+      ], 
+      "label": "surfaces"
+    }, 
+    "units": {
+      "name": "units", 
+      "hosted_on": "github.com", 
+      "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-units/master/metadata.json", 
+      "metainfo": {
+        "state": "registered", 
+        "description": "Simple conversion between common units", 
+        "title": "Units Converter"
+      }, 
+      "subpage": "apps/units.html", 
+      "git_url": "https://github.com/aiidalab/aiidalab-units", 
+      "groups": [
+        "utilities"
+      ], 
+      "label": "units"
+    }
+  }
+}
