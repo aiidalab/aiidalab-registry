@@ -1,0 +1,69 @@
+{% extends "base.html" %} 
+
+{% block css %}
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="shortcut icon" type="image/png" href="../static/favicon.png">
+{% endblock css %}
+
+{% block body %}
+<main>
+        <h1 class="app-header">
+            Details for app &quot;<a href="{{code_home}}">{{name}}</a>&quot;
+        </h1>
+        <p><a href="../index.html">&lt; Go back to the app summary</a></p>
+
+    <h2>General information</h2>
+    <div>
+        <p>
+            <a href="{{ git_url }}" target="_blank">Go to the app code homepage</a> 
+        </p>
+    </div>
+
+    {% if documentation_url %}
+        <p>
+            <strong>Documentation</strong>: <a href="{{ documentation_url }}" target="_blank">Go to app documentation</a>
+        <p>
+    {% else %}
+        <p>
+            <strong>Documentation</strong>: Documentation not provided by the app author
+        <p>
+    {% endif %}
+
+
+    <h2>
+        Detailed information
+    </h2>
+    {% if metainfo %}
+    <div id='description'>
+        <p>
+            <strong>Author(s)</strong>: {{ metainfo.author }}
+        </p>
+        <p>
+            <strong>Short description</strong>: {{ metainfo.description }}
+        </p>
+        <p>
+            <strong>Package name (for pip)</strong>: <code>aiidalab-{{ name }}</code>
+        </p>
+        <p>
+            <strong>Most recent version</strong>: {{ metainfo.version }}
+        </p>
+
+    </div>
+    {% else %}
+    <div id='description'>
+        <p>
+            Unable to retrieve meta information for this app.
+            Ask the app developers to provide a <code>meta.json</code> file
+            in the app source code.
+        </p>
+    </div>
+    {% endif %}
+
+</main>
+
+{% endblock body %}
+
+{# Needed because of the different relative path #}
+{% block footer_images %}
+<div style="text-align: center;"><img src="../static/img/MARVEL.png" height="70px">&nbsp;&nbsp;&nbsp;&nbsp;<img src="../static/img/MaX.png" height="70px"></div>
+{% endblock footer_images %}
