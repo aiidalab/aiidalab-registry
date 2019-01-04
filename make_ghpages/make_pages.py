@@ -22,6 +22,7 @@ static_folder = 'static'
 out_folder = 'out'
 # subfolder for HTMLs of apps
 html_subfolder_name = 'apps'
+apps_meta_file = 'apps_meta.json'
 
 ### END configuration
 
@@ -41,7 +42,7 @@ def get_html_app_fname(app_name):
 def get_hosted_on(url):
     from urlparse import urlparse
     try:
-        netloc = urlparse(app_data['code_home']).netloc
+        netloc = urlparse(app_data['git_url']).netloc
     except Exception as e:
         print e
         return None
@@ -116,6 +117,7 @@ if __name__ == "__main__":
     other_summary = []
     other_summary_names = set()
 
+    print "[apps]"
     for app_name in sorted(apps_raw_data.keys()):
         print "  - {}".format(app_name)
         app_data = apps_raw_data[app_name]
@@ -152,10 +154,14 @@ if __name__ == "__main__":
         print "    - Page {} generated.".format(subpage_name)
 
     print "[main index]"
-
-    # print all_data
     rendered = main_index_template.render(**all_data)
     outfile = os.path.join(outdir_abs, 'index.html')
     with codecs.open(outfile, 'w', 'utf-8') as f:
         f.write(rendered)
     print "  - index.html generated"
+
+    # save json data for the app manager
+    outfile = os.path.join(outdir_abs, apps_meta_file)
+    with codecs.open(outfile, 'w', 'utf-8') as f:
+        json.dump(all_data, f, ensure_ascii=False, indent=2)
+    print "  - apps_meta.json generated"
