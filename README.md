@@ -3,7 +3,7 @@
 This repository contains the **source code** of the official App registry for the [AiiDA Lab](aiidalab.materialscloud.org).
 
 <p align="center">
- <a href="http://aiidateam.github.io/aiida-registry" rel="Go to AiiDA Lab app registry">
+ <a href="http://aiidalab.github.io/aiidalab-registry" rel="Go to AiiDA Lab app registry">
   <img src="make_ghpages/static/gotobutton.svg">
  </a>
  </p>
