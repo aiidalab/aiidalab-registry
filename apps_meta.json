@@ -60,6 +60,27 @@
       ], 
       "label": "AiiDA Tutorials"
     }, 
+    "aiidalab-optimade": {
+      "gitinfo": {
+        "HEAD": "31c1fdad06ea0396c97b6c8834c66ae8102504da", 
+        "refs/heads/master": "31c1fdad06ea0396c97b6c8834c66ae8102504da"
+      }, 
+      "name": "aiidalab-optimade", 
+      "hosted_on": "github.com", 
+      "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-optimade/master/metadata.json", 
+      "metainfo": {
+        "state": "development", 
+        "authors": "AiiDA Team", 
+        "description": "AiiDA Lab App that implements an OPTiMaDe client", 
+        "title": "OPTiMaDe client"
+      }, 
+      "subpage": "apps/aiidalab-optimade.html", 
+      "git_url": "https://github.com/aiidalab/aiidalab-optimade.git", 
+      "groups": [
+        "utilities"
+      ], 
+      "label": "OPTiMaDe"
+    }, 
     "aiidalab-persistence-homology": {
       "gitinfo": {
         "HEAD": "9f28696d43542c2219f5d532fb706a5cb53ac3b1", 
@@ -232,9 +253,9 @@
         "refs/pull/6/head": "e23e6d654a4d3f9cd56fca0e9897e6398f16a86a", 
         "refs/pull/9/head": "e40b1d3f5d92a0e7595ad3db7956b4b409c48ab2", 
         "refs/pull/4/merge": "a4591bc0ba706cbc589ce4f7e203f82d021a560c", 
-        "refs/heads/develop": "1736b32e4a273ca02fa53e1a855168074dbcf00c", 
-        "refs/pull/14/merge": "403cfa6d082278a8d43d3bce154c7f8b5811ae8d", 
-        "refs/pull/14/head": "1736b32e4a273ca02fa53e1a855168074dbcf00c", 
+        "refs/heads/develop": "5b4e1dcc9933c7d1b4db34b6c8094d52e9edd3d9", 
+        "refs/pull/14/merge": "5ed0c8174d03e87b46b826c8fb53259376a60f77", 
+        "refs/pull/14/head": "5b4e1dcc9933c7d1b4db34b6c8094d52e9edd3d9", 
         "refs/heads/master": "382478300fa51ef4ed69e80a504aba766b19aea8"
       }, 
       "name": "home", 
