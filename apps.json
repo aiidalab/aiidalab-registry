@@ -100,5 +100,11 @@
         "meta_url": "https://raw.githubusercontent.com/DropD/mc-vasp-example/master/metadata.json",
         "label": "Vasp example",
 	"groups": ["calculations"]
+    },
+    "aiidalab-optimade": {
+        "git_url": "https://github.com/aiidalab/aiidalab-optimade.git",
+        "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-optimade/master/metadata.json",
+        "label": "OPTiMaDe",
+    "groups": ["utilities"]
     }
 }
