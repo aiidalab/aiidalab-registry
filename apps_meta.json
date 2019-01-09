@@ -62,8 +62,8 @@
     }, 
     "aiidalab-optimade": {
       "gitinfo": {
-        "HEAD": "31c1fdad06ea0396c97b6c8834c66ae8102504da", 
-        "refs/heads/master": "31c1fdad06ea0396c97b6c8834c66ae8102504da"
+        "HEAD": "c5e7faf41e8a66578514119b6ca9b68d9bcc004e", 
+        "refs/heads/master": "c5e7faf41e8a66578514119b6ca9b68d9bcc004e"
       }, 
       "name": "aiidalab-optimade", 
       "hosted_on": "github.com", 
@@ -174,8 +174,8 @@
     }, 
     "calcexamples": {
       "gitinfo": {
-        "HEAD": "78e27d683736ee1b39a0ba5675b602fb9cf1def0", 
-        "refs/heads/master": "78e27d683736ee1b39a0ba5675b602fb9cf1def0"
+        "HEAD": "879bf40faecc42a26c79b8132a8239c1e9acb208", 
+        "refs/heads/master": "879bf40faecc42a26c79b8132a8239c1e9acb208"
       }, 
       "name": "calcexamples", 
       "hosted_on": "github.com", 
@@ -253,9 +253,9 @@
         "refs/pull/6/head": "e23e6d654a4d3f9cd56fca0e9897e6398f16a86a", 
         "refs/pull/9/head": "e40b1d3f5d92a0e7595ad3db7956b4b409c48ab2", 
         "refs/pull/4/merge": "a4591bc0ba706cbc589ce4f7e203f82d021a560c", 
-        "refs/heads/develop": "5b4e1dcc9933c7d1b4db34b6c8094d52e9edd3d9", 
-        "refs/pull/14/merge": "5ed0c8174d03e87b46b826c8fb53259376a60f77", 
-        "refs/pull/14/head": "5b4e1dcc9933c7d1b4db34b6c8094d52e9edd3d9", 
+        "refs/heads/develop": "479b818e2dfb85f7dd17b9183a68c9ad0bfe9df6", 
+        "refs/pull/14/merge": "8081c98646855b31a289245fd6c82af2e6831e1f", 
+        "refs/pull/14/head": "479b818e2dfb85f7dd17b9183a68c9ad0bfe9df6", 
         "refs/heads/master": "382478300fa51ef4ed69e80a504aba766b19aea8"
       }, 
       "name": "home", 
