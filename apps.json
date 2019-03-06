@@ -4,9 +4,9 @@
         "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-home/master/metadata.json",
         "categories": ["setup"]
     },
-    "aiida": {
-        "git_url": "https://github.com/aiidalab/aiidalab-aiida",
-        "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-aiida/master/metadata.json",
+    "aiida-cockpit": {
+        "git_url": "https://github.com/aiidalab/aiidalab-aiida-cockpit",
+        "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-aiida-cockpit/master/metadata.json",
         "categories": ["setup", "utilities"]
     },
     "cscs": {
@@ -64,29 +64,29 @@
         "meta_url": "https://raw.githubusercontent.com/aiidateam/aiida_demos/master/metadata.json",
         "categories": ["tutorials"]
     },
-    "aiidalab-quantum-mobile": {
+    "quantum-mobile": {
         "git_url": "https://github.com/aiidalab/aiidalab-quantum-mobile.git",
         "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-quantum-mobile/master/metadata.json",
         "categories": ["setup"]
     },
-    "aiidalab-persistence-homology": {
+    "persistence-homology": {
         "git_url": "https://github.com/aiidalab/aiidalab-persistence-homology.git",
         "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-persistence-homology/master/metadata.json",
         "categories": ["classical"]
     },
-    "aiidalab-widgets-base": {
+    "widgets-base": {
         "git_url": "https://github.com/aiidalab/aiidalab-widgets-base.git",
         "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-widgets-base/master/metadata.json",
         "categories": ["utilities"]
     },
-        "mc-vasp-example": {
+    "vasp-example": {
         "git_url": "https://github.com/DropD/mc-vasp-example.git",
         "meta_url": "https://raw.githubusercontent.com/DropD/mc-vasp-example/master/metadata.json",
         "categories": ["quantum"]
     },
-    "aiidalab-optimade": {
+    "optimade": {
         "git_url": "https://github.com/aiidalab/aiidalab-optimade.git",
         "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-optimade/master/metadata.json",
-    "categories": ["utilities"]
+        "categories": ["utilities"]
     }
 }
