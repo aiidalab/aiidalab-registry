@@ -36,13 +36,13 @@
     {% if metainfo %}
     <div id='description'>
         <p>
-            <strong>Author(s)</strong>: {{ metainfo.author }}
+            <strong>Author(s)</strong>: {{ metainfo.authors }}
         </p>
         <p>
             <strong>Short description</strong>: {{ metainfo.description }}
         </p>
         <p>
-            <strong>Package name (for pip)</strong>: <code>aiidalab-{{ name }}</code>
+            <strong>Package name (for pip)</strong>: <code>{{ metainfo.name }}</code>
         </p>
         <p>
             <strong>Most recent version</strong>: {{ metainfo.version }}
@@ -53,8 +53,8 @@
     <div id='description'>
         <p>
             Unable to retrieve meta information for this app.
-            Ask the app developers to provide a <code>meta.json</code> file
-            in the app source code.
+            Ask the app developers to provide a <code>metadata.json</code>
+            file in the app source code.
         </p>
     </div>
     {% endif %}

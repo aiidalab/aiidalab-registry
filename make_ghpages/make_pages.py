@@ -1,17 +1,17 @@
-#!/usr/bin/env python
 # -*- coding: utf-8 -*-
+
 import codecs
 import json
 import os
 import shutil
 import sys
+import string
 from collections import OrderedDict, defaultdict
+from urllib.parse import urlparse
+from urllib.request import urlopen
 
 ## Requires jinja2 >= 2.9
 from jinja2 import Environment, PackageLoader, select_autoescape
-from kitchen.text.converters import getwriter
-# see https://pythonhosted.org/kitchen/unicode-frustrations.html
-#from kitchen.text.converters import to_bytes
 
 ### BEGIN configuration
 pwd = os.path.split(os.path.abspath(__file__))[0]
@@ -26,12 +26,8 @@ apps_meta_file = 'apps_meta.json'
 
 ### END configuration
 
-UTF8Writer = getwriter('utf8')
-sys.stdout = UTF8Writer(sys.stdout)
-
 
 def get_html_app_fname(app_name):
-    import string
     valid_characters = set(string.ascii_letters + string.digits + '_-')
 
     simple_string = "".join(c for c in app_name if c in valid_characters)
@@ -40,11 +36,10 @@ def get_html_app_fname(app_name):
 
 
 def get_hosted_on(url):
-    from urlparse import urlparse
     try:
-        netloc = urlparse(app_data['git_url']).netloc
+        netloc = urlparse(url).netloc
     except Exception as e:
-        print e
+        print(e)
         return None
 
     # Remove port (if any)
@@ -58,19 +53,18 @@ def get_hosted_on(url):
 
 
 def get_meta_info(json_url):
-    import urllib2
     try:
-        response = urllib2.urlopen(json_url)
+        response = urlopen(json_url)
         json_txt = response.read()
-    except Exception as e:
+    except Exception:
         import traceback
-        print "  >> UNABLE TO RETRIEVE THE JSON URL: {}".format(json_url)
-        print traceback.print_exc(file=sys.stdout)
+        print("  >> UNABLE TO RETRIEVE THE JSON URL: {}".format(json_url))
+        print(traceback.print_exc(file=sys.stdout))
         return None
     try:
         json_data = json.loads(json_txt)
     except ValueError:
-        print "  >> WARNING! Unable to parse JSON"
+        print("  >> WARNING! Unable to parse JSON")
         return None
 
     return json_data
@@ -79,13 +73,16 @@ def get_git_branches(git_url):
     from dulwich.client import get_transport_and_path_from_url
     t, p = get_transport_and_path_from_url(git_url)
     branches = t.get_refs(p)
-    return branches
+    res = {}
+    for key, value in branches.items():
+        res[key.decode("utf-8")] = value.decode("utf-8")
+    return res
 
 def validate_meta_info(app_name, meta_info):
-    if not 'state' in meta_info.keys():
+    if 'state' not in meta_info:
         meta_info['state'] = 'registered'
 
-    if not 'title' in meta_info.keys():
+    if 'title' not in meta_info:
         meta_info['title'] = app_name
 
     return meta_info
@@ -122,13 +119,11 @@ if __name__ == "__main__":
     other_summary = []
     other_summary_names = set()
 
-    print "[apps]"
+    print("[apps]")
     for app_name in sorted(apps_raw_data.keys()):
-        print "  - {}".format(app_name)
+        print("  - {}".format(app_name))
         app_data = apps_raw_data[app_name]
         app_data['name'] = app_name
-
-        thisapp_data = {}
 
         html_app_fname = get_html_app_fname(app_name)
         subpage_name = os.path.join(html_subfolder_name,
@@ -136,12 +131,12 @@ if __name__ == "__main__":
         subpage_abspath = os.path.join(outdir_abs, subpage_name)
         hosted_on = get_hosted_on(app_data['git_url'])
 
-        # Get meta.json from the project;
+        # Get metadata.json from the project;
         # set to None if not retrievable
         try:
             meta_url = app_data['meta_url']
         except KeyError:
-            print "  >> WARNING: Missing meta_url!!!"
+            print("  >> WARNING: Missing meta_url!!!")
             meta_info = None
         else:
             meta_info = get_meta_info(meta_url)
@@ -157,17 +152,17 @@ if __name__ == "__main__":
 
         with codecs.open(subpage_abspath, 'w', 'utf-8') as f:
             f.write(app_html)
-        print "    - Page {} generated.".format(subpage_name)
+        print("    - Page {} generated.".format(subpage_name))
 
-    print "[main index]"
+    print("[main index]")
     rendered = main_index_template.render(**all_data)
     outfile = os.path.join(outdir_abs, 'index.html')
     with codecs.open(outfile, 'w', 'utf-8') as f:
         f.write(rendered)
-    print "  - index.html generated"
+    print("  - index.html generated")
 
     # save json data for the app manager
     outfile = os.path.join(outdir_abs, apps_meta_file)
     with codecs.open(outfile, 'w', 'utf-8') as f:
         json.dump(all_data, f, ensure_ascii=False, indent=2)
-    print "  - apps_meta.json generated"
+    print("  - apps_meta.json generated")
