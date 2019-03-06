@@ -40,6 +40,7 @@ This repository contains the **source code** of the official App registry for th
         "aiida-tutorials": {
             "git_url": "https://github.com/aiidateam/aiida_demos.git",
             "meta_url": "https://raw.githubusercontent.com/aiidateam/aiida_demos/master/metadata.json",
+            "categories": ["tutorials"]
         }
     ```
 
@@ -88,6 +89,27 @@ The link to the online documentation of the app (e.g. on
 #### external_url
 
 General homepage for your app.
+
+### Valid keys for your app in `apps.json`
+
+#### git_url
+
+**Mandatory**.
+Link to the source code repository.
+
+#### meta_url
+
+**Mandatory**.
+Link to the location of your app's `metadata.json` file.
+
+#### categories
+
+*Optional*.
+List of valid categories.
+
+You can see the most recent list of categories in
+[`categories.json`](https://github.com/aiidalab/aiidalab-registry/blob/master/categories.json),
+including a description of each category.
 
 ## Acknowledgements
 

@@ -4,11 +4,11 @@ import codecs
 import json
 import os
 import shutil
-import sys
 import string
 from collections import OrderedDict, defaultdict
 from urllib.parse import urlparse
 from urllib.request import urlopen
+import exceptions as exc
 
 ## Requires jinja2 >= 2.9
 from jinja2 import Environment, PackageLoader, select_autoescape
@@ -25,6 +25,8 @@ out_folder = 'out'
 html_subfolder_name = 'apps' # subfolder for HTMLs of apps
 apps_meta_file = 'apps_meta.json'
 
+# configuration
+TIMEOUT_TIME = 30  # seconds
 ### END configuration
 
 
@@ -38,10 +40,11 @@ def get_html_app_fname(app_name):
 
 def get_hosted_on(url):
     try:
-        netloc = urlparse(url).netloc
-    except Exception as e:
-        print(e)
-        return None
+        urlopen(url, timeout=TIMEOUT_TIME)
+    except Exception:
+        raise exc.MissingGit("Value for 'git_url' in apps.json may be wrong: '{}'".format(url))
+
+    netloc = urlparse(url).netloc
 
     # Remove port (if any)
     netloc = netloc.partition(':')[0]
@@ -55,18 +58,15 @@ def get_hosted_on(url):
 
 def get_meta_info(json_url):
     try:
-        response = urlopen(json_url)
+        response = urlopen(json_url, timeout=TIMEOUT_TIME)
         json_txt = response.read()
     except Exception:
-        import traceback
-        print("  >> UNABLE TO RETRIEVE THE JSON URL: {}".format(json_url))
-        print(traceback.print_exc(file=sys.stdout))
-        return None
+        raise exc.MissingMetadata("Value for 'meta_url' in apps.json may be wrong: '{}'".format(json_url))
+
     try:
         json_data = json.loads(json_txt)
     except ValueError:
-        print("  >> WARNING! Unable to parse JSON")
-        return None
+        raise exc.WrongMetadata("Cannot perform 'json.loads()' on given metadata.json file.")
 
     return json_data
 
@@ -79,14 +79,42 @@ def get_git_branches(git_url):
         res[key.decode("utf-8")] = value.decode("utf-8")
     return res
 
-def validate_meta_info(app_name, meta_info):
+def get_git_author(git_url):
+    git_author = urlparse(git_url).path
+    
+    git_author = git_author.split('/')[1]
+
+    ## Special condition, only valid when git_author is 'aiidalab'
+    if git_author == 'aiidalab':
+        git_author = 'AiiDA Lab Team'
+    
+    return git_author
+
+def validate_meta_info(app_name, meta_info, git_url):
     if 'state' not in meta_info:
         meta_info['state'] = 'registered'
 
     if 'title' not in meta_info:
         meta_info['title'] = app_name
 
+    if 'authors' not in meta_info:
+        meta_info['authors'] = get_git_author(git_url)
+
     return meta_info
+
+def validate_categories(categories, raw_data):
+    if not categories or not isinstance(categories, list):
+        raise exc.MissingCategories("Value for 'categories' in apps.json may be wrong: '{}'".format(str(categories)))
+
+    for category in categories:
+        if category not in raw_data:
+            raise exc.WrongCategory("The specified category '{}' is not valid. "
+                                    "Valid categories are: {}".format(category, str(raw_data.keys())))
+
+def get_logo_url(logo_rel_path, meta_url):
+    logo_url = meta_url[:-len('metadata.json')] + logo_rel_path
+
+    return logo_url
 
 
 if __name__ == "__main__":
@@ -108,10 +136,11 @@ if __name__ == "__main__":
     singlepage_template = env.get_template("singlepage.html")
     main_index_template = env.get_template("main_index.html")
 
-
+    # Get apps.json raw data
     with open(os.path.join(pwd, os.pardir, apps_file)) as f:
         apps_raw_data = json.load(f)
 
+    # Get categories.json raw data
     with open(os.path.join(pwd, os.pardir, categories_file)) as f:
         categories_raw_data = json.load(f)
 
@@ -136,31 +165,45 @@ if __name__ == "__main__":
         subpage_name = os.path.join(html_subfolder_name,
                                     get_html_app_fname(app_name))
         subpage_abspath = os.path.join(outdir_abs, subpage_name)
-        hosted_on = get_hosted_on(app_data['git_url'])
+
+        # Get Git URL, fail build if git_url is not found or wrong
+        if 'git_url' in app_data:
+            hosted_on = get_hosted_on(app_data['git_url'])
+        else:
+            raise exc.MissingGit("No 'git_url' key for '{}' in apps.json".format(app_name))
 
         # Get metadata.json from the project;
-        # set to None if not retrievable
-        try:
-            meta_url = app_data['meta_url']
-        except KeyError:
-            print("  >> WARNING: Missing meta_url!!!")
-            meta_info = None
+        # fail build if meta_url is not found or wrong
+        if 'meta_url' in app_data:
+            meta_info = get_meta_info(app_data['meta_url'])
         else:
-            meta_info = get_meta_info(meta_url)
+            raise exc.MissingMetadata("No 'meta_url' key for '{}' in apps.json".format(app_name))
 
-        app_data['metainfo'] = validate_meta_info(app_name, meta_info)
+        # Check if categories are specified, warn if not
+        if 'categories' not in app_data:
+            print("  >> WARNING: No categories specified.")
+        # Check correct categories are specified
+        else:
+            validate_categories(app_data['categories'], all_data['categories'])
+
+        app_data['metainfo'] = validate_meta_info(app_name, meta_info, app_data['git_url'])
         app_data['gitinfo'] = get_git_branches(app_data['git_url'])
         app_data['subpage'] = subpage_name
         app_data['hosted_on'] = hosted_on
+        
+        # Get logo URL, if it has been specified
+        if 'logo' in app_data['metainfo']:
+            app_data['logo'] = get_logo_url(app_data['metainfo']['logo'], app_data['meta_url'])
 
         all_data['apps'][app_name] = app_data
 
-        app_html = singlepage_template.render(category_map=categories_raw_data, **app_data)
-
+        # Make single-entry page based on singlepage.html
+        app_html = singlepage_template.render(category_map=all_data['categories'], **app_data)
         with codecs.open(subpage_abspath, 'w', 'utf-8') as f:
             f.write(app_html)
         print("    - Page {} generated.".format(subpage_name))
 
+    # Make index page based on main_index.html
     print("[main index]")
     rendered = main_index_template.render(**all_data)
     outfile = os.path.join(outdir_abs, 'index.html')
@@ -168,7 +211,7 @@ if __name__ == "__main__":
         f.write(rendered)
     print("  - index.html generated")
 
-    # save json data for the app manager
+    # Save json data for the app manager
     outfile = os.path.join(outdir_abs, apps_meta_file)
     with codecs.open(outfile, 'w', 'utf-8') as f:
         json.dump(all_data, f, ensure_ascii=False, indent=2)
