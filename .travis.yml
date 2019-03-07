@@ -1,7 +1,7 @@
 language: python
 
 python:
-  - "2.7"
+  - "3.6"
 
 cache: pip
 
@@ -15,11 +15,13 @@ env:
 
 before_install:
   - cd make_ghpages
+  # Update pip, setuptools, and wheel
+  - pip install -U pip setuptools wheel
 
 install:
   # Install needed dependencies
   - pip install -r requirements.txt
 
 script: 
-  - ./make_pages.py  
+  - python make_pages.py  
   - cd ../.travis-data && ./deploy.sh

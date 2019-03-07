@@ -14,7 +14,7 @@
     </h1>
 
     <div id='entrylist'>
-        {% for app_name, app in apps.iteritems() %}
+        {% for app_name, app in apps.items() %}
         <div class='submenu-entry'>
         <h2><a href="{{ app.subpage }}">{{ app_name }}: {{ app.metainfo.title }}</a></h2>
         {% if app.metainfo.description %}
@@ -35,16 +35,18 @@
                 <strong>Documentation</strong>: Documentation not provided by the app author
             <p>
         {% endif %}
-	{% if app.summaryinfo %}
-        <p class="summaryinfo">
-            {% for summaryinfoelem in app.summaryinfo %}
-            <span class="badge"> 
-                <span class="badge-left {{summaryinfoelem.colorclass}}">{{summaryinfoelem.text}}</span>
-                <span class="badge-right">{{summaryinfoelem.count}}</span>
-            </span>
-            {% endfor %}
-        </p>
-	{% endif %}
+        <!-- Summaryinfo has not yet been introduced to the AiiDA Lab app registry -->
+        {% if app.summaryinfo %}
+            <p class="summaryinfo">
+                {% for summaryinfoelem in app.summaryinfo %}
+                <span class="badge"> 
+                    <span class="badge-left {{summaryinfoelem.colorclass}}">{{summaryinfoelem.text}}</span>
+                    <span class="badge-right">{{summaryinfoelem.count}}</span>
+                </span>
+                {% endfor %}
+            </p>
+        {% endif %}
+        
         <p class='details'><a href="{{ app.subpage }}">Show app details</a></p>
         </div>
         

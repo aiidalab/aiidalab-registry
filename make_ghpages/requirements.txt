@@ -1,4 +1,2 @@
 dulwich
 jinja2
-kitchen
-
