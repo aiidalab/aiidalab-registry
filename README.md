@@ -20,7 +20,8 @@ This repository contains the **source code** of the official App registry for th
             "authors": "A. Person, B. Smart",
             "logo": "folder/logo.png",
             "state": "development",
-            "documentation_url": "https://aiidalab-exmpl.readthedocs.io"
+            "documentation_url": "https://aiidalab-exmpl.readthedocs.io",
+            "external_url": "http://www.aiida.net"
         }
     ```
 
@@ -83,6 +84,10 @@ One of
 
 The link to the online documentation of the app (e.g. on
 [Read The Docs](https://readthedocs.org/)).
+
+#### external_url
+
+General homepage for your app.
 
 ## Acknowledgements
 
