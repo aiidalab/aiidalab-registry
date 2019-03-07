@@ -15,13 +15,19 @@
     <h2>General information</h2>
     <div>
         <p>
-            <a href="{{ git_url }}" target="_blank">Go to the app code homepage</a> 
+            <strong>App code</strong>: <a href="{{ git_url }}" target="_blank">Go to the app code</a> 
         </p>
     </div>
 
-    {% if documentation_url %}
+    {% if metainfo.external_url %}
         <p>
-            <strong>Documentation</strong>: <a href="{{ documentation_url }}" target="_blank">Go to app documentation</a>
+            <strong>App homepage</strong>: <a href="{{ metainfo.external_url }}" target="_blank">Go to app homepage</a>
+        <p>
+    {% endif %}
+
+    {% if metainfo.documentation_url %}
+        <p>
+            <strong>Documentation</strong>: <a href="{{ metainfo.documentation_url }}" target="_blank">Go to app documentation</a>
         <p>
     {% else %}
         <p>
