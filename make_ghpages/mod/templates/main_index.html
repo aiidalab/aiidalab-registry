@@ -20,21 +20,14 @@
         {% if app.metainfo.description %}
         <p class=description>{{app.metainfo.description}}</p>
         {% endif %}
-        <p class="currentstate">Current state: {{ app.metainfo.state }}</p>
-        <p><a href="{{ app.git_url }}" target="_blank">app homepage</a> 
+        <p class="currentstate">State: {{ app.metainfo.state }} 
+          {% if app.metainfo.version %}(version {{ app.metainfo.version }}){% endif %}
+        </p>
+        <p><a href="{{ app.git_url }}" target="_blank">Source code</a> 
         {% if app.hosted_on %}
         <span style="font-size: 90%">(hosted on {{ app.hosted_on }})</span>
         {% endif %}
         </p>
-        {% if app.documentation_url %}
-            <p>
-                <strong>Documentation</strong>: <a href="{{ app.documentation_url }}" target="_blank">Go to app documentation</a>
-            <p>
-        {% else %}
-            <p>
-                <strong>Documentation</strong>: Documentation not provided by the app author
-            <p>
-        {% endif %}
         <!-- Summaryinfo has not yet been introduced to the AiiDA Lab app registry -->
         {% if app.summaryinfo %}
             <p class="summaryinfo">
