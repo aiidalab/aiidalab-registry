@@ -14,14 +14,15 @@ from urllib.request import urlopen
 from jinja2 import Environment, PackageLoader, select_autoescape
 
 ### BEGIN configuration
-pwd = os.path.split(os.path.abspath(__file__))[0]
-apps_file_abs = os.path.join(pwd, os.pardir, 'apps.json')
+# inputs
+apps_file = 'apps.json'
+categories_file = 'categories.json'
 templates_folder = 'templates'
 static_folder = 'static'
 
-out_folder = 'out'
-# subfolder for HTMLs of apps
-html_subfolder_name = 'apps'
+# outputs
+out_folder = 'out' 
+html_subfolder_name = 'apps' # subfolder for HTMLs of apps
 apps_meta_file = 'apps_meta.json'
 
 ### END configuration
@@ -89,6 +90,7 @@ def validate_meta_info(app_name, meta_info):
 
 
 if __name__ == "__main__":
+    pwd = os.path.split(os.path.abspath(__file__))[0]
     outdir_abs = os.path.join(pwd, out_folder)
     static_abs = os.path.join(pwd, static_folder)
 
@@ -106,8 +108,12 @@ if __name__ == "__main__":
     singlepage_template = env.get_template("singlepage.html")
     main_index_template = env.get_template("main_index.html")
 
-    with open(apps_file_abs) as f:
+
+    with open(os.path.join(pwd, os.pardir, apps_file)) as f:
         apps_raw_data = json.load(f)
+
+    with open(os.path.join(pwd, os.pardir, categories_file)) as f:
+        categories_raw_data = json.load(f)
 
     all_data = {}
     all_data['apps'] = OrderedDict()
@@ -148,7 +154,7 @@ if __name__ == "__main__":
 
         all_data['apps'][app_name] = app_data
 
-        app_html = singlepage_template.render(**app_data)
+        app_html = singlepage_template.render(category_map=categories_raw_data, **app_data)
 
         with codecs.open(subpage_abspath, 'w', 'utf-8') as f:
             f.write(app_html)
