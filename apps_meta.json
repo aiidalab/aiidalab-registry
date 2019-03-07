@@ -9,13 +9,15 @@
       ],
       "name": "aiida",
       "metainfo": {
-        "description": "AiiDA tools",
-        "title": "AiiDA",
+        "description": "Tools to manage AiiDA",
+        "title": "AiiDA Cockpit",
+        "version": "0.0.1",
+        "logo": "miscellaneous/logos/aiida.png",
         "state": "registered"
       },
       "gitinfo": {
-        "HEAD": "9c674def7662dfb940ff68ef8f3579d421190878",
-        "refs/heads/master": "9c674def7662dfb940ff68ef8f3579d421190878",
+        "HEAD": "9149dc03fcb9bc9228fcb02fd5d3fa02ae9a20a7",
+        "refs/heads/master": "9149dc03fcb9bc9228fcb02fd5d3fa02ae9a20a7",
         "refs/pull/1/head": "38725d64b6aa8e431f0cec7aab23ddd5a3bd661c",
         "refs/pull/2/head": "3b07235a4b7553b4c21d11bc44790b52f7ff6957",
         "refs/pull/3/head": "84c9a99dd9c6fa900f330618ef22aa4e2bc583b7",
@@ -38,18 +40,22 @@
       ],
       "name": "aiida-tutorials",
       "metainfo": {
-        "description": "jupyter notebooks demonstrating how to use AiiDA",
         "title": "AiiDA Tutorials",
-        "state": "registered"
+        "description": "A collection of Jupyter notebooks demonstrating how to use AiiDA",
+        "authors": "AiiDA Team",
+        "version": "0.1.0",
+        "logo": "miscellaneous/logos/aiida.png",
+        "state": "stable"
       },
       "gitinfo": {
-        "HEAD": "9cc2a7852939bc371ecb892377f63c20ff579fee",
-        "refs/heads/master": "9cc2a7852939bc371ecb892377f63c20ff579fee",
+        "HEAD": "791a28813258856993d36fe47aca175935d7dc9e",
+        "refs/heads/master": "791a28813258856993d36fe47aca175935d7dc9e",
         "refs/pull/1/head": "fdbf1c867aa6999fc27eeb704106c4732b3e0212",
         "refs/pull/10/head": "3fb48178ca7787616c021e5a324254b9b834ee15",
         "refs/pull/12/head": "f3ca152c468b7390d239ff30d9220b1d4fbe5f2d",
         "refs/pull/13/head": "bbd968e19bcad02778d18b578d03077816e71f36",
         "refs/pull/14/head": "118d1155ccff14794ef0dd6a72a69f7cf4bd8c75",
+        "refs/pull/15/head": "2fddebcad2aaa9bf6b639c36f0e05b7b2ea1dbfe",
         "refs/pull/8/head": "0e3b623b0e7eca23ea14b14f9437383093151d1e",
         "refs/pull/9/head": "add4a723c97b38a7a736b7292e5f3bd4bc1bc60c",
         "refs/tags/v1.0": "d6817b97bdd9730b2aa1f6ef4292d8710e956c3b",
@@ -70,14 +76,15 @@
         "title": "OPTiMaDe client",
         "description": "AiiDA Lab App that implements an OPTiMaDe client",
         "version": "0.2-alpha",
-        "authors": "AiiDA Team",
+        "authors": "AiiDA Lab Team",
         "state": "development",
-        "logo": "img/optimade_square.png"
+        "logo": "img/optimade_square.png",
+        "external_url": "http://www.optimade.org"
       },
       "gitinfo": {
-        "HEAD": "fffcc7d6292ea61b1e296b2c1d5f337089c54a04",
+        "HEAD": "f569fd3825447b129714623e85f9526e0c3ba3fb",
         "refs/heads/develop": "8019fbb6f296eb451e23dfaed8dd60876d53aeda",
-        "refs/heads/master": "fffcc7d6292ea61b1e296b2c1d5f337089c54a04"
+        "refs/heads/master": "f569fd3825447b129714623e85f9526e0c3ba3fb"
       },
       "subpage": "apps/aiidalab-optimade.html",
       "hosted_on": "github.com"
@@ -90,13 +97,15 @@
       ],
       "name": "aiidalab-persistence-homology",
       "metainfo": {
-        "description": "Materials Cloud App for persistence homology analysis of nanoporous materials.",
         "title": "Persistence Homology",
-        "state": "registered"
+        "description": "Perform persistence homology analysis of nanoporous materials.",
+        "authors": "Leopold Talirz",
+        "version": "0.1.0b",
+        "state": "development"
       },
       "gitinfo": {
-        "HEAD": "9f28696d43542c2219f5d532fb706a5cb53ac3b1",
-        "refs/heads/master": "9f28696d43542c2219f5d532fb706a5cb53ac3b1"
+        "HEAD": "2e8459c714781cb90ed36b8b4a790c168d97d5a8",
+        "refs/heads/master": "2e8459c714781cb90ed36b8b4a790c168d97d5a8"
       },
       "subpage": "apps/aiidalab-persistence-homology.html",
       "hosted_on": "github.com"
@@ -110,12 +119,15 @@
       "name": "aiidalab-quantum-mobile",
       "metainfo": {
         "title": "Quantum Mobile",
-        "description": "Test virtual machine based on QuantumMobile",
-        "state": "registered"
+        "description": "Set up connection to compute resource based on QuantumMobile",
+        "authors": "AiiDA Team",
+        "version": "0.1.0",
+        "logo": "static/logo.png",
+        "state": "stable"
       },
       "gitinfo": {
-        "HEAD": "ef7960b8ed7d4b166237fb5f555417df0e3016f6",
-        "refs/heads/master": "ef7960b8ed7d4b166237fb5f555417df0e3016f6"
+        "HEAD": "eb96020051961c06234120a40359437c74d200a4",
+        "refs/heads/master": "eb96020051961c06234120a40359437c74d200a4"
       },
       "subpage": "apps/aiidalab-quantum-mobile.html",
       "hosted_on": "github.com"
@@ -161,11 +173,12 @@
       "metainfo": {
         "description": "Materials Cloud Backup App",
         "title": "Backup",
+        "version": "0.1-alpha",
         "state": "registered"
       },
       "gitinfo": {
-        "HEAD": "9129062e4019862a4b45c4d78813f077c50e8521",
-        "refs/heads/master": "9129062e4019862a4b45c4d78813f077c50e8521"
+        "HEAD": "62591ae7593d0640514f057643f4e762ca2d3e9e",
+        "refs/heads/master": "62591ae7593d0640514f057643f4e762ca2d3e9e"
       },
       "subpage": "apps/backup.html",
       "hosted_on": "github.com"
@@ -180,12 +193,13 @@
       "metainfo": {
         "description": "Calculation examples",
         "title": "Calculation examples",
+        "version": "0.4.3",
         "state": "registered"
       },
       "gitinfo": {
-        "HEAD": "879bf40faecc42a26c79b8132a8239c1e9acb208",
+        "HEAD": "b85dac7606e2e6f6396d3c1c64c5440ef7922d64",
         "refs/heads/develop": "06200e4bba028d9b33b9786fd402244563ab91cc",
-        "refs/heads/master": "879bf40faecc42a26c79b8132a8239c1e9acb208",
+        "refs/heads/master": "b85dac7606e2e6f6396d3c1c64c5440ef7922d64",
         "refs/heads/test": "af6b73393b12a8b29edea7f710cfc84fa755ff83"
       },
       "subpage": "apps/calcexamples.html",
@@ -201,11 +215,13 @@
       "metainfo": {
         "description": "CSCS Computers",
         "title": "CSCS",
+        "version": "0.1",
+        "logo": "img/800px-Swiss_National_Supercomputing_Centre_logo.png",
         "state": "registered"
       },
       "gitinfo": {
-        "HEAD": "b6dbfbec5c7359c7fa4fbf5dc057efb2d76db305",
-        "refs/heads/master": "b6dbfbec5c7359c7fa4fbf5dc057efb2d76db305",
+        "HEAD": "179bf63c6280d519f87c99221590239f73c80598",
+        "refs/heads/master": "179bf63c6280d519f87c99221590239f73c80598",
         "refs/pull/1/head": "f8e47607a7c0b4ab1911ef671e7adb855502baf8",
         "refs/pull/2/head": "6fd63dd31bee361068b7e45a6dbb305ebeddfb5d",
         "refs/pull/3/head": "910a1d827c977db71880cd5545917c25c0ff7edf",
@@ -228,11 +244,13 @@
       "metainfo": {
         "title": "EPFL Supercomputers",
         "description": "Set up supercomputers at EPFL, Switzerland for use in AiiDA",
+        "version": "0.2.5",
+        "logo": "img/epfl.png",
         "state": "registered"
       },
       "gitinfo": {
-        "HEAD": "f44d07bda0aa2e41d5a37efd16286d9efc139f7d",
-        "refs/heads/master": "f44d07bda0aa2e41d5a37efd16286d9efc139f7d",
+        "HEAD": "9084f1641d4c6b801b8e5f4d11bbe99a725eb76b",
+        "refs/heads/master": "9084f1641d4c6b801b8e5f4d11bbe99a725eb76b",
         "refs/pull/6/head": "79fd5f6bb34fd454f2b37db186e117b928f3ce3c",
         "refs/pull/6/merge": "894ef4d5b7dd6e36045cf1c4016e1f3d0f6fbe56"
       },
@@ -249,12 +267,13 @@
       "metainfo": {
         "description": "AiiDA Lab Home",
         "title": "Home",
+        "version": "0.3.8",
         "state": "registered"
       },
       "gitinfo": {
-        "HEAD": "17ec4cbadd8a80afe820ae17a9c0609862551eff",
+        "HEAD": "b48a21f51bb56cd9780f6d6bbed1bb18ff32f3fa",
         "refs/heads/develop": "36c723a62f2d966b9baeb18b9584c51df16ee7a8",
-        "refs/heads/master": "17ec4cbadd8a80afe820ae17a9c0609862551eff",
+        "refs/heads/master": "b48a21f51bb56cd9780f6d6bbed1bb18ff32f3fa",
         "refs/pull/1/head": "674052f9279896aac1eb75adc7c3ec3d97716ab0",
         "refs/pull/14/head": "36c723a62f2d966b9baeb18b9584c51df16ee7a8",
         "refs/pull/3/head": "172e2065562290dcc8e286250ea0110882b06d43",
@@ -287,7 +306,9 @@
         "refs/heads/test": "4b17e6df3c7704e6328bdf91d10c9750ed70b6d8",
         "refs/pull/3/head": "cb49ade93f8a3a9655f01a16a969c2a6725eaedf",
         "refs/pull/4/head": "f24bde2da248002f0d2aba9de73bd72e8b63d83a",
-        "refs/pull/5/head": "70940de5efe75c595185e020bcac06770d7fc97a"
+        "refs/pull/5/head": "70940de5efe75c595185e020bcac06770d7fc97a",
+        "refs/pull/7/head": "b5279a5a2c608693b26c1af1040643b8c807455a",
+        "refs/pull/7/merge": "f75e41763f054948c7b021ffa42b8dbd8ebb6dc3"
       },
       "subpage": "apps/lsmo.html",
       "hosted_on": "github.com"
@@ -308,7 +329,9 @@
         "HEAD": "5345e90aa27f9ad6055e5d6028552536bc0993e8",
         "refs/heads/master": "5345e90aa27f9ad6055e5d6028552536bc0993e8",
         "refs/heads/revise-ui": "335df2fdc6bfa47ee815f57033943aefa56a73ea",
-        "refs/pull/1/head": "335df2fdc6bfa47ee815f57033943aefa56a73ea"
+        "refs/pull/1/head": "335df2fdc6bfa47ee815f57033943aefa56a73ea",
+        "refs/pull/2/head": "638905e6442f470ad6855517de7105995d9f5a00",
+        "refs/pull/2/merge": "8009c7c8d42cdd7379624aeaf4df1afd09f2c91a"
       },
       "subpage": "apps/mc-vasp-example.html",
       "hosted_on": "github.com"
@@ -332,7 +355,9 @@
         "refs/pull/1/head": "f5cd454fda990cc12bdd9e1ba5a0d1f76f95bc9f",
         "refs/pull/2/head": "f19381cf199ab6d25933efd4917bb35d9a612a7f",
         "refs/pull/3/head": "425d1fda6dfb72fbb8b4b46ae2425e8b52408c3a",
-        "refs/pull/4/head": "625a4b02ef1baa33f2c6e7ad60ba9b4c685a843b"
+        "refs/pull/4/head": "625a4b02ef1baa33f2c6e7ad60ba9b4c685a843b",
+        "refs/pull/5/head": "269f83a4c881b37bd6432671f2d04b211bcd7629",
+        "refs/pull/5/merge": "9201fc623f5b81d1417192fa4b03247b9d423eab"
       },
       "subpage": "apps/reactions.html",
       "hosted_on": "github.com"
@@ -351,7 +376,9 @@
       },
       "gitinfo": {
         "HEAD": "ee30a4c3637f6a40fbe0f4569849d4382a79facb",
-        "refs/heads/master": "ee30a4c3637f6a40fbe0f4569849d4382a79facb"
+        "refs/heads/master": "ee30a4c3637f6a40fbe0f4569849d4382a79facb",
+        "refs/pull/1/head": "6c71a75202811fd76d654d62e2b917ef5ce7882d",
+        "refs/pull/1/merge": "e227bca6cf5390cbe4f8f623ff156a42b3d9cbaf"
       },
       "subpage": "apps/scanning_probe.html",
       "hosted_on": "github.com"
@@ -366,11 +393,12 @@
       "metainfo": {
         "description": "Application to upload structures from your personal computer or from databases",
         "title": "Structure Importer",
+        "version": "0.2.2",
         "state": "registered"
       },
       "gitinfo": {
-        "HEAD": "0f17fe70d1569dd3f6bb3c237e7d382f8ee7dd4f",
-        "refs/heads/master": "0f17fe70d1569dd3f6bb3c237e7d382f8ee7dd4f"
+        "HEAD": "46bc0bcf7f62b15ea25a8ff494b6c2e62b5b5910",
+        "refs/heads/master": "46bc0bcf7f62b15ea25a8ff494b6c2e62b5b5910"
       },
       "subpage": "apps/structureimporter.html",
       "hosted_on": "github.com"
@@ -416,6 +444,8 @@
         "refs/pull/31/head": "52be78bcdbfc3d3d8bc4908d8f07d6828fd7bc75",
         "refs/pull/32/head": "0cc9f41f74151510cb85dc9e96ef90697a669318",
         "refs/pull/33/head": "77b715a3c786c0b61129ca66f7b9ae1fb6f84b4c",
+        "refs/pull/34/head": "9a2548168100a2c1ce5d2555b62c39ea6b670fc5",
+        "refs/pull/34/merge": "87a3cf2627b58fcbdc2fa202aed6f4a2d0e04067",
         "refs/pull/4/head": "c18354e38c5331c55f0e2fa5d085a0536cc4695b",
         "refs/pull/5/head": "7bd1778998ceae7f484a3451e5bb03719fb305f0",
         "refs/pull/6/head": "c1e4ee1353070020c7e60260d010883d3948fa28",
@@ -439,11 +469,12 @@
       "metainfo": {
         "description": "Simple conversion between common units",
         "title": "Units Converter",
+        "version": "0.1",
         "state": "registered"
       },
       "gitinfo": {
-        "HEAD": "06b52243c3fa83440dc427686bc973e4e8c0086f",
-        "refs/heads/master": "06b52243c3fa83440dc427686bc973e4e8c0086f"
+        "HEAD": "2dae0caa678ea318b49033e89c0a97be870eef41",
+        "refs/heads/master": "2dae0caa678ea318b49033e89c0a97be870eef41"
       },
       "subpage": "apps/units.html",
       "hosted_on": "github.com"
