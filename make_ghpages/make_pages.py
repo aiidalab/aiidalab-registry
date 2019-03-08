@@ -117,6 +117,7 @@ if __name__ == "__main__":
 
     all_data = {}
     all_data['apps'] = OrderedDict()
+    all_data['categories'] = categories_raw_data
 
     html_subfolder_abs = os.path.join(outdir_abs, html_subfolder_name)
     os.mkdir(html_subfolder_abs)
