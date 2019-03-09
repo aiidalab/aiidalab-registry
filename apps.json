@@ -2,91 +2,91 @@
     "home": {
         "git_url": "https://github.com/aiidalab/aiidalab-home",
         "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-home/master/metadata.json",
-	    "groups": ["utilities"]
+        "categories": ["setup"]
     },
     "aiida": {
         "git_url": "https://github.com/aiidalab/aiidalab-aiida",
         "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-aiida/master/metadata.json",
-	    "groups": ["aiida", "utilities"]
+        "categories": ["setup", "utilities"]
     },
     "cscs": {
         "git_url": "https://github.com/aiidalab/aiidalab-cscs",
         "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-cscs/master/metadata.json",
-	    "groups": ["configuration"]
+        "categories": ["setup"]
     },
     "epfl": {
         "git_url": "https://github.com/aiidalab/aiidalab-epfl-supercomputers",
         "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-epfl-supercomputers/master/metadata.json",
-	    "groups": ["configuration"]
+        "categories": ["setup"]
     },
     "surfaces": {
         "git_url": "https://github.com/cpignedoli/aiidalab-empa-surfaces",
         "meta_url": "https://raw.githubusercontent.com/cpignedoli/aiidalab-empa-surfaces/master/metadata.json",
-	    "groups": ["calculations"]
+        "categories": ["quantum"]
     },
     "reactions": {
         "git_url": "https://github.com/edditler/aiidalab-empa-reactions",
         "meta_url": "https://raw.githubusercontent.com/edditler/aiidalab-empa-reactions/master/metadata.json",
-	    "groups": ["calculations"]
+        "categories": ["quantum"]
     },    
     "scanning_probe": {
         "git_url": "https://github.com/eimrek/aiidalab-empa-scanning-probe",
         "meta_url": "https://raw.githubusercontent.com/eimrek/aiidalab-empa-scanning-probe/master/metadata.json",
-	    "groups": ["calculations"]
+        "categories": ["quantum"]
     },
     "units": {
         "git_url": "https://github.com/aiidalab/aiidalab-units",
         "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-units/master/metadata.json",
-	    "groups": ["utilities"]
+        "categories": ["utilities"]
     },
     "backup": {
         "git_url": "https://github.com/aiidalab/aiidalab-backup",
         "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-backup/master/metadata.json",
-	    "groups": ["utilities"]
+        "categories": ["utilities"]
     },
     "structureimporter": {
         "git_url": "https://github.com/aiidalab/aiidalab-manage-structures",
         "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-manage-structures/master/metadata.json",
-	    "groups": ["utilities"]
+        "categories": ["utilities"]
     },
     "calcexamples": {
         "git_url": "https://github.com/aiidalab/aiidalab-calculation-examples.git",
         "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-calculation-examples/master/metadata.json",
-	    "groups": ["tutorial"]
+        "categories": ["quantum", "tutorials"]
     },
     "lsmo": {
         "git_url": "https://github.com/yakutovicha/aiidalab-epfl-lsmo.git",
         "meta_url": "https://raw.githubusercontent.com/yakutovicha/aiidalab-epfl-lsmo/master/metadata.json",
-	    "groups": ["calculations"]
+        "categories": ["classical", "quantum"]
     },
     "aiida-tutorials": {
         "git_url": "https://github.com/aiidateam/aiida_demos.git",
         "meta_url": "https://raw.githubusercontent.com/aiidateam/aiida_demos/master/metadata.json",
-	    "groups": ["tutorial"]
+        "categories": ["tutorials"]
     },
     "aiidalab-quantum-mobile": {
         "git_url": "https://github.com/aiidalab/aiidalab-quantum-mobile.git",
         "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-quantum-mobile/master/metadata.json",
-	    "groups": ["configuration"]
+        "categories": ["setup"]
     },
     "aiidalab-persistence-homology": {
         "git_url": "https://github.com/aiidalab/aiidalab-persistence-homology.git",
         "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-persistence-homology/master/metadata.json",
-	    "groups": ["calculations"]
+        "categories": ["classical"]
     },
     "aiidalab-widgets-base": {
         "git_url": "https://github.com/aiidalab/aiidalab-widgets-base.git",
         "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-widgets-base/master/metadata.json",
-	    "groups": ["utilities"]
+        "categories": ["utilities"]
     },
         "mc-vasp-example": {
         "git_url": "https://github.com/DropD/mc-vasp-example.git",
         "meta_url": "https://raw.githubusercontent.com/DropD/mc-vasp-example/master/metadata.json",
-	    "groups": ["calculations"]
+        "categories": ["quantum"]
     },
     "aiidalab-optimade": {
         "git_url": "https://github.com/aiidalab/aiidalab-optimade.git",
         "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-optimade/master/metadata.json",
-        "groups": ["utilities"]
+    "categories": ["utilities"]
     }
 }

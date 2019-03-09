@@ -35,6 +35,14 @@
         <p>
     {% endif %}
 
+        <p>
+            <strong>Categories</strong>: 
+            {% if categories %}
+                {% for category in categories %}
+                    <span class="category">{{ category_map[category]["title"] }}</span> 
+                {% endfor %}
+            {% endif %}
+        <p>
 
     <h2>
         Detailed information
