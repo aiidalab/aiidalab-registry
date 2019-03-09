@@ -3,8 +3,8 @@
     "aiida": {
       "git_url": "https://github.com/aiidalab/aiidalab-aiida",
       "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-aiida/master/metadata.json",
-      "groups": [
-        "aiida",
+      "categories": [
+        "setup",
         "utilities"
       ],
       "name": "aiida",
@@ -35,8 +35,8 @@
     "aiida-tutorials": {
       "git_url": "https://github.com/aiidateam/aiida_demos.git",
       "meta_url": "https://raw.githubusercontent.com/aiidateam/aiida_demos/master/metadata.json",
-      "groups": [
-        "tutorial"
+      "categories": [
+        "tutorials"
       ],
       "name": "aiida-tutorials",
       "metainfo": {
@@ -68,7 +68,7 @@
     "aiidalab-optimade": {
       "git_url": "https://github.com/aiidalab/aiidalab-optimade.git",
       "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-optimade/master/metadata.json",
-      "groups": [
+      "categories": [
         "utilities"
       ],
       "name": "aiidalab-optimade",
@@ -92,8 +92,8 @@
     "aiidalab-persistence-homology": {
       "git_url": "https://github.com/aiidalab/aiidalab-persistence-homology.git",
       "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-persistence-homology/master/metadata.json",
-      "groups": [
-        "calculations"
+      "categories": [
+        "classical"
       ],
       "name": "aiidalab-persistence-homology",
       "metainfo": {
@@ -104,8 +104,8 @@
         "state": "development"
       },
       "gitinfo": {
-        "HEAD": "2e8459c714781cb90ed36b8b4a790c168d97d5a8",
-        "refs/heads/master": "2e8459c714781cb90ed36b8b4a790c168d97d5a8"
+        "HEAD": "7ee0bfa278ee97fd5a3a123b67824feca5c96e58",
+        "refs/heads/master": "7ee0bfa278ee97fd5a3a123b67824feca5c96e58"
       },
       "subpage": "apps/aiidalab-persistence-homology.html",
       "hosted_on": "github.com"
@@ -113,8 +113,8 @@
     "aiidalab-quantum-mobile": {
       "git_url": "https://github.com/aiidalab/aiidalab-quantum-mobile.git",
       "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-quantum-mobile/master/metadata.json",
-      "groups": [
-        "configuration"
+      "categories": [
+        "setup"
       ],
       "name": "aiidalab-quantum-mobile",
       "metainfo": {
@@ -135,20 +135,25 @@
     "aiidalab-widgets-base": {
       "git_url": "https://github.com/aiidalab/aiidalab-widgets-base.git",
       "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-widgets-base/master/metadata.json",
-      "groups": [
+      "categories": [
         "utilities"
       ],
       "name": "aiidalab-widgets-base",
       "metainfo": {
-        "description": "Reusable AiiDA Lab widgets for applications in the AiiDA Lab.",
         "title": "AiiDA Lab Widgets",
-        "state": "registered"
+        "description": "Reusable widgets for applications in the AiiDA Lab.",
+        "authors": "AiiDA Team",
+        "version": "0.2.0a2",
+        "logo": "miscellaneous/logos/aiidalab.png",
+        "state": "stable"
       },
       "gitinfo": {
-        "HEAD": "fbc917fd9932eca45ee367408ed2a9d70498bcb9",
+        "HEAD": "f6296f891bce43228dc298d2c324cda242b4aa50",
         "refs/heads/computer_and_code_setup": "7efd9d2fc1acd3522e966febcec0ed369982a28b",
-        "refs/heads/master": "fbc917fd9932eca45ee367408ed2a9d70498bcb9",
+        "refs/heads/master": "f6296f891bce43228dc298d2c324cda242b4aa50",
         "refs/pull/10/head": "7de3d88c63708d8fb7fbe749d2270178024631ec",
+        "refs/pull/11/head": "2a430d1fa0115454b29a6e084e544f52108f9b68",
+        "refs/pull/11/merge": "c8c47c90465841e115a9d2942f4020f3af616f23",
         "refs/pull/4/head": "6a4db6b6659d82eb3d690242bf3e5a4f959baa10",
         "refs/pull/6/head": "a547bb269ecca26198462f16ef38c00b842ff35e",
         "refs/pull/9/head": "048a8e5d27557d767dbd2d784a26f1801d55683a",
@@ -166,7 +171,7 @@
     "backup": {
       "git_url": "https://github.com/aiidalab/aiidalab-backup",
       "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-backup/master/metadata.json",
-      "groups": [
+      "categories": [
         "utilities"
       ],
       "name": "backup",
@@ -186,8 +191,9 @@
     "calcexamples": {
       "git_url": "https://github.com/aiidalab/aiidalab-calculation-examples.git",
       "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-calculation-examples/master/metadata.json",
-      "groups": [
-        "tutorial"
+      "categories": [
+        "quantum",
+        "tutorials"
       ],
       "name": "calcexamples",
       "metainfo": {
@@ -208,8 +214,8 @@
     "cscs": {
       "git_url": "https://github.com/aiidalab/aiidalab-cscs",
       "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-cscs/master/metadata.json",
-      "groups": [
-        "configuration"
+      "categories": [
+        "setup"
       ],
       "name": "cscs",
       "metainfo": {
@@ -237,8 +243,8 @@
     "epfl": {
       "git_url": "https://github.com/aiidalab/aiidalab-epfl-supercomputers",
       "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-epfl-supercomputers/master/metadata.json",
-      "groups": [
-        "configuration"
+      "categories": [
+        "setup"
       ],
       "name": "epfl",
       "metainfo": {
@@ -260,8 +266,8 @@
     "home": {
       "git_url": "https://github.com/aiidalab/aiidalab-home",
       "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-home/master/metadata.json",
-      "groups": [
-        "utilities"
+      "categories": [
+        "setup"
       ],
       "name": "home",
       "metainfo": {
@@ -271,9 +277,9 @@
         "state": "registered"
       },
       "gitinfo": {
-        "HEAD": "b48a21f51bb56cd9780f6d6bbed1bb18ff32f3fa",
+        "HEAD": "31cacf749be5a6471aa3cb8788b60883a1545df9",
         "refs/heads/develop": "36c723a62f2d966b9baeb18b9584c51df16ee7a8",
-        "refs/heads/master": "b48a21f51bb56cd9780f6d6bbed1bb18ff32f3fa",
+        "refs/heads/master": "31cacf749be5a6471aa3cb8788b60883a1545df9",
         "refs/pull/1/head": "674052f9279896aac1eb75adc7c3ec3d97716ab0",
         "refs/pull/14/head": "36c723a62f2d966b9baeb18b9584c51df16ee7a8",
         "refs/pull/3/head": "172e2065562290dcc8e286250ea0110882b06d43",
@@ -290,25 +296,27 @@
     "lsmo": {
       "git_url": "https://github.com/yakutovicha/aiidalab-epfl-lsmo.git",
       "meta_url": "https://raw.githubusercontent.com/yakutovicha/aiidalab-epfl-lsmo/master/metadata.json",
-      "groups": [
-        "calculations"
+      "categories": [
+        "classical",
+        "quantum"
       ],
       "name": "lsmo",
       "metainfo": {
         "description": "Applications from the LSMO group",
         "title": "LSMO apps",
+        "version": "0.1.0",
+        "logo": "miscellaneous/logos/LSMO.png",
         "state": "registered"
       },
       "gitinfo": {
-        "HEAD": "4731b551a1a5ff1e7483e1ad89b31e1f38ec3bbd",
+        "HEAD": "4d7293b73cac2308eaf09cbc564adfc893cc89d1",
         "refs/heads/develop": "a6d4ba864edeb8cbe1fa8bcadcc3d32d944f50c6",
-        "refs/heads/master": "4731b551a1a5ff1e7483e1ad89b31e1f38ec3bbd",
+        "refs/heads/master": "4d7293b73cac2308eaf09cbc564adfc893cc89d1",
         "refs/heads/test": "4b17e6df3c7704e6328bdf91d10c9750ed70b6d8",
         "refs/pull/3/head": "cb49ade93f8a3a9655f01a16a969c2a6725eaedf",
         "refs/pull/4/head": "f24bde2da248002f0d2aba9de73bd72e8b63d83a",
         "refs/pull/5/head": "70940de5efe75c595185e020bcac06770d7fc97a",
-        "refs/pull/7/head": "b5279a5a2c608693b26c1af1040643b8c807455a",
-        "refs/pull/7/merge": "f75e41763f054948c7b021ffa42b8dbd8ebb6dc3"
+        "refs/pull/7/head": "b5279a5a2c608693b26c1af1040643b8c807455a"
       },
       "subpage": "apps/lsmo.html",
       "hosted_on": "github.com"
@@ -316,8 +324,8 @@
     "mc-vasp-example": {
       "git_url": "https://github.com/DropD/mc-vasp-example.git",
       "meta_url": "https://raw.githubusercontent.com/DropD/mc-vasp-example/master/metadata.json",
-      "groups": [
-        "calculations"
+      "categories": [
+        "quantum"
       ],
       "name": "mc-vasp-example",
       "metainfo": {
@@ -339,25 +347,26 @@
     "reactions": {
       "git_url": "https://github.com/edditler/aiidalab-empa-reactions",
       "meta_url": "https://raw.githubusercontent.com/edditler/aiidalab-empa-reactions/master/metadata.json",
-      "groups": [
-        "calculations"
+      "categories": [
+        "quantum"
       ],
       "name": "reactions",
       "metainfo": {
         "description": "Empa nanotech@surfaces Laboratory",
         "title": "Empa nanotech@surfaces Laboratory - Reactions",
+        "version": "0.1",
+        "logo": "miscellaneous/logos/empa.png",
         "state": "registered"
       },
       "gitinfo": {
-        "HEAD": "096e420bca201dd880fa46d79508818cd5d787c1",
+        "HEAD": "d6dc00cae81530e46a68202926100f5aad554960",
         "refs/heads/NEB": "09398e98df538910a5eaed65285ad8116c884216",
-        "refs/heads/master": "096e420bca201dd880fa46d79508818cd5d787c1",
+        "refs/heads/master": "d6dc00cae81530e46a68202926100f5aad554960",
         "refs/pull/1/head": "f5cd454fda990cc12bdd9e1ba5a0d1f76f95bc9f",
         "refs/pull/2/head": "f19381cf199ab6d25933efd4917bb35d9a612a7f",
         "refs/pull/3/head": "425d1fda6dfb72fbb8b4b46ae2425e8b52408c3a",
         "refs/pull/4/head": "625a4b02ef1baa33f2c6e7ad60ba9b4c685a843b",
-        "refs/pull/5/head": "269f83a4c881b37bd6432671f2d04b211bcd7629",
-        "refs/pull/5/merge": "9201fc623f5b81d1417192fa4b03247b9d423eab"
+        "refs/pull/5/head": "269f83a4c881b37bd6432671f2d04b211bcd7629"
       },
       "subpage": "apps/reactions.html",
       "hosted_on": "github.com"
@@ -365,20 +374,21 @@
     "scanning_probe": {
       "git_url": "https://github.com/eimrek/aiidalab-empa-scanning-probe",
       "meta_url": "https://raw.githubusercontent.com/eimrek/aiidalab-empa-scanning-probe/master/metadata.json",
-      "groups": [
-        "calculations"
+      "categories": [
+        "quantum"
       ],
       "name": "scanning_probe",
       "metainfo": {
         "description": "Empa nanotech@surfaces Laboratory",
         "title": "Empa nanotech@surfaces Laboratory - Scanning Probe Microscopy",
+        "version": "0.1",
+        "logo": "miscellaneous/logos/empa.png",
         "state": "registered"
       },
       "gitinfo": {
-        "HEAD": "ee30a4c3637f6a40fbe0f4569849d4382a79facb",
-        "refs/heads/master": "ee30a4c3637f6a40fbe0f4569849d4382a79facb",
-        "refs/pull/1/head": "6c71a75202811fd76d654d62e2b917ef5ce7882d",
-        "refs/pull/1/merge": "e227bca6cf5390cbe4f8f623ff156a42b3d9cbaf"
+        "HEAD": "8ea8314fb996311623d543d041a8416ad2c1ac09",
+        "refs/heads/master": "8ea8314fb996311623d543d041a8416ad2c1ac09",
+        "refs/pull/1/head": "6c71a75202811fd76d654d62e2b917ef5ce7882d"
       },
       "subpage": "apps/scanning_probe.html",
       "hosted_on": "github.com"
@@ -386,7 +396,7 @@
     "structureimporter": {
       "git_url": "https://github.com/aiidalab/aiidalab-manage-structures",
       "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-manage-structures/master/metadata.json",
-      "groups": [
+      "categories": [
         "utilities"
       ],
       "name": "structureimporter",
@@ -406,18 +416,20 @@
     "surfaces": {
       "git_url": "https://github.com/cpignedoli/aiidalab-empa-surfaces",
       "meta_url": "https://raw.githubusercontent.com/cpignedoli/aiidalab-empa-surfaces/master/metadata.json",
-      "groups": [
-        "calculations"
+      "categories": [
+        "quantum"
       ],
       "name": "surfaces",
       "metainfo": {
         "description": "Tools for graphene nanoribbons, developed at the nanotech@surfaces laboratory, Empa",
         "title": "Empa nanotech@surfaces Laboratory - Graphene nanoribbons",
+        "version": "0.1.1",
+        "logo": "miscellaneous/logos/empa.png",
         "state": "registered"
       },
       "gitinfo": {
-        "HEAD": "ed0150aa34db4c2cc7b16d4282f0a453ab49f7a8",
-        "refs/heads/master": "ed0150aa34db4c2cc7b16d4282f0a453ab49f7a8",
+        "HEAD": "bedea9154ce3fb0081e525d09a050381a9d79ed7",
+        "refs/heads/master": "bedea9154ce3fb0081e525d09a050381a9d79ed7",
         "refs/pull/10/head": "ca56b4459d857c7a4961cd22b120a4924f469b33",
         "refs/pull/11/head": "84c56ef7cc102811d8363ae5c74b2d219d63fc23",
         "refs/pull/12/head": "6ecfcaab4f1108e5ec053cff618ff2cceeea25c6",
@@ -445,7 +457,6 @@
         "refs/pull/32/head": "0cc9f41f74151510cb85dc9e96ef90697a669318",
         "refs/pull/33/head": "77b715a3c786c0b61129ca66f7b9ae1fb6f84b4c",
         "refs/pull/34/head": "9a2548168100a2c1ce5d2555b62c39ea6b670fc5",
-        "refs/pull/34/merge": "87a3cf2627b58fcbdc2fa202aed6f4a2d0e04067",
         "refs/pull/4/head": "c18354e38c5331c55f0e2fa5d085a0536cc4695b",
         "refs/pull/5/head": "7bd1778998ceae7f484a3451e5bb03719fb305f0",
         "refs/pull/6/head": "c1e4ee1353070020c7e60260d010883d3948fa28",
@@ -462,7 +473,7 @@
     "units": {
       "git_url": "https://github.com/aiidalab/aiidalab-units",
       "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-units/master/metadata.json",
-      "groups": [
+      "categories": [
         "utilities"
       ],
       "name": "units",
@@ -478,6 +489,28 @@
       },
       "subpage": "apps/units.html",
       "hosted_on": "github.com"
+    }
+  },
+  "categories": {
+    "utilities": {
+      "title": "Utilities",
+      "description": "Utility apps for everyday tasks."
+    },
+    "setup": {
+      "title": "Setup",
+      "description": "Apps for setting up and configuring your AiiDA lab environment."
+    },
+    "quantum": {
+      "title": "Quantum",
+      "description": "Apps for performing quantum-mechanical calculations."
+    },
+    "classical": {
+      "title": "Classical",
+      "description": "Apps for performing calculations based on classical/empirical force fields."
+    },
+    "tutorials": {
+      "title": "Tutorials",
+      "description": "Apps suitable for getting to know AiiDA and the AiiDA lab."
     }
   }
 }
