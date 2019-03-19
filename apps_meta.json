@@ -1,19 +1,20 @@
 {
   "apps": {
-    "aiida": {
-      "git_url": "https://github.com/aiidalab/aiidalab-aiida",
-      "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-aiida/master/metadata.json",
+    "aiida-cockpit": {
+      "git_url": "https://github.com/aiidalab/aiidalab-aiida-cockpit",
+      "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-aiida-cockpit/master/metadata.json",
       "categories": [
         "setup",
         "utilities"
       ],
-      "name": "aiida",
+      "name": "aiida-cockpit",
       "metainfo": {
         "description": "Tools to manage AiiDA",
         "title": "AiiDA Cockpit",
         "version": "0.0.1",
         "logo": "miscellaneous/logos/aiida.png",
-        "state": "registered"
+        "state": "registered",
+        "authors": "AiiDA Lab Team"
       },
       "gitinfo": {
         "HEAD": "9149dc03fcb9bc9228fcb02fd5d3fa02ae9a20a7",
@@ -29,8 +30,9 @@
         "refs/pull/9/head": "cf0b946584db986186c2dac06e27ca15c75e31d1",
         "refs/tags/v0.0.1": "8de2822ee8859ee71ff4f5adeaf5e7b46ea19005"
       },
-      "subpage": "apps/aiida.html",
-      "hosted_on": "github.com"
+      "subpage": "apps/aiida-cockpit.html",
+      "hosted_on": "github.com",
+      "logo": "https://raw.githubusercontent.com/aiidalab/aiidalab-aiida-cockpit/master/miscellaneous/logos/aiida.png"
     },
     "aiida-tutorials": {
       "git_url": "https://github.com/aiidateam/aiida_demos.git",
@@ -63,110 +65,8 @@
         "refs/tags/v2.0": "e163ff47a7a8493117b5a24b6734c7c9887d6a45"
       },
       "subpage": "apps/aiida-tutorials.html",
-      "hosted_on": "github.com"
-    },
-    "aiidalab-optimade": {
-      "git_url": "https://github.com/aiidalab/aiidalab-optimade.git",
-      "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-optimade/master/metadata.json",
-      "categories": [
-        "utilities"
-      ],
-      "name": "aiidalab-optimade",
-      "metainfo": {
-        "title": "OPTiMaDe client",
-        "description": "AiiDA Lab App that implements an OPTiMaDe client",
-        "version": "0.2-alpha",
-        "authors": "AiiDA Lab Team",
-        "state": "development",
-        "logo": "img/optimade_square.png",
-        "external_url": "http://www.optimade.org"
-      },
-      "gitinfo": {
-        "HEAD": "f569fd3825447b129714623e85f9526e0c3ba3fb",
-        "refs/heads/develop": "8019fbb6f296eb451e23dfaed8dd60876d53aeda",
-        "refs/heads/master": "f569fd3825447b129714623e85f9526e0c3ba3fb"
-      },
-      "subpage": "apps/aiidalab-optimade.html",
-      "hosted_on": "github.com"
-    },
-    "aiidalab-persistence-homology": {
-      "git_url": "https://github.com/aiidalab/aiidalab-persistence-homology.git",
-      "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-persistence-homology/master/metadata.json",
-      "categories": [
-        "classical"
-      ],
-      "name": "aiidalab-persistence-homology",
-      "metainfo": {
-        "title": "Persistence Homology",
-        "description": "Perform persistence homology analysis of nanoporous materials.",
-        "authors": "Leopold Talirz",
-        "version": "0.1.0b",
-        "state": "development"
-      },
-      "gitinfo": {
-        "HEAD": "7ee0bfa278ee97fd5a3a123b67824feca5c96e58",
-        "refs/heads/master": "7ee0bfa278ee97fd5a3a123b67824feca5c96e58"
-      },
-      "subpage": "apps/aiidalab-persistence-homology.html",
-      "hosted_on": "github.com"
-    },
-    "aiidalab-quantum-mobile": {
-      "git_url": "https://github.com/aiidalab/aiidalab-quantum-mobile.git",
-      "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-quantum-mobile/master/metadata.json",
-      "categories": [
-        "setup"
-      ],
-      "name": "aiidalab-quantum-mobile",
-      "metainfo": {
-        "title": "Quantum Mobile",
-        "description": "Set up connection to compute resource based on QuantumMobile",
-        "authors": "AiiDA Team",
-        "version": "0.1.0",
-        "logo": "static/logo.png",
-        "state": "stable"
-      },
-      "gitinfo": {
-        "HEAD": "eb96020051961c06234120a40359437c74d200a4",
-        "refs/heads/master": "eb96020051961c06234120a40359437c74d200a4"
-      },
-      "subpage": "apps/aiidalab-quantum-mobile.html",
-      "hosted_on": "github.com"
-    },
-    "aiidalab-widgets-base": {
-      "git_url": "https://github.com/aiidalab/aiidalab-widgets-base.git",
-      "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-widgets-base/master/metadata.json",
-      "categories": [
-        "utilities"
-      ],
-      "name": "aiidalab-widgets-base",
-      "metainfo": {
-        "title": "AiiDA Lab Widgets",
-        "description": "Reusable widgets for applications in the AiiDA Lab.",
-        "authors": "AiiDA Team",
-        "version": "0.2.0a2",
-        "logo": "miscellaneous/logos/aiidalab.png",
-        "state": "stable"
-      },
-      "gitinfo": {
-        "HEAD": "f6296f891bce43228dc298d2c324cda242b4aa50",
-        "refs/heads/computer_and_code_setup": "7efd9d2fc1acd3522e966febcec0ed369982a28b",
-        "refs/heads/master": "f6296f891bce43228dc298d2c324cda242b4aa50",
-        "refs/pull/10/head": "7de3d88c63708d8fb7fbe749d2270178024631ec",
-        "refs/pull/11/head": "2a430d1fa0115454b29a6e084e544f52108f9b68",
-        "refs/pull/11/merge": "c8c47c90465841e115a9d2942f4020f3af616f23",
-        "refs/pull/4/head": "6a4db6b6659d82eb3d690242bf3e5a4f959baa10",
-        "refs/pull/6/head": "a547bb269ecca26198462f16ef38c00b842ff35e",
-        "refs/pull/9/head": "048a8e5d27557d767dbd2d784a26f1801d55683a",
-        "refs/tags/v0.1.0a0": "b8047221833000a51bb8f21ce7304353af1297e0",
-        "refs/tags/v0.2.0a0": "0b12f44e31079a6ac952d0cc3b730883435f41f1",
-        "refs/tags/v0.2.0a0^{}": "e6d85402e4df8da825f29e890bc506e0b264217d",
-        "refs/tags/v0.2.0a1": "9fec9faf52a891727da0875fcb6ec61badb1934c",
-        "refs/tags/v0.2.0a1^{}": "759666cf457f616f29de752c0d1630af4e2ecfd5",
-        "refs/tags/v0.2.0a2": "2de86d59b6f807f0a752a42fafc394f97b68fdee",
-        "refs/tags/v0.2.0a2^{}": "0d0d10a217fa07b5f5f460a1788b4162f101d1c2"
-      },
-      "subpage": "apps/aiidalab-widgets-base.html",
-      "hosted_on": "github.com"
+      "hosted_on": "github.com",
+      "logo": "https://raw.githubusercontent.com/aiidateam/aiida_demos/master/miscellaneous/logos/aiida.png"
     },
     "backup": {
       "git_url": "https://github.com/aiidalab/aiidalab-backup",
@@ -179,7 +79,8 @@
         "description": "Materials Cloud Backup App",
         "title": "Backup",
         "version": "0.1-alpha",
-        "state": "registered"
+        "state": "registered",
+        "authors": "AiiDA Lab Team"
       },
       "gitinfo": {
         "HEAD": "62591ae7593d0640514f057643f4e762ca2d3e9e",
@@ -200,7 +101,8 @@
         "description": "Calculation examples",
         "title": "Calculation examples",
         "version": "0.4.3",
-        "state": "registered"
+        "state": "registered",
+        "authors": "AiiDA Lab Team"
       },
       "gitinfo": {
         "HEAD": "b85dac7606e2e6f6396d3c1c64c5440ef7922d64",
@@ -223,7 +125,8 @@
         "title": "CSCS",
         "version": "0.1",
         "logo": "img/800px-Swiss_National_Supercomputing_Centre_logo.png",
-        "state": "registered"
+        "state": "registered",
+        "authors": "AiiDA Lab Team"
       },
       "gitinfo": {
         "HEAD": "179bf63c6280d519f87c99221590239f73c80598",
@@ -238,7 +141,8 @@
         "refs/tags/v0.0.1": "39b23179a3ec1ee15d58267db9c9c910b99ea415"
       },
       "subpage": "apps/cscs.html",
-      "hosted_on": "github.com"
+      "hosted_on": "github.com",
+      "logo": "https://raw.githubusercontent.com/aiidalab/aiidalab-cscs/master/img/800px-Swiss_National_Supercomputing_Centre_logo.png"
     },
     "epfl": {
       "git_url": "https://github.com/aiidalab/aiidalab-epfl-supercomputers",
@@ -252,7 +156,8 @@
         "description": "Set up supercomputers at EPFL, Switzerland for use in AiiDA",
         "version": "0.2.5",
         "logo": "img/epfl.png",
-        "state": "registered"
+        "state": "registered",
+        "authors": "AiiDA Lab Team"
       },
       "gitinfo": {
         "HEAD": "9084f1641d4c6b801b8e5f4d11bbe99a725eb76b",
@@ -261,7 +166,8 @@
         "refs/pull/6/merge": "894ef4d5b7dd6e36045cf1c4016e1f3d0f6fbe56"
       },
       "subpage": "apps/epfl.html",
-      "hosted_on": "github.com"
+      "hosted_on": "github.com",
+      "logo": "https://raw.githubusercontent.com/aiidalab/aiidalab-epfl-supercomputers/master/img/epfl.png"
     },
     "home": {
       "git_url": "https://github.com/aiidalab/aiidalab-home",
@@ -271,15 +177,16 @@
       ],
       "name": "home",
       "metainfo": {
-        "description": "AiiDA Lab Home",
         "title": "Home",
+        "description": "AiiDA Lab Home",
+        "authors": "Aliaksandr Yakutovich, Ole Schuett, Casper Welzel Andersen, Leopold Talirz, Edward Ditler",
         "version": "0.3.8",
         "state": "registered"
       },
       "gitinfo": {
-        "HEAD": "31cacf749be5a6471aa3cb8788b60883a1545df9",
-        "refs/heads/develop": "36c723a62f2d966b9baeb18b9584c51df16ee7a8",
-        "refs/heads/master": "31cacf749be5a6471aa3cb8788b60883a1545df9",
+        "HEAD": "0ea868bbc39c46df85bad0e717eb6ed27bdeb6e6",
+        "refs/heads/develop": "25eb328f9565b6ec5f9f3935a86e8edfd76db380",
+        "refs/heads/master": "0ea868bbc39c46df85bad0e717eb6ed27bdeb6e6",
         "refs/pull/1/head": "674052f9279896aac1eb75adc7c3ec3d97716ab0",
         "refs/pull/14/head": "36c723a62f2d966b9baeb18b9584c51df16ee7a8",
         "refs/pull/3/head": "172e2065562290dcc8e286250ea0110882b06d43",
@@ -306,7 +213,8 @@
         "title": "LSMO apps",
         "version": "0.1.0",
         "logo": "miscellaneous/logos/LSMO.png",
-        "state": "registered"
+        "state": "registered",
+        "authors": "yakutovicha"
       },
       "gitinfo": {
         "HEAD": "4d7293b73cac2308eaf09cbc564adfc893cc89d1",
@@ -319,30 +227,77 @@
         "refs/pull/7/head": "b5279a5a2c608693b26c1af1040643b8c807455a"
       },
       "subpage": "apps/lsmo.html",
-      "hosted_on": "github.com"
+      "hosted_on": "github.com",
+      "logo": "https://raw.githubusercontent.com/yakutovicha/aiidalab-epfl-lsmo/master/miscellaneous/logos/LSMO.png"
     },
-    "mc-vasp-example": {
-      "git_url": "https://github.com/DropD/mc-vasp-example.git",
-      "meta_url": "https://raw.githubusercontent.com/DropD/mc-vasp-example/master/metadata.json",
+    "optimade": {
+      "git_url": "https://github.com/aiidalab/aiidalab-optimade.git",
+      "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-optimade/master/metadata.json",
       "categories": [
-        "quantum"
+        "utilities"
       ],
-      "name": "mc-vasp-example",
+      "name": "optimade",
       "metainfo": {
-        "title": "AiiDA-VASP Demo",
-        "description": "Compute a band structure using the AiiDA-VASP plugin",
-        "state": "registered"
+        "title": "OPTiMaDe client",
+        "description": "AiiDA Lab App that implements an OPTiMaDe client",
+        "version": "0.2-alpha",
+        "authors": "AiiDA Lab Team",
+        "state": "development",
+        "logo": "img/optimade_square.png",
+        "external_url": "http://www.optimade.org"
       },
       "gitinfo": {
-        "HEAD": "5345e90aa27f9ad6055e5d6028552536bc0993e8",
-        "refs/heads/master": "5345e90aa27f9ad6055e5d6028552536bc0993e8",
-        "refs/heads/revise-ui": "335df2fdc6bfa47ee815f57033943aefa56a73ea",
-        "refs/pull/1/head": "335df2fdc6bfa47ee815f57033943aefa56a73ea",
-        "refs/pull/2/head": "638905e6442f470ad6855517de7105995d9f5a00",
-        "refs/pull/2/merge": "8009c7c8d42cdd7379624aeaf4df1afd09f2c91a"
+        "HEAD": "f569fd3825447b129714623e85f9526e0c3ba3fb",
+        "refs/heads/develop": "8019fbb6f296eb451e23dfaed8dd60876d53aeda",
+        "refs/heads/master": "f569fd3825447b129714623e85f9526e0c3ba3fb"
       },
-      "subpage": "apps/mc-vasp-example.html",
+      "subpage": "apps/optimade.html",
+      "hosted_on": "github.com",
+      "logo": "https://raw.githubusercontent.com/aiidalab/aiidalab-optimade/master/img/optimade_square.png"
+    },
+    "persistence-homology": {
+      "git_url": "https://github.com/aiidalab/aiidalab-persistence-homology.git",
+      "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-persistence-homology/master/metadata.json",
+      "categories": [
+        "classical"
+      ],
+      "name": "persistence-homology",
+      "metainfo": {
+        "title": "Persistence Homology",
+        "description": "Perform persistence homology analysis of nanoporous materials.",
+        "authors": "Leopold Talirz",
+        "version": "0.1.0b",
+        "state": "development"
+      },
+      "gitinfo": {
+        "HEAD": "7ee0bfa278ee97fd5a3a123b67824feca5c96e58",
+        "refs/heads/master": "7ee0bfa278ee97fd5a3a123b67824feca5c96e58"
+      },
+      "subpage": "apps/persistence-homology.html",
       "hosted_on": "github.com"
+    },
+    "quantum-mobile": {
+      "git_url": "https://github.com/aiidalab/aiidalab-quantum-mobile.git",
+      "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-quantum-mobile/master/metadata.json",
+      "categories": [
+        "setup"
+      ],
+      "name": "quantum-mobile",
+      "metainfo": {
+        "title": "Quantum Mobile",
+        "description": "Set up connection to compute resource based on QuantumMobile",
+        "authors": "AiiDA Team",
+        "version": "0.1.0",
+        "logo": "static/logo.png",
+        "state": "stable"
+      },
+      "gitinfo": {
+        "HEAD": "eb96020051961c06234120a40359437c74d200a4",
+        "refs/heads/master": "eb96020051961c06234120a40359437c74d200a4"
+      },
+      "subpage": "apps/quantum-mobile.html",
+      "hosted_on": "github.com",
+      "logo": "https://raw.githubusercontent.com/aiidalab/aiidalab-quantum-mobile/master/static/logo.png"
     },
     "reactions": {
       "git_url": "https://github.com/edditler/aiidalab-empa-reactions",
@@ -356,7 +311,8 @@
         "title": "Empa nanotech@surfaces Laboratory - Reactions",
         "version": "0.1",
         "logo": "miscellaneous/logos/empa.png",
-        "state": "registered"
+        "state": "registered",
+        "authors": "edditler"
       },
       "gitinfo": {
         "HEAD": "d6dc00cae81530e46a68202926100f5aad554960",
@@ -369,7 +325,8 @@
         "refs/pull/5/head": "269f83a4c881b37bd6432671f2d04b211bcd7629"
       },
       "subpage": "apps/reactions.html",
-      "hosted_on": "github.com"
+      "hosted_on": "github.com",
+      "logo": "https://raw.githubusercontent.com/edditler/aiidalab-empa-reactions/master/miscellaneous/logos/empa.png"
     },
     "scanning_probe": {
       "git_url": "https://github.com/eimrek/aiidalab-empa-scanning-probe",
@@ -383,15 +340,17 @@
         "title": "Empa nanotech@surfaces Laboratory - Scanning Probe Microscopy",
         "version": "0.1",
         "logo": "miscellaneous/logos/empa.png",
-        "state": "registered"
+        "state": "registered",
+        "authors": "eimrek"
       },
       "gitinfo": {
-        "HEAD": "8ea8314fb996311623d543d041a8416ad2c1ac09",
-        "refs/heads/master": "8ea8314fb996311623d543d041a8416ad2c1ac09",
+        "HEAD": "7ba8e995347686652d9adf75597875becc0dbce7",
+        "refs/heads/master": "7ba8e995347686652d9adf75597875becc0dbce7",
         "refs/pull/1/head": "6c71a75202811fd76d654d62e2b917ef5ce7882d"
       },
       "subpage": "apps/scanning_probe.html",
-      "hosted_on": "github.com"
+      "hosted_on": "github.com",
+      "logo": "https://raw.githubusercontent.com/eimrek/aiidalab-empa-scanning-probe/master/miscellaneous/logos/empa.png"
     },
     "structureimporter": {
       "git_url": "https://github.com/aiidalab/aiidalab-manage-structures",
@@ -404,7 +363,8 @@
         "description": "Application to upload structures from your personal computer or from databases",
         "title": "Structure Importer",
         "version": "0.2.2",
-        "state": "registered"
+        "state": "registered",
+        "authors": "AiiDA Lab Team"
       },
       "gitinfo": {
         "HEAD": "46bc0bcf7f62b15ea25a8ff494b6c2e62b5b5910",
@@ -425,7 +385,8 @@
         "title": "Empa nanotech@surfaces Laboratory - Graphene nanoribbons",
         "version": "0.1.1",
         "logo": "miscellaneous/logos/empa.png",
-        "state": "registered"
+        "state": "registered",
+        "authors": "cpignedoli"
       },
       "gitinfo": {
         "HEAD": "bedea9154ce3fb0081e525d09a050381a9d79ed7",
@@ -468,7 +429,8 @@
         "refs/tags/v0.1.1": "818ca108baa8e70541e94d0bae831fb20e90a637"
       },
       "subpage": "apps/surfaces.html",
-      "hosted_on": "github.com"
+      "hosted_on": "github.com",
+      "logo": "https://raw.githubusercontent.com/cpignedoli/aiidalab-empa-surfaces/master/miscellaneous/logos/empa.png"
     },
     "units": {
       "git_url": "https://github.com/aiidalab/aiidalab-units",
@@ -481,7 +443,8 @@
         "description": "Simple conversion between common units",
         "title": "Units Converter",
         "version": "0.1",
-        "state": "registered"
+        "state": "registered",
+        "authors": "AiiDA Lab Team"
       },
       "gitinfo": {
         "HEAD": "2dae0caa678ea318b49033e89c0a97be870eef41",
@@ -489,6 +452,69 @@
       },
       "subpage": "apps/units.html",
       "hosted_on": "github.com"
+    },
+    "vasp-example": {
+      "git_url": "https://github.com/DropD/mc-vasp-example.git",
+      "meta_url": "https://raw.githubusercontent.com/DropD/mc-vasp-example/master/metadata.json",
+      "categories": [
+        "quantum"
+      ],
+      "name": "vasp-example",
+      "metainfo": {
+        "title": "AiiDA-VASP Demo",
+        "description": "Compute a band structure using the AiiDA-VASP plugin",
+        "state": "registered",
+        "authors": "DropD"
+      },
+      "gitinfo": {
+        "HEAD": "5345e90aa27f9ad6055e5d6028552536bc0993e8",
+        "refs/heads/master": "5345e90aa27f9ad6055e5d6028552536bc0993e8",
+        "refs/heads/revise-ui": "335df2fdc6bfa47ee815f57033943aefa56a73ea",
+        "refs/pull/1/head": "335df2fdc6bfa47ee815f57033943aefa56a73ea",
+        "refs/pull/2/head": "638905e6442f470ad6855517de7105995d9f5a00",
+        "refs/pull/2/merge": "8009c7c8d42cdd7379624aeaf4df1afd09f2c91a"
+      },
+      "subpage": "apps/vasp-example.html",
+      "hosted_on": "github.com"
+    },
+    "widgets-base": {
+      "git_url": "https://github.com/aiidalab/aiidalab-widgets-base.git",
+      "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-widgets-base/master/metadata.json",
+      "categories": [
+        "utilities"
+      ],
+      "name": "widgets-base",
+      "metainfo": {
+        "title": "AiiDA Lab Widgets",
+        "description": "Reusable widgets for applications in the AiiDA Lab.",
+        "authors": "AiiDA Team",
+        "version": "0.2.0a2",
+        "logo": "miscellaneous/logos/aiidalab.png",
+        "state": "stable"
+      },
+      "gitinfo": {
+        "HEAD": "f6296f891bce43228dc298d2c324cda242b4aa50",
+        "refs/heads/computer_and_code_setup": "5032ff5fdf3a99b1ddf7173848986618ca437508",
+        "refs/heads/master": "f6296f891bce43228dc298d2c324cda242b4aa50",
+        "refs/pull/10/head": "7de3d88c63708d8fb7fbe749d2270178024631ec",
+        "refs/pull/11/head": "2a430d1fa0115454b29a6e084e544f52108f9b68",
+        "refs/pull/11/merge": "240760bc4f622897a81c170526fb0b2cce6d054d",
+        "refs/pull/12/head": "5032ff5fdf3a99b1ddf7173848986618ca437508",
+        "refs/pull/12/merge": "79a54abd8f64190d5489fa0776a5a20871f0a7f7",
+        "refs/pull/4/head": "6a4db6b6659d82eb3d690242bf3e5a4f959baa10",
+        "refs/pull/6/head": "a547bb269ecca26198462f16ef38c00b842ff35e",
+        "refs/pull/9/head": "048a8e5d27557d767dbd2d784a26f1801d55683a",
+        "refs/tags/v0.1.0a0": "b8047221833000a51bb8f21ce7304353af1297e0",
+        "refs/tags/v0.2.0a0": "0b12f44e31079a6ac952d0cc3b730883435f41f1",
+        "refs/tags/v0.2.0a0^{}": "e6d85402e4df8da825f29e890bc506e0b264217d",
+        "refs/tags/v0.2.0a1": "9fec9faf52a891727da0875fcb6ec61badb1934c",
+        "refs/tags/v0.2.0a1^{}": "759666cf457f616f29de752c0d1630af4e2ecfd5",
+        "refs/tags/v0.2.0a2": "2de86d59b6f807f0a752a42fafc394f97b68fdee",
+        "refs/tags/v0.2.0a2^{}": "0d0d10a217fa07b5f5f460a1788b4162f101d1c2"
+      },
+      "subpage": "apps/widgets-base.html",
+      "hosted_on": "github.com",
+      "logo": "https://raw.githubusercontent.com/aiidalab/aiidalab-widgets-base/master/miscellaneous/logos/aiidalab.png"
     }
   },
   "categories": {
