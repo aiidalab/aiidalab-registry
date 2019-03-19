@@ -20,13 +20,16 @@
         </div>
         <div class="app-card-text">
             <h1>{{ metainfo.title }}</h1>
+            <p class="sub-header">
             {% if categories %}
-                <p class="sub-header">
                 {% for category in categories %}
                     <span class="category">{{ category_map[category]["title"] }}</span> 
                 {% endfor %}
-                </p>
+            {% else %}
+                No categories specified.<br>
+                Ask the app developers to specify categories in <code>apps.json</code>.
             {% endif %}
+            </p>
         </div>
     </div>
 

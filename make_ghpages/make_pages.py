@@ -26,7 +26,7 @@ html_subfolder_name = 'apps' # subfolder for HTMLs of apps
 apps_meta_file = 'apps_meta.json'
 
 # configuration
-TIMEOUT_TIME = 30  # seconds
+TIMEOUT_SECONDS = 30  # seconds
 ### END configuration
 
 
@@ -40,7 +40,7 @@ def get_html_app_fname(app_name):
 
 def get_hosted_on(url):
     try:
-        urlopen(url, timeout=TIMEOUT_TIME)
+        urlopen(url, timeout=TIMEOUT_SECONDS)
     except Exception:
         raise exc.MissingGit("Value for 'git_url' in apps.json may be wrong: '{}'".format(url))
 
@@ -58,7 +58,7 @@ def get_hosted_on(url):
 
 def get_meta_info(json_url):
     try:
-        response = urlopen(json_url, timeout=TIMEOUT_TIME)
+        response = urlopen(json_url, timeout=TIMEOUT_SECONDS)
         json_txt = response.read()
     except Exception:
         raise exc.MissingMetadata("Value for 'meta_url' in apps.json may be wrong: '{}'".format(json_url))
@@ -103,13 +103,17 @@ def validate_meta_info(app_name, meta_info, git_url):
     return meta_info
 
 def validate_categories(categories, raw_data):
-    if not categories or not isinstance(categories, list):
-        raise exc.MissingCategories("Value for 'categories' in apps.json may be wrong: '{}'".format(str(categories)))
+    if not isinstance(categories, list):
+        raise exc.MissingCategories("Value for 'categories' in apps.json must be a list: '{}'".format(str(categories)))
+
+    if not categories:
+        print("  >> WARNING: No categories specified.")
+        return
 
     for category in categories:
         if category not in raw_data:
-            raise exc.WrongCategory("The specified category '{}' is not valid. "
-                                    "Valid categories are: {}".format(category, str(raw_data.keys())))
+            raise exc.WrongCategory("Specified category '{}' not found in list {}. ".format(category, str(raw_data.keys()))
+                                    + "Edit categories.json to propose new categories.")
 
 def get_logo_url(logo_rel_path, meta_url):
     logo_url = meta_url[:-len('metadata.json')] + logo_rel_path

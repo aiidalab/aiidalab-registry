@@ -49,7 +49,7 @@ h1 {
     margin-block-end: .67em;
 }
 
-// Needs to be there to activate elements
+/* Needs to be there to activate elements */
 span {
 }
 
@@ -79,6 +79,11 @@ h2 {
     margin: 0;
     font-size: 140%;
     color: #005;
+}
+
+h2 .category {
+    font-size: 54%; /* category divided by h2 = 75 % / 140 % ~= 54 % */
+    font-weight: normal;
 }
 
 .description {
