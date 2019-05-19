@@ -26,7 +26,7 @@
         "refs/pull/6/head": "c6ef44c063ce730cea9cf7f32c5bb782a9020317",
         "refs/pull/7/head": "acc4561c69bdbe033ae464f7125c5df3439a867b",
         "refs/pull/8/head": "cbf56ca8757639d5b5538f19bf3d90600320ec99",
-        "refs/pull/8/merge": "4d6d0b902ea5f0017790fa5d8e598a874e3e07c3",
+        "refs/pull/8/merge": "06f5cff7dafbf2df8716031e8e0c685a80cf4a0f",
         "refs/pull/9/head": "cf0b946584db986186c2dac06e27ca15c75e31d1",
         "refs/tags/v0.0.1": "8de2822ee8859ee71ff4f5adeaf5e7b46ea19005"
       },
@@ -50,14 +50,19 @@
         "state": "stable"
       },
       "gitinfo": {
-        "HEAD": "791a28813258856993d36fe47aca175935d7dc9e",
-        "refs/heads/master": "791a28813258856993d36fe47aca175935d7dc9e",
+        "HEAD": "618014b7794dc2f3b8b0c5f913d40f8d9beac50b",
+        "refs/heads/master": "618014b7794dc2f3b8b0c5f913d40f8d9beac50b",
         "refs/pull/1/head": "fdbf1c867aa6999fc27eeb704106c4732b3e0212",
         "refs/pull/10/head": "3fb48178ca7787616c021e5a324254b9b834ee15",
         "refs/pull/12/head": "f3ca152c468b7390d239ff30d9220b1d4fbe5f2d",
         "refs/pull/13/head": "bbd968e19bcad02778d18b578d03077816e71f36",
         "refs/pull/14/head": "118d1155ccff14794ef0dd6a72a69f7cf4bd8c75",
         "refs/pull/15/head": "2fddebcad2aaa9bf6b639c36f0e05b7b2ea1dbfe",
+        "refs/pull/17/head": "73c6f1473a0799420d78f9eeb787c2a020522a11",
+        "refs/pull/18/head": "61c053701baf80400f396603ce50f59ac8e764bc",
+        "refs/pull/19/head": "f501cf4e26e5bc04f021a213453a3694eac8bd90",
+        "refs/pull/20/head": "2ae068579aa12ff984b6f1d660d0624716847299",
+        "refs/pull/21/head": "17235f6fcb1e9f6133bcc407e1034e2083f91752",
         "refs/pull/8/head": "0e3b623b0e7eca23ea14b14f9437383093151d1e",
         "refs/pull/9/head": "add4a723c97b38a7a736b7292e5f3bd4bc1bc60c",
         "refs/tags/v1.0": "d6817b97bdd9730b2aa1f6ef4292d8710e956c3b",
@@ -67,6 +72,54 @@
       "subpage": "apps/aiida-tutorials.html",
       "hosted_on": "github.com",
       "logo": "https://raw.githubusercontent.com/aiidateam/aiida_demos/master/miscellaneous/logos/aiida.png"
+    },
+    "aiidalab-widgets-base": {
+      "git_url": "https://github.com/aiidalab/aiidalab-widgets-base.git",
+      "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-widgets-base/master/metadata.json",
+      "categories": [
+        "utilities"
+      ],
+      "name": "aiidalab-widgets-base",
+      "metainfo": {
+        "title": "AiiDA Lab Widgets",
+        "description": "Reusable widgets for applications in the AiiDA Lab.",
+        "authors": "AiiDA Team",
+        "version": "0.4.0b2",
+        "logo": "miscellaneous/logos/aiidalab.png",
+        "state": "stable"
+      },
+      "gitinfo": {
+        "HEAD": "ea2314f7c92064f6ca786b140c2af5d3b283d9ca",
+        "refs/heads/aiida-1.0": "3a03674b646a4616dcc064dd52c2bccbc9a30b89",
+        "refs/heads/develop": "dde7039c0e539e437ccf583eca9ad69c4122edfc",
+        "refs/heads/master": "ea2314f7c92064f6ca786b140c2af5d3b283d9ca",
+        "refs/pull/10/head": "7de3d88c63708d8fb7fbe749d2270178024631ec",
+        "refs/pull/11/head": "2a430d1fa0115454b29a6e084e544f52108f9b68",
+        "refs/pull/11/merge": "8f7cd488088579862c6564577ce4c26e7ce5d1fa",
+        "refs/pull/12/head": "97570dbd6578f77d5a656af231de258cfecb6ea3",
+        "refs/pull/14/head": "4fe95263ed4bd6d9d1a8b224e05803354265cedd",
+        "refs/pull/18/head": "9d0c24932e32678356209a8dab07a1f1f8bd7efe",
+        "refs/pull/23/head": "fce2a53931b6879f2786268da4a40e8c57065b1b",
+        "refs/pull/4/head": "6a4db6b6659d82eb3d690242bf3e5a4f959baa10",
+        "refs/pull/6/head": "a547bb269ecca26198462f16ef38c00b842ff35e",
+        "refs/pull/9/head": "048a8e5d27557d767dbd2d784a26f1801d55683a",
+        "refs/tags/v0.1.0a0": "b8047221833000a51bb8f21ce7304353af1297e0",
+        "refs/tags/v0.2.0a0": "0b12f44e31079a6ac952d0cc3b730883435f41f1",
+        "refs/tags/v0.2.0a0^{}": "e6d85402e4df8da825f29e890bc506e0b264217d",
+        "refs/tags/v0.2.0a1": "9fec9faf52a891727da0875fcb6ec61badb1934c",
+        "refs/tags/v0.2.0a1^{}": "759666cf457f616f29de752c0d1630af4e2ecfd5",
+        "refs/tags/v0.2.0a2": "2de86d59b6f807f0a752a42fafc394f97b68fdee",
+        "refs/tags/v0.2.0a2^{}": "0d0d10a217fa07b5f5f460a1788b4162f101d1c2",
+        "refs/tags/v0.3.0b1": "c50740b69ea111493e4c5b816ca38f4372f60a9e",
+        "refs/tags/v0.3.0b1^{}": "291a9b159eac902aee655862322670ec1b0cd5b1",
+        "refs/tags/v0.4.0b1": "adf408bf2d65612d3ee8def3ad9662185871996f",
+        "refs/tags/v0.4.0b1^{}": "d5c4caaf56898c80dc9071637cf275e269c77f6a",
+        "refs/tags/v0.4.0b2": "288d4099b375e94419773e03e15852a620b92fec",
+        "refs/tags/v0.4.0b2^{}": "e408da75bfb8d2242f87461d54596dd5bce2fc1a"
+      },
+      "subpage": "apps/aiidalab-widgets-base.html",
+      "hosted_on": "github.com",
+      "logo": "https://raw.githubusercontent.com/aiidalab/aiidalab-widgets-base/master/miscellaneous/logos/aiidalab.png"
     },
     "backup": {
       "git_url": "https://github.com/aiidalab/aiidalab-backup",
@@ -105,10 +158,12 @@
         "authors": "AiiDA Lab Team"
       },
       "gitinfo": {
-        "HEAD": "b85dac7606e2e6f6396d3c1c64c5440ef7922d64",
-        "refs/heads/develop": "06200e4bba028d9b33b9786fd402244563ab91cc",
-        "refs/heads/master": "b85dac7606e2e6f6396d3c1c64c5440ef7922d64",
-        "refs/heads/test": "af6b73393b12a8b29edea7f710cfc84fa755ff83"
+        "HEAD": "47e4faf8354a9237a497c0caaa813e00ed0b7b52",
+        "refs/heads/develop": "e61c3b68acdcd9fba11e600a1925b4bfe80b8043",
+        "refs/heads/improve_examples": "619d491842ede29aaafd7f81fa6aa83c4d3e8507",
+        "refs/heads/master": "47e4faf8354a9237a497c0caaa813e00ed0b7b52",
+        "refs/heads/test": "af6b73393b12a8b29edea7f710cfc84fa755ff83",
+        "refs/pull/1/head": "619d491842ede29aaafd7f81fa6aa83c4d3e8507"
       },
       "subpage": "apps/calcexamples.html",
       "hosted_on": "github.com"
@@ -155,19 +210,20 @@
         "title": "EPFL Supercomputers",
         "description": "Set up supercomputers at EPFL, Switzerland for use in AiiDA",
         "version": "0.2.5",
-        "logo": "img/epfl.png",
+        "logo": "img/EPFL_Logo_Digital_RGB_PROD_small.png",
         "state": "registered",
         "authors": "AiiDA Lab Team"
       },
       "gitinfo": {
-        "HEAD": "9084f1641d4c6b801b8e5f4d11bbe99a725eb76b",
-        "refs/heads/master": "9084f1641d4c6b801b8e5f4d11bbe99a725eb76b",
+        "HEAD": "926ccd9adacd9c82fd29780b6916383669837b13",
+        "refs/heads/master": "926ccd9adacd9c82fd29780b6916383669837b13",
         "refs/pull/6/head": "79fd5f6bb34fd454f2b37db186e117b928f3ce3c",
-        "refs/pull/6/merge": "894ef4d5b7dd6e36045cf1c4016e1f3d0f6fbe56"
+        "refs/pull/6/merge": "894ef4d5b7dd6e36045cf1c4016e1f3d0f6fbe56",
+        "refs/pull/7/head": "875c064856aa6e5172574fe983e365c7bae4fd64"
       },
       "subpage": "apps/epfl.html",
       "hosted_on": "github.com",
-      "logo": "https://raw.githubusercontent.com/aiidalab/aiidalab-epfl-supercomputers/master/img/epfl.png"
+      "logo": "https://raw.githubusercontent.com/aiidalab/aiidalab-epfl-supercomputers/master/img/EPFL_Logo_Digital_RGB_PROD_small.png"
     },
     "home": {
       "git_url": "https://github.com/aiidalab/aiidalab-home",
@@ -184,11 +240,13 @@
         "state": "registered"
       },
       "gitinfo": {
-        "HEAD": "0ea868bbc39c46df85bad0e717eb6ed27bdeb6e6",
-        "refs/heads/develop": "25eb328f9565b6ec5f9f3935a86e8edfd76db380",
-        "refs/heads/master": "0ea868bbc39c46df85bad0e717eb6ed27bdeb6e6",
+        "HEAD": "a41ae7a154ac0e1436ac6095d84625d76e0e3c9e",
+        "refs/heads/aiida_v1.0": "7eefb3d202c5f857f067250a831f8a1216ff259e",
+        "refs/heads/develop": "a41ae7a154ac0e1436ac6095d84625d76e0e3c9e",
+        "refs/heads/master": "a41ae7a154ac0e1436ac6095d84625d76e0e3c9e",
         "refs/pull/1/head": "674052f9279896aac1eb75adc7c3ec3d97716ab0",
         "refs/pull/14/head": "36c723a62f2d966b9baeb18b9584c51df16ee7a8",
+        "refs/pull/28/head": "ade417581d35c59016b78791d7fb54bf393d3c21",
         "refs/pull/3/head": "172e2065562290dcc8e286250ea0110882b06d43",
         "refs/pull/4/head": "f4844d23d4a915e5005614446f7f174a3829b193",
         "refs/pull/4/merge": "a4591bc0ba706cbc589ce4f7e203f82d021a560c",
@@ -247,9 +305,9 @@
         "external_url": "http://www.optimade.org"
       },
       "gitinfo": {
-        "HEAD": "f569fd3825447b129714623e85f9526e0c3ba3fb",
-        "refs/heads/develop": "8019fbb6f296eb451e23dfaed8dd60876d53aeda",
-        "refs/heads/master": "f569fd3825447b129714623e85f9526e0c3ba3fb"
+        "HEAD": "0fee2992caff3ca0f5bb9328e8bf747fa7475f72",
+        "refs/heads/develop": "94dce533408db2d9f1716d6c8a4cb92ba962d7cf",
+        "refs/heads/master": "0fee2992caff3ca0f5bb9328e8bf747fa7475f72"
       },
       "subpage": "apps/optimade.html",
       "hosted_on": "github.com",
@@ -344,9 +402,10 @@
         "authors": "eimrek"
       },
       "gitinfo": {
-        "HEAD": "7ba8e995347686652d9adf75597875becc0dbce7",
-        "refs/heads/master": "7ba8e995347686652d9adf75597875becc0dbce7",
-        "refs/pull/1/head": "6c71a75202811fd76d654d62e2b917ef5ce7882d"
+        "HEAD": "7df64937ff305400e3d3e26c58e5a1b24586e910",
+        "refs/heads/master": "7df64937ff305400e3d3e26c58e5a1b24586e910",
+        "refs/pull/1/head": "6c71a75202811fd76d654d62e2b917ef5ce7882d",
+        "refs/tags/v0.1": "c69eac1056bb672272d962cc48e4dc7242dde375"
       },
       "subpage": "apps/scanning_probe.html",
       "hosted_on": "github.com",
@@ -389,8 +448,8 @@
         "authors": "cpignedoli"
       },
       "gitinfo": {
-        "HEAD": "bedea9154ce3fb0081e525d09a050381a9d79ed7",
-        "refs/heads/master": "bedea9154ce3fb0081e525d09a050381a9d79ed7",
+        "HEAD": "19f187030e6f29dc52ec0dc7f17ffd93f35ada29",
+        "refs/heads/master": "19f187030e6f29dc52ec0dc7f17ffd93f35ada29",
         "refs/pull/10/head": "ca56b4459d857c7a4961cd22b120a4924f469b33",
         "refs/pull/11/head": "84c56ef7cc102811d8363ae5c74b2d219d63fc23",
         "refs/pull/12/head": "6ecfcaab4f1108e5ec053cff618ff2cceeea25c6",
@@ -476,45 +535,6 @@
       },
       "subpage": "apps/vasp-example.html",
       "hosted_on": "github.com"
-    },
-    "widgets-base": {
-      "git_url": "https://github.com/aiidalab/aiidalab-widgets-base.git",
-      "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-widgets-base/master/metadata.json",
-      "categories": [
-        "utilities"
-      ],
-      "name": "widgets-base",
-      "metainfo": {
-        "title": "AiiDA Lab Widgets",
-        "description": "Reusable widgets for applications in the AiiDA Lab.",
-        "authors": "AiiDA Team",
-        "version": "0.2.0a2",
-        "logo": "miscellaneous/logos/aiidalab.png",
-        "state": "stable"
-      },
-      "gitinfo": {
-        "HEAD": "f6296f891bce43228dc298d2c324cda242b4aa50",
-        "refs/heads/computer_and_code_setup": "5032ff5fdf3a99b1ddf7173848986618ca437508",
-        "refs/heads/master": "f6296f891bce43228dc298d2c324cda242b4aa50",
-        "refs/pull/10/head": "7de3d88c63708d8fb7fbe749d2270178024631ec",
-        "refs/pull/11/head": "2a430d1fa0115454b29a6e084e544f52108f9b68",
-        "refs/pull/11/merge": "240760bc4f622897a81c170526fb0b2cce6d054d",
-        "refs/pull/12/head": "5032ff5fdf3a99b1ddf7173848986618ca437508",
-        "refs/pull/12/merge": "79a54abd8f64190d5489fa0776a5a20871f0a7f7",
-        "refs/pull/4/head": "6a4db6b6659d82eb3d690242bf3e5a4f959baa10",
-        "refs/pull/6/head": "a547bb269ecca26198462f16ef38c00b842ff35e",
-        "refs/pull/9/head": "048a8e5d27557d767dbd2d784a26f1801d55683a",
-        "refs/tags/v0.1.0a0": "b8047221833000a51bb8f21ce7304353af1297e0",
-        "refs/tags/v0.2.0a0": "0b12f44e31079a6ac952d0cc3b730883435f41f1",
-        "refs/tags/v0.2.0a0^{}": "e6d85402e4df8da825f29e890bc506e0b264217d",
-        "refs/tags/v0.2.0a1": "9fec9faf52a891727da0875fcb6ec61badb1934c",
-        "refs/tags/v0.2.0a1^{}": "759666cf457f616f29de752c0d1630af4e2ecfd5",
-        "refs/tags/v0.2.0a2": "2de86d59b6f807f0a752a42fafc394f97b68fdee",
-        "refs/tags/v0.2.0a2^{}": "0d0d10a217fa07b5f5f460a1788b4162f101d1c2"
-      },
-      "subpage": "apps/widgets-base.html",
-      "hosted_on": "github.com",
-      "logo": "https://raw.githubusercontent.com/aiidalab/aiidalab-widgets-base/master/miscellaneous/logos/aiidalab.png"
     }
   },
   "categories": {
