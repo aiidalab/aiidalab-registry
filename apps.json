@@ -74,7 +74,7 @@
         "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-persistence-homology/master/metadata.json",
         "categories": ["classical"]
     },
-    "widgets-base": {
+    "aiidalab-widgets-base": {
         "git_url": "https://github.com/aiidalab/aiidalab-widgets-base.git",
         "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-widgets-base/master/metadata.json",
         "categories": ["utilities"]
