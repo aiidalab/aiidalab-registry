@@ -81,21 +81,21 @@
       ],
       "name": "aiidalab-widgets-base",
       "metainfo": {
-        "title": "AiiDA Lab Widgets",
-        "description": "Reusable widgets for applications in the AiiDA Lab.",
+        "title": "AiiDA lab Widgets",
+        "description": "Reusable widgets for applications in the AiiDA lab.",
         "authors": "AiiDA Team",
         "version": "0.4.0b2",
         "logo": "miscellaneous/logos/aiidalab.png",
         "state": "stable"
       },
       "gitinfo": {
-        "HEAD": "ea2314f7c92064f6ca786b140c2af5d3b283d9ca",
-        "refs/heads/aiida-1.0": "3a03674b646a4616dcc064dd52c2bccbc9a30b89",
-        "refs/heads/develop": "dde7039c0e539e437ccf583eca9ad69c4122edfc",
-        "refs/heads/master": "ea2314f7c92064f6ca786b140c2af5d3b283d9ca",
+        "HEAD": "97219f99e4c2e67b3d3be935ab7c7606b751dc19",
+        "refs/heads/aiida-1.0": "cfc17c13fcd49582854a2df0720dc0a5b8800bcd",
+        "refs/heads/develop": "97219f99e4c2e67b3d3be935ab7c7606b751dc19",
+        "refs/heads/master": "97219f99e4c2e67b3d3be935ab7c7606b751dc19",
         "refs/pull/10/head": "7de3d88c63708d8fb7fbe749d2270178024631ec",
         "refs/pull/11/head": "2a430d1fa0115454b29a6e084e544f52108f9b68",
-        "refs/pull/11/merge": "8f7cd488088579862c6564577ce4c26e7ce5d1fa",
+        "refs/pull/11/merge": "9381ccfef02d36d4da921743ce7e87cba15708ab",
         "refs/pull/12/head": "97570dbd6578f77d5a656af231de258cfecb6ea3",
         "refs/pull/14/head": "4fe95263ed4bd6d9d1a8b224e05803354265cedd",
         "refs/pull/18/head": "9d0c24932e32678356209a8dab07a1f1f8bd7efe",
@@ -115,7 +115,11 @@
         "refs/tags/v0.4.0b1": "adf408bf2d65612d3ee8def3ad9662185871996f",
         "refs/tags/v0.4.0b1^{}": "d5c4caaf56898c80dc9071637cf275e269c77f6a",
         "refs/tags/v0.4.0b2": "288d4099b375e94419773e03e15852a620b92fec",
-        "refs/tags/v0.4.0b2^{}": "e408da75bfb8d2242f87461d54596dd5bce2fc1a"
+        "refs/tags/v0.4.0b2^{}": "e408da75bfb8d2242f87461d54596dd5bce2fc1a",
+        "refs/tags/v1.0.0a1": "ceb9cd6365b02542bd2893998f719321f338e634",
+        "refs/tags/v1.0.0a1^{}": "b4fdc0373d73b253a5d62928085ea97028aad8b9",
+        "refs/tags/v1.0.0a2": "d11bc85adb690145f1b67b0cebef6be94b8c7134",
+        "refs/tags/v1.0.0a2^{}": "cfc17c13fcd49582854a2df0720dc0a5b8800bcd"
       },
       "subpage": "apps/aiidalab-widgets-base.html",
       "hosted_on": "github.com",
@@ -159,6 +163,7 @@
       },
       "gitinfo": {
         "HEAD": "47e4faf8354a9237a497c0caaa813e00ed0b7b52",
+        "refs/heads/aiida-1.0": "ebe4fac773245c31331e221759564a41376d3a26",
         "refs/heads/develop": "e61c3b68acdcd9fba11e600a1925b4bfe80b8043",
         "refs/heads/improve_examples": "619d491842ede29aaafd7f81fa6aa83c4d3e8507",
         "refs/heads/master": "47e4faf8354a9237a497c0caaa813e00ed0b7b52",
@@ -240,10 +245,10 @@
         "state": "registered"
       },
       "gitinfo": {
-        "HEAD": "a41ae7a154ac0e1436ac6095d84625d76e0e3c9e",
-        "refs/heads/aiida_v1.0": "7eefb3d202c5f857f067250a831f8a1216ff259e",
-        "refs/heads/develop": "a41ae7a154ac0e1436ac6095d84625d76e0e3c9e",
-        "refs/heads/master": "a41ae7a154ac0e1436ac6095d84625d76e0e3c9e",
+        "HEAD": "e27a7caafbd0da1f0fdba6c944875a6de09eab37",
+        "refs/heads/aiida_v1.0": "6292796d9b9c11f9891316fc888be8aea61e3c2a",
+        "refs/heads/develop": "e27a7caafbd0da1f0fdba6c944875a6de09eab37",
+        "refs/heads/master": "e27a7caafbd0da1f0fdba6c944875a6de09eab37",
         "refs/pull/1/head": "674052f9279896aac1eb75adc7c3ec3d97716ab0",
         "refs/pull/14/head": "36c723a62f2d966b9baeb18b9584c51df16ee7a8",
         "refs/pull/28/head": "ade417581d35c59016b78791d7fb54bf393d3c21",
@@ -287,6 +292,29 @@
       "subpage": "apps/lsmo.html",
       "hosted_on": "github.com",
       "logo": "https://raw.githubusercontent.com/yakutovicha/aiidalab-epfl-lsmo/master/miscellaneous/logos/LSMO.png"
+    },
+    "nanoribbons": {
+      "git_url": "https://github.com/cpignedoli/aiidalab-empa-nanoribbons",
+      "meta_url": "https://raw.githubusercontent.com/cpignedoli/aiidalab-empa-nanoribbons/master/metadata.json",
+      "categories": [
+        "quantum"
+      ],
+      "name": "nanoribbons",
+      "metainfo": {
+        "description": "Tools for graphene nanoribbons, developed at the nanotech@surfaces laboratory, Empa",
+        "title": "Empa nanotech@surfaces Laboratory - Graphene nanoribbons",
+        "version": "0.1.1",
+        "logo": "miscellaneous/logos/empa.png",
+        "state": "registered",
+        "authors": "cpignedoli"
+      },
+      "gitinfo": {
+        "HEAD": "194692d0d9581ba889f14fbabf87aace166a7e5c",
+        "refs/heads/master": "194692d0d9581ba889f14fbabf87aace166a7e5c"
+      },
+      "subpage": "apps/nanoribbons.html",
+      "hosted_on": "github.com",
+      "logo": "https://raw.githubusercontent.com/cpignedoli/aiidalab-empa-nanoribbons/master/miscellaneous/logos/empa.png"
     },
     "optimade": {
       "git_url": "https://github.com/aiidalab/aiidalab-optimade.git",
@@ -402,8 +430,8 @@
         "authors": "eimrek"
       },
       "gitinfo": {
-        "HEAD": "7df64937ff305400e3d3e26c58e5a1b24586e910",
-        "refs/heads/master": "7df64937ff305400e3d3e26c58e5a1b24586e910",
+        "HEAD": "def390d1e1bb66f3d49994a06869c3d89e6ec888",
+        "refs/heads/master": "def390d1e1bb66f3d49994a06869c3d89e6ec888",
         "refs/pull/1/head": "6c71a75202811fd76d654d62e2b917ef5ce7882d",
         "refs/tags/v0.1": "c69eac1056bb672272d962cc48e4dc7242dde375"
       },
@@ -440,16 +468,16 @@
       ],
       "name": "surfaces",
       "metainfo": {
-        "description": "Tools for graphene nanoribbons, developed at the nanotech@surfaces laboratory, Empa",
-        "title": "Empa nanotech@surfaces Laboratory - Graphene nanoribbons",
+        "description": "Tools for on-surface chemistry, developed at the nanotech@surfaces laboratory, Empa",
+        "title": "Empa nanotech@surfaces Laboratory - On-Surface Chemistry",
         "version": "0.1.1",
         "logo": "miscellaneous/logos/empa.png",
         "state": "registered",
         "authors": "cpignedoli"
       },
       "gitinfo": {
-        "HEAD": "19f187030e6f29dc52ec0dc7f17ffd93f35ada29",
-        "refs/heads/master": "19f187030e6f29dc52ec0dc7f17ffd93f35ada29",
+        "HEAD": "8ae5872faf940c4497eb7e2baff9f8002568824a",
+        "refs/heads/master": "8ae5872faf940c4497eb7e2baff9f8002568824a",
         "refs/pull/10/head": "ca56b4459d857c7a4961cd22b120a4924f469b33",
         "refs/pull/11/head": "84c56ef7cc102811d8363ae5c74b2d219d63fc23",
         "refs/pull/12/head": "6ecfcaab4f1108e5ec053cff618ff2cceeea25c6",
