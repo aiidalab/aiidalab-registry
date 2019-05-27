@@ -19,6 +19,11 @@
         "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-epfl-supercomputers/master/metadata.json",
         "categories": ["setup"]
     },
+    "nanoribbons": {
+        "git_url": "https://github.com/cpignedoli/aiidalab-empa-nanoribbons",
+        "meta_url": "https://raw.githubusercontent.com/cpignedoli/aiidalab-empa-nanoribbons/master/metadata.json",
+        "categories": ["quantum"]
+    },
     "surfaces": {
         "git_url": "https://github.com/cpignedoli/aiidalab-empa-surfaces",
         "meta_url": "https://raw.githubusercontent.com/cpignedoli/aiidalab-empa-surfaces/master/metadata.json",
