@@ -1,9 +1,9 @@
-# AiiDA Lab Application Registry
+# AiiDA lab Application Registry
 
-This repository contains the **source code** of the official App registry for the [AiiDA Lab](aiidalab.materialscloud.org).
+This repository contains the **source code** of the official App registry for the [AiiDA lab](aiidalab.materialscloud.org).
 
 <p align="center">
- <a href="http://aiidalab.github.io/aiidalab-registry" rel="Go to AiiDA Lab app registry">
+ <a href="http://aiidalab.github.io/aiidalab-registry" rel="Go to AiiDA lab app registry">
   <img src="make_ghpages/static/gotobutton.svg">
  </a>
 </p>
@@ -28,7 +28,7 @@ This repository contains the **source code** of the official App registry for th
     **Note**: The fields `title` and `description` are mandatory.
 
     **Note**: If you used the
-    [AiiDA Lab App cookie cutter](https://github.com/aiidalab/aiidalab-app-cutter)
+    [AiiDA lab App cookie cutter](https://github.com/aiidalab/aiidalab-app-cutter)
     to create your app, you should already have `metadata.json` in your repository
     and need only update it.
 
@@ -45,7 +45,7 @@ This repository contains the **source code** of the official App registry for th
     ```
 
 Your app will show up in the
-[AiiDA Lab App Store](https://github.com/aiidalab/aiidalab-home/blob/master/appstore.ipynb)
+[AiiDA lab App Store](https://github.com/aiidalab/aiidalab-home/blob/master/appstore.ipynb)
 once your pull request is merged.
 
 ### Valid keys for `metadata.json`
@@ -62,7 +62,7 @@ The description will be displayed on the detail page of your app.
 
 The version will be displayed on the detail page of your app.
 This is also used by the
-[AiiDA Lab App Store](https://github.com/aiidalab/aiidalab-home/blob/master/appstore.ipynb).
+[AiiDA lab App Store](https://github.com/aiidalab/aiidalab-home/blob/master/appstore.ipynb).
 
 #### authors
 
