@@ -8,20 +8,16 @@ cache: pip
 # We are using travis in order to build and deploy the page to the gh-pages branch.
 # Using encrypted deploy key as described here:
 # https://gist.github.com/domenic/ec8b0fc8ab45f39403dd#get-encrypted-credentials
-env: 
-  global: 
-  - ENCRYPTION_LABEL: "b78f01f07a2c"
-  - COMMIT_AUTHOR_EMAIL: deploy@travis-ci.org
+env:
+  - RUN_TYPE="tests"
+  - RUN_TYPE="build" ENCRYPTION_LABEL="b78f01f07a2c" COMMIT_AUTHOR_EMAIL="deploy@travis-ci.org"
 
 before_install:
-  - cd make_ghpages
   # Update pip, setuptools, and wheel
   - pip install -U pip setuptools wheel
 
 install:
   # Install needed dependencies
-  - pip install -r requirements.txt
+  - pip install -r ./make_ghpages/requirements.txt
 
-script: 
-  - python make_pages.py  
-  - cd ../.travis-data && ./deploy.sh
+script: .travis-data/run_script.sh
