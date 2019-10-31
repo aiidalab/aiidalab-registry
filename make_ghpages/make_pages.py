@@ -118,6 +118,12 @@ def validate_categories(categories, raw_data):
 def get_logo_url(logo_rel_path, meta_url):
     logo_url = meta_url[:-len('metadata.json')] + logo_rel_path
 
+    # Validate url to logo
+    try:
+        urlopen(logo_url, timeout=TIMEOUT_SECONDS)
+    except Exception:
+        raise exc.MissingLogo("Value for 'logo' in your app's metadata.json may be wrong: '{}'".format(logo_url))
+
     return logo_url
 
 
