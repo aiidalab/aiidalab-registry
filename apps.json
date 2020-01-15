@@ -20,23 +20,18 @@
         "categories": ["setup"]
     },
     "nanoribbons": {
-        "git_url": "https://github.com/cpignedoli/aiidalab-empa-nanoribbons",
-        "meta_url": "https://raw.githubusercontent.com/cpignedoli/aiidalab-empa-nanoribbons/master/metadata.json",
+        "git_url": "https://github.com/nanotech-empa/aiidalab-empa-nanoribbons",
+        "meta_url": "https://raw.githubusercontent.com/nanotech-empa/aiidalab-empa-nanoribbons/master/metadata.json",
         "categories": ["quantum"]
     },
     "surfaces": {
-        "git_url": "https://github.com/cpignedoli/aiidalab-empa-surfaces",
-        "meta_url": "https://raw.githubusercontent.com/cpignedoli/aiidalab-empa-surfaces/master/metadata.json",
+        "git_url": "https://github.com/nanotech-empa/aiidalab-empa-surfaces",
+        "meta_url": "https://raw.githubusercontent.com/nanotech-empa/aiidalab-empa-surfaces/master/metadata.json",
         "categories": ["quantum"]
     },
-    "reactions": {
-        "git_url": "https://github.com/edditler/aiidalab-empa-reactions",
-        "meta_url": "https://raw.githubusercontent.com/edditler/aiidalab-empa-reactions/master/metadata.json",
-        "categories": ["quantum"]
-    },    
     "scanning_probe": {
-        "git_url": "https://github.com/eimrek/aiidalab-empa-scanning-probe",
-        "meta_url": "https://raw.githubusercontent.com/eimrek/aiidalab-empa-scanning-probe/master/metadata.json",
+        "git_url": "https://github.com/nanotech-empa/aiidalab-empa-scanning-probe",
+        "meta_url": "https://raw.githubusercontent.com/nanotech-empa/aiidalab-empa-scanning-probe/master/metadata.json",
         "categories": ["quantum"]
     },
     "units": {
