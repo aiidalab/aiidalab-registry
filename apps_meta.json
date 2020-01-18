@@ -89,18 +89,43 @@
         "state": "stable"
       },
       "gitinfo": {
-        "HEAD": "97219f99e4c2e67b3d3be935ab7c7606b751dc19",
-        "refs/heads/aiida-1.0": "cfc17c13fcd49582854a2df0720dc0a5b8800bcd",
-        "refs/heads/develop": "97219f99e4c2e67b3d3be935ab7c7606b751dc19",
-        "refs/heads/master": "97219f99e4c2e67b3d3be935ab7c7606b751dc19",
+        "HEAD": "ece1bff88c5c6e35feb1475bbe5b45f0faccaa18",
+        "refs/heads/aiida-1.0": "0c8d56541a7897788ce025a74cb167f787b8dfe8",
+        "refs/heads/develop": "ece1bff88c5c6e35feb1475bbe5b45f0faccaa18",
+        "refs/heads/master": "ece1bff88c5c6e35feb1475bbe5b45f0faccaa18",
+        "refs/heads/qe-revision": "2c993ba1b1ca941d43793519910b0ced3bcf0e2d",
+        "refs/heads/setup-code-widget": "4affb3f950ed91e29dfc0e305904c474f4ce6d36",
+        "refs/heads/structure_editor": "33b34ba1be43e07d862dac94ca6209b81274ec3a",
+        "refs/heads/trajectory_visualizer": "a786b48c883a680f3ff04c83175912a1b989b43a",
         "refs/pull/10/head": "7de3d88c63708d8fb7fbe749d2270178024631ec",
         "refs/pull/11/head": "2a430d1fa0115454b29a6e084e544f52108f9b68",
-        "refs/pull/11/merge": "9381ccfef02d36d4da921743ce7e87cba15708ab",
+        "refs/pull/11/merge": "77009c52ecdfbe5f1af45fed8fa398ef41bc9acd",
         "refs/pull/12/head": "97570dbd6578f77d5a656af231de258cfecb6ea3",
         "refs/pull/14/head": "4fe95263ed4bd6d9d1a8b224e05803354265cedd",
         "refs/pull/18/head": "9d0c24932e32678356209a8dab07a1f1f8bd7efe",
         "refs/pull/23/head": "fce2a53931b6879f2786268da4a40e8c57065b1b",
+        "refs/pull/25/head": "441e73c4b3e662e11cfa813e96f93258b7f6314e",
+        "refs/pull/26/head": "0c8d56541a7897788ce025a74cb167f787b8dfe8",
+        "refs/pull/26/merge": "987c9aa5f91c032acdaa0d35c45f308d115230b8",
+        "refs/pull/28/head": "2f1f396ab251c98b7473458b7f8a4f4bb4b2b639",
+        "refs/pull/29/head": "4cace15b8b8d631a6c0a8981f1e64397274f421a",
+        "refs/pull/30/head": "284f210f452a14af1f4ee45069a47a3647d4ef64",
+        "refs/pull/32/head": "a786b48c883a680f3ff04c83175912a1b989b43a",
+        "refs/pull/32/merge": "6dd55ff51963eec7cba3abb01021772c601dfba6",
+        "refs/pull/33/head": "bdaf6a99fa91eabaa68c45dd73fc4640d7b18684",
+        "refs/pull/34/head": "a3d3891fcf39e2843f847cecabc89cff77a5926b",
+        "refs/pull/35/head": "8db8877bce3a71fc993e463f2f274fe1d07d1ed2",
+        "refs/pull/37/head": "d0b5028c651e8373e2b37156e6a14fc53425b004",
+        "refs/pull/39/head": "d135c068dc5f1054b667c3e31df6b8be5ccd6352",
         "refs/pull/4/head": "6a4db6b6659d82eb3d690242bf3e5a4f959baa10",
+        "refs/pull/40/head": "53966c2e71946f4774713ff075a5867ba462a4f0",
+        "refs/pull/41/head": "d3e62d68659deaa2299c112940437ddc5924365e",
+        "refs/pull/42/head": "c785514413992e5d0d655d09ce72cd0ceca89932",
+        "refs/pull/44/head": "bd98ae49a277728ea0d848a88b58a7bf8f0989a7",
+        "refs/pull/47/head": "33b34ba1be43e07d862dac94ca6209b81274ec3a",
+        "refs/pull/47/merge": "ecbcd5e09396dd5ccaadcaa3fb7c1c4d5057f912",
+        "refs/pull/49/head": "22bf2cffdd067c0cb8f2ffe0040835abc51c144e",
+        "refs/pull/50/head": "132c50ee9efa32aa99e5e686cdd9ba05bdd80977",
         "refs/pull/6/head": "a547bb269ecca26198462f16ef38c00b842ff35e",
         "refs/pull/9/head": "048a8e5d27557d767dbd2d784a26f1801d55683a",
         "refs/tags/v0.1.0a0": "b8047221833000a51bb8f21ce7304353af1297e0",
@@ -119,7 +144,13 @@
         "refs/tags/v1.0.0a1": "ceb9cd6365b02542bd2893998f719321f338e634",
         "refs/tags/v1.0.0a1^{}": "b4fdc0373d73b253a5d62928085ea97028aad8b9",
         "refs/tags/v1.0.0a2": "d11bc85adb690145f1b67b0cebef6be94b8c7134",
-        "refs/tags/v1.0.0a2^{}": "cfc17c13fcd49582854a2df0720dc0a5b8800bcd"
+        "refs/tags/v1.0.0a2^{}": "cfc17c13fcd49582854a2df0720dc0a5b8800bcd",
+        "refs/tags/v1.0.0a5": "7557602350b66549f8735829b51a27b582ae03f2",
+        "refs/tags/v1.0.0a5^{}": "aa49575f0745fb42f8e29c4c11fde12c4203521c",
+        "refs/tags/v1.0.0a6": "35e34760933fec7ede0e48bf89f0f137af4bc550",
+        "refs/tags/v1.0.0a6^{}": "1afe6df67b3eb374663524fe81093b6b537cbb5b",
+        "refs/tags/v1.0.0a7": "2446a52afbef4ba7cf188f1e199d5c50ab57a90b",
+        "refs/tags/v1.0.0a7^{}": "7e4295a374f7f171f6f67b075e3ca77d976d3093"
       },
       "subpage": "apps/aiidalab-widgets-base.html",
       "hosted_on": "github.com",
@@ -162,13 +193,16 @@
         "authors": "AiiDA Lab Team"
       },
       "gitinfo": {
-        "HEAD": "47e4faf8354a9237a497c0caaa813e00ed0b7b52",
-        "refs/heads/aiida-1.0": "ebe4fac773245c31331e221759564a41376d3a26",
-        "refs/heads/develop": "e61c3b68acdcd9fba11e600a1925b4bfe80b8043",
-        "refs/heads/improve_examples": "619d491842ede29aaafd7f81fa6aa83c4d3e8507",
-        "refs/heads/master": "47e4faf8354a9237a497c0caaa813e00ed0b7b52",
-        "refs/heads/test": "af6b73393b12a8b29edea7f710cfc84fa755ff83",
-        "refs/pull/1/head": "619d491842ede29aaafd7f81fa6aa83c4d3e8507"
+        "HEAD": "38eaa7643d79cbf16f7a40046e14de27e37d3319",
+        "refs/heads/aiida-1.0": "ea4a7df03084596367a50c2a4f259011c51d3046",
+        "refs/heads/develop": "38eaa7643d79cbf16f7a40046e14de27e37d3319",
+        "refs/heads/master": "38eaa7643d79cbf16f7a40046e14de27e37d3319",
+        "refs/pull/1/head": "619d491842ede29aaafd7f81fa6aa83c4d3e8507",
+        "refs/pull/10/head": "ea4a7df03084596367a50c2a4f259011c51d3046",
+        "refs/pull/10/merge": "26d97190da602e12c0decf529fa973fb7ce3d2b5",
+        "refs/pull/5/head": "b9e390702ab4713ca17e2585c06c55cf257eac12",
+        "refs/pull/6/head": "29981069167ad01cace38aadf6f4bf7ba2f8a898",
+        "refs/pull/9/head": "b8083df149baba90d1cbefbf6e1f605e51a946c0"
       },
       "subpage": "apps/calcexamples.html",
       "hosted_on": "github.com"
@@ -246,12 +280,14 @@
       },
       "gitinfo": {
         "HEAD": "e27a7caafbd0da1f0fdba6c944875a6de09eab37",
-        "refs/heads/aiida_v1.0": "6292796d9b9c11f9891316fc888be8aea61e3c2a",
+        "refs/heads/aiida_v1.0": "d75e679e11f8446792426295fa2bf1685465bf33",
         "refs/heads/develop": "e27a7caafbd0da1f0fdba6c944875a6de09eab37",
         "refs/heads/master": "e27a7caafbd0da1f0fdba6c944875a6de09eab37",
         "refs/pull/1/head": "674052f9279896aac1eb75adc7c3ec3d97716ab0",
         "refs/pull/14/head": "36c723a62f2d966b9baeb18b9584c51df16ee7a8",
         "refs/pull/28/head": "ade417581d35c59016b78791d7fb54bf393d3c21",
+        "refs/pull/29/head": "d75e679e11f8446792426295fa2bf1685465bf33",
+        "refs/pull/29/merge": "11ff6ac60872d5dd60372a3f1a8c5f8d31f14e95",
         "refs/pull/3/head": "172e2065562290dcc8e286250ea0110882b06d43",
         "refs/pull/4/head": "f4844d23d4a915e5005614446f7f174a3829b193",
         "refs/pull/4/merge": "a4591bc0ba706cbc589ce4f7e203f82d021a560c",
@@ -281,6 +317,7 @@
       },
       "gitinfo": {
         "HEAD": "4d7293b73cac2308eaf09cbc564adfc893cc89d1",
+        "refs/heads/aiida_1.0": "104a597669be5451dea69f2f50153b2c3ae9b324",
         "refs/heads/develop": "a6d4ba864edeb8cbe1fa8bcadcc3d32d944f50c6",
         "refs/heads/master": "4d7293b73cac2308eaf09cbc564adfc893cc89d1",
         "refs/heads/test": "4b17e6df3c7704e6328bdf91d10c9750ed70b6d8",
@@ -294,8 +331,8 @@
       "logo": "https://raw.githubusercontent.com/yakutovicha/aiidalab-epfl-lsmo/master/miscellaneous/logos/LSMO.png"
     },
     "nanoribbons": {
-      "git_url": "https://github.com/cpignedoli/aiidalab-empa-nanoribbons",
-      "meta_url": "https://raw.githubusercontent.com/cpignedoli/aiidalab-empa-nanoribbons/master/metadata.json",
+      "git_url": "https://github.com/nanotech-empa/aiidalab-empa-nanoribbons",
+      "meta_url": "https://raw.githubusercontent.com/nanotech-empa/aiidalab-empa-nanoribbons/master/metadata.json",
       "categories": [
         "quantum"
       ],
@@ -306,15 +343,17 @@
         "version": "0.1.1",
         "logo": "miscellaneous/logos/empa.png",
         "state": "registered",
-        "authors": "cpignedoli"
+        "authors": "nanotech-empa"
       },
       "gitinfo": {
-        "HEAD": "194692d0d9581ba889f14fbabf87aace166a7e5c",
-        "refs/heads/master": "194692d0d9581ba889f14fbabf87aace166a7e5c"
+        "HEAD": "f41f12d6068e0c7a9828a9efe9a33fd962b651eb",
+        "refs/heads/aiida_1.0_migration": "21dd72027eaed91488b4a2e352aa4621576a67b1",
+        "refs/heads/master": "f41f12d6068e0c7a9828a9efe9a33fd962b651eb",
+        "refs/pull/1/head": "21dd72027eaed91488b4a2e352aa4621576a67b1"
       },
       "subpage": "apps/nanoribbons.html",
       "hosted_on": "github.com",
-      "logo": "https://raw.githubusercontent.com/cpignedoli/aiidalab-empa-nanoribbons/master/miscellaneous/logos/empa.png"
+      "logo": "https://raw.githubusercontent.com/nanotech-empa/aiidalab-empa-nanoribbons/master/miscellaneous/logos/empa.png"
     },
     "optimade": {
       "git_url": "https://github.com/aiidalab/aiidalab-optimade.git",
@@ -326,16 +365,23 @@
       "metainfo": {
         "title": "OPTiMaDe client",
         "description": "AiiDA Lab App that implements an OPTiMaDe client",
-        "version": "0.2-alpha",
+        "version": "1.0-alpha",
         "authors": "AiiDA Lab Team",
         "state": "development",
         "logo": "img/optimade_square.png",
         "external_url": "http://www.optimade.org"
       },
       "gitinfo": {
-        "HEAD": "0fee2992caff3ca0f5bb9328e8bf747fa7475f72",
-        "refs/heads/develop": "94dce533408db2d9f1716d6c8a4cb92ba962d7cf",
-        "refs/heads/master": "0fee2992caff3ca0f5bb9328e8bf747fa7475f72"
+        "HEAD": "9542142f93f18b936bc376ded3bbfd85d33092da",
+        "refs/heads/develop": "9542142f93f18b936bc376ded3bbfd85d33092da",
+        "refs/heads/master": "9542142f93f18b936bc376ded3bbfd85d33092da",
+        "refs/heads/old_aiidalab_cwa_user": "a9ce0ea1c4ca5cadc4374c3dbcdee554810ee822",
+        "refs/heads/reorder_package": "0769af1f03c123586e1b4309e452957de2735e34",
+        "refs/pull/1/head": "9fd3597c4cca320f9a390f438c7c2774f2769220",
+        "refs/pull/2/head": "9542142f93f18b936bc376ded3bbfd85d33092da",
+        "refs/pull/3/head": "9542142f93f18b936bc376ded3bbfd85d33092da",
+        "refs/pull/4/head": "0769af1f03c123586e1b4309e452957de2735e34",
+        "refs/pull/4/merge": "bc1a5b9d523d357cbae1693f34eab16ea4cec9c7"
       },
       "subpage": "apps/optimade.html",
       "hosted_on": "github.com",
@@ -362,6 +408,30 @@
       "subpage": "apps/persistence-homology.html",
       "hosted_on": "github.com"
     },
+    "quantum-espresso": {
+      "git_url": "https://github.com/aiidalab/aiidalab-qe.git",
+      "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-qe/master/metadata.json",
+      "categories": [
+        "quantum"
+      ],
+      "name": "quantum-espresso",
+      "metainfo": {
+        "description": "Perform Quantum ESPRESSO calculations",
+        "title": "Quantum ESPRESSO",
+        "version": "0.1.0",
+        "authors": "Carl Simon Adorf, Aliaksandr Yakutovich",
+        "logo": "miscellaneous/logos/QE.jpg",
+        "state": "development"
+      },
+      "gitinfo": {
+        "HEAD": "50e0972631f641420467371e21437b2581a5b63c",
+        "refs/heads/develop": "50e0972631f641420467371e21437b2581a5b63c",
+        "refs/heads/master": "50e0972631f641420467371e21437b2581a5b63c"
+      },
+      "subpage": "apps/quantum-espresso.html",
+      "hosted_on": "github.com",
+      "logo": "https://raw.githubusercontent.com/aiidalab/aiidalab-qe/master/miscellaneous/logos/QE.jpg"
+    },
     "quantum-mobile": {
       "git_url": "https://github.com/aiidalab/aiidalab-quantum-mobile.git",
       "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-quantum-mobile/master/metadata.json",
@@ -385,38 +455,9 @@
       "hosted_on": "github.com",
       "logo": "https://raw.githubusercontent.com/aiidalab/aiidalab-quantum-mobile/master/static/logo.png"
     },
-    "reactions": {
-      "git_url": "https://github.com/edditler/aiidalab-empa-reactions",
-      "meta_url": "https://raw.githubusercontent.com/edditler/aiidalab-empa-reactions/master/metadata.json",
-      "categories": [
-        "quantum"
-      ],
-      "name": "reactions",
-      "metainfo": {
-        "description": "Empa nanotech@surfaces Laboratory",
-        "title": "Empa nanotech@surfaces Laboratory - Reactions",
-        "version": "0.1",
-        "logo": "miscellaneous/logos/empa.png",
-        "state": "registered",
-        "authors": "edditler"
-      },
-      "gitinfo": {
-        "HEAD": "d6dc00cae81530e46a68202926100f5aad554960",
-        "refs/heads/NEB": "09398e98df538910a5eaed65285ad8116c884216",
-        "refs/heads/master": "d6dc00cae81530e46a68202926100f5aad554960",
-        "refs/pull/1/head": "f5cd454fda990cc12bdd9e1ba5a0d1f76f95bc9f",
-        "refs/pull/2/head": "f19381cf199ab6d25933efd4917bb35d9a612a7f",
-        "refs/pull/3/head": "425d1fda6dfb72fbb8b4b46ae2425e8b52408c3a",
-        "refs/pull/4/head": "625a4b02ef1baa33f2c6e7ad60ba9b4c685a843b",
-        "refs/pull/5/head": "269f83a4c881b37bd6432671f2d04b211bcd7629"
-      },
-      "subpage": "apps/reactions.html",
-      "hosted_on": "github.com",
-      "logo": "https://raw.githubusercontent.com/edditler/aiidalab-empa-reactions/master/miscellaneous/logos/empa.png"
-    },
     "scanning_probe": {
-      "git_url": "https://github.com/eimrek/aiidalab-empa-scanning-probe",
-      "meta_url": "https://raw.githubusercontent.com/eimrek/aiidalab-empa-scanning-probe/master/metadata.json",
+      "git_url": "https://github.com/nanotech-empa/aiidalab-empa-scanning-probe",
+      "meta_url": "https://raw.githubusercontent.com/nanotech-empa/aiidalab-empa-scanning-probe/master/metadata.json",
       "categories": [
         "quantum"
       ],
@@ -427,17 +468,21 @@
         "version": "0.1",
         "logo": "miscellaneous/logos/empa.png",
         "state": "registered",
-        "authors": "eimrek"
+        "authors": "nanotech-empa"
       },
       "gitinfo": {
-        "HEAD": "def390d1e1bb66f3d49994a06869c3d89e6ec888",
-        "refs/heads/master": "def390d1e1bb66f3d49994a06869c3d89e6ec888",
+        "HEAD": "08870b0f96c1aeb279f8e6cfab318f8df8d32bf6",
+        "refs/heads/aiida_1.0_migration": "4f6a9ceb664aa49aa2e9c726bcde738591ac0973",
+        "refs/heads/master": "08870b0f96c1aeb279f8e6cfab318f8df8d32bf6",
         "refs/pull/1/head": "6c71a75202811fd76d654d62e2b917ef5ce7882d",
-        "refs/tags/v0.1": "c69eac1056bb672272d962cc48e4dc7242dde375"
+        "refs/pull/2/head": "cd8570f5b8ac03e9fa5fe6be4184290df0d7917c",
+        "refs/tags/v0.1": "c69eac1056bb672272d962cc48e4dc7242dde375",
+        "refs/tags/v0.2": "1bd53e71e729a700b84ee8241ddf0ac6a89b725a",
+        "refs/tags/v1.0": "e62587b6480b2a8e3e107db859f10b144f6e7c24"
       },
       "subpage": "apps/scanning_probe.html",
       "hosted_on": "github.com",
-      "logo": "https://raw.githubusercontent.com/eimrek/aiidalab-empa-scanning-probe/master/miscellaneous/logos/empa.png"
+      "logo": "https://raw.githubusercontent.com/nanotech-empa/aiidalab-empa-scanning-probe/master/miscellaneous/logos/empa.png"
     },
     "structureimporter": {
       "git_url": "https://github.com/aiidalab/aiidalab-manage-structures",
@@ -461,8 +506,8 @@
       "hosted_on": "github.com"
     },
     "surfaces": {
-      "git_url": "https://github.com/cpignedoli/aiidalab-empa-surfaces",
-      "meta_url": "https://raw.githubusercontent.com/cpignedoli/aiidalab-empa-surfaces/master/metadata.json",
+      "git_url": "https://github.com/nanotech-empa/aiidalab-empa-surfaces",
+      "meta_url": "https://raw.githubusercontent.com/nanotech-empa/aiidalab-empa-surfaces/master/metadata.json",
       "categories": [
         "quantum"
       ],
@@ -473,11 +518,13 @@
         "version": "0.1.1",
         "logo": "miscellaneous/logos/empa.png",
         "state": "registered",
-        "authors": "cpignedoli"
+        "authors": "nanotech-empa"
       },
       "gitinfo": {
-        "HEAD": "8ae5872faf940c4497eb7e2baff9f8002568824a",
-        "refs/heads/master": "8ae5872faf940c4497eb7e2baff9f8002568824a",
+        "HEAD": "def4e269cb7fcf3572a286e71b12f4fc854829dd",
+        "refs/heads/aiida_1.0_migration": "0d714d48bcacb35ef39ac9b2556e8f34b0dc3271",
+        "refs/heads/develop": "03d54420f695686da95a1a7c476f0e8c5a4ce963",
+        "refs/heads/master": "def4e269cb7fcf3572a286e71b12f4fc854829dd",
         "refs/pull/10/head": "ca56b4459d857c7a4961cd22b120a4924f469b33",
         "refs/pull/11/head": "84c56ef7cc102811d8363ae5c74b2d219d63fc23",
         "refs/pull/12/head": "6ecfcaab4f1108e5ec053cff618ff2cceeea25c6",
@@ -505,6 +552,8 @@
         "refs/pull/32/head": "0cc9f41f74151510cb85dc9e96ef90697a669318",
         "refs/pull/33/head": "77b715a3c786c0b61129ca66f7b9ae1fb6f84b4c",
         "refs/pull/34/head": "9a2548168100a2c1ce5d2555b62c39ea6b670fc5",
+        "refs/pull/35/head": "0d714d48bcacb35ef39ac9b2556e8f34b0dc3271",
+        "refs/pull/35/merge": "c43961d79cf65bc1443621cf0ca704325bf4ecd2",
         "refs/pull/4/head": "c18354e38c5331c55f0e2fa5d085a0536cc4695b",
         "refs/pull/5/head": "7bd1778998ceae7f484a3451e5bb03719fb305f0",
         "refs/pull/6/head": "c1e4ee1353070020c7e60260d010883d3948fa28",
@@ -517,7 +566,7 @@
       },
       "subpage": "apps/surfaces.html",
       "hosted_on": "github.com",
-      "logo": "https://raw.githubusercontent.com/cpignedoli/aiidalab-empa-surfaces/master/miscellaneous/logos/empa.png"
+      "logo": "https://raw.githubusercontent.com/nanotech-empa/aiidalab-empa-surfaces/master/miscellaneous/logos/empa.png"
     },
     "units": {
       "git_url": "https://github.com/aiidalab/aiidalab-units",
