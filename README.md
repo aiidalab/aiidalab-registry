@@ -1,6 +1,6 @@
 # AiiDA lab Application Registry
 
-This repository contains the **source code** of the official App registry for the [AiiDA lab](aiidalab.materialscloud.org).
+This repository contains the **source code** of the official App registry for the [AiiDA lab](https://www.materialscloud.org/aiidalab).
 
 <p align="center">
  <a href="http://aiidalab.github.io/aiidalab-registry" rel="Go to AiiDA lab app registry">
