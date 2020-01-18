@@ -20,6 +20,8 @@ case "$RUN_TYPE" in
         python "$BUILD_PATH/make_pages.py"
 
         # Deploy
-        "$DEPLOY_PATH/deploy.sh"
+        cd $DEPLOY_PATH
+        "./deploy.sh"
+        cd -
         ;;
 esac
