@@ -73,6 +73,36 @@
       "hosted_on": "github.com",
       "logo": "https://raw.githubusercontent.com/aiidateam/aiida_demos/master/miscellaneous/logos/aiida.png"
     },
+    "aiidalab-optimade": {
+      "git_url": "https://github.com/aiidalab/aiidalab-optimade.git",
+      "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-optimade/master/metadata.json",
+      "categories": [
+        "utilities"
+      ],
+      "name": "aiidalab-optimade",
+      "metainfo": {
+        "title": "OPTiMaDe client",
+        "description": "AiiDA Lab App that implements an OPTiMaDe client",
+        "version": "1.0-alpha",
+        "authors": "AiiDA Lab Team",
+        "state": "development",
+        "logo": "img/optimade_square.png",
+        "external_url": "http://www.optimade.org"
+      },
+      "gitinfo": {
+        "HEAD": "9542142f93f18b936bc376ded3bbfd85d33092da",
+        "refs/heads/develop": "0cba384d36db3b513006b66d00e91cdf00235b00",
+        "refs/heads/master": "9542142f93f18b936bc376ded3bbfd85d33092da",
+        "refs/heads/old_aiidalab_cwa_user": "a9ce0ea1c4ca5cadc4374c3dbcdee554810ee822",
+        "refs/pull/1/head": "9fd3597c4cca320f9a390f438c7c2774f2769220",
+        "refs/pull/2/head": "9542142f93f18b936bc376ded3bbfd85d33092da",
+        "refs/pull/3/head": "9542142f93f18b936bc376ded3bbfd85d33092da",
+        "refs/pull/4/head": "d4a247e77d549b5956ff540801f1db997d44512c"
+      },
+      "subpage": "apps/aiidalab-optimade.html",
+      "hosted_on": "github.com",
+      "logo": "https://raw.githubusercontent.com/aiidalab/aiidalab-optimade/master/img/optimade_square.png"
+    },
     "aiidalab-widgets-base": {
       "git_url": "https://github.com/aiidalab/aiidalab-widgets-base.git",
       "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-widgets-base/master/metadata.json",
@@ -90,12 +120,11 @@
       },
       "gitinfo": {
         "HEAD": "ece1bff88c5c6e35feb1475bbe5b45f0faccaa18",
-        "refs/heads/aiida-1.0": "0c8d56541a7897788ce025a74cb167f787b8dfe8",
+        "refs/heads/aiida-1.0": "50fe68e0df999825419b162cdb2419dc24ad12bd",
         "refs/heads/develop": "ece1bff88c5c6e35feb1475bbe5b45f0faccaa18",
         "refs/heads/master": "ece1bff88c5c6e35feb1475bbe5b45f0faccaa18",
         "refs/heads/qe-revision": "2c993ba1b1ca941d43793519910b0ced3bcf0e2d",
         "refs/heads/setup-code-widget": "4affb3f950ed91e29dfc0e305904c474f4ce6d36",
-        "refs/heads/structure_editor": "33b34ba1be43e07d862dac94ca6209b81274ec3a",
         "refs/heads/trajectory_visualizer": "a786b48c883a680f3ff04c83175912a1b989b43a",
         "refs/pull/10/head": "7de3d88c63708d8fb7fbe749d2270178024631ec",
         "refs/pull/11/head": "2a430d1fa0115454b29a6e084e544f52108f9b68",
@@ -105,8 +134,8 @@
         "refs/pull/18/head": "9d0c24932e32678356209a8dab07a1f1f8bd7efe",
         "refs/pull/23/head": "fce2a53931b6879f2786268da4a40e8c57065b1b",
         "refs/pull/25/head": "441e73c4b3e662e11cfa813e96f93258b7f6314e",
-        "refs/pull/26/head": "0c8d56541a7897788ce025a74cb167f787b8dfe8",
-        "refs/pull/26/merge": "987c9aa5f91c032acdaa0d35c45f308d115230b8",
+        "refs/pull/26/head": "50fe68e0df999825419b162cdb2419dc24ad12bd",
+        "refs/pull/26/merge": "2b67f682a16cf2a409a638d6d830fe29df67165f",
         "refs/pull/28/head": "2f1f396ab251c98b7473458b7f8a4f4bb4b2b639",
         "refs/pull/29/head": "4cace15b8b8d631a6c0a8981f1e64397274f421a",
         "refs/pull/30/head": "284f210f452a14af1f4ee45069a47a3647d4ef64",
@@ -122,8 +151,7 @@
         "refs/pull/41/head": "d3e62d68659deaa2299c112940437ddc5924365e",
         "refs/pull/42/head": "c785514413992e5d0d655d09ce72cd0ceca89932",
         "refs/pull/44/head": "bd98ae49a277728ea0d848a88b58a7bf8f0989a7",
-        "refs/pull/47/head": "33b34ba1be43e07d862dac94ca6209b81274ec3a",
-        "refs/pull/47/merge": "ecbcd5e09396dd5ccaadcaa3fb7c1c4d5057f912",
+        "refs/pull/47/head": "2268948e39222c6636d595e93194aae2adc354dd",
         "refs/pull/49/head": "22bf2cffdd067c0cb8f2ffe0040835abc51c144e",
         "refs/pull/50/head": "132c50ee9efa32aa99e5e686cdd9ba05bdd80977",
         "refs/pull/6/head": "a547bb269ecca26198462f16ef38c00b842ff35e",
@@ -355,38 +383,6 @@
       "hosted_on": "github.com",
       "logo": "https://raw.githubusercontent.com/nanotech-empa/aiidalab-empa-nanoribbons/master/miscellaneous/logos/empa.png"
     },
-    "optimade": {
-      "git_url": "https://github.com/aiidalab/aiidalab-optimade.git",
-      "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-optimade/master/metadata.json",
-      "categories": [
-        "utilities"
-      ],
-      "name": "optimade",
-      "metainfo": {
-        "title": "OPTiMaDe client",
-        "description": "AiiDA Lab App that implements an OPTiMaDe client",
-        "version": "1.0-alpha",
-        "authors": "AiiDA Lab Team",
-        "state": "development",
-        "logo": "img/optimade_square.png",
-        "external_url": "http://www.optimade.org"
-      },
-      "gitinfo": {
-        "HEAD": "9542142f93f18b936bc376ded3bbfd85d33092da",
-        "refs/heads/develop": "9542142f93f18b936bc376ded3bbfd85d33092da",
-        "refs/heads/master": "9542142f93f18b936bc376ded3bbfd85d33092da",
-        "refs/heads/old_aiidalab_cwa_user": "a9ce0ea1c4ca5cadc4374c3dbcdee554810ee822",
-        "refs/heads/reorder_package": "0769af1f03c123586e1b4309e452957de2735e34",
-        "refs/pull/1/head": "9fd3597c4cca320f9a390f438c7c2774f2769220",
-        "refs/pull/2/head": "9542142f93f18b936bc376ded3bbfd85d33092da",
-        "refs/pull/3/head": "9542142f93f18b936bc376ded3bbfd85d33092da",
-        "refs/pull/4/head": "0769af1f03c123586e1b4309e452957de2735e34",
-        "refs/pull/4/merge": "bc1a5b9d523d357cbae1693f34eab16ea4cec9c7"
-      },
-      "subpage": "apps/optimade.html",
-      "hosted_on": "github.com",
-      "logo": "https://raw.githubusercontent.com/aiidalab/aiidalab-optimade/master/img/optimade_square.png"
-    },
     "persistence-homology": {
       "git_url": "https://github.com/aiidalab/aiidalab-persistence-homology.git",
       "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-persistence-homology/master/metadata.json",
@@ -424,9 +420,9 @@
         "state": "development"
       },
       "gitinfo": {
-        "HEAD": "50e0972631f641420467371e21437b2581a5b63c",
+        "HEAD": "3b2edfa6ca057e0bfd680f18770792dae1039a7e",
         "refs/heads/develop": "50e0972631f641420467371e21437b2581a5b63c",
-        "refs/heads/master": "50e0972631f641420467371e21437b2581a5b63c"
+        "refs/heads/master": "3b2edfa6ca057e0bfd680f18770792dae1039a7e"
       },
       "subpage": "apps/quantum-espresso.html",
       "hosted_on": "github.com",
