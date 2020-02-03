@@ -44,11 +44,6 @@
         "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-backup/master/metadata.json",
         "categories": ["utilities"]
     },
-    "structureimporter": {
-        "git_url": "https://github.com/aiidalab/aiidalab-manage-structures",
-        "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-manage-structures/master/metadata.json",
-        "categories": ["utilities"]
-    },
     "calcexamples": {
         "git_url": "https://github.com/aiidalab/aiidalab-calculation-examples.git",
         "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-calculation-examples/master/metadata.json",
