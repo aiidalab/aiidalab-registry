@@ -83,21 +83,25 @@
       "metainfo": {
         "title": "OPTiMaDe client",
         "description": "AiiDA Lab App that implements an OPTiMaDe client",
-        "version": "1.0-alpha",
+        "version": "1.0-alpha1",
         "authors": "AiiDA Lab Team",
         "state": "development",
         "logo": "img/optimade_square.png",
         "external_url": "http://www.optimade.org"
       },
       "gitinfo": {
-        "HEAD": "9542142f93f18b936bc376ded3bbfd85d33092da",
-        "refs/heads/develop": "0cba384d36db3b513006b66d00e91cdf00235b00",
-        "refs/heads/master": "9542142f93f18b936bc376ded3bbfd85d33092da",
+        "HEAD": "9be5ffa7486ce9a2de2e72bde07f9d53e4255427",
+        "refs/heads/develop": "2da2e5df2fd52be061b85b83c008524ef173f9ce",
+        "refs/heads/master": "9be5ffa7486ce9a2de2e72bde07f9d53e4255427",
         "refs/heads/old_aiidalab_cwa_user": "a9ce0ea1c4ca5cadc4374c3dbcdee554810ee822",
         "refs/pull/1/head": "9fd3597c4cca320f9a390f438c7c2774f2769220",
         "refs/pull/2/head": "9542142f93f18b936bc376ded3bbfd85d33092da",
         "refs/pull/3/head": "9542142f93f18b936bc376ded3bbfd85d33092da",
-        "refs/pull/4/head": "d4a247e77d549b5956ff540801f1db997d44512c"
+        "refs/pull/4/head": "d4a247e77d549b5956ff540801f1db997d44512c",
+        "refs/pull/5/head": "2f99bf331e40841e65f1457b8138844b168098fb",
+        "refs/pull/6/head": "7002399d83342f525580a6a24524268c915bf9e9",
+        "refs/pull/7/head": "5a7a001996564994bd8184269542aebcab09fed0",
+        "refs/pull/8/head": "9b51883670ad4613863413d58acea8f43ff62701"
       },
       "subpage": "apps/aiidalab-optimade.html",
       "hosted_on": "github.com",
@@ -125,6 +129,7 @@
         "refs/heads/master": "ece1bff88c5c6e35feb1475bbe5b45f0faccaa18",
         "refs/heads/qe-revision": "2c993ba1b1ca941d43793519910b0ced3bcf0e2d",
         "refs/heads/setup-code-widget": "4affb3f950ed91e29dfc0e305904c474f4ce6d36",
+        "refs/heads/traj_vis": "eaeda93c4707b3c9b6bb5e7c5f44af242a929b80",
         "refs/heads/trajectory_visualizer": "a786b48c883a680f3ff04c83175912a1b989b43a",
         "refs/pull/10/head": "7de3d88c63708d8fb7fbe749d2270178024631ec",
         "refs/pull/11/head": "2a430d1fa0115454b29a6e084e544f52108f9b68",
@@ -140,7 +145,6 @@
         "refs/pull/29/head": "4cace15b8b8d631a6c0a8981f1e64397274f421a",
         "refs/pull/30/head": "284f210f452a14af1f4ee45069a47a3647d4ef64",
         "refs/pull/32/head": "a786b48c883a680f3ff04c83175912a1b989b43a",
-        "refs/pull/32/merge": "6dd55ff51963eec7cba3abb01021772c601dfba6",
         "refs/pull/33/head": "bdaf6a99fa91eabaa68c45dd73fc4640d7b18684",
         "refs/pull/34/head": "a3d3891fcf39e2843f847cecabc89cff77a5926b",
         "refs/pull/35/head": "8db8877bce3a71fc993e463f2f274fe1d07d1ed2",
@@ -154,6 +158,8 @@
         "refs/pull/47/head": "2268948e39222c6636d595e93194aae2adc354dd",
         "refs/pull/49/head": "22bf2cffdd067c0cb8f2ffe0040835abc51c144e",
         "refs/pull/50/head": "132c50ee9efa32aa99e5e686cdd9ba05bdd80977",
+        "refs/pull/51/head": "eaeda93c4707b3c9b6bb5e7c5f44af242a929b80",
+        "refs/pull/51/merge": "1560e8dfb1bcde63ac0e73fd5ec7d45d9eec0993",
         "refs/pull/6/head": "a547bb269ecca26198462f16ef38c00b842ff35e",
         "refs/pull/9/head": "048a8e5d27557d767dbd2d784a26f1801d55683a",
         "refs/tags/v0.1.0a0": "b8047221833000a51bb8f21ce7304353af1297e0",
@@ -222,12 +228,15 @@
       },
       "gitinfo": {
         "HEAD": "38eaa7643d79cbf16f7a40046e14de27e37d3319",
-        "refs/heads/aiida-1.0": "ea4a7df03084596367a50c2a4f259011c51d3046",
+        "refs/heads/aiida-1.0": "4ed73f6ceecf652cf3f35f5873c2b62f0c61496f",
         "refs/heads/develop": "38eaa7643d79cbf16f7a40046e14de27e37d3319",
         "refs/heads/master": "38eaa7643d79cbf16f7a40046e14de27e37d3319",
+        "refs/heads/migrate-cp2k": "be42bc07351ba02fdd8359412e5c59d32e3bc10b",
         "refs/pull/1/head": "619d491842ede29aaafd7f81fa6aa83c4d3e8507",
-        "refs/pull/10/head": "ea4a7df03084596367a50c2a4f259011c51d3046",
-        "refs/pull/10/merge": "26d97190da602e12c0decf529fa973fb7ce3d2b5",
+        "refs/pull/10/head": "4ed73f6ceecf652cf3f35f5873c2b62f0c61496f",
+        "refs/pull/10/merge": "f6bd05031697bda973237a213124556c85b27c7b",
+        "refs/pull/11/head": "be42bc07351ba02fdd8359412e5c59d32e3bc10b",
+        "refs/pull/11/merge": "1d90aa71be93a4df9596017f6a1ddc6ee9df5d4f",
         "refs/pull/5/head": "b9e390702ab4713ca17e2585c06c55cf257eac12",
         "refs/pull/6/head": "29981069167ad01cace38aadf6f4bf7ba2f8a898",
         "refs/pull/9/head": "b8083df149baba90d1cbefbf6e1f605e51a946c0"
@@ -420,9 +429,11 @@
         "state": "development"
       },
       "gitinfo": {
-        "HEAD": "3b2edfa6ca057e0bfd680f18770792dae1039a7e",
+        "HEAD": "b01ff23d63d3a9a3f1e1094b17b35f5888812654",
         "refs/heads/develop": "50e0972631f641420467371e21437b2581a5b63c",
-        "refs/heads/master": "3b2edfa6ca057e0bfd680f18770792dae1039a7e"
+        "refs/heads/master": "b01ff23d63d3a9a3f1e1094b17b35f5888812654",
+        "refs/heads/optimade": "7bb8eb2aa836fc2c01ac33518b39a6b4bb83fb12",
+        "refs/heads/package": "a4270840b622456e9ce145e4c56a5246ec16494e"
       },
       "subpage": "apps/quantum-espresso.html",
       "hosted_on": "github.com",
@@ -479,27 +490,6 @@
       "subpage": "apps/scanning_probe.html",
       "hosted_on": "github.com",
       "logo": "https://raw.githubusercontent.com/nanotech-empa/aiidalab-empa-scanning-probe/master/miscellaneous/logos/empa.png"
-    },
-    "structureimporter": {
-      "git_url": "https://github.com/aiidalab/aiidalab-manage-structures",
-      "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-manage-structures/master/metadata.json",
-      "categories": [
-        "utilities"
-      ],
-      "name": "structureimporter",
-      "metainfo": {
-        "description": "Application to upload structures from your personal computer or from databases",
-        "title": "Structure Importer",
-        "version": "0.2.2",
-        "state": "registered",
-        "authors": "AiiDA Lab Team"
-      },
-      "gitinfo": {
-        "HEAD": "46bc0bcf7f62b15ea25a8ff494b6c2e62b5b5910",
-        "refs/heads/master": "46bc0bcf7f62b15ea25a8ff494b6c2e62b5b5910"
-      },
-      "subpage": "apps/structureimporter.html",
-      "hosted_on": "github.com"
     },
     "surfaces": {
       "git_url": "https://github.com/nanotech-empa/aiidalab-empa-surfaces",
