@@ -123,14 +123,12 @@
         "state": "stable"
       },
       "gitinfo": {
-        "HEAD": "ece1bff88c5c6e35feb1475bbe5b45f0faccaa18",
-        "refs/heads/aiida-1.0": "50fe68e0df999825419b162cdb2419dc24ad12bd",
-        "refs/heads/develop": "ece1bff88c5c6e35feb1475bbe5b45f0faccaa18",
+        "HEAD": "e26c997bf58ac09064a2ba98113d74a02fe9eb90",
+        "refs/heads/develop": "e26c997bf58ac09064a2ba98113d74a02fe9eb90",
         "refs/heads/master": "ece1bff88c5c6e35feb1475bbe5b45f0faccaa18",
         "refs/heads/qe-revision": "2c993ba1b1ca941d43793519910b0ced3bcf0e2d",
         "refs/heads/setup-code-widget": "4affb3f950ed91e29dfc0e305904c474f4ce6d36",
-        "refs/heads/traj_vis": "eaeda93c4707b3c9b6bb5e7c5f44af242a929b80",
-        "refs/heads/trajectory_visualizer": "a786b48c883a680f3ff04c83175912a1b989b43a",
+        "refs/heads/trajectory_visualizer": "783ed839bcb25117ef99c221a60da52d20070e9b",
         "refs/pull/10/head": "7de3d88c63708d8fb7fbe749d2270178024631ec",
         "refs/pull/11/head": "2a430d1fa0115454b29a6e084e544f52108f9b68",
         "refs/pull/11/merge": "77009c52ecdfbe5f1af45fed8fa398ef41bc9acd",
@@ -140,7 +138,6 @@
         "refs/pull/23/head": "fce2a53931b6879f2786268da4a40e8c57065b1b",
         "refs/pull/25/head": "441e73c4b3e662e11cfa813e96f93258b7f6314e",
         "refs/pull/26/head": "50fe68e0df999825419b162cdb2419dc24ad12bd",
-        "refs/pull/26/merge": "2b67f682a16cf2a409a638d6d830fe29df67165f",
         "refs/pull/28/head": "2f1f396ab251c98b7473458b7f8a4f4bb4b2b639",
         "refs/pull/29/head": "4cace15b8b8d631a6c0a8981f1e64397274f421a",
         "refs/pull/30/head": "284f210f452a14af1f4ee45069a47a3647d4ef64",
@@ -159,7 +156,9 @@
         "refs/pull/49/head": "22bf2cffdd067c0cb8f2ffe0040835abc51c144e",
         "refs/pull/50/head": "132c50ee9efa32aa99e5e686cdd9ba05bdd80977",
         "refs/pull/51/head": "eaeda93c4707b3c9b6bb5e7c5f44af242a929b80",
-        "refs/pull/51/merge": "1560e8dfb1bcde63ac0e73fd5ec7d45d9eec0993",
+        "refs/pull/52/head": "783ed839bcb25117ef99c221a60da52d20070e9b",
+        "refs/pull/52/merge": "be31c40b152521038df3efd270fca43538c365a7",
+        "refs/pull/53/head": "e0ee657a37dfaf1c9d8e9cc728a167e1360bb993",
         "refs/pull/6/head": "a547bb269ecca26198462f16ef38c00b842ff35e",
         "refs/pull/9/head": "048a8e5d27557d767dbd2d784a26f1801d55683a",
         "refs/tags/v0.1.0a0": "b8047221833000a51bb8f21ce7304353af1297e0",
@@ -184,32 +183,13 @@
         "refs/tags/v1.0.0a6": "35e34760933fec7ede0e48bf89f0f137af4bc550",
         "refs/tags/v1.0.0a6^{}": "1afe6df67b3eb374663524fe81093b6b537cbb5b",
         "refs/tags/v1.0.0a7": "2446a52afbef4ba7cf188f1e199d5c50ab57a90b",
-        "refs/tags/v1.0.0a7^{}": "7e4295a374f7f171f6f67b075e3ca77d976d3093"
+        "refs/tags/v1.0.0a7^{}": "7e4295a374f7f171f6f67b075e3ca77d976d3093",
+        "refs/tags/v1.0.0a8": "df04422b6de72c0101a6a4049fa2fcd074948d08",
+        "refs/tags/v1.0.0a8^{}": "e26c997bf58ac09064a2ba98113d74a02fe9eb90"
       },
       "subpage": "apps/aiidalab-widgets-base.html",
       "hosted_on": "github.com",
       "logo": "https://raw.githubusercontent.com/aiidalab/aiidalab-widgets-base/master/miscellaneous/logos/aiidalab.png"
-    },
-    "backup": {
-      "git_url": "https://github.com/aiidalab/aiidalab-backup",
-      "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-backup/master/metadata.json",
-      "categories": [
-        "utilities"
-      ],
-      "name": "backup",
-      "metainfo": {
-        "description": "Materials Cloud Backup App",
-        "title": "Backup",
-        "version": "0.1-alpha",
-        "state": "registered",
-        "authors": "AiiDA Lab Team"
-      },
-      "gitinfo": {
-        "HEAD": "62591ae7593d0640514f057643f4e762ca2d3e9e",
-        "refs/heads/master": "62591ae7593d0640514f057643f4e762ca2d3e9e"
-      },
-      "subpage": "apps/backup.html",
-      "hosted_on": "github.com"
     },
     "calcexamples": {
       "git_url": "https://github.com/aiidalab/aiidalab-calculation-examples.git",
@@ -316,16 +296,18 @@
         "state": "registered"
       },
       "gitinfo": {
-        "HEAD": "e27a7caafbd0da1f0fdba6c944875a6de09eab37",
+        "HEAD": "61ff920588510e1567874d81062cbda0937e64a2",
         "refs/heads/aiida_v1.0": "d75e679e11f8446792426295fa2bf1685465bf33",
-        "refs/heads/develop": "e27a7caafbd0da1f0fdba6c944875a6de09eab37",
+        "refs/heads/develop": "61ff920588510e1567874d81062cbda0937e64a2",
         "refs/heads/master": "e27a7caafbd0da1f0fdba6c944875a6de09eab37",
+        "refs/heads/move_apps_to_aiidalab": "77b033d03047c9dd889ba19aefb79f9cc706e0dc",
         "refs/pull/1/head": "674052f9279896aac1eb75adc7c3ec3d97716ab0",
         "refs/pull/14/head": "36c723a62f2d966b9baeb18b9584c51df16ee7a8",
         "refs/pull/28/head": "ade417581d35c59016b78791d7fb54bf393d3c21",
         "refs/pull/29/head": "d75e679e11f8446792426295fa2bf1685465bf33",
-        "refs/pull/29/merge": "11ff6ac60872d5dd60372a3f1a8c5f8d31f14e95",
         "refs/pull/3/head": "172e2065562290dcc8e286250ea0110882b06d43",
+        "refs/pull/30/head": "77b033d03047c9dd889ba19aefb79f9cc706e0dc",
+        "refs/pull/30/merge": "4485536453b64295b72b31d0978c941f72821f20",
         "refs/pull/4/head": "f4844d23d4a915e5005614446f7f174a3829b193",
         "refs/pull/4/merge": "a4591bc0ba706cbc589ce4f7e203f82d021a560c",
         "refs/pull/5/head": "38acf7f7012ed86f803df1729a5a52d9da2c0c62",
@@ -432,8 +414,11 @@
         "HEAD": "b01ff23d63d3a9a3f1e1094b17b35f5888812654",
         "refs/heads/develop": "50e0972631f641420467371e21437b2581a5b63c",
         "refs/heads/master": "b01ff23d63d3a9a3f1e1094b17b35f5888812654",
+        "refs/heads/modify-num-electrons": "c4a8c709b3b94988c49178095c4b5da851f5c08f",
         "refs/heads/optimade": "7bb8eb2aa836fc2c01ac33518b39a6b4bb83fb12",
-        "refs/heads/package": "a4270840b622456e9ce145e4c56a5246ec16494e"
+        "refs/heads/package": "a4270840b622456e9ce145e4c56a5246ec16494e",
+        "refs/pull/1/head": "c4a8c709b3b94988c49178095c4b5da851f5c08f",
+        "refs/pull/1/merge": "c455734242abf2c01177eadcb1578c7740838fa2"
       },
       "subpage": "apps/quantum-espresso.html",
       "hosted_on": "github.com",
