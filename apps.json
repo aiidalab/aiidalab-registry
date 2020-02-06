@@ -34,11 +34,6 @@
         "meta_url": "https://raw.githubusercontent.com/nanotech-empa/aiidalab-empa-scanning-probe/master/metadata.json",
         "categories": ["quantum"]
     },
-    "units": {
-        "git_url": "https://github.com/aiidalab/aiidalab-units",
-        "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-units/master/metadata.json",
-        "categories": ["utilities"]
-    },
     "calcexamples": {
         "git_url": "https://github.com/aiidalab/aiidalab-calculation-examples.git",
         "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-calculation-examples/master/metadata.json",
