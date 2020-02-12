@@ -341,17 +341,15 @@
         "authors": "lsmo-epfl"
       },
       "gitinfo": {
-        "HEAD": "f89ebaaf4d255754329037dcfb49cd23ca692325",
+        "HEAD": "b8d5174d11ff68c8ceba727a2a02c7a81264fbd2",
         "refs/heads/aiida_1.0": "104a597669be5451dea69f2f50153b2c3ae9b324",
-        "refs/heads/develop": "f89ebaaf4d255754329037dcfb49cd23ca692325",
+        "refs/heads/develop": "b8d5174d11ff68c8ceba727a2a02c7a81264fbd2",
         "refs/heads/master": "4d7293b73cac2308eaf09cbc564adfc893cc89d1",
-        "refs/heads/merge_persistence_homology": "f5571893a45115d452872a9871d3f0ec68abc796",
         "refs/pull/3/head": "cb49ade93f8a3a9655f01a16a969c2a6725eaedf",
         "refs/pull/4/head": "f24bde2da248002f0d2aba9de73bd72e8b63d83a",
         "refs/pull/5/head": "70940de5efe75c595185e020bcac06770d7fc97a",
         "refs/pull/7/head": "b5279a5a2c608693b26c1af1040643b8c807455a",
-        "refs/pull/8/head": "f5571893a45115d452872a9871d3f0ec68abc796",
-        "refs/pull/8/merge": "e7d5d9d1e8c020d511731074978f32ce80cbdcf9"
+        "refs/pull/8/head": "f5571893a45115d452872a9871d3f0ec68abc796"
       },
       "subpage": "apps/lsmo.html",
       "hosted_on": "github.com",
@@ -381,27 +379,6 @@
       "subpage": "apps/nanoribbons.html",
       "hosted_on": "github.com",
       "logo": "https://raw.githubusercontent.com/nanotech-empa/aiidalab-empa-nanoribbons/master/miscellaneous/logos/empa.png"
-    },
-    "persistence-homology": {
-      "git_url": "https://github.com/aiidalab/aiidalab-persistence-homology.git",
-      "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-persistence-homology/master/metadata.json",
-      "categories": [
-        "classical"
-      ],
-      "name": "persistence-homology",
-      "metainfo": {
-        "title": "Persistence Homology",
-        "description": "Perform persistence homology analysis of nanoporous materials.",
-        "authors": "Leopold Talirz",
-        "version": "0.1.0b",
-        "state": "development"
-      },
-      "gitinfo": {
-        "HEAD": "7ee0bfa278ee97fd5a3a123b67824feca5c96e58",
-        "refs/heads/master": "7ee0bfa278ee97fd5a3a123b67824feca5c96e58"
-      },
-      "subpage": "apps/persistence-homology.html",
-      "hosted_on": "github.com"
     },
     "quantum-espresso": {
       "git_url": "https://github.com/aiidalab/aiidalab-qe.git",
