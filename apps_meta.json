@@ -91,17 +91,21 @@
       },
       "gitinfo": {
         "HEAD": "9be5ffa7486ce9a2de2e72bde07f9d53e4255427",
-        "refs/heads/develop": "2da2e5df2fd52be061b85b83c008524ef173f9ce",
+        "refs/heads/develop": "5efa73f51e615cd45f45acd0547aab813b1490e1",
         "refs/heads/master": "9be5ffa7486ce9a2de2e72bde07f9d53e4255427",
         "refs/heads/old_aiidalab_cwa_user": "a9ce0ea1c4ca5cadc4374c3dbcdee554810ee822",
+        "refs/heads/various_updates": "4603806814b512189261bafbb27d367defacd773",
         "refs/pull/1/head": "9fd3597c4cca320f9a390f438c7c2774f2769220",
+        "refs/pull/10/head": "1216d0022b38a78b96c10c437cd902a75aa59e34",
+        "refs/pull/11/head": "a61e69ce8f269073636c5a81d2c0ffdc80eb3fbf",
         "refs/pull/2/head": "9542142f93f18b936bc376ded3bbfd85d33092da",
         "refs/pull/3/head": "9542142f93f18b936bc376ded3bbfd85d33092da",
         "refs/pull/4/head": "d4a247e77d549b5956ff540801f1db997d44512c",
         "refs/pull/5/head": "2f99bf331e40841e65f1457b8138844b168098fb",
         "refs/pull/6/head": "7002399d83342f525580a6a24524268c915bf9e9",
         "refs/pull/7/head": "5a7a001996564994bd8184269542aebcab09fed0",
-        "refs/pull/8/head": "9b51883670ad4613863413d58acea8f43ff62701"
+        "refs/pull/8/head": "9b51883670ad4613863413d58acea8f43ff62701",
+        "refs/pull/9/head": "9be5ffa7486ce9a2de2e72bde07f9d53e4255427"
       },
       "subpage": "apps/aiidalab-optimade.html",
       "hosted_on": "github.com",
@@ -123,9 +127,8 @@
         "state": "stable"
       },
       "gitinfo": {
-        "HEAD": "e26c997bf58ac09064a2ba98113d74a02fe9eb90",
-        "refs/heads/develop": "e26c997bf58ac09064a2ba98113d74a02fe9eb90",
-        "refs/heads/fix_smiles_importer": "b0651cfc1903f68265734e2883616c18b114051f",
+        "HEAD": "7c56b285940570cceb1e1e9a52d24fcd795efc3b",
+        "refs/heads/develop": "7c56b285940570cceb1e1e9a52d24fcd795efc3b",
         "refs/heads/master": "ece1bff88c5c6e35feb1475bbe5b45f0faccaa18",
         "refs/heads/qe-revision": "2c993ba1b1ca941d43793519910b0ced3bcf0e2d",
         "refs/heads/setup-code-widget": "4affb3f950ed91e29dfc0e305904c474f4ce6d36",
@@ -161,7 +164,6 @@
         "refs/pull/52/merge": "9409ff8959b0fbf334edd46dd0ff0c4b2beca750",
         "refs/pull/53/head": "e0ee657a37dfaf1c9d8e9cc728a167e1360bb993",
         "refs/pull/54/head": "b0651cfc1903f68265734e2883616c18b114051f",
-        "refs/pull/54/merge": "4666783f01c72a070528127e28217c682367cf64",
         "refs/pull/6/head": "a547bb269ecca26198462f16ef38c00b842ff35e",
         "refs/pull/9/head": "048a8e5d27557d767dbd2d784a26f1801d55683a",
         "refs/tags/v0.1.0a0": "b8047221833000a51bb8f21ce7304353af1297e0",
@@ -277,7 +279,7 @@
         "HEAD": "926ccd9adacd9c82fd29780b6916383669837b13",
         "refs/heads/master": "926ccd9adacd9c82fd29780b6916383669837b13",
         "refs/pull/6/head": "79fd5f6bb34fd454f2b37db186e117b928f3ce3c",
-        "refs/pull/6/merge": "894ef4d5b7dd6e36045cf1c4016e1f3d0f6fbe56",
+        "refs/pull/6/merge": "025da51d43e468e6f1a81053bdc71fb0abf424c0",
         "refs/pull/7/head": "875c064856aa6e5172574fe983e365c7bae4fd64"
       },
       "subpage": "apps/epfl.html",
@@ -300,15 +302,18 @@
       },
       "gitinfo": {
         "HEAD": "84442d49c0e6c445766a895da75287c3170285f4",
-        "refs/heads/aiida_v1.0": "d75e679e11f8446792426295fa2bf1685465bf33",
         "refs/heads/develop": "84442d49c0e6c445766a895da75287c3170285f4",
+        "refs/heads/incompatible_aiida_warning": "59cdac39cb8223a3ac72200b9fe52254d40b314f",
         "refs/heads/master": "e27a7caafbd0da1f0fdba6c944875a6de09eab37",
+        "refs/heads/support/aiida-0.12.x": "e27a7caafbd0da1f0fdba6c944875a6de09eab37",
         "refs/pull/1/head": "674052f9279896aac1eb75adc7c3ec3d97716ab0",
         "refs/pull/14/head": "36c723a62f2d966b9baeb18b9584c51df16ee7a8",
         "refs/pull/28/head": "ade417581d35c59016b78791d7fb54bf393d3c21",
         "refs/pull/29/head": "d75e679e11f8446792426295fa2bf1685465bf33",
         "refs/pull/3/head": "172e2065562290dcc8e286250ea0110882b06d43",
         "refs/pull/30/head": "77b033d03047c9dd889ba19aefb79f9cc706e0dc",
+        "refs/pull/31/head": "59cdac39cb8223a3ac72200b9fe52254d40b314f",
+        "refs/pull/31/merge": "f3aea9cb67312040bf4f08ac1ee5149c1f51770a",
         "refs/pull/4/head": "f4844d23d4a915e5005614446f7f174a3829b193",
         "refs/pull/4/merge": "a4591bc0ba706cbc589ce4f7e203f82d021a560c",
         "refs/pull/5/head": "38acf7f7012ed86f803df1729a5a52d9da2c0c62",
@@ -320,8 +325,8 @@
       "hosted_on": "github.com"
     },
     "lsmo": {
-      "git_url": "https://github.com/yakutovicha/aiidalab-epfl-lsmo.git",
-      "meta_url": "https://raw.githubusercontent.com/yakutovicha/aiidalab-epfl-lsmo/master/metadata.json",
+      "git_url": "https://github.com/lsmo-epfl/aiidalab-epfl-lsmo.git",
+      "meta_url": "https://raw.githubusercontent.com/lsmo-epfl/aiidalab-epfl-lsmo/master/metadata.json",
       "categories": [
         "classical",
         "quantum"
@@ -333,22 +338,24 @@
         "version": "0.1.0",
         "logo": "miscellaneous/logos/LSMO.png",
         "state": "registered",
-        "authors": "yakutovicha"
+        "authors": "lsmo-epfl"
       },
       "gitinfo": {
-        "HEAD": "4d7293b73cac2308eaf09cbc564adfc893cc89d1",
+        "HEAD": "f89ebaaf4d255754329037dcfb49cd23ca692325",
         "refs/heads/aiida_1.0": "104a597669be5451dea69f2f50153b2c3ae9b324",
-        "refs/heads/develop": "a6d4ba864edeb8cbe1fa8bcadcc3d32d944f50c6",
+        "refs/heads/develop": "f89ebaaf4d255754329037dcfb49cd23ca692325",
         "refs/heads/master": "4d7293b73cac2308eaf09cbc564adfc893cc89d1",
-        "refs/heads/test": "4b17e6df3c7704e6328bdf91d10c9750ed70b6d8",
+        "refs/heads/merge_persistence_homology": "f5571893a45115d452872a9871d3f0ec68abc796",
         "refs/pull/3/head": "cb49ade93f8a3a9655f01a16a969c2a6725eaedf",
         "refs/pull/4/head": "f24bde2da248002f0d2aba9de73bd72e8b63d83a",
         "refs/pull/5/head": "70940de5efe75c595185e020bcac06770d7fc97a",
-        "refs/pull/7/head": "b5279a5a2c608693b26c1af1040643b8c807455a"
+        "refs/pull/7/head": "b5279a5a2c608693b26c1af1040643b8c807455a",
+        "refs/pull/8/head": "f5571893a45115d452872a9871d3f0ec68abc796",
+        "refs/pull/8/merge": "e7d5d9d1e8c020d511731074978f32ce80cbdcf9"
       },
       "subpage": "apps/lsmo.html",
       "hosted_on": "github.com",
-      "logo": "https://raw.githubusercontent.com/yakutovicha/aiidalab-epfl-lsmo/master/miscellaneous/logos/LSMO.png"
+      "logo": "https://raw.githubusercontent.com/lsmo-epfl/aiidalab-epfl-lsmo/master/miscellaneous/logos/LSMO.png"
     },
     "nanoribbons": {
       "git_url": "https://github.com/nanotech-empa/aiidalab-empa-nanoribbons",
@@ -415,11 +422,11 @@
         "HEAD": "b01ff23d63d3a9a3f1e1094b17b35f5888812654",
         "refs/heads/develop": "50e0972631f641420467371e21437b2581a5b63c",
         "refs/heads/master": "b01ff23d63d3a9a3f1e1094b17b35f5888812654",
-        "refs/heads/modify-num-electrons": "c4a8c709b3b94988c49178095c4b5da851f5c08f",
+        "refs/heads/modify-num-electrons": "8c28ffd13044f7a50840f5a93b68516eb11e31a1",
         "refs/heads/optimade": "7bb8eb2aa836fc2c01ac33518b39a6b4bb83fb12",
         "refs/heads/package": "a4270840b622456e9ce145e4c56a5246ec16494e",
-        "refs/pull/1/head": "c4a8c709b3b94988c49178095c4b5da851f5c08f",
-        "refs/pull/1/merge": "c455734242abf2c01177eadcb1578c7740838fa2"
+        "refs/pull/1/head": "8c28ffd13044f7a50840f5a93b68516eb11e31a1",
+        "refs/pull/1/merge": "ffc43590fa13e0aa0165257e060827edbc1792e9"
       },
       "subpage": "apps/quantum-espresso.html",
       "hosted_on": "github.com",
