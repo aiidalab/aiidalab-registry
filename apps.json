@@ -40,8 +40,8 @@
         "categories": ["quantum", "tutorials"]
     },
     "lsmo": {
-        "git_url": "https://github.com/yakutovicha/aiidalab-epfl-lsmo.git",
-        "meta_url": "https://raw.githubusercontent.com/yakutovicha/aiidalab-epfl-lsmo/master/metadata.json",
+        "git_url": "https://github.com/lsmo-epfl/aiidalab-epfl-lsmo.git",
+        "meta_url": "https://raw.githubusercontent.com/lsmo-epfl/aiidalab-epfl-lsmo/master/metadata.json",
         "categories": ["classical", "quantum"]
     },
     "aiida-tutorials": {
