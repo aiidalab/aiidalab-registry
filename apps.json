@@ -54,11 +54,6 @@
         "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-quantum-mobile/master/metadata.json",
         "categories": ["setup"]
     },
-    "persistence-homology": {
-        "git_url": "https://github.com/aiidalab/aiidalab-persistence-homology.git",
-        "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-persistence-homology/master/metadata.json",
-        "categories": ["classical"]
-    },
     "aiidalab-widgets-base": {
         "git_url": "https://github.com/aiidalab/aiidalab-widgets-base.git",
         "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-widgets-base/master/metadata.json",
