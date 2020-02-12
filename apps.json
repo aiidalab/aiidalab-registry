@@ -9,16 +9,6 @@
         "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-aiida-cockpit/master/metadata.json",
         "categories": ["setup", "utilities"]
     },
-    "cscs": {
-        "git_url": "https://github.com/aiidalab/aiidalab-cscs",
-        "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-cscs/master/metadata.json",
-        "categories": ["setup"]
-    },
-    "epfl": {
-        "git_url": "https://github.com/aiidalab/aiidalab-epfl-supercomputers",
-        "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-epfl-supercomputers/master/metadata.json",
-        "categories": ["setup"]
-    },
     "nanoribbons": {
         "git_url": "https://github.com/nanotech-empa/aiidalab-empa-nanoribbons",
         "meta_url": "https://raw.githubusercontent.com/nanotech-empa/aiidalab-empa-nanoribbons/master/metadata.json",
