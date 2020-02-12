@@ -523,30 +523,6 @@
       "subpage": "apps/surfaces.html",
       "hosted_on": "github.com",
       "logo": "https://raw.githubusercontent.com/nanotech-empa/aiidalab-empa-surfaces/master/miscellaneous/logos/empa.png"
-    },
-    "vasp-example": {
-      "git_url": "https://github.com/DropD/mc-vasp-example.git",
-      "meta_url": "https://raw.githubusercontent.com/DropD/mc-vasp-example/master/metadata.json",
-      "categories": [
-        "quantum"
-      ],
-      "name": "vasp-example",
-      "metainfo": {
-        "title": "AiiDA-VASP Demo",
-        "description": "Compute a band structure using the AiiDA-VASP plugin",
-        "state": "registered",
-        "authors": "DropD"
-      },
-      "gitinfo": {
-        "HEAD": "5345e90aa27f9ad6055e5d6028552536bc0993e8",
-        "refs/heads/master": "5345e90aa27f9ad6055e5d6028552536bc0993e8",
-        "refs/heads/revise-ui": "335df2fdc6bfa47ee815f57033943aefa56a73ea",
-        "refs/pull/1/head": "335df2fdc6bfa47ee815f57033943aefa56a73ea",
-        "refs/pull/2/head": "638905e6442f470ad6855517de7105995d9f5a00",
-        "refs/pull/2/merge": "8009c7c8d42cdd7379624aeaf4df1afd09f2c91a"
-      },
-      "subpage": "apps/vasp-example.html",
-      "hosted_on": "github.com"
     }
   },
   "categories": {
