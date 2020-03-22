@@ -1,5 +1,37 @@
 {
   "apps": {
+    "aiidalab-lsmo": {
+      "git_url": "https://github.com/lsmo-epfl/aiidalab-epfl-lsmo.git",
+      "meta_url": "https://raw.githubusercontent.com/lsmo-epfl/aiidalab-epfl-lsmo/master/metadata.json",
+      "categories": [
+        "classical",
+        "quantum"
+      ],
+      "name": "aiidalab-lsmo",
+      "metainfo": {
+        "description": "Applications from the LSMO group",
+        "title": "LSMO apps",
+        "version": "0.1.0",
+        "logo": "miscellaneous/logos/LSMO.png",
+        "state": "registered",
+        "authors": "lsmo-epfl"
+      },
+      "gitinfo": {
+        "HEAD": "cea77537e1f1f9b5172b559de6e7637cbb5e8257",
+        "refs/heads/develop": "cea77537e1f1f9b5172b559de6e7637cbb5e8257",
+        "refs/heads/master": "cea77537e1f1f9b5172b559de6e7637cbb5e8257",
+        "refs/pull/10/head": "55322d2a72f353ca7d496821b463bf0014a611e1",
+        "refs/pull/3/head": "cb49ade93f8a3a9655f01a16a969c2a6725eaedf",
+        "refs/pull/4/head": "f24bde2da248002f0d2aba9de73bd72e8b63d83a",
+        "refs/pull/5/head": "70940de5efe75c595185e020bcac06770d7fc97a",
+        "refs/pull/7/head": "b5279a5a2c608693b26c1af1040643b8c807455a",
+        "refs/pull/8/head": "f5571893a45115d452872a9871d3f0ec68abc796",
+        "refs/pull/9/head": "f9990d4512211ca746f35064c48c1ffc9f9e5a12"
+      },
+      "subpage": "apps/aiidalab-lsmo.html",
+      "hosted_on": "github.com",
+      "logo": "https://raw.githubusercontent.com/lsmo-epfl/aiidalab-epfl-lsmo/master/miscellaneous/logos/LSMO.png"
+    },
     "aiidalab-optimade": {
       "git_url": "https://github.com/aiidalab/aiidalab-optimade.git",
       "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-optimade/master/metadata.json",
@@ -9,17 +41,17 @@
       "name": "aiidalab-optimade",
       "metainfo": {
         "title": "OPTiMaDe client",
-        "description": "AiiDA Lab App that implements an OPTiMaDe client",
-        "version": "1.0-alpha1",
+        "description": "Query for and import structures from OPTiMaDe providers (COD, Materials Cloud, NoMaD, Materials Project, OQMD, and more ...). Note, this application handles the structures by converting them to ASE Atoms or AiiDA StructureData objects.",
+        "version": "2.0-a2",
         "authors": "AiiDA Lab Team",
         "state": "development",
-        "logo": "img/optimade_square.png",
-        "external_url": "http://www.optimade.org"
+        "logo": "img/optimade_logo.png",
+        "external_url": "https://www.optimade.org"
       },
       "gitinfo": {
-        "HEAD": "9be5ffa7486ce9a2de2e72bde07f9d53e4255427",
-        "refs/heads/develop": "9f21acddd3bda41b41118e4a68541db290ea7178",
-        "refs/heads/master": "9be5ffa7486ce9a2de2e72bde07f9d53e4255427",
+        "HEAD": "a8047ff331d75e5ac24eb2fe615bde5b744d5685",
+        "refs/heads/develop": "a8047ff331d75e5ac24eb2fe615bde5b744d5685",
+        "refs/heads/master": "a8047ff331d75e5ac24eb2fe615bde5b744d5685",
         "refs/heads/old_aiidalab_cwa_user": "a9ce0ea1c4ca5cadc4374c3dbcdee554810ee822",
         "refs/pull/1/head": "9fd3597c4cca320f9a390f438c7c2774f2769220",
         "refs/pull/10/head": "1216d0022b38a78b96c10c437cd902a75aa59e34",
@@ -29,17 +61,25 @@
         "refs/pull/18/head": "ce6f0e7562e8818c2630c8e99cfab9987f48d7ef",
         "refs/pull/19/head": "9f21acddd3bda41b41118e4a68541db290ea7178",
         "refs/pull/2/head": "9542142f93f18b936bc376ded3bbfd85d33092da",
+        "refs/pull/20/head": "a7b71a672a90b7ed0f17d22a27e780a303c6a505",
+        "refs/pull/21/head": "a7b71a672a90b7ed0f17d22a27e780a303c6a505",
+        "refs/pull/22/head": "a8047ff331d75e5ac24eb2fe615bde5b744d5685",
+        "refs/pull/23/head": "a8047ff331d75e5ac24eb2fe615bde5b744d5685",
         "refs/pull/3/head": "9542142f93f18b936bc376ded3bbfd85d33092da",
         "refs/pull/4/head": "d4a247e77d549b5956ff540801f1db997d44512c",
         "refs/pull/5/head": "2f99bf331e40841e65f1457b8138844b168098fb",
         "refs/pull/6/head": "7002399d83342f525580a6a24524268c915bf9e9",
         "refs/pull/7/head": "5a7a001996564994bd8184269542aebcab09fed0",
         "refs/pull/8/head": "9b51883670ad4613863413d58acea8f43ff62701",
-        "refs/pull/9/head": "9be5ffa7486ce9a2de2e72bde07f9d53e4255427"
+        "refs/pull/9/head": "9be5ffa7486ce9a2de2e72bde07f9d53e4255427",
+        "refs/tags/v2.0-a1": "032200c316b6305d774cf3d252b11f781c6ea0ae",
+        "refs/tags/v2.0-a1^{}": "a7b71a672a90b7ed0f17d22a27e780a303c6a505",
+        "refs/tags/v2.0-a2": "222d46053afbb388c221250554cb78aa8463eed0",
+        "refs/tags/v2.0-a2^{}": "a8047ff331d75e5ac24eb2fe615bde5b744d5685"
       },
       "subpage": "apps/aiidalab-optimade.html",
       "hosted_on": "github.com",
-      "logo": "https://raw.githubusercontent.com/aiidalab/aiidalab-optimade/master/img/optimade_square.png"
+      "logo": "https://raw.githubusercontent.com/aiidalab/aiidalab-optimade/master/img/optimade_logo.png"
     },
     "aiidalab-widgets-base": {
       "git_url": "https://github.com/aiidalab/aiidalab-widgets-base.git",
@@ -57,16 +97,16 @@
         "state": "stable"
       },
       "gitinfo": {
-        "HEAD": "36f9eafb20ee6391d38f0985897dea6ad9987a69",
-        "refs/heads/develop": "36f9eafb20ee6391d38f0985897dea6ad9987a69",
-        "refs/heads/master": "36f9eafb20ee6391d38f0985897dea6ad9987a69",
+        "HEAD": "e9b11c54e62a0f37cfa78314c6e7d1e77426abd6",
+        "refs/heads/develop": "e9b11c54e62a0f37cfa78314c6e7d1e77426abd6",
+        "refs/heads/master": "e9b11c54e62a0f37cfa78314c6e7d1e77426abd6",
         "refs/heads/qe-revision": "2c993ba1b1ca941d43793519910b0ced3bcf0e2d",
         "refs/heads/setup-code-widget": "4affb3f950ed91e29dfc0e305904c474f4ce6d36",
         "refs/heads/support/aiida-0.12.x": "ece1bff88c5c6e35feb1475bbe5b45f0faccaa18",
         "refs/heads/trajectory_visualizer": "783ed839bcb25117ef99c221a60da52d20070e9b",
         "refs/pull/10/head": "7de3d88c63708d8fb7fbe749d2270178024631ec",
         "refs/pull/11/head": "2a430d1fa0115454b29a6e084e544f52108f9b68",
-        "refs/pull/11/merge": "77009c52ecdfbe5f1af45fed8fa398ef41bc9acd",
+        "refs/pull/11/merge": "a70ff1c8f9915d970d5bba063ef23185f0a6ad46",
         "refs/pull/12/head": "97570dbd6578f77d5a656af231de258cfecb6ea3",
         "refs/pull/14/head": "4fe95263ed4bd6d9d1a8b224e05803354265cedd",
         "refs/pull/18/head": "9d0c24932e32678356209a8dab07a1f1f8bd7efe",
@@ -101,6 +141,10 @@
         "refs/pull/58/head": "a9eecd9568dc4ffc3a139b23ccfb32b689d7ecd9",
         "refs/pull/59/head": "9033814b7cb5c5cf3af830d023dba3c08f926c44",
         "refs/pull/6/head": "a547bb269ecca26198462f16ef38c00b842ff35e",
+        "refs/pull/61/head": "73f017f2016147f74a9aff374386742639ac45ba",
+        "refs/pull/62/head": "f3c341b009639a35f59a2db47ff9f7f4cd8a692a",
+        "refs/pull/63/head": "0427e248bb39711b451a82da60c3991344e4a69a",
+        "refs/pull/64/head": "6e15475754275fee8dcfa33b7da9cc2b5656b818",
         "refs/pull/9/head": "048a8e5d27557d767dbd2d784a26f1801d55683a",
         "refs/tags/v0.1.0a0": "b8047221833000a51bb8f21ce7304353af1297e0",
         "refs/tags/v0.2.0a0": "0b12f44e31079a6ac952d0cc3b730883435f41f1",
@@ -130,7 +174,9 @@
         "refs/tags/v1.0.0b1": "0195e548b02b6f2f2f5a2b7f3a4c913965d55f5b",
         "refs/tags/v1.0.0b1^{}": "32fdfe1a5e19bbb76807d096670fe12ae26ba66d",
         "refs/tags/v1.0.0b2": "ff246fbbda52f98a90e9de5d57447a816d5b6ee0",
-        "refs/tags/v1.0.0b2^{}": "36f9eafb20ee6391d38f0985897dea6ad9987a69"
+        "refs/tags/v1.0.0b2^{}": "36f9eafb20ee6391d38f0985897dea6ad9987a69",
+        "refs/tags/v1.0.0b3": "0f5ffe2e1b7de3d5a67f8bfe3176cbc16a330170",
+        "refs/tags/v1.0.0b3^{}": "e9b11c54e62a0f37cfa78314c6e7d1e77426abd6"
       },
       "subpage": "apps/aiidalab-widgets-base.html",
       "hosted_on": "github.com",
@@ -192,10 +238,10 @@
       },
       "gitinfo": {
         "HEAD": "f41f12d6068e0c7a9828a9efe9a33fd962b651eb",
-        "refs/heads/aiida_1.0_migration": "b1ec5114de5eca7ef7260ba8e381ea308440e308",
+        "refs/heads/aiida_1.0_migration": "6aebb06162c5eb0995896d1f63a36848efa2ebb9",
         "refs/heads/master": "f41f12d6068e0c7a9828a9efe9a33fd962b651eb",
         "refs/heads/support/aiida-0.12.x": "f41f12d6068e0c7a9828a9efe9a33fd962b651eb",
-        "refs/pull/1/head": "b1ec5114de5eca7ef7260ba8e381ea308440e308"
+        "refs/pull/1/head": "6aebb06162c5eb0995896d1f63a36848efa2ebb9"
       },
       "subpage": "apps/nanoribbons.html",
       "hosted_on": "github.com",
@@ -243,20 +289,21 @@
       "metainfo": {
         "description": "Empa nanotech@surfaces Laboratory",
         "title": "Empa nanotech@surfaces Laboratory - Scanning Probe Microscopy",
-        "version": "1.0",
+        "version": "1.1",
         "logo": "miscellaneous/logos/empa.png",
         "authors": "K. Eimre, F. Hillebrand",
         "state": "registered"
       },
       "gitinfo": {
-        "HEAD": "4f6a9ceb664aa49aa2e9c726bcde738591ac0973",
-        "refs/heads/master": "4f6a9ceb664aa49aa2e9c726bcde738591ac0973",
+        "HEAD": "40693feb4a278681d9b174367846db81a5dd6cf0",
+        "refs/heads/master": "40693feb4a278681d9b174367846db81a5dd6cf0",
         "refs/heads/support/aiida-0.12.x": "08870b0f96c1aeb279f8e6cfab318f8df8d32bf6",
         "refs/pull/1/head": "6c71a75202811fd76d654d62e2b917ef5ce7882d",
         "refs/pull/2/head": "cd8570f5b8ac03e9fa5fe6be4184290df0d7917c",
         "refs/tags/v0.1": "c69eac1056bb672272d962cc48e4dc7242dde375",
         "refs/tags/v0.2": "1bd53e71e729a700b84ee8241ddf0ac6a89b725a",
-        "refs/tags/v1.0": "e62587b6480b2a8e3e107db859f10b144f6e7c24"
+        "refs/tags/v1.0": "e62587b6480b2a8e3e107db859f10b144f6e7c24",
+        "refs/tags/v1.1": "9ce88c33726a23ed55c8063427d74f5e4c81e009"
       },
       "subpage": "apps/scanning_probe.html",
       "hosted_on": "github.com",
@@ -279,7 +326,7 @@
       },
       "gitinfo": {
         "HEAD": "def4e269cb7fcf3572a286e71b12f4fc854829dd",
-        "refs/heads/aiida_1.0_migration": "3afb566b292ba00ccdf8c6c158f132a2e39cfd05",
+        "refs/heads/aiida_1.0_migration": "9a9aa625b8e75bbd10edd44bb555d3f56b3bbf05",
         "refs/heads/develop": "03d54420f695686da95a1a7c476f0e8c5a4ce963",
         "refs/heads/master": "def4e269cb7fcf3572a286e71b12f4fc854829dd",
         "refs/heads/support/aiida-0.12.x": "def4e269cb7fcf3572a286e71b12f4fc854829dd",
@@ -310,8 +357,8 @@
         "refs/pull/32/head": "0cc9f41f74151510cb85dc9e96ef90697a669318",
         "refs/pull/33/head": "77b715a3c786c0b61129ca66f7b9ae1fb6f84b4c",
         "refs/pull/34/head": "9a2548168100a2c1ce5d2555b62c39ea6b670fc5",
-        "refs/pull/35/head": "3afb566b292ba00ccdf8c6c158f132a2e39cfd05",
-        "refs/pull/35/merge": "4a4049048ac70ade61ea772e9b335b771ceebe08",
+        "refs/pull/35/head": "9a9aa625b8e75bbd10edd44bb555d3f56b3bbf05",
+        "refs/pull/35/merge": "a327239b8db251cc2fe328ab4611ffe621dc2f86",
         "refs/pull/4/head": "c18354e38c5331c55f0e2fa5d085a0536cc4695b",
         "refs/pull/5/head": "7bd1778998ceae7f484a3451e5bb03719fb305f0",
         "refs/pull/6/head": "c1e4ee1353070020c7e60260d010883d3948fa28",
