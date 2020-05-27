@@ -50,66 +50,24 @@ once your pull request is merged.
 
 ### Valid keys for `metadata.json`
 
-#### title
-
-The title will be displayed in the list of apps in the application manager.
-
-#### description
-
-The description will be displayed on the detail page of your app.
-
-#### version
-
-The version will be displayed on the detail page of your app.
-This is also used by the
-[AiiDA lab App Store](https://github.com/aiidalab/aiidalab-home/blob/master/appstore.ipynb).
-
-#### authors
-
-Comma-separated list of authors.
-
-#### logo
-
-Relative path to a logo (png or jpg) within your repository.
-
-#### state
-
-One of
-
-* `registered`: lowest level - app may not yet be in a working state.
-  Use this to secure a specific name.
-* `development`: app is under active development, expect the occasional bug.
-* `stable`: app can be used in production.
-
-#### documentation_url
-
-The link to the online documentation of the app (e.g. on
-[Read The Docs](https://readthedocs.org/)).
-
-#### external_url
-
-General homepage for your app.
+| Key | Requirement | Description |
+|:---:|:---:|:---|
+| `title` | **Mandatory** | The title will be displayed in the list of apps in the application manager. |
+| `description` | **Mandatory** | The description will be displayed on the detail page of your app. |
+| `version` | Optional | The version will be displayed on the detail page of your app. This is also used by the [AiiDA lab App Store](https://github.com/aiidalab/aiidalab-home/blob/master/appstore.ipynb). |
+| `authors` | Optional | Comma-separated list of authors. |
+| `logo` | Optional | Relative path to a logo (png or jpg) within your repository. |
+| `state` | Optional | One of<br>- `registered`: lowest level - app may not yet be in a working state. Use this to secure a specific name.<br>- `development`: app is under active development, expect the occasional bug.<br>- `stable`: app can be used in production. |
+| `documentation_url` | Optional | The link to the online documentation of the app (e.g. on [Read The Docs](https://readthedocs.org/)). |
+| `external_url` | Optional | General homepage for your app. |
 
 ### Valid keys for your app in `apps.json`
 
-#### git_url
-
-**Mandatory**.
-Link to the source code repository.
-
-#### meta_url
-
-**Mandatory**.
-Link to the location of your app's `metadata.json` file.
-
-#### categories
-
-*Optional*.
-List of valid categories.
-
-You can see the most recent list of categories in
-[`categories.json`](https://github.com/aiidalab/aiidalab-registry/blob/master/categories.json),
-including a description of each category.
+| Key | Requirement | Description |
+|:---:|:---:|:---|
+| `git_url` | **Mandatory** | Link to the source code repository. |
+| `meta_url` | **Mandatory** | Link to the location of your app's `metadata.json` file. |
+| `categories` | Optional | List of valid categories.<br>You can see the most recent list of categories in [`categories.json`](https://github.com/aiidalab/aiidalab-registry/blob/master/categories.json), including a description of each category. |
 
 ## Acknowledgements
 
