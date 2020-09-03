@@ -30,7 +30,7 @@
         "categories": ["classical", "quantum"]
     },
     "aiidalab-optimade": {
-        "git_url": "https://github.com/aiidalab/aiidalab-optimade.git",
+        "git_url": "https://github.com/aiidalab/aiidalab-optimade.git@aiidalab",
         "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-optimade/aiidalab/metadata.json",
         "categories": ["utilities"]
     },
