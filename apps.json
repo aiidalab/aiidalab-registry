@@ -29,11 +29,6 @@
         "meta_url": "https://raw.githubusercontent.com/lsmo-epfl/aiidalab-epfl-lsmo/master/metadata.json",
         "categories": ["classical", "quantum"]
     },
-    "aiidalab-optimade": {
-        "git_url": "https://github.com/aiidalab/aiidalab-optimade.git@aiidalab",
-        "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-optimade/aiidalab/metadata.json",
-        "categories": ["utilities"]
-    },
     "quantum-espresso": {
         "git_url": "https://github.com/aiidalab/aiidalab-qe.git",
         "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-qe/master/metadata.json",
