@@ -1,0 +1,159 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://raw.githubusercontent.com/aiidalab/aiidalab-registry/v1/schemas/apps_meta.schema.json",
+    "$ref": "#/definitions/Welcome",
+    "definitions": {
+        "Welcome": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "apps": {
+                    "$ref": "#/definitions/Apps"
+                },
+                "categories": {
+                    "$ref": "#/definitions/Categories"
+                }
+            },
+            "required": [
+                "apps",
+                "categories"
+            ],
+            "title": "Welcome"
+        },
+        "Apps": {
+            "type": "object",
+            "additionalProperties": false,
+            "patternProperties": {
+              ".*": {"$ref": "#/definitions/App"}
+            },
+            "title": "Apps"
+        },
+        "App": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "git_url": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ],
+                    "qt-uri-extensions": [
+                        ".git"
+                    ]
+                },
+                "meta_url": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ],
+                    "qt-uri-extensions": [
+                        ".json"
+                    ]
+                },
+                "categories": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "metainfo": {
+                    "$ref": "#/definitions/Metainfo"
+                },
+                "gitinfo": {
+                    "$ref": "#/definitions/AppGitinfo"
+                },
+                "hosted_on": {
+                    "type": "string"
+                },
+                "groups": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            },
+            "required": [
+                "categories",
+                "git_url",
+                "gitinfo",
+                "groups",
+                "hosted_on",
+                "meta_url",
+                "metainfo"
+            ],
+            "title": "App"
+        },
+        "AppGitinfo": {
+            "type": "object",
+            "additionalProperties": false,
+            "propertyNames": {
+              "pattern": "^(HEAD)|(refs\/(heads|tags))\/.+$"
+            },
+            "patternProperties": {
+              ".*": {"type": "string"}
+            },
+            "title": "AppGitinfo"
+        },
+        "Metainfo": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "description": {
+                    "type": "string"
+                },
+                "title": {
+                    "type": "string"
+                },
+                "version": {
+                    "type": "string"
+                },
+                "logo": {
+                    "type": "string"
+                },
+                "state": {
+                  "$ref": "#/definitions/State"
+                },
+                "authors": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "description",
+                "state",
+                "title",
+                "version"
+            ],
+            "title": "Metainfo"
+        },
+        "State": {
+          "type": "string",
+          "enum": ["registered", "development", "stable"]
+        },
+        "Categories": {
+            "type": "object",
+            "additionalProperties": false,
+            "patternProperties": {
+              ".*": {"$ref": "#/definitions/Category"}
+            }
+        },
+        "Category": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "title": {
+                    "type": "string"
+                },
+                "description": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "description",
+                "title"
+            ],
+            "title": "Category"
+        }
+    }
+}
