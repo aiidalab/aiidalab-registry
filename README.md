@@ -1,9 +1,9 @@
-# AiiDA lab Application Registry
+# AiiDAlab Application Registry
 
-This repository contains the **source code** of the official App registry for the [AiiDA lab](https://www.materialscloud.org/aiidalab).
+This repository contains the **source code** of the official App registry for the [AiiDAlab](https://www.materialscloud.org/aiidalab).
 
 <p align="center">
- <a href="http://aiidalab.github.io/aiidalab-registry" rel="Go to AiiDA lab app registry">
+ <a href="http://aiidalab.github.io/aiidalab-registry" rel="Go to AiiDAlab app registry">
   <img src="make_ghpages/static/gotobutton.svg">
  </a>
 </p>
@@ -15,7 +15,7 @@ This repository contains the **source code** of the official App registry for th
     ```json
         {
             "title": "AiiDA Tutorials",
-            "description": "Learn how to use AiiDA using jupyter notebooks on the AiiDA lab.",
+            "description": "Learn how to use AiiDA using jupyter notebooks on the AiiDAlab.",
             "version": "0.1-alpha",
             "authors": "A. Person, B. Smart",
             "logo": "folder/logo.png",
@@ -28,7 +28,7 @@ This repository contains the **source code** of the official App registry for th
     **Note**: The fields `title` and `description` are mandatory.
 
     **Note**: If you used the
-    [AiiDA lab App cookie cutter](https://github.com/aiidalab/aiidalab-app-cutter)
+    [AiiDAlab App cookie cutter](https://github.com/aiidalab/aiidalab-app-cutter)
     to create your app, you should already have `metadata.json` in your repository
     and need only update it.
 
@@ -45,7 +45,7 @@ This repository contains the **source code** of the official App registry for th
     ```
 
 Your app will show up in the
-[AiiDA lab App Store](https://github.com/aiidalab/aiidalab-home/blob/master/appstore.ipynb)
+[AiiDAlab App Store](https://github.com/aiidalab/aiidalab-home/blob/master/appstore.ipynb)
 once your pull request is merged.
 
 ### Valid keys for `metadata.json`
@@ -54,7 +54,7 @@ once your pull request is merged.
 |:---:|:---:|:---|
 | `title` | **Mandatory** | The title will be displayed in the list of apps in the application manager. |
 | `description` | **Mandatory** | The description will be displayed on the detail page of your app. |
-| `version` | Optional | The version will be displayed on the detail page of your app. This is also used by the [AiiDA lab App Store](https://github.com/aiidalab/aiidalab-home/blob/master/appstore.ipynb). |
+| `version` | Optional | The version will be displayed on the detail page of your app. This is also used by the [AiiDAlab App Store](https://github.com/aiidalab/aiidalab-home/blob/master/appstore.ipynb). |
 | `authors` | Optional | Comma-separated list of authors. |
 | `logo` | Optional | Relative path to a logo (png or jpg) within your repository. |
 | `state` | Optional | One of<br>- `registered`: lowest level - app may not yet be in a working state. Use this to secure a specific name.<br>- `development`: app is under active development, expect the occasional bug.<br>- `stable`: app can be used in production. |
