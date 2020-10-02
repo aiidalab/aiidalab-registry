@@ -43,6 +43,11 @@ def categories_json():
     return json.loads(ROOT.joinpath('categories.json').read_text())
 
 
+@pytest.fixture
+def valid_categories(categories_json):
+    return set(categories_json)
+
+
 def test_validate_apps_schema(apps_schema):
     jsonschema.Draft7Validator.check_schema(apps_schema)
 
@@ -59,8 +64,14 @@ def test_validate_metadata_schema(metadata_schema):
     jsonschema.Draft7Validator.check_schema(metadata_schema)
 
 
-def test_validate_apps_json(validate, apps_schema, apps_json):
+def test_validate_apps_json_schema(validate, apps_schema, apps_json, valid_categories):
     validate(instance=apps_json, schema=apps_schema)
+
+
+def test_validate_apps_json_categories(apps_json, valid_categories):
+    for app in apps_json.values():
+        for category in app['categories']:
+            assert category in valid_categories
 
 
 def test_validate_categories_json(validate, categories_schema, categories_json):
