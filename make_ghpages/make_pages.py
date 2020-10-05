@@ -6,6 +6,7 @@ import os
 import shutil
 import string
 from collections import OrderedDict, defaultdict
+from pathlib import Path
 from urllib.parse import urlparse
 from urllib.request import urlopen
 import exceptions as exc
@@ -226,3 +227,11 @@ if __name__ == "__main__":
     with codecs.open(outfile, 'w', 'utf-8') as f:
         json.dump(all_data, f, ensure_ascii=False, indent=2)
     print("  - apps_meta.json generated")
+
+    # Copy schemas
+    print("[schemas/v1]")
+    schemas_outdir = Path(outdir_abs).joinpath('schemas/v1')
+    schemas_outdir.mkdir(parents=True)
+    for schemafile in Path(pwd).glob('../schemas/*.schema.json'):
+        print(f"  - {schemafile.name}")
+        shutil.copyfile(schemafile, schemas_outdir.joinpath(schemafile.name))
