@@ -79,28 +79,23 @@ def get_git_branches(git_url):
         res[key.decode("utf-8")] = value.decode("utf-8")
     return res
 
+
 def get_git_author(git_url):
-    git_author = urlparse(git_url).path
+    git_author = urlparse(git_url).path.split('/')[1]
 
-    git_author = git_author.split('/')[1]
-
-    ## Special condition, only valid when git_author is 'aiidalab'
+    # Special condition, only valid when git_author is 'aiidalab'
     if git_author == 'aiidalab':
         git_author = 'AiiDA Lab Team'
 
     return git_author
 
+
 def complete_meta_info(app_name, meta_info, git_url):
-    if 'state' not in meta_info:
-        meta_info['state'] = 'registered'
-
-    if 'title' not in meta_info:
-        meta_info['title'] = app_name
-
-    if 'authors' not in meta_info:
-        meta_info['authors'] = get_git_author(git_url)
-
+    meta_info.setdefault('state', 'registered')
+    meta_info.setdefault('title', app_name)
+    meta_info.setdefault('authors', get_git_author(git_url))
     return meta_info
+
 
 def get_logo_url(logo_rel_path, meta_url):
     logo_url = meta_url[:-len('metadata.json')] + logo_rel_path
