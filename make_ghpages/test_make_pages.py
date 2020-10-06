@@ -40,6 +40,7 @@ def write_json_files(tmpdir, metadata=None, apps=None):
 
 
 ### TESTS ###
+@pytest.mark.skip(reason='requests does not natively handle file:// scheme')
 def test_validate_logo(tmpdir):
     """ Test validate logo in get_logo_url(logo_rel_path, meta_url)
     Make sure exception is raised when logo URL is present,
@@ -67,6 +68,7 @@ def test_validate_logo(tmpdir):
         app_data['logo'] = mp.get_logo_url(app_data['metainfo']['logo'], app_data['meta_url'])
 
 
+@pytest.mark.skip(reason='requests does not natively handle file:// scheme')
 def test_get_logo_url(tmpdir):
     """ Test get_logo_url(logo_rel_path, meta_url)
     Making path to logo equal to path to metadata.json to test path to "logo"

@@ -8,13 +8,17 @@ import string
 from collections import OrderedDict
 from pathlib import Path
 from urllib.parse import urlparse
-from urllib.request import urlopen
 import exceptions as exc
 
 ## Requires jinja2 >= 2.9
 from jinja2 import Environment, PackageLoader, select_autoescape
+import requests
+import requests_cache
 
 ### BEGIN configuration
+
+requests_cache.install_cache('.requests-cache')
+
 # inputs
 apps_file = 'apps.json'
 categories_file = 'categories.json'
@@ -41,7 +45,8 @@ def get_html_app_fname(app_name):
 
 def get_hosted_on(url):
     try:
-        urlopen(url, timeout=TIMEOUT_SECONDS)
+        r = requests.get(url, timeout=TIMEOUT_SECONDS)
+        r.raise_for_status()
     except Exception:
         raise exc.MissingGit("Value for 'git_url' in apps.json may be wrong: '{}'".format(url))
 
@@ -59,17 +64,16 @@ def get_hosted_on(url):
 
 def get_meta_info(json_url):
     try:
-        response = urlopen(json_url, timeout=TIMEOUT_SECONDS)
-        json_txt = response.read()
+        r = requests.get(json_url, timeout=TIMEOUT_SECONDS)
+        r.raise_for_status()
     except Exception:
-        raise exc.MissingMetadata("Value for 'meta_url' in apps.json may be wrong: '{}'".format(json_url))
+        raise exc.MissingMetadata(f"Value for 'meta_url' in apps.json may be wrong: '{json_url}'")
+    else:
+        try:
+            return r.json()
+        except ValueError:
+            raise exc.WrongMetadata("The apps' metadata is not valid JSON.")
 
-    try:
-        json_data = json.loads(json_txt)
-    except ValueError:
-        raise exc.WrongMetadata("Cannot perform 'json.loads()' on given metadata.json file.")
-
-    return json_data
 
 def get_git_branches(git_url):
     from dulwich.client import get_transport_and_path_from_url
@@ -121,7 +125,7 @@ def get_logo_url(logo_rel_path, meta_url):
 
     # Validate url to logo
     try:
-        urlopen(logo_url, timeout=TIMEOUT_SECONDS)
+        requests.get(logo_url, timeout=TIMEOUT_SECONDS)
     except Exception:
         raise exc.MissingLogo("Value for 'logo' in your app's metadata.json may be wrong: '{}'".format(logo_url))
 

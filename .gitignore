@@ -5,3 +5,6 @@
 
 # Editors
 .vscode
+
+# Cache files
+.requests-cache.sqlite
