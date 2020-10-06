@@ -12,12 +12,16 @@ import exceptions as exc
 
 ## Requires jinja2 >= 2.9
 from jinja2 import Environment, PackageLoader, select_autoescape
+import jsonschema
 import requests
 import requests_cache
 
 ### BEGIN configuration
 
 requests_cache.install_cache('.requests-cache')
+
+# paths
+ROOT = Path(__file__).parent.parent.resolve()
 
 # inputs
 apps_file = 'apps.json'
@@ -107,19 +111,6 @@ def complete_meta_info(app_name, meta_info, git_url):
 
     return meta_info
 
-def validate_categories(categories, raw_data):
-    if not isinstance(categories, list):
-        raise exc.MissingCategories("Value for 'categories' in apps.json must be a list: '{}'".format(str(categories)))
-
-    if not categories:
-        print("  >> WARNING: No categories specified.")
-        return
-
-    for category in categories:
-        if category not in raw_data:
-            raise exc.WrongCategory("Specified category '{}' not found in list {}. ".format(category, str(raw_data.keys()))
-                                    + "Edit categories.json to propose new categories.")
-
 def get_logo_url(logo_rel_path, meta_url):
     logo_url = meta_url[:-len('metadata.json')] + logo_rel_path
 
@@ -149,9 +140,6 @@ def fetch_app_data(app_data, app_name):
     # Check if categories are specified, warn if not
     if 'categories' not in app_data:
         print("  >> WARNING: No categories specified.")
-    # Check correct categories are specified
-    else:
-        validate_categories(app_data['categories'], apps_meta['categories'])
 
     app_data['metainfo'] = complete_meta_info(app_name, meta_info, app_data['git_url'])
     app_data['gitinfo'] = get_git_branches(app_data['git_url'])
@@ -162,6 +150,15 @@ def fetch_app_data(app_data, app_name):
         app_data['logo'] = get_logo_url(app_data['metainfo']['logo'], app_data['meta_url'])
 
     return app_data
+
+
+def validate_apps_meta(apps_meta):
+    apps_meta_schema = json.loads(ROOT.joinpath('schemas/apps_meta.schema.json').read_text())
+    jsonschema.validate(instance=apps_meta, schema=apps_meta_schema)
+
+    for app, appdata in apps_meta['apps'].items():
+        for category in appdata['categories']:
+            assert category in apps_meta['categories']
 
 
 def generate_apps_meta(apps_raw_data, categories_raw_data):
@@ -177,6 +174,7 @@ def generate_apps_meta(apps_raw_data, categories_raw_data):
                               get_html_app_fname(app_name))
         apps_meta['apps'][app_name] = app_data
 
+    validate_apps_meta(apps_meta)
     return apps_meta
 
 
@@ -202,10 +200,14 @@ if __name__ == "__main__":
     # Get apps.json raw data
     with open(os.path.join(pwd, os.pardir, apps_file)) as f:
         apps_raw_data = json.load(f)
+    apps_schema = json.loads(ROOT.joinpath('schemas/apps.schema.json').read_text())
+    jsonschema.validate(instance=apps_raw_data, schema=apps_schema)
 
     # Get categories.json raw data
     with open(os.path.join(pwd, os.pardir, categories_file)) as f:
         categories_raw_data = json.load(f)
+    categories_schema = json.loads(ROOT.joinpath('schemas/categories.schema.json').read_text())
+    jsonschema.validate(instance=categories_raw_data, schema=categories_schema)
 
     apps_meta = generate_apps_meta(apps_raw_data, categories_raw_data)
 
