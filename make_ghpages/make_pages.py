@@ -35,7 +35,7 @@ def get_html_app_fname(app_name):
 
     simple_string = "".join(c for c in app_name if c in valid_characters)
 
-    return "{}.html".format(simple_string)
+    return f"{simple_string}.html"
 
 
 def get_hosted_on(url):
@@ -43,7 +43,7 @@ def get_hosted_on(url):
         r = requests.get(url, timeout=TIMEOUT_SECONDS)
         r.raise_for_status()
     except Exception:
-        raise exc.MissingGit("Value for 'git_url' in apps.json may be wrong: '{}'".format(url))
+        raise exc.MissingGit(f"Value for 'git_url' in apps.json may be wrong: '{url}'")
 
     netloc = urlparse(url).netloc
 
@@ -104,7 +104,7 @@ def get_logo_url(logo_rel_path, meta_url):
     try:
         requests.get(logo_url, timeout=TIMEOUT_SECONDS)
     except Exception:
-        raise exc.MissingLogo("Value for 'logo' in your app's metadata.json may be wrong: '{}'".format(logo_url))
+        raise exc.MissingLogo(f"Value for 'logo' in your app's metadata.json may be wrong: '{logo_url}'")
 
     return logo_url
 
@@ -114,14 +114,14 @@ def fetch_app_data(app_data, app_name):
     if 'git_url' in app_data:
         hosted_on = get_hosted_on(app_data['git_url'])
     else:
-        raise exc.MissingGit("No 'git_url' key for '{}' in apps.json".format(app_name))
+        raise exc.MissingGit(f"No 'git_url' key for '{app_name}' in apps.json")
 
     # Get metadata.json from the project;
     # fail build if meta_url is not found or wrong
     if 'meta_url' in app_data:
         meta_info = get_meta_info(app_data['meta_url'])
     else:
-        raise exc.MissingMetadata("No 'meta_url' key for '{}' in apps.json".format(app_name))
+        raise exc.MissingMetadata(f"No 'meta_url' key for '{app_name}' in apps.json")
 
     # Check if categories are specified, warn if not
     if 'categories' not in app_data:
@@ -153,7 +153,7 @@ def generate_apps_meta(apps_data, categories_data):
     apps_meta['categories'] = categories_data
     print("Fetch app data...")
     for app_name in sorted(apps_data.keys()):
-        print("  - {}".format(app_name))
+        print(f"  - {app_name}")
         app_data = fetch_app_data(apps_data[app_name], app_name)
         app_data['name'] = app_name
         app_data['subpage'] = os.path.join('apps', get_html_app_fname(app_name))
@@ -190,7 +190,7 @@ def build_pages(apps_meta):
         app_html = singlepage_template.render(category_map=apps_meta['categories'], **app_data)
         with codecs.open(subpage_abspath, 'w', 'utf-8') as f:
             f.write(app_html)
-        print("  - {}".format(subpage_name))
+        print(f"  - {subpage_name}")
 
     # Make index page based on main_index.html
     print("[main index]")
