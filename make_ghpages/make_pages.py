@@ -22,17 +22,8 @@ requests_cache.install_cache('.requests-cache')
 
 # paths
 ROOT = Path(__file__).parent.parent.resolve()
-
-# inputs
-apps_file = 'apps.json'
-categories_file = 'categories.json'
-templates_folder = 'templates'
-static_folder = 'static'
-
-# outputs
-out_folder = 'out'
-html_subfolder_name = 'apps' # subfolder for HTMLs of apps
-apps_meta_file = 'apps_meta.json'
+STATIC_PATH = ROOT.joinpath('make_ghpages', 'static')
+BUILD_PATH = ROOT.joinpath('make_ghpages', 'out')
 
 # configuration
 TIMEOUT_SECONDS = 30  # seconds
@@ -161,88 +152,86 @@ def validate_apps_meta(apps_meta):
             assert category in apps_meta['categories']
 
 
-def generate_apps_meta(apps_raw_data, categories_raw_data):
+def generate_apps_meta(apps_data, categories_data):
     apps_meta = {}
     apps_meta['apps'] = OrderedDict()
-    apps_meta['categories'] = categories_raw_data
+    apps_meta['categories'] = categories_data
     print("Fetch app data...")
-    for app_name in sorted(apps_raw_data.keys()):
+    for app_name in sorted(apps_data.keys()):
         print("  - {}".format(app_name))
-        app_data = fetch_app_data(apps_raw_data[app_name], app_name)
+        app_data = fetch_app_data(apps_data[app_name], app_name)
         app_data['name'] = app_name
-        app_data['subpage'] = os.path.join(html_subfolder_name,
-                              get_html_app_fname(app_name))
+        app_data['subpage'] = os.path.join('apps', get_html_app_fname(app_name))
         apps_meta['apps'][app_name] = app_data
 
     validate_apps_meta(apps_meta)
     return apps_meta
 
 
-if __name__ == "__main__":
-    pwd = os.path.split(os.path.abspath(__file__))[0]
-    outdir_abs = os.path.join(pwd, out_folder)
-    static_abs = os.path.join(pwd, static_folder)
+def build_pages(apps_meta):
+    # Validate input data
+    validate_apps_meta(apps_meta)
 
     # Create output folder, copy static files
-    if os.path.exists(outdir_abs):
-        shutil.rmtree(outdir_abs)
-    os.mkdir(outdir_abs)
-    shutil.copytree(static_abs, os.path.join(outdir_abs, static_folder))
+    if BUILD_PATH.exists():
+        shutil.rmtree(BUILD_PATH)
+    shutil.copytree(STATIC_PATH, BUILD_PATH / 'static')
 
+    # Load template environment
     env = Environment(
         loader=PackageLoader('mod'),
         autoescape=select_autoescape(['html', 'xml']),
     )
-
     singlepage_template = env.get_template("singlepage.html")
     main_index_template = env.get_template("main_index.html")
 
-    # Get apps.json raw data
-    with open(os.path.join(pwd, os.pardir, apps_file)) as f:
-        apps_raw_data = json.load(f)
-    apps_schema = json.loads(ROOT.joinpath('schemas/apps.schema.json').read_text())
-    jsonschema.validate(instance=apps_raw_data, schema=apps_schema)
-
-    # Get categories.json raw data
-    with open(os.path.join(pwd, os.pardir, categories_file)) as f:
-        categories_raw_data = json.load(f)
-    categories_schema = json.loads(ROOT.joinpath('schemas/categories.schema.json').read_text())
-    jsonschema.validate(instance=categories_raw_data, schema=categories_schema)
-
-    apps_meta = generate_apps_meta(apps_raw_data, categories_raw_data)
-
-    html_subfolder_abs = os.path.join(outdir_abs, html_subfolder_name)
-    os.mkdir(html_subfolder_abs)
-
     # Make single-entry page based on singlepage.html
     print("[apps]")
+    BUILD_PATH.joinpath('apps').mkdir()
     for app_name, app_data in apps_meta['apps'].items():
         subpage_name = app_data['subpage']
-        subpage_abspath = os.path.join(outdir_abs, subpage_name)
+        subpage_abspath = BUILD_PATH / subpage_name
 
         app_html = singlepage_template.render(category_map=apps_meta['categories'], **app_data)
         with codecs.open(subpage_abspath, 'w', 'utf-8') as f:
             f.write(app_html)
-        print("  - {} generated.".format(subpage_name))
+        print("  - {}".format(subpage_name))
 
     # Make index page based on main_index.html
     print("[main index]")
     rendered = main_index_template.render(**apps_meta)
-    outfile = os.path.join(outdir_abs, 'index.html')
-    with codecs.open(outfile, 'w', 'utf-8') as f:
-        f.write(rendered)
-    print("  - index.html generated")
+    outfile = BUILD_PATH / 'index.html'
+    outfile.write_text(rendered, encoding='utf-8')
+    print(f"  - {outfile.relative_to(BUILD_PATH)}")
 
     # Save json data for the app manager
-    outfile = os.path.join(outdir_abs, apps_meta_file)
-    with codecs.open(outfile, 'w', 'utf-8') as f:
-        json.dump(apps_meta, f, ensure_ascii=False, indent=2)
-    print("  - apps_meta.json generated")
+    outfile = BUILD_PATH / 'apps_meta.json'
+    rendered = json.dumps(apps_meta, ensure_ascii=False, indent=2)
+    outfile.write_text(rendered, encoding='utf-8')
+    print(f"  - {outfile.relative_to(BUILD_PATH)}")
 
     # Copy schemas
     print("[schemas/v1]")
-    schemas_outdir = Path(outdir_abs).joinpath('schemas/v1')
+    schemas_outdir = BUILD_PATH.joinpath('schemas', 'v1')
     schemas_outdir.mkdir(parents=True)
-    for schemafile in Path(pwd).glob('../schemas/*.schema.json'):
-        print(f"  - {schemafile.name}")
+    for schemafile in ROOT.glob('schemas/*.schema.json'):
         shutil.copyfile(schemafile, schemas_outdir.joinpath(schemafile.name))
+        print(f"  - {schemas_outdir.relative_to(BUILD_PATH)}/{schemafile.name}")
+
+
+if __name__ == "__main__":
+    # Get apps.json raw data and validate against schema
+    apps_data = json.loads(ROOT.joinpath('apps.json').read_text())
+    apps_schema = json.loads(ROOT.joinpath('schemas/apps.schema.json').read_text())
+    jsonschema.validate(instance=apps_data, schema=apps_schema)
+
+    # Get categories.json raw data and validate against schema
+    categories_data = json.loads(ROOT.joinpath('categories.json').read_text())
+    categories_schema = json.loads(ROOT.joinpath('schemas/categories.schema.json').read_text())
+    jsonschema.validate(instance=categories_data, schema=categories_schema)
+
+    # Generate the apps_meta data
+    apps_meta = generate_apps_meta(apps_data, categories_data)
+
+    # Build the HTML pages
+    build_pages(apps_meta)
