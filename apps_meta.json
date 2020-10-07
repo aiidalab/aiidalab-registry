@@ -384,9 +384,9 @@
         "state": "development"
       },
       "gitinfo": {
-        "HEAD": "ecabce2100acfe5fe97998ab8774635c00c2f4f6",
+        "HEAD": "c75a1f34a680cfd56459963b22e1abcff2719ee8",
         "refs/heads/develop": "3edc4d8efce2d18e78708adbe02f40dde3e3871c",
-        "refs/heads/master": "ecabce2100acfe5fe97998ab8774635c00c2f4f6",
+        "refs/heads/master": "c75a1f34a680cfd56459963b22e1abcff2719ee8",
         "refs/heads/modify-num-electrons": "8c28ffd13044f7a50840f5a93b68516eb11e31a1",
         "refs/pull/1/head": "8c28ffd13044f7a50840f5a93b68516eb11e31a1",
         "refs/pull/1/merge": "ffc43590fa13e0aa0165257e060827edbc1792e9",
