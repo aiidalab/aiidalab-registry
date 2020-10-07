@@ -113,8 +113,8 @@
         "state": "stable"
       },
       "gitinfo": {
-        "HEAD": "b13ae7dc3cb7375c685358319ecdf6de6db022eb",
-        "refs/heads/develop": "b13ae7dc3cb7375c685358319ecdf6de6db022eb",
+        "HEAD": "efad328d0f83d099fdc529792201a946b48110fa",
+        "refs/heads/develop": "efad328d0f83d099fdc529792201a946b48110fa",
         "refs/heads/master": "efad328d0f83d099fdc529792201a946b48110fa",
         "refs/heads/qe-revision-2": "39c2f17ef7ae821f445bbf20e0a03bda52dbb645",
         "refs/heads/setup-code-widget": "4affb3f950ed91e29dfc0e305904c474f4ce6d36",
