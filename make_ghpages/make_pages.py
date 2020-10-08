@@ -22,11 +22,11 @@ requests_cache.install_cache('.requests-cache')
 
 # paths
 ROOT = Path(__file__).parent.parent.resolve()
-STATIC_PATH = ROOT.joinpath('make_ghpages', 'static')
-BUILD_PATH = ROOT.joinpath('make_ghpages', 'out')
+STATIC_PATH = ROOT / 'make_ghpages' / 'static'
+BUILD_PATH = ROOT / 'make_ghpages' / 'out'
 
 # configuration
-TIMEOUT_SECONDS = 30  # seconds
+TIMEOUT_SECONDS = 30
 ### END configuration
 
 
@@ -43,7 +43,7 @@ def get_hosted_on(url):
         r = requests.get(url, timeout=TIMEOUT_SECONDS)
         r.raise_for_status()
     except Exception:
-        raise exc.MissingGit(f"Value for 'git_url' in apps.json may be wrong: '{url}'")
+        raise exc.MissingGit(f"Value for 'git_url' in apps.json may be wrong: {url!r}")
 
     netloc = urlparse(url).netloc
 
@@ -59,13 +59,13 @@ def get_hosted_on(url):
 
 def get_meta_info(json_url):
     try:
-        r = requests.get(json_url, timeout=TIMEOUT_SECONDS)
-        r.raise_for_status()
+        response = requests.get(json_url, timeout=TIMEOUT_SECONDS)
+        response.raise_for_status()
     except Exception:
-        raise exc.MissingMetadata(f"Value for 'meta_url' in apps.json may be wrong: '{json_url}'")
+        raise exc.MissingMetadata(f"Value for 'meta_url' in apps.json may be wrong: {json_url!r}")
     else:
         try:
-            return r.json()
+            return response.json()
         except ValueError:
             raise exc.WrongMetadata("The apps' metadata is not valid JSON.")
 
@@ -85,7 +85,7 @@ def get_git_author(git_url):
 
     # Special condition, only valid when git_author is 'aiidalab'
     if git_author == 'aiidalab':
-        git_author = 'AiiDA Lab Team'
+        git_author = 'AiiDAlab Team'
 
     return git_author
 
@@ -104,7 +104,7 @@ def get_logo_url(logo_rel_path, meta_url):
     try:
         requests.get(logo_url, timeout=TIMEOUT_SECONDS)
     except Exception:
-        raise exc.MissingLogo(f"Value for 'logo' in your app's metadata.json may be wrong: '{logo_url}'")
+        raise exc.MissingLogo(f"Value for 'logo' in your app's metadata.json may be wrong: {logo_url!r}")
 
     return logo_url
 
@@ -114,14 +114,14 @@ def fetch_app_data(app_data, app_name):
     if 'git_url' in app_data:
         hosted_on = get_hosted_on(app_data['git_url'])
     else:
-        raise exc.MissingGit(f"No 'git_url' key for '{app_name}' in apps.json")
+        raise exc.MissingGit(f"No 'git_url' key for {app_name!r} in apps.json")
 
     # Get metadata.json from the project;
     # fail build if meta_url is not found or wrong
     if 'meta_url' in app_data:
         meta_info = get_meta_info(app_data['meta_url'])
     else:
-        raise exc.MissingMetadata(f"No 'meta_url' key for '{app_name}' in apps.json")
+        raise exc.MissingMetadata(f"No 'meta_url' key for {app_name!r} in apps.json")
 
     # Check if categories are specified, warn if not
     if 'categories' not in app_data:
@@ -148,10 +148,11 @@ def validate_apps_meta(apps_meta):
 
 
 def generate_apps_meta(apps_data, categories_data):
-    apps_meta = {}
-    apps_meta['apps'] = OrderedDict()
-    apps_meta['categories'] = categories_data
-    print("Fetch app data...")
+    apps_meta = {
+        'apps': OrderedDict(),
+        'categories': categories_data,
+    }
+    print("Fetching app data...")
     for app_name in sorted(apps_data.keys()):
         print(f"  - {app_name}")
         app_data = fetch_app_data(apps_data[app_name], app_name)
@@ -207,14 +208,14 @@ def build_pages(apps_meta):
 
     # Copy schemas
     print("[schemas/v1]")
-    schemas_outdir = BUILD_PATH.joinpath('schemas', 'v1')
+    schemas_outdir = BUILD_PATH / 'schemas' / 'v1'
     schemas_outdir.mkdir(parents=True)
     for schemafile in ROOT.glob('schemas/*.schema.json'):
-        shutil.copyfile(schemafile, schemas_outdir.joinpath(schemafile.name))
+        shutil.copyfile(schemafile, schemas_outdir / schemafile.name)
         print(f"  - {schemas_outdir.relative_to(BUILD_PATH)}/{schemafile.name}")
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     # Get apps.json raw data and validate against schema
     apps_data = json.loads(ROOT.joinpath('apps.json').read_text())
     apps_schema = json.loads(ROOT.joinpath('schemas/apps.schema.json').read_text())
