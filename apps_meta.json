@@ -454,9 +454,9 @@
         "authors": "nanotech-empa"
       },
       "gitinfo": {
-        "HEAD": "30c3d9d754f3c07a78dbaa606029a9346bb31de9",
+        "HEAD": "3f253f398d9c8f77624e3be694a313ce79d172ab",
         "refs/heads/develop": "3eaf391e899e0ffb29748159fe6367e651290aae",
-        "refs/heads/master": "30c3d9d754f3c07a78dbaa606029a9346bb31de9",
+        "refs/heads/master": "3f253f398d9c8f77624e3be694a313ce79d172ab",
         "refs/heads/support/aiida-0.12.x": "def4e269cb7fcf3572a286e71b12f4fc854829dd",
         "refs/pull/10/head": "ca56b4459d857c7a4961cd22b120a4924f469b33",
         "refs/pull/11/head": "84c56ef7cc102811d8363ae5c74b2d219d63fc23",
