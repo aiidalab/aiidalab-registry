@@ -12,13 +12,13 @@ import exceptions as exc
 
 ## Requires jinja2 >= 2.9
 from jinja2 import Environment, PackageLoader, select_autoescape
+import cachecontrol
 import jsonschema
 import requests
-import requests_cache
 
 ### BEGIN configuration
 
-requests_cache.install_cache('.requests-cache')
+REQUESTS = cachecontrol.CacheControl(requests.Session())
 
 # paths
 ROOT = Path(__file__).parent.parent.resolve()
@@ -40,8 +40,7 @@ def get_html_app_fname(app_name):
 
 def get_hosted_on(url):
     try:
-        r = requests.get(url, timeout=TIMEOUT_SECONDS)
-        r.raise_for_status()
+        REQUESTS.get(url, timeout=TIMEOUT_SECONDS).raise_for_status()
     except Exception:
         raise exc.MissingGit(f"Value for 'git_url' in apps.json may be wrong: {url!r}")
 
@@ -59,7 +58,7 @@ def get_hosted_on(url):
 
 def get_meta_info(json_url):
     try:
-        response = requests.get(json_url, timeout=TIMEOUT_SECONDS)
+        response = REQUESTS.get(json_url, timeout=TIMEOUT_SECONDS)
         response.raise_for_status()
     except Exception:
         raise exc.MissingMetadata(f"Value for 'meta_url' in apps.json may be wrong: {json_url!r}")
@@ -102,7 +101,7 @@ def get_logo_url(logo_rel_path, meta_url):
 
     # Validate url to logo
     try:
-        requests.get(logo_url, timeout=TIMEOUT_SECONDS)
+        REQUESTS.get(logo_url, timeout=TIMEOUT_SECONDS)
     except Exception:
         raise exc.MissingLogo(f"Value for 'logo' in your app's metadata.json may be wrong: {logo_url!r}")
 
