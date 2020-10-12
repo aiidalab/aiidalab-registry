@@ -7,7 +7,6 @@
         "classical",
         "quantum"
       ],
-      "name": "aiidalab-lsmo",
       "metainfo": {
         "description": "Applications from the LSMO group",
         "title": "LSMO apps",
@@ -52,9 +51,10 @@
         "refs/tags/v0.1.0": "bf82ac4c8033df623091b88d8bc1ff3d264532d8",
         "refs/tags/v0.1.0^{}": "01ef3bfa764d929703b3ceddc1c3110bb5d25102"
       },
-      "subpage": "apps/aiidalab-lsmo.html",
       "hosted_on": "github.com",
-      "logo": "https://raw.githubusercontent.com/lsmo-epfl/aiidalab-epfl-lsmo/master/miscellaneous/logos/LSMO.png"
+      "logo": "https://raw.githubusercontent.com/lsmo-epfl/aiidalab-epfl-lsmo/master/miscellaneous/logos/LSMO.png",
+      "name": "aiidalab-lsmo",
+      "subpage": "apps/aiidalab-lsmo.html"
     },
     "aiidalab-optimade": {
       "git_url": "https://github.com/aiidalab/aiidalab-optimade.git",
@@ -62,7 +62,6 @@
       "categories": [
         "utilities"
       ],
-      "name": "aiidalab-optimade",
       "metainfo": {
         "title": "OPTIMADE Client",
         "description": "Query for and import structures from OPTIMADE providers (COD, Materials Cloud, NoMaD, Materials Project, OQMD, and more ...).",
@@ -93,9 +92,10 @@
         "refs/tags/v1.1.1": "756714cde8967cb365c51f4505c735976df2eafd",
         "refs/tags/v1.1.1^{}": "d348e8b1e7c991497315acef1129a2788a845646"
       },
-      "subpage": "apps/aiidalab-optimade.html",
       "hosted_on": "github.com",
-      "logo": "https://raw.githubusercontent.com/aiidalab/aiidalab-optimade/master/img/optimade-no-text-transparent-bg.png"
+      "logo": "https://raw.githubusercontent.com/aiidalab/aiidalab-optimade/master/img/optimade-no-text-transparent-bg.png",
+      "name": "aiidalab-optimade",
+      "subpage": "apps/aiidalab-optimade.html"
     },
     "aiidalab-widgets-base": {
       "git_url": "https://github.com/aiidalab/aiidalab-widgets-base.git",
@@ -103,7 +103,6 @@
       "categories": [
         "utilities"
       ],
-      "name": "aiidalab-widgets-base",
       "metainfo": {
         "title": "AiiDAlab Base Widgets",
         "description": "Reusable widgets for applications in the AiiDAlab.",
@@ -260,9 +259,10 @@
         "refs/tags/v1.0.0b9": "758252f94028bb4a058d47582c75e37a97abaae1",
         "refs/tags/v1.0.0b9^{}": "960526425d2bd8e99320c742e9497c70907ad084"
       },
-      "subpage": "apps/aiidalab-widgets-base.html",
       "hosted_on": "github.com",
-      "logo": "https://raw.githubusercontent.com/aiidalab/aiidalab-widgets-base/master/miscellaneous/logos/aiidalab.png"
+      "logo": "https://raw.githubusercontent.com/aiidalab/aiidalab-widgets-base/master/miscellaneous/logos/aiidalab.png",
+      "name": "aiidalab-widgets-base",
+      "subpage": "apps/aiidalab-widgets-base.html"
     },
     "home": {
       "git_url": "https://github.com/aiidalab/aiidalab-home",
@@ -270,7 +270,6 @@
       "categories": [
         "setup"
       ],
-      "name": "home",
       "metainfo": {
         "title": "Home",
         "description": "AiiDA lab Home",
@@ -318,8 +317,9 @@
         "refs/tags/v20.09.0": "f20ce4af4d23c45bafecaec3d7ebaeab71fb98f6",
         "refs/tags/v20.09.0^{}": "f3b25933b05cad4586eb9e036b0d2f67862e7dbc"
       },
-      "subpage": "apps/home.html",
-      "hosted_on": "github.com"
+      "hosted_on": "github.com",
+      "name": "home",
+      "subpage": "apps/home.html"
     },
     "nanoribbons": {
       "git_url": "https://github.com/nanotech-empa/aiidalab-empa-nanoribbons",
@@ -327,7 +327,6 @@
       "categories": [
         "quantum"
       ],
-      "name": "nanoribbons",
       "metainfo": {
         "authors": "nanotech@surfaces laboratory, Empa",
         "description": "Tools for graphene nanoribbons, developed at the nanotech@surfaces laboratory, Empa",
@@ -364,9 +363,10 @@
         "refs/tags/v1.1.0": "3ba9c02808255f786c62d7de6ebb196c0d8448b5",
         "refs/tags/v1.1.0^{}": "0af01e527318f6dbaef785e4e3be8e53749aebc7"
       },
-      "subpage": "apps/nanoribbons.html",
       "hosted_on": "github.com",
-      "logo": "https://raw.githubusercontent.com/nanotech-empa/aiidalab-empa-nanoribbons/master/miscellaneous/logos/empa.png"
+      "logo": "https://raw.githubusercontent.com/nanotech-empa/aiidalab-empa-nanoribbons/master/miscellaneous/logos/empa.png",
+      "name": "nanoribbons",
+      "subpage": "apps/nanoribbons.html"
     },
     "quantum-espresso": {
       "git_url": "https://github.com/aiidalab/aiidalab-qe.git",
@@ -374,7 +374,6 @@
       "categories": [
         "quantum"
       ],
-      "name": "quantum-espresso",
       "metainfo": {
         "description": "Perform Quantum ESPRESSO calculations",
         "title": "Quantum ESPRESSO",
@@ -403,9 +402,10 @@
         "refs/pull/9/head": "70d1a5840be88f8f04c61f4cc6c5cf4343d79723",
         "refs/tags/v20.09.0": "2a8dcb9c7b66c004e0bb87e38ab23c8563b5575f"
       },
-      "subpage": "apps/quantum-espresso.html",
       "hosted_on": "github.com",
-      "logo": "https://raw.githubusercontent.com/aiidalab/aiidalab-qe/master/miscellaneous/logos/QE.jpg"
+      "logo": "https://raw.githubusercontent.com/aiidalab/aiidalab-qe/master/miscellaneous/logos/QE.jpg",
+      "name": "quantum-espresso",
+      "subpage": "apps/quantum-espresso.html"
     },
     "scanning_probe": {
       "git_url": "https://github.com/nanotech-empa/aiidalab-empa-scanning-probe",
@@ -413,7 +413,6 @@
       "categories": [
         "quantum"
       ],
-      "name": "scanning_probe",
       "metainfo": {
         "description": "Empa nanotech@surfaces Laboratory",
         "title": "Empa nanotech@surfaces Laboratory - Scanning Probe Microscopy",
@@ -434,9 +433,10 @@
         "refs/tags/v1.1": "9ce88c33726a23ed55c8063427d74f5e4c81e009",
         "refs/tags/v1.2": "1a5400fa27908063312c8b1e03295ec9a8b02b18"
       },
-      "subpage": "apps/scanning_probe.html",
       "hosted_on": "github.com",
-      "logo": "https://raw.githubusercontent.com/nanotech-empa/aiidalab-empa-scanning-probe/master/miscellaneous/logos/empa.png"
+      "logo": "https://raw.githubusercontent.com/nanotech-empa/aiidalab-empa-scanning-probe/master/miscellaneous/logos/empa.png",
+      "name": "scanning_probe",
+      "subpage": "apps/scanning_probe.html"
     },
     "surfaces": {
       "git_url": "https://github.com/nanotech-empa/aiidalab-empa-surfaces",
@@ -444,7 +444,6 @@
       "categories": [
         "quantum"
       ],
-      "name": "surfaces",
       "metainfo": {
         "description": "Tools for on-surface chemistry, developed at the nanotech@surfaces laboratory, Empa",
         "title": "Empa nanotech@surfaces Laboratory - On-Surface Chemistry",
@@ -501,9 +500,10 @@
         "refs/tags/v0.1": "818ca108baa8e70541e94d0bae831fb20e90a637",
         "refs/tags/v0.1.1": "818ca108baa8e70541e94d0bae831fb20e90a637"
       },
-      "subpage": "apps/surfaces.html",
       "hosted_on": "github.com",
-      "logo": "https://raw.githubusercontent.com/nanotech-empa/aiidalab-empa-surfaces/master/miscellaneous/logos/empa.png"
+      "logo": "https://raw.githubusercontent.com/nanotech-empa/aiidalab-empa-surfaces/master/miscellaneous/logos/empa.png",
+      "name": "surfaces",
+      "subpage": "apps/surfaces.html"
     }
   },
   "categories": {

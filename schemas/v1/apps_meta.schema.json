@@ -58,27 +58,33 @@
                         "type": "string"
                     }
                 },
+                "name": {
+                  "type": "string"
+                },
                 "metainfo": {
-                    "$ref": "#/definitions/Metainfo"
+                    "$ref": "https://aiidalab.github.io/aiidalab-registry/schemas/v1/metadata.schema.json#/definitions/Welcome"
                 },
                 "gitinfo": {
                     "$ref": "#/definitions/AppGitinfo"
                 },
+                "subpage": {
+                    "type": "string"
+                },
                 "hosted_on": {
                     "type": "string"
                 },
-                "groups": {
-                    "type": "array",
-                    "items": {
-                        "type": "string"
-                    }
+                "logo": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ]
                 }
             },
             "required": [
                 "categories",
                 "git_url",
                 "gitinfo",
-                "groups",
                 "hosted_on",
                 "meta_url",
                 "metainfo"
@@ -89,43 +95,12 @@
             "type": "object",
             "additionalProperties": false,
             "propertyNames": {
-              "pattern": "^(HEAD)|(refs\/(heads|tags))\/.+$"
+              "pattern": "^(HEAD)|(refs\/(heads|pull|tags))\/.+$"
             },
             "patternProperties": {
               ".*": {"type": "string"}
             },
             "title": "AppGitinfo"
-        },
-        "Metainfo": {
-            "type": "object",
-            "additionalProperties": false,
-            "properties": {
-                "description": {
-                    "type": "string"
-                },
-                "title": {
-                    "type": "string"
-                },
-                "version": {
-                    "type": "string"
-                },
-                "logo": {
-                    "type": "string"
-                },
-                "state": {
-                  "$ref": "#/definitions/State"
-                },
-                "authors": {
-                    "type": "string"
-                }
-            },
-            "required": [
-                "description",
-                "state",
-                "title",
-                "version"
-            ],
-            "title": "Metainfo"
         },
         "State": {
           "type": "string",
@@ -135,25 +110,8 @@
             "type": "object",
             "additionalProperties": false,
             "patternProperties": {
-              ".*": {"$ref": "#/definitions/Category"}
+              ".*": {"$ref": "https://aiidalab.github.io/aiidalab-registry/schemas/v1/categories.schema.json#/definitions/Category"}
             }
-        },
-        "Category": {
-            "type": "object",
-            "additionalProperties": false,
-            "properties": {
-                "title": {
-                    "type": "string"
-                },
-                "description": {
-                    "type": "string"
-                }
-            },
-            "required": [
-                "description",
-                "title"
-            ],
-            "title": "Category"
         }
     }
 }
