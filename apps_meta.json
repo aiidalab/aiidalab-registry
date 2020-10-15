@@ -65,15 +65,15 @@
       "metainfo": {
         "title": "OPTIMADE Client",
         "description": "Query for and import structures from OPTIMADE providers (COD, Materials Cloud, NoMaD, Materials Project, OQMD, and more ...).",
-        "version": "1.1.1",
+        "version": "1.1.2",
         "authors": "Casper Welzel Andersen",
         "state": "stable",
         "logo": "img/optimade-no-text-transparent-bg.png",
         "external_url": "https://www.optimade.org"
       },
       "gitinfo": {
-        "HEAD": "4677b542237220bd6aae4336376e5ce75dae5baf",
-        "refs/heads/master": "4677b542237220bd6aae4336376e5ce75dae5baf",
+        "HEAD": "a9a458c1834d19e046ed91fdcb00969eae088a28",
+        "refs/heads/master": "a9a458c1834d19e046ed91fdcb00969eae088a28",
         "refs/pull/1/head": "0aae91c8effc85a2305a22baf1cc79341b57c72f",
         "refs/pull/10/head": "6453655c05368b049f60cc93d2eac8e36a41531f",
         "refs/pull/11/head": "944f756e4951317aa4bb3547b3110387a17dc636",
@@ -92,8 +92,8 @@
         "refs/tags/v1.1.0^{}": "188c1cccc997aa56e3b436a1ddd190b3a8c0b95a",
         "refs/tags/v1.1.1": "756714cde8967cb365c51f4505c735976df2eafd",
         "refs/tags/v1.1.1^{}": "d348e8b1e7c991497315acef1129a2788a845646",
-        "refs/tags/v1.1.2": "0a78a77f27eeac0bb7cc81a97a5a7dc734e8b188",
-        "refs/tags/v1.1.2^{}": "4677b542237220bd6aae4336376e5ce75dae5baf"
+        "refs/tags/v1.1.2": "6535607673ebf9c96dd0e20ad9d46db745241e69",
+        "refs/tags/v1.1.2^{}": "a9a458c1834d19e046ed91fdcb00969eae088a28"
       },
       "hosted_on": "github.com",
       "logo": "https://raw.githubusercontent.com/aiidalab/aiidalab-optimade/master/img/optimade-no-text-transparent-bg.png",
