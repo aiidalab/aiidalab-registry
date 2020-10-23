@@ -386,13 +386,13 @@
         "state": "development"
       },
       "gitinfo": {
-        "HEAD": "954989159d521f0881a79828c7addd9c876da7d4",
+        "HEAD": "1c2cc8720369f6db296534f9ce7d72e6051539a4",
         "refs/heads/develop": "1c2cc8720369f6db296534f9ce7d72e6051539a4",
-        "refs/heads/gh-pages": "70194a34329695067aa66bad97c321eb9d391ed0",
-        "refs/heads/master": "954989159d521f0881a79828c7addd9c876da7d4",
+        "refs/heads/gh-pages": "a4451f6cd28f11fa1e1b0d1d7cd55829409e32de",
+        "refs/heads/master": "1c2cc8720369f6db296534f9ce7d72e6051539a4",
         "refs/heads/metadata": "d9baebe34df07178a88ae484faabd77de801d597",
         "refs/heads/modify-num-electrons": "8c28ffd13044f7a50840f5a93b68516eb11e31a1",
-        "refs/heads/publish-metadata": "f57838152e69673b2a0ecbfc9919446558eae301",
+        "refs/heads/publish-metadata": "264487ea840699be799f3f6a6934a4c4b52f7aed",
         "refs/pull/1/head": "8c28ffd13044f7a50840f5a93b68516eb11e31a1",
         "refs/pull/1/merge": "ffc43590fa13e0aa0165257e060827edbc1792e9",
         "refs/pull/10/head": "5e0ce9942b30f2d152e756bbdef3f1ad4378071e",
@@ -408,7 +408,8 @@
         "refs/pull/9/head": "70d1a5840be88f8f04c61f4cc6c5cf4343d79723",
         "refs/tags/v20.09.0": "2a8dcb9c7b66c004e0bb87e38ab23c8563b5575f",
         "refs/tags/v20.10.0": "b244d52a77b4afe1c0b42e007e17ef7e7475f99b",
-        "refs/tags/v20.10.1": "954989159d521f0881a79828c7addd9c876da7d4"
+        "refs/tags/v20.10.1": "954989159d521f0881a79828c7addd9c876da7d4",
+        "refs/tags/v20.10.2": "1c2cc8720369f6db296534f9ce7d72e6051539a4"
       },
       "hosted_on": "github.com",
       "logo": "https://raw.githubusercontent.com/aiidalab/aiidalab-qe/master/miscellaneous/logos/QE.jpg",
