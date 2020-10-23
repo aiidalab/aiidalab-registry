@@ -388,11 +388,11 @@
       "gitinfo": {
         "HEAD": "954989159d521f0881a79828c7addd9c876da7d4",
         "refs/heads/develop": "3edc4d8efce2d18e78708adbe02f40dde3e3871c",
-        "refs/heads/gh-pages": "be270739f1082e7cfeaebfe48943773ff488c154",
+        "refs/heads/gh-pages": "70194a34329695067aa66bad97c321eb9d391ed0",
         "refs/heads/master": "954989159d521f0881a79828c7addd9c876da7d4",
         "refs/heads/metadata": "d9baebe34df07178a88ae484faabd77de801d597",
         "refs/heads/modify-num-electrons": "8c28ffd13044f7a50840f5a93b68516eb11e31a1",
-        "refs/heads/publish-metadata": "e89ab68aa38c9eab1dbdea7de36c4e90eac8d1c5",
+        "refs/heads/publish-metadata": "f57838152e69673b2a0ecbfc9919446558eae301",
         "refs/pull/1/head": "8c28ffd13044f7a50840f5a93b68516eb11e31a1",
         "refs/pull/1/merge": "ffc43590fa13e0aa0165257e060827edbc1792e9",
         "refs/pull/10/head": "5e0ce9942b30f2d152e756bbdef3f1ad4378071e",
