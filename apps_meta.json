@@ -65,20 +65,21 @@
       "metainfo": {
         "title": "OPTIMADE Client",
         "description": "Query for and import structures from OPTIMADE providers (COD, Materials Cloud, NoMaD, Materials Project, OQMD, and more ...).",
-        "version": "1.1.2",
+        "version": "1.2.0",
         "authors": "Casper Welzel Andersen",
         "state": "stable",
         "logo": "img/optimade-no-text-transparent-bg.png",
         "external_url": "https://www.optimade.org"
       },
       "gitinfo": {
-        "HEAD": "4e0255b642811df3867b83ea0f25a4f49409a4f6",
-        "refs/heads/master": "4e0255b642811df3867b83ea0f25a4f49409a4f6",
+        "HEAD": "81b86a2fe97a0e754768616f8222c5dc221fb302",
+        "refs/heads/master": "81b86a2fe97a0e754768616f8222c5dc221fb302",
         "refs/pull/1/head": "0aae91c8effc85a2305a22baf1cc79341b57c72f",
         "refs/pull/10/head": "6453655c05368b049f60cc93d2eac8e36a41531f",
         "refs/pull/11/head": "944f756e4951317aa4bb3547b3110387a17dc636",
         "refs/pull/13/head": "e000688062397269fec91ab4276c2c607d4e8b5c",
         "refs/pull/14/head": "e22d450ea59096235b4e21245cdb3e52aaa63d19",
+        "refs/pull/15/head": "95c0df238d2f67fa0efbc49a4789495af8578feb",
         "refs/pull/3/head": "654396f6dc77e2280c9cde59becbce54b4ebe59f",
         "refs/pull/5/head": "4f1918265861cbe47561b7651db0bcbc93978fc4",
         "refs/pull/6/head": "b99458c19fb43190cc2e388837c8556c94540e1d",
@@ -94,7 +95,9 @@
         "refs/tags/v1.1.1": "756714cde8967cb365c51f4505c735976df2eafd",
         "refs/tags/v1.1.1^{}": "d348e8b1e7c991497315acef1129a2788a845646",
         "refs/tags/v1.1.2": "6535607673ebf9c96dd0e20ad9d46db745241e69",
-        "refs/tags/v1.1.2^{}": "a9a458c1834d19e046ed91fdcb00969eae088a28"
+        "refs/tags/v1.1.2^{}": "a9a458c1834d19e046ed91fdcb00969eae088a28",
+        "refs/tags/v1.2.0": "d5e8e3bb47a28d718216e115f864a4cf70988c29",
+        "refs/tags/v1.2.0^{}": "81b86a2fe97a0e754768616f8222c5dc221fb302"
       },
       "hosted_on": "github.com",
       "logo": "https://raw.githubusercontent.com/aiidalab/aiidalab-optimade/master/img/optimade-no-text-transparent-bg.png",
