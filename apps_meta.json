@@ -16,11 +16,11 @@
         "authors": "lsmo-epfl"
       },
       "gitinfo": {
-        "HEAD": "dddb2ea9e9d84f7a813101843693f5edac6fe0f0",
+        "HEAD": "d50127825c48a089876cf7f38791f8d8d8840470",
         "refs/heads/backup/computer-setup": "ec23ebf546cd614f8166ba52e544cc7a53c7d01b",
-        "refs/heads/develop": "dddb2ea9e9d84f7a813101843693f5edac6fe0f0",
+        "refs/heads/develop": "d50127825c48a089876cf7f38791f8d8d8840470",
         "refs/heads/electronic_calcs": "77abb69ccb5642a7cdc9c9e29fcb9ba3e3842fab",
-        "refs/heads/master": "01ef3bfa764d929703b3ceddc1c3110bb5d25102",
+        "refs/heads/master": "d50127825c48a089876cf7f38791f8d8d8840470",
         "refs/pull/10/head": "55322d2a72f353ca7d496821b463bf0014a611e1",
         "refs/pull/11/head": "071ae54100364829dbfb72fb6b247b00dd4bc72a",
         "refs/pull/12/head": "4eccba79511a40dc60d1c1f879fd49290c16f9fe",
@@ -43,13 +43,16 @@
         "refs/pull/28/head": "8944b31bc5ac46f58c610654127c1e18e4ea69fd",
         "refs/pull/29/head": "64b85bddb68357339cbbdc3297fa5919436f1ecb",
         "refs/pull/3/head": "cb49ade93f8a3a9655f01a16a969c2a6725eaedf",
+        "refs/pull/31/head": "1e8a72555075e0b51c5c1efc8041d829fb59d0d6",
         "refs/pull/4/head": "f24bde2da248002f0d2aba9de73bd72e8b63d83a",
         "refs/pull/5/head": "70940de5efe75c595185e020bcac06770d7fc97a",
         "refs/pull/7/head": "b5279a5a2c608693b26c1af1040643b8c807455a",
         "refs/pull/8/head": "f5571893a45115d452872a9871d3f0ec68abc796",
         "refs/pull/9/head": "f9990d4512211ca746f35064c48c1ffc9f9e5a12",
         "refs/tags/v0.1.0": "bf82ac4c8033df623091b88d8bc1ff3d264532d8",
-        "refs/tags/v0.1.0^{}": "01ef3bfa764d929703b3ceddc1c3110bb5d25102"
+        "refs/tags/v0.1.0^{}": "01ef3bfa764d929703b3ceddc1c3110bb5d25102",
+        "refs/tags/v20.10.0": "72c01adaf117a02a086a55cb192eed6f46af0192",
+        "refs/tags/v20.10.0^{}": "d50127825c48a089876cf7f38791f8d8d8840470"
       },
       "hosted_on": "github.com",
       "logo": "https://raw.githubusercontent.com/lsmo-epfl/aiidalab-epfl-lsmo/master/miscellaneous/logos/LSMO.png",
