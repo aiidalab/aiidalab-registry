@@ -33,6 +33,12 @@
                 "external_url": {
                   "type": "string",
                   "format": "uri"
+                },
+                "requires": {
+                  "type": "object",
+                  "patternProperties": {
+                    ".*": {"$ref": "#/definitions/Requirements"}
+                  }
                 }
             },
             "required": [
@@ -40,6 +46,13 @@
                 "title"
             ],
             "title": "Welcome"
+        },
+        "Requirements": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Requirements"
         }
     }
 }
