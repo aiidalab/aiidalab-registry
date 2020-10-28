@@ -290,8 +290,8 @@
         "state": "registered"
       },
       "gitinfo": {
-        "HEAD": "88b3488f52f473baadcde5d56224cdd9ad036271",
-        "refs/heads/develop": "88b3488f52f473baadcde5d56224cdd9ad036271",
+        "HEAD": "16e57a8bc487a73d0612ce5afa7d3edc1c2cb9ed",
+        "refs/heads/develop": "16e57a8bc487a73d0612ce5afa7d3edc1c2cb9ed",
         "refs/heads/master": "f3b25933b05cad4586eb9e036b0d2f67862e7dbc",
         "refs/heads/support/aiida-0.12.x": "0d8cf36dfbe41818240be5973f6e0b8817c97ac9",
         "refs/pull/1/head": "674052f9279896aac1eb75adc7c3ec3d97716ab0",
@@ -319,7 +319,6 @@
         "refs/pull/45/head": "453f6a20f3204e9c47fe81218a4e526cc1a2f496",
         "refs/pull/46/head": "9d26f9932ee9c4afbf2c127a19eee11965212b42",
         "refs/pull/47/head": "1203b2daf0cf342358f9d6a66841570f608c0e69",
-        "refs/pull/47/merge": "f82a3e29f385b0ef2a8a2010c6b8a93d182ba9f7",
         "refs/pull/48/head": "038375ae040c317a8769712c86bdfa53cd843b93",
         "refs/pull/5/head": "38acf7f7012ed86f803df1729a5a52d9da2c0c62",
         "refs/pull/6/head": "e23e6d654a4d3f9cd56fca0e9897e6398f16a86a",
@@ -381,7 +380,7 @@
     },
     "quantum-espresso": {
       "git_url": "https://github.com/aiidalab/aiidalab-qe.git",
-      "meta_url": "https://raw.githubusercontent.com/aiidalab/aiidalab-qe/master/metadata.json",
+      "meta_url": "https://aiidalab.github.io/aiidalab-qe/metadata.json",
       "categories": [
         "quantum"
       ],
@@ -394,10 +393,10 @@
         "state": "development"
       },
       "gitinfo": {
-        "HEAD": "1c2cc8720369f6db296534f9ce7d72e6051539a4",
+        "HEAD": "89702931d585e67e118a66b3033b18c58b5d7868",
         "refs/heads/develop": "1c2cc8720369f6db296534f9ce7d72e6051539a4",
-        "refs/heads/gh-pages": "a4451f6cd28f11fa1e1b0d1d7cd55829409e32de",
-        "refs/heads/master": "1c2cc8720369f6db296534f9ce7d72e6051539a4",
+        "refs/heads/gh-pages": "292f0bf29a3769edf09daadcfe4f1bc4908ed10a",
+        "refs/heads/master": "89702931d585e67e118a66b3033b18c58b5d7868",
         "refs/heads/metadata": "d9baebe34df07178a88ae484faabd77de801d597",
         "refs/heads/modify-num-electrons": "8c28ffd13044f7a50840f5a93b68516eb11e31a1",
         "refs/heads/publish-metadata": "264487ea840699be799f3f6a6934a4c4b52f7aed",
@@ -408,7 +407,6 @@
         "refs/pull/12/head": "2a8dcb9c7b66c004e0bb87e38ab23c8563b5575f",
         "refs/pull/13/head": "55a8b4df0cd924ba417e1571032cf0065c75828f",
         "refs/pull/14/head": "264487ea840699be799f3f6a6934a4c4b52f7aed",
-        "refs/pull/14/merge": "04a56567ee17c253bb3d9962192ac4a34e6062b5",
         "refs/pull/2/head": "2e0493aceb9931a6c88ba9bc6c925e32954f3d1b",
         "refs/pull/3/head": "ee19f4bed9ffde63edbcb8121ccbe3fb28c28155",
         "refs/pull/4/head": "29d5bbf50183b17028e3c5acd79e56b6e81990f1",
@@ -422,7 +420,7 @@
         "refs/tags/v20.10.2": "1c2cc8720369f6db296534f9ce7d72e6051539a4"
       },
       "hosted_on": "github.com",
-      "logo": "https://raw.githubusercontent.com/aiidalab/aiidalab-qe/master/miscellaneous/logos/QE.jpg",
+      "logo": "https://aiidalab.github.io/aiidalab-qe/miscellaneous/logos/QE.jpg",
       "name": "quantum-espresso",
       "subpage": "apps/quantum-espresso.html"
     },
