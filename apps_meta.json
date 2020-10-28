@@ -390,13 +390,35 @@
         "version": "0.1.0",
         "authors": "Carl Simon Adorf, Aliaksandr Yakutovich",
         "logo": "miscellaneous/logos/QE.jpg",
-        "state": "development"
+        "state": "development",
+        "requires": {
+          "<20.10.2,>=20.09": [
+            "aiida-core~=1.0",
+            "aiidalab-optimade~=1.1.2",
+            "aiidalab-widgets-base==1.0.0b12",
+            "aiida-quantumespresso~=3.2",
+            "ase~=3.18",
+            "fileupload==0.1.5",
+            "nglview~=2.7",
+            "ipywidgets~=7.5"
+          ],
+          ">=20.10.2": [
+            "aiida-core~=1.0",
+            "aiidalab-optimade~=1.1.2",
+            "aiidalab-widgets-base==1.0.0b12",
+            "aiida-quantumespresso~=3.2",
+            "ase~=3.18",
+            "fileupload==0.1.5",
+            "nglview~=2.7",
+            "ipywidgets~=7.5"
+          ]
+        }
       },
       "gitinfo": {
-        "HEAD": "89702931d585e67e118a66b3033b18c58b5d7868",
+        "HEAD": "2b00903f930d19aed761df5fab843301bc6ae5fe",
         "refs/heads/develop": "1c2cc8720369f6db296534f9ce7d72e6051539a4",
-        "refs/heads/gh-pages": "292f0bf29a3769edf09daadcfe4f1bc4908ed10a",
-        "refs/heads/master": "89702931d585e67e118a66b3033b18c58b5d7868",
+        "refs/heads/gh-pages": "b2d9c3a5239f9486eba4ec9b8993a51df8d979f4",
+        "refs/heads/master": "2b00903f930d19aed761df5fab843301bc6ae5fe",
         "refs/heads/metadata": "d9baebe34df07178a88ae484faabd77de801d597",
         "refs/heads/modify-num-electrons": "8c28ffd13044f7a50840f5a93b68516eb11e31a1",
         "refs/heads/publish-metadata": "264487ea840699be799f3f6a6934a4c4b52f7aed",
