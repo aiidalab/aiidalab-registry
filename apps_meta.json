@@ -76,6 +76,7 @@
       },
       "gitinfo": {
         "HEAD": "81b86a2fe97a0e754768616f8222c5dc221fb302",
+        "refs/heads/dependabot/pip/master/optimade-client-approx-eq-2020.10.28": "c8fd57560201c07ee6b7a55bede33ff6cdf9203b",
         "refs/heads/master": "81b86a2fe97a0e754768616f8222c5dc221fb302",
         "refs/pull/1/head": "0aae91c8effc85a2305a22baf1cc79341b57c72f",
         "refs/pull/10/head": "6453655c05368b049f60cc93d2eac8e36a41531f",
@@ -83,6 +84,8 @@
         "refs/pull/13/head": "e000688062397269fec91ab4276c2c607d4e8b5c",
         "refs/pull/14/head": "e22d450ea59096235b4e21245cdb3e52aaa63d19",
         "refs/pull/15/head": "95c0df238d2f67fa0efbc49a4789495af8578feb",
+        "refs/pull/16/head": "c8fd57560201c07ee6b7a55bede33ff6cdf9203b",
+        "refs/pull/16/merge": "b36bd8d1ecb9e78f8310b5c28e8372afe921d348",
         "refs/pull/3/head": "654396f6dc77e2280c9cde59becbce54b4ebe59f",
         "refs/pull/5/head": "4f1918265861cbe47561b7651db0bcbc93978fc4",
         "refs/pull/6/head": "b99458c19fb43190cc2e388837c8556c94540e1d",
