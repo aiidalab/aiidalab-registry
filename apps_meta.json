@@ -16,11 +16,10 @@
         "authors": "lsmo-epfl"
       },
       "gitinfo": {
-        "HEAD": "d50127825c48a089876cf7f38791f8d8d8840470",
+        "HEAD": "a3b795c412bc6b56a3650324f6d46da2b74025dc",
         "refs/heads/backup/computer-setup": "ec23ebf546cd614f8166ba52e544cc7a53c7d01b",
-        "refs/heads/develop": "d50127825c48a089876cf7f38791f8d8d8840470",
+        "refs/heads/develop": "a3b795c412bc6b56a3650324f6d46da2b74025dc",
         "refs/heads/electronic_calcs": "77abb69ccb5642a7cdc9c9e29fcb9ba3e3842fab",
-        "refs/heads/fix/code-setup-links": "55bf3cf361a06eef697fa2ac95e394175524184c",
         "refs/heads/master": "d50127825c48a089876cf7f38791f8d8d8840470",
         "refs/pull/10/head": "55322d2a72f353ca7d496821b463bf0014a611e1",
         "refs/pull/11/head": "071ae54100364829dbfb72fb6b247b00dd4bc72a",
@@ -46,7 +45,6 @@
         "refs/pull/3/head": "cb49ade93f8a3a9655f01a16a969c2a6725eaedf",
         "refs/pull/31/head": "1e8a72555075e0b51c5c1efc8041d829fb59d0d6",
         "refs/pull/32/head": "55bf3cf361a06eef697fa2ac95e394175524184c",
-        "refs/pull/32/merge": "ba0066e91fbc8ea999fce117d2539d02ead01fd3",
         "refs/pull/4/head": "f24bde2da248002f0d2aba9de73bd72e8b63d83a",
         "refs/pull/5/head": "70940de5efe75c595185e020bcac06770d7fc97a",
         "refs/pull/7/head": "b5279a5a2c608693b26c1af1040643b8c807455a",
