@@ -465,8 +465,8 @@
         "state": "registered"
       },
       "gitinfo": {
-        "HEAD": "d9158ab2352a36786d705a766a240ba198f72b88",
-        "refs/heads/master": "d9158ab2352a36786d705a766a240ba198f72b88",
+        "HEAD": "61204b784910085a4fbb9ebc95f02040945ba458",
+        "refs/heads/master": "61204b784910085a4fbb9ebc95f02040945ba458",
         "refs/heads/support/aiida-0.12.x": "2a9c1e676552b61b6f314ab39c4ff2dfa089cd3e",
         "refs/pull/1/head": "6c71a75202811fd76d654d62e2b917ef5ce7882d",
         "refs/pull/2/head": "cd8570f5b8ac03e9fa5fe6be4184290df0d7917c",
