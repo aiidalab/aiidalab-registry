@@ -133,7 +133,7 @@
       "gitinfo": {
         "HEAD": "efad328d0f83d099fdc529792201a946b48110fa",
         "refs/heads/develop": "efad328d0f83d099fdc529792201a946b48110fa",
-        "refs/heads/fix/add-optimade-client-dependency": "e8fc60cfa711b59ea0046c4d777d8574278f38f7",
+        "refs/heads/fix/add-optimade-client-dependency": "5194f1fa9569efb40e0c4dc52f110c9803aee920",
         "refs/heads/fix/gracefully-handle-output_filename-attribute-absence": "e5bcbb1692c34d5ca7b152461c00f089b9cd6b6e",
         "refs/heads/master": "efad328d0f83d099fdc529792201a946b48110fa",
         "refs/heads/qe-revision-2": "39c2f17ef7ae821f445bbf20e0a03bda52dbb645",
@@ -175,8 +175,8 @@
         "refs/pull/140/merge": "4c889ad6d9337d855ce9495dbb22aa3d824ecc13",
         "refs/pull/144/head": "e5bcbb1692c34d5ca7b152461c00f089b9cd6b6e",
         "refs/pull/144/merge": "ad76a986d4fa01c44e7fd049d7b27bdd9108c808",
-        "refs/pull/145/head": "e8fc60cfa711b59ea0046c4d777d8574278f38f7",
-        "refs/pull/145/merge": "87ca89675c38ed494e0fb0d9f999e4000fc6553d",
+        "refs/pull/145/head": "5194f1fa9569efb40e0c4dc52f110c9803aee920",
+        "refs/pull/145/merge": "4b5b777a87011f8ebc7c5949f236058983ea351f",
         "refs/pull/18/head": "9d0c24932e32678356209a8dab07a1f1f8bd7efe",
         "refs/pull/23/head": "fce2a53931b6879f2786268da4a40e8c57065b1b",
         "refs/pull/25/head": "441e73c4b3e662e11cfa813e96f93258b7f6314e",
@@ -476,8 +476,8 @@
         "state": "registered"
       },
       "gitinfo": {
-        "HEAD": "61204b784910085a4fbb9ebc95f02040945ba458",
-        "refs/heads/master": "61204b784910085a4fbb9ebc95f02040945ba458",
+        "HEAD": "c0a41edbc2351b3e7109796b89a2f989d2fa6e5c",
+        "refs/heads/master": "c0a41edbc2351b3e7109796b89a2f989d2fa6e5c",
         "refs/heads/support/aiida-0.12.x": "2a9c1e676552b61b6f314ab39c4ff2dfa089cd3e",
         "refs/pull/1/head": "6c71a75202811fd76d654d62e2b917ef5ce7882d",
         "refs/pull/2/head": "cd8570f5b8ac03e9fa5fe6be4184290df0d7917c",
