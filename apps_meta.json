@@ -133,6 +133,7 @@
       "gitinfo": {
         "HEAD": "efad328d0f83d099fdc529792201a946b48110fa",
         "refs/heads/develop": "efad328d0f83d099fdc529792201a946b48110fa",
+        "refs/heads/fix/add-optimade-client-dependency": "e8fc60cfa711b59ea0046c4d777d8574278f38f7",
         "refs/heads/fix/gracefully-handle-output_filename-attribute-absence": "e5bcbb1692c34d5ca7b152461c00f089b9cd6b6e",
         "refs/heads/master": "efad328d0f83d099fdc529792201a946b48110fa",
         "refs/heads/qe-revision-2": "39c2f17ef7ae821f445bbf20e0a03bda52dbb645",
@@ -174,6 +175,8 @@
         "refs/pull/140/merge": "4c889ad6d9337d855ce9495dbb22aa3d824ecc13",
         "refs/pull/144/head": "e5bcbb1692c34d5ca7b152461c00f089b9cd6b6e",
         "refs/pull/144/merge": "ad76a986d4fa01c44e7fd049d7b27bdd9108c808",
+        "refs/pull/145/head": "e8fc60cfa711b59ea0046c4d777d8574278f38f7",
+        "refs/pull/145/merge": "87ca89675c38ed494e0fb0d9f999e4000fc6553d",
         "refs/pull/18/head": "9d0c24932e32678356209a8dab07a1f1f8bd7efe",
         "refs/pull/23/head": "fce2a53931b6879f2786268da4a40e8c57065b1b",
         "refs/pull/25/head": "441e73c4b3e662e11cfa813e96f93258b7f6314e",
