@@ -358,9 +358,9 @@
         "state": "registered"
       },
       "gitinfo": {
-        "HEAD": "b15d6584fc2482f7266aa28ea01a3a35bc25fae8",
-        "refs/heads/bands_ks_bug": "2618c8ac857c15c8e85cfeb83414396768b2869f",
-        "refs/heads/develop": "b15d6584fc2482f7266aa28ea01a3a35bc25fae8",
+        "HEAD": "51341d9a21a066620921609a6984aa4a39565904",
+        "refs/heads/bands_ks_bug": "897711ee2a2217c1e0163fbbfe61bd1f6db09b15",
+        "refs/heads/develop": "51341d9a21a066620921609a6984aa4a39565904",
         "refs/heads/master": "b15d6584fc2482f7266aa28ea01a3a35bc25fae8",
         "refs/heads/support/aiida-0.12.x": "f41f12d6068e0c7a9828a9efe9a33fd962b651eb",
         "refs/pull/1/head": "15143dd4b107b70cc8e563babde262a86a6043a1",
@@ -375,8 +375,7 @@
         "refs/pull/18/head": "0df400cd4a9fad37232a4b98468450af8c80dd6d",
         "refs/pull/19/head": "6dae11d4e1b8e3f63c3d89265243e4d3da49e1c4",
         "refs/pull/2/head": "14063450eba7953dbe8cb74f6bbf96717d9a18c6",
-        "refs/pull/20/head": "2618c8ac857c15c8e85cfeb83414396768b2869f",
-        "refs/pull/20/merge": "4b05a91c9a161850b6ad0a82450e2dbd8f5a7884",
+        "refs/pull/20/head": "897711ee2a2217c1e0163fbbfe61bd1f6db09b15",
         "refs/pull/3/head": "9ef651cd37b94f5679accfe06d577094b12bb4d9",
         "refs/pull/4/head": "7a3c0ebc8c1c5459e4370a75c42ead7fd4b55b38",
         "refs/pull/5/head": "15b94c102cae169f88f5620841da9e2198398aab",
