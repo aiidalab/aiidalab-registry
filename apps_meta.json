@@ -353,15 +353,15 @@
         "authors": "nanotech@surfaces laboratory, Empa",
         "description": "Tools for graphene nanoribbons, developed at the nanotech@surfaces laboratory, Empa",
         "title": "Empa nanotech@surfaces Laboratory - Graphene nanoribbons",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "logo": "miscellaneous/logos/empa.png",
         "state": "registered"
       },
       "gitinfo": {
-        "HEAD": "51341d9a21a066620921609a6984aa4a39565904",
+        "HEAD": "70da4f718a37ff85a3e517d91a4c70373c297b17",
         "refs/heads/bands_ks_bug": "897711ee2a2217c1e0163fbbfe61bd1f6db09b15",
-        "refs/heads/develop": "51341d9a21a066620921609a6984aa4a39565904",
-        "refs/heads/master": "b15d6584fc2482f7266aa28ea01a3a35bc25fae8",
+        "refs/heads/develop": "70da4f718a37ff85a3e517d91a4c70373c297b17",
+        "refs/heads/master": "70da4f718a37ff85a3e517d91a4c70373c297b17",
         "refs/heads/release/1.1.1": "f612ccef342f3dc4ce7e4e7a47b2770a5693cf03",
         "refs/heads/support/aiida-0.12.x": "f41f12d6068e0c7a9828a9efe9a33fd962b651eb",
         "refs/pull/1/head": "15143dd4b107b70cc8e563babde262a86a6043a1",
@@ -387,7 +387,8 @@
         "refs/pull/9/head": "fc95b68068cce9751d65b81e556a5a1cf270f191",
         "refs/tags/v1.0": "844b5aeea46894de7bf470c0a56b7269c9808306",
         "refs/tags/v1.1.0": "3ba9c02808255f786c62d7de6ebb196c0d8448b5",
-        "refs/tags/v1.1.0^{}": "0af01e527318f6dbaef785e4e3be8e53749aebc7"
+        "refs/tags/v1.1.0^{}": "0af01e527318f6dbaef785e4e3be8e53749aebc7",
+        "refs/tags/v1.1.1": "70da4f718a37ff85a3e517d91a4c70373c297b17"
       },
       "hosted_on": "github.com",
       "logo": "https://raw.githubusercontent.com/nanotech-empa/aiidalab-empa-nanoribbons/master/miscellaneous/logos/empa.png",
