@@ -361,7 +361,6 @@
       },
       "gitinfo": {
         "HEAD": "70da4f718a37ff85a3e517d91a4c70373c297b17",
-        "refs/heads/bands_ks_bug": "897711ee2a2217c1e0163fbbfe61bd1f6db09b15",
         "refs/heads/develop": "70da4f718a37ff85a3e517d91a4c70373c297b17",
         "refs/heads/master": "70da4f718a37ff85a3e517d91a4c70373c297b17",
         "refs/heads/release/1.1.1": "f612ccef342f3dc4ce7e4e7a47b2770a5693cf03",
