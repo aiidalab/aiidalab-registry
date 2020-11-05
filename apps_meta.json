@@ -136,6 +136,7 @@
       },
       "gitinfo": {
         "HEAD": "dcca1f9677ed1763e752823793a874e1be0657d5",
+        "refs/heads/add-requires-to-metadata": "52bcf8a4567e4d84cb029258f040546d81df013c",
         "refs/heads/develop": "dcca1f9677ed1763e752823793a874e1be0657d5",
         "refs/heads/master": "efad328d0f83d099fdc529792201a946b48110fa",
         "refs/heads/qe-revision-2": "39c2f17ef7ae821f445bbf20e0a03bda52dbb645",
@@ -182,6 +183,8 @@
         "refs/pull/148/head": "21b4584d5a8f0616b1ce4bbf0447e63b2d2b3771",
         "refs/pull/149/head": "b4b627d6cca2e307df96afe226d191a58c37b13e",
         "refs/pull/149/merge": "a395c5151f73d150e29cfa1a46e6ed19d2ff045a",
+        "refs/pull/150/head": "52bcf8a4567e4d84cb029258f040546d81df013c",
+        "refs/pull/150/merge": "07e99736ed9b4ba8abe1b20d8da90cdb47bd4168",
         "refs/pull/18/head": "9d0c24932e32678356209a8dab07a1f1f8bd7efe",
         "refs/pull/23/head": "fce2a53931b6879f2786268da4a40e8c57065b1b",
         "refs/pull/25/head": "441e73c4b3e662e11cfa813e96f93258b7f6314e",
