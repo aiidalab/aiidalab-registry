@@ -435,20 +435,10 @@
         "logo": "miscellaneous/logos/QE.jpg",
         "state": "development",
         "requires": {
-          "<20.10.2,>=20.09": [
+          ">=20.09": [
             "aiida-core~=1.0",
-            "aiidalab-optimade~=1.1.2",
-            "aiidalab-widgets-base==1.0.0b12",
-            "aiida-quantumespresso~=3.2",
-            "ase~=3.18",
-            "fileupload==0.1.5",
-            "nglview~=2.7",
-            "ipywidgets~=7.5"
-          ],
-          ">=20.10.2": [
-            "aiida-core~=1.0",
-            "aiidalab-optimade~=1.1.2",
-            "aiidalab-widgets-base==1.0.0b12",
+            "aiidalab-optimade~=1.1",
+            "aiidalab-widgets-base~=1.0b",
             "aiida-quantumespresso~=3.2",
             "ase~=3.18",
             "fileupload==0.1.5",
