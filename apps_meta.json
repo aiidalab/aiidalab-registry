@@ -450,7 +450,7 @@
       "gitinfo": {
         "HEAD": "829ee65747e5644d4fdd83a5e1fd043df41e20d3",
         "refs/heads/develop": "1c2cc8720369f6db296534f9ce7d72e6051539a4",
-        "refs/heads/feature/select-process": "7d1ecc39e1d9c55557d65616e0b38bba4437d35d",
+        "refs/heads/feature/select-process": "85813b033407f9149f97e85c522732038f2a4c94",
         "refs/heads/gh-pages": "68c0891ad5b3e1333dff33eae9aab3061df5faa6",
         "refs/heads/master": "829ee65747e5644d4fdd83a5e1fd043df41e20d3",
         "refs/heads/metadata/update-requires": "56de86b7bfbd99bd7ab6e4ca5efff25150b72761",
