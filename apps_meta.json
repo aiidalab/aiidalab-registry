@@ -150,8 +150,8 @@
         }
       },
       "gitinfo": {
-        "HEAD": "77709f544911a0e146a588619cb6031ed85a7bd4",
-        "refs/heads/develop": "77709f544911a0e146a588619cb6031ed85a7bd4",
+        "HEAD": "1bf70420afdaed343a5dfc85aec4aa1108d0cbff",
+        "refs/heads/develop": "1bf70420afdaed343a5dfc85aec4aa1108d0cbff",
         "refs/heads/master": "a082c22c6471833adc8fa6bc77af936012286640",
         "refs/heads/qe-revision-2": "39c2f17ef7ae821f445bbf20e0a03bda52dbb645",
         "refs/heads/setup-code-widget": "4affb3f950ed91e29dfc0e305904c474f4ce6d36",
@@ -169,7 +169,6 @@
         "refs/pull/109/head": "e62a26c77622a5d9d83d5d0ea8b9b8c8c2043fb3",
         "refs/pull/11/head": "2a430d1fa0115454b29a6e084e544f52108f9b68",
         "refs/pull/110/head": "2f69f426fdb5cbd95ebe860f9de30f120e0fc4cf",
-        "refs/pull/110/merge": "c6fc4c04d58592dcaa9b4c910bd1ebb98626b35c",
         "refs/pull/111/head": "e8e70a2df1809fdb6640b95e8558074092296cc7",
         "refs/pull/112/head": "bcf4533ecebdf6c4099f2cf46c477d0179c02533",
         "refs/pull/113/head": "f9cbef55dba5f7d81171924f5f6f3eaf2901dfea",
