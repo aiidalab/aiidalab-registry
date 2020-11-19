@@ -157,6 +157,7 @@
         "refs/heads/qe-revision-2": "39c2f17ef7ae821f445bbf20e0a03bda52dbb645",
         "refs/heads/setup-code-widget": "4affb3f950ed91e29dfc0e305904c474f4ce6d36",
         "refs/heads/support/aiida-0.12.x": "ece1bff88c5c6e35feb1475bbe5b45f0faccaa18",
+        "refs/heads/test": "fcaef649a8d0e1a758c91bf2f9214a1bb647a4fd",
         "refs/heads/trajectory_visualizer": "1e7efdb42a41366f0bd5a9e216459bdee6c88fbc",
         "refs/heads/update/simplify-code-setup": "8fe5ce1430bf7e88fe5ebc574791a265f144a6e8",
         "refs/heads/update/simplify-computer-setup": "a716aa25cc0f21745a4cf855f22910472bd2d62e",
