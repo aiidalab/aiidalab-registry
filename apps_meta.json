@@ -150,11 +150,10 @@
         }
       },
       "gitinfo": {
-        "HEAD": "486457160573d7ec6ca7b17994efa483320db4a0",
-        "refs/heads/develop": "486457160573d7ec6ca7b17994efa483320db4a0",
+        "HEAD": "5b2a654553c9d02208f14b05a4489b22718accd2",
+        "refs/heads/develop": "5b2a654553c9d02208f14b05a4489b22718accd2",
         "refs/heads/master": "5b2a654553c9d02208f14b05a4489b22718accd2",
         "refs/heads/qe-revision-2": "39c2f17ef7ae821f445bbf20e0a03bda52dbb645",
-        "refs/heads/release/1.0.0b14": "0f5df85a47baba1a47bdf5f9b8ca3c7642d93654",
         "refs/heads/setup-code-widget": "4affb3f950ed91e29dfc0e305904c474f4ce6d36",
         "refs/heads/support/aiida-0.12.x": "ece1bff88c5c6e35feb1475bbe5b45f0faccaa18",
         "refs/heads/test": "fcaef649a8d0e1a758c91bf2f9214a1bb647a4fd",
@@ -298,6 +297,8 @@
         "refs/tags/v1.0.0b12^{}": "efad328d0f83d099fdc529792201a946b48110fa",
         "refs/tags/v1.0.0b13": "ed9ada0080b3187f89a86ba2336a89e152d321ff",
         "refs/tags/v1.0.0b13^{}": "a082c22c6471833adc8fa6bc77af936012286640",
+        "refs/tags/v1.0.0b14": "037640ddcb256a2397944521b7ff8e103a2975a2",
+        "refs/tags/v1.0.0b14^{}": "5b2a654553c9d02208f14b05a4489b22718accd2",
         "refs/tags/v1.0.0b2": "ff246fbbda52f98a90e9de5d57447a816d5b6ee0",
         "refs/tags/v1.0.0b2^{}": "36f9eafb20ee6391d38f0985897dea6ad9987a69",
         "refs/tags/v1.0.0b3": "0f5ffe2e1b7de3d5a67f8bfe3176cbc16a330170",
