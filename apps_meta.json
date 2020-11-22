@@ -74,16 +74,15 @@
       "metainfo": {
         "title": "OPTIMADE Client",
         "description": "Query for and import structures from OPTIMADE providers (COD, Materials Cloud, NoMaD, Materials Project, OQMD, and more ...).",
-        "version": "1.2.2",
+        "version": "1.2.3",
         "authors": "Casper Welzel Andersen",
         "state": "stable",
         "logo": "img/optimade-no-text-transparent-bg.png",
         "external_url": "https://www.optimade.org"
       },
       "gitinfo": {
-        "HEAD": "83fdcb60cfb1d87faba48038f7ba3cba771f2c83",
-        "refs/heads/dependabot/pip/master/optimade-client-approx-eq-2020.11.19": "fcadf4fe6fbbc99af1dd0a83caac61824eba0fc2",
-        "refs/heads/master": "83fdcb60cfb1d87faba48038f7ba3cba771f2c83",
+        "HEAD": "c65ebaa6ea9506b710039c0db30f6f2d5f0dbbae",
+        "refs/heads/master": "c65ebaa6ea9506b710039c0db30f6f2d5f0dbbae",
         "refs/pull/1/head": "0aae91c8effc85a2305a22baf1cc79341b57c72f",
         "refs/pull/10/head": "6453655c05368b049f60cc93d2eac8e36a41531f",
         "refs/pull/11/head": "944f756e4951317aa4bb3547b3110387a17dc636",
@@ -94,7 +93,7 @@
         "refs/pull/17/head": "85c2ee9a0ac10f3ac9e5dc9ab6459f6e23e35321",
         "refs/pull/18/head": "f96848fd2c76e2e0e9e79589abe202b130a9e551",
         "refs/pull/19/head": "fcadf4fe6fbbc99af1dd0a83caac61824eba0fc2",
-        "refs/pull/19/merge": "c0fb2ec032bca6a5b6b83d089f5c1c05f1cefc75",
+        "refs/pull/20/head": "4bc2df8519c1621b0737d303e1d12d497611d584",
         "refs/pull/3/head": "654396f6dc77e2280c9cde59becbce54b4ebe59f",
         "refs/pull/5/head": "4f1918265861cbe47561b7651db0bcbc93978fc4",
         "refs/pull/6/head": "b99458c19fb43190cc2e388837c8556c94540e1d",
@@ -116,7 +115,9 @@
         "refs/tags/v1.2.1": "6878ae9ca82eb71fe37e77e2ceadf36d0b7bc05d",
         "refs/tags/v1.2.1^{}": "42f45efb87368b6bb4d53f8b9943cc7c161e4261",
         "refs/tags/v1.2.2": "791d7f700c3c07d2aed14c41d5a8111f2251ddd9",
-        "refs/tags/v1.2.2^{}": "83fdcb60cfb1d87faba48038f7ba3cba771f2c83"
+        "refs/tags/v1.2.2^{}": "83fdcb60cfb1d87faba48038f7ba3cba771f2c83",
+        "refs/tags/v1.2.3": "4293d2eadaf4a7f252b4986e2ce60740d53bf2a8",
+        "refs/tags/v1.2.3^{}": "c65ebaa6ea9506b710039c0db30f6f2d5f0dbbae"
       },
       "hosted_on": "github.com",
       "logo": "https://raw.githubusercontent.com/aiidalab/aiidalab-optimade/master/img/optimade-no-text-transparent-bg.png",
