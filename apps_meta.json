@@ -402,6 +402,7 @@
         "refs/heads/master": "70da4f718a37ff85a3e517d91a4c70373c297b17",
         "refs/heads/release/1.1.1": "f612ccef342f3dc4ce7e4e7a47b2770a5693cf03",
         "refs/heads/support/aiida-0.12.x": "f41f12d6068e0c7a9828a9efe9a33fd962b651eb",
+        "refs/heads/update/openbabel": "b3484981940a3437485f0e9bbd99489429471eac",
         "refs/pull/1/head": "15143dd4b107b70cc8e563babde262a86a6043a1",
         "refs/pull/10/head": "9752741512e8e7258b877388c683ac50d47fa12d",
         "refs/pull/11/head": "47023fcaaf6910ad260a71a3a3bd184c49a75cd3",
