@@ -463,11 +463,11 @@
         }
       },
       "gitinfo": {
-        "HEAD": "4e5dd66cf07fe3e475ffefc7e2950595fd8cb105",
+        "HEAD": "40674cde4e845dfdef556e95ce717bb93a04b397",
         "refs/heads/develop": "9583d5eb7f1082cf29987a9fffda4b2a1227feac",
         "refs/heads/feature/setup-pseudos": "3b497de6336b9d05e2b72f45910c4392e21e2995",
-        "refs/heads/gh-pages": "68c0891ad5b3e1333dff33eae9aab3061df5faa6",
-        "refs/heads/master": "4e5dd66cf07fe3e475ffefc7e2950595fd8cb105",
+        "refs/heads/gh-pages": "be67a2811f5a5d1e5398c2cdc4d906fb3d654776",
+        "refs/heads/master": "40674cde4e845dfdef556e95ce717bb93a04b397",
         "refs/heads/metadata/update-requires": "56de86b7bfbd99bd7ab6e4ca5efff25150b72761",
         "refs/heads/modify-num-electrons": "8c28ffd13044f7a50840f5a93b68516eb11e31a1",
         "refs/pull/1/head": "8c28ffd13044f7a50840f5a93b68516eb11e31a1",
@@ -488,6 +488,7 @@
         "refs/pull/23/head": "68b0413b506cb1afe952698084df85dd1a9d0d83",
         "refs/pull/24/head": "021a2aa70a23ee2a2a706675fef9f6004599bbf0",
         "refs/pull/25/head": "278913a68c11a8e4074ab0dd5b18751ff96a5e3a",
+        "refs/pull/27/head": "c23e4c70044901d75ab7b06056ca735a162f4adf",
         "refs/pull/3/head": "ee19f4bed9ffde63edbcb8121ccbe3fb28c28155",
         "refs/pull/4/head": "29d5bbf50183b17028e3c5acd79e56b6e81990f1",
         "refs/pull/5/head": "bf09fef2a6f82cba86eaccdf603ddbde8e587442",
