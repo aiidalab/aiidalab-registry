@@ -466,6 +466,7 @@
         "HEAD": "40674cde4e845dfdef556e95ce717bb93a04b397",
         "refs/heads/develop": "0cd2f2967d2aa7157ab01c2ef3b1f51615ef9da4",
         "refs/heads/feature/setup-pseudos": "3b497de6336b9d05e2b72f45910c4392e21e2995",
+        "refs/heads/fix/unit-test-select-silicon": "0499e9e5a5e6fef2aa3e1a02103ef3c6e763299f",
         "refs/heads/gh-pages": "be67a2811f5a5d1e5398c2cdc4d906fb3d654776",
         "refs/heads/master": "40674cde4e845dfdef556e95ce717bb93a04b397",
         "refs/heads/metadata/update-requires": "56de86b7bfbd99bd7ab6e4ca5efff25150b72761",
