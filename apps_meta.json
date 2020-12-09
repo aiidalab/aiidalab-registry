@@ -508,7 +508,8 @@
         "refs/tags/v20.10.2": "1c2cc8720369f6db296534f9ce7d72e6051539a4",
         "refs/tags/v20.11.0": "994874ee05749f46407d1217e3de7338ae003929",
         "refs/tags/v20.11.1": "16dd3bf916ed9f152ca18dfe7f2d1a9cc7aeb268",
-        "refs/tags/v20.11.2": "58af2213fdce7453932acb1346aa9d4c27110dd4"
+        "refs/tags/v20.11.2": "58af2213fdce7453932acb1346aa9d4c27110dd4",
+        "refs/tags/v20.12.0": "5006b47be245d45dab75f2d4c4cdd29f159323a3"
       },
       "hosted_on": "github.com",
       "logo": "https://aiidalab.github.io/aiidalab-qe/miscellaneous/logos/QE.jpg",
