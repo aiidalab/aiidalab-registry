@@ -614,6 +614,29 @@
       "logo": "https://raw.githubusercontent.com/nanotech-empa/aiidalab-empa-surfaces/master/miscellaneous/logos/empa.png",
       "name": "surfaces",
       "subpage": "apps/surfaces.html"
+    },
+    "tb-mfh": {
+      "git_url": "https://github.com/nanotech-empa/aiidalab-empa-tb-mfh",
+      "meta_url": "https://raw.githubusercontent.com/nanotech-empa/aiidalab-empa-tb-mfh/master/metadata.json",
+      "categories": [
+        "quantum"
+      ],
+      "metainfo": {
+        "authors": "nanotech@surfaces laboratory, Empa",
+        "description": "App to run mean-field Hubbard tight-binding calculations.",
+        "title": "Empa nanotech@surfaces Laboratory - MFH TB for nanographenes",
+        "version": "0.1.0",
+        "logo": "miscellaneous/logos/empa.png",
+        "state": "development"
+      },
+      "gitinfo": {
+        "HEAD": "3996ee3357edd6aa2bce1a34c4d0d4e3a19083d8",
+        "refs/heads/master": "3996ee3357edd6aa2bce1a34c4d0d4e3a19083d8"
+      },
+      "hosted_on": "github.com",
+      "logo": "https://raw.githubusercontent.com/nanotech-empa/aiidalab-empa-tb-mfh/master/miscellaneous/logos/empa.png",
+      "name": "tb-mfh",
+      "subpage": "apps/tb-mfh.html"
     }
   },
   "categories": {
