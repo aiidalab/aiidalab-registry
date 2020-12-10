@@ -630,8 +630,8 @@
         "state": "development"
       },
       "gitinfo": {
-        "HEAD": "3996ee3357edd6aa2bce1a34c4d0d4e3a19083d8",
-        "refs/heads/master": "3996ee3357edd6aa2bce1a34c4d0d4e3a19083d8"
+        "HEAD": "7213b07b4b07c8fc2e1bd53ca3f2028a014c7f45",
+        "refs/heads/master": "7213b07b4b07c8fc2e1bd53ca3f2028a014c7f45"
       },
       "hosted_on": "github.com",
       "logo": "https://raw.githubusercontent.com/nanotech-empa/aiidalab-empa-tb-mfh/master/miscellaneous/logos/empa.png",
