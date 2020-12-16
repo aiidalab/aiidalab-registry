@@ -154,8 +154,8 @@
         }
       },
       "gitinfo": {
-        "HEAD": "77ce8b11bd016971e9a83cec9145924c97b8251a",
-        "refs/heads/develop": "77ce8b11bd016971e9a83cec9145924c97b8251a",
+        "HEAD": "bffc7429cf2b939cdc5e6e09fd7c6db57f0771fb",
+        "refs/heads/develop": "bffc7429cf2b939cdc5e6e09fd7c6db57f0771fb",
         "refs/heads/master": "5b2a654553c9d02208f14b05a4489b22718accd2",
         "refs/heads/qe-revision-2": "39c2f17ef7ae821f445bbf20e0a03bda52dbb645",
         "refs/heads/setup-code-widget": "4affb3f950ed91e29dfc0e305904c474f4ce6d36",
@@ -347,8 +347,8 @@
         "state": "registered"
       },
       "gitinfo": {
-        "HEAD": "3ac6ecc5101eecef107875250aff292ca8d0a397",
-        "refs/heads/develop": "3ac6ecc5101eecef107875250aff292ca8d0a397",
+        "HEAD": "16bb0797d5ec0f78669d3fce835b1c7e4e57637b",
+        "refs/heads/develop": "16bb0797d5ec0f78669d3fce835b1c7e4e57637b",
         "refs/heads/master": "3ac6ecc5101eecef107875250aff292ca8d0a397",
         "refs/heads/support/aiida-0.12.x": "0d8cf36dfbe41818240be5973f6e0b8817c97ac9",
         "refs/pull/1/head": "674052f9279896aac1eb75adc7c3ec3d97716ab0",
