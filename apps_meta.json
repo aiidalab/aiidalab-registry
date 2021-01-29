@@ -487,7 +487,7 @@
       },
       "gitinfo": {
         "HEAD": "5006b47be245d45dab75f2d4c4cdd29f159323a3",
-        "refs/heads/develop": "14ffe402bebfb50b9c99a9a864e9653ca402a2b7",
+        "refs/heads/develop": "5006b47be245d45dab75f2d4c4cdd29f159323a3",
         "refs/heads/feature/setup-pseudos": "3b497de6336b9d05e2b72f45910c4392e21e2995",
         "refs/heads/gh-pages": "24a1a3fd0361e88f7b80596150a306f7e1d1548e",
         "refs/heads/master": "5006b47be245d45dab75f2d4c4cdd29f159323a3",
@@ -586,6 +586,7 @@
       },
       "gitinfo": {
         "HEAD": "d311e6fa2e288e8850f4ea66209fc3222c53e05d",
+        "refs/heads/cdxml": "254563dc7a5106ccf125c229f8a4f56596e61636",
         "refs/heads/develop": "1f81d3201ed6afd7b8b7667ea831b8eee6078b46",
         "refs/heads/master": "d311e6fa2e288e8850f4ea66209fc3222c53e05d",
         "refs/heads/support/aiida-0.12.x": "def4e269cb7fcf3572a286e71b12f4fc854829dd",
@@ -625,6 +626,8 @@
         "refs/pull/42/head": "3d97d5d1f93eb3361697ec692ac58434c9b43e81",
         "refs/pull/43/head": "f209d38d181b4690134439cf0c1c25b5a2b987a1",
         "refs/pull/44/head": "f209d38d181b4690134439cf0c1c25b5a2b987a1",
+        "refs/pull/45/head": "254563dc7a5106ccf125c229f8a4f56596e61636",
+        "refs/pull/45/merge": "e5f53d0100ceb82d44483321557afba4f9595528",
         "refs/pull/5/head": "7bd1778998ceae7f484a3451e5bb03719fb305f0",
         "refs/pull/6/head": "c1e4ee1353070020c7e60260d010883d3948fa28",
         "refs/pull/7/head": "bfd39ea0a978b95907f994bb297055ceea05029b",
