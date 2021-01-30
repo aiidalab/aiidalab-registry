@@ -581,16 +581,16 @@
       "metainfo": {
         "description": "Tools for on-surface chemistry, developed at the nanotech@surfaces laboratory, Empa",
         "title": "Empa nanotech@surfaces Laboratory - On-Surface Chemistry",
-        "version": "0.1.1",
+        "version": "0.2.0",
         "logo": "miscellaneous/logos/empa.png",
         "state": "registered",
         "authors": "nanotech-empa"
       },
       "gitinfo": {
-        "HEAD": "d311e6fa2e288e8850f4ea66209fc3222c53e05d",
-        "refs/heads/cdxml": "254563dc7a5106ccf125c229f8a4f56596e61636",
-        "refs/heads/develop": "9954a8f39f78ccaa88dc9b766b180ddc596a3692",
-        "refs/heads/master": "d311e6fa2e288e8850f4ea66209fc3222c53e05d",
+        "HEAD": "75b7fbb9cc62c142e8062d6818f48dd7bd6a2331",
+        "refs/heads/develop": "75b7fbb9cc62c142e8062d6818f48dd7bd6a2331",
+        "refs/heads/master": "75b7fbb9cc62c142e8062d6818f48dd7bd6a2331",
+        "refs/heads/release/0.2.0": "7e339474f44d89ae6416c80cdd24db2e725c0280",
         "refs/heads/support/aiida-0.12.x": "def4e269cb7fcf3572a286e71b12f4fc854829dd",
         "refs/pull/10/head": "ca56b4459d857c7a4961cd22b120a4924f469b33",
         "refs/pull/11/head": "84c56ef7cc102811d8363ae5c74b2d219d63fc23",
@@ -629,6 +629,7 @@
         "refs/pull/43/head": "f209d38d181b4690134439cf0c1c25b5a2b987a1",
         "refs/pull/44/head": "f209d38d181b4690134439cf0c1c25b5a2b987a1",
         "refs/pull/45/head": "254563dc7a5106ccf125c229f8a4f56596e61636",
+        "refs/pull/46/head": "7e339474f44d89ae6416c80cdd24db2e725c0280",
         "refs/pull/5/head": "7bd1778998ceae7f484a3451e5bb03719fb305f0",
         "refs/pull/6/head": "c1e4ee1353070020c7e60260d010883d3948fa28",
         "refs/pull/7/head": "bfd39ea0a978b95907f994bb297055ceea05029b",
@@ -636,7 +637,9 @@
         "refs/pull/9/head": "2cf756266e93da78752103cb9dc8ec2f7b7c82d0",
         "refs/tags/v0.0.1": "64afc0f6b96a508439f24edf710f6345c3285285",
         "refs/tags/v0.1": "818ca108baa8e70541e94d0bae831fb20e90a637",
-        "refs/tags/v0.1.1": "818ca108baa8e70541e94d0bae831fb20e90a637"
+        "refs/tags/v0.1.1": "818ca108baa8e70541e94d0bae831fb20e90a637",
+        "refs/tags/v0.2.0": "b12a756af0d4ebea1652b196567ceb098454df46",
+        "refs/tags/v0.2.0^{}": "75b7fbb9cc62c142e8062d6818f48dd7bd6a2331"
       },
       "hosted_on": "github.com",
       "logo": "https://raw.githubusercontent.com/nanotech-empa/aiidalab-empa-surfaces/master/miscellaneous/logos/empa.png",
