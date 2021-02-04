@@ -351,7 +351,7 @@
       ],
       "metainfo": {
         "title": "Home",
-        "description": "AiiDA lab Home",
+        "description": "AiiDAlab Home",
         "authors": "Aliaksandr Yakutovich, Ole Schuett, Casper Welzel Andersen, Leopold Talirz, Edward Ditler",
         "version": "0.3.8",
         "state": "registered"
@@ -359,8 +359,8 @@
       "gitinfo": {
         "HEAD": "ac934d8807fd8b22272da3b96e6f326b38ca94ea",
         "refs/heads/develop": "ac934d8807fd8b22272da3b96e6f326b38ca94ea",
-        "refs/heads/master": "3ac6ecc5101eecef107875250aff292ca8d0a397",
-        "refs/heads/release/21.02.0": "3c5a10c44cdece203720b40347af6a77e9c6e329",
+        "refs/heads/feature/compatibility-info": "8b558e1dbf6402ce16198381ecc5fbab438a1316",
+        "refs/heads/master": "91b3c1f898d5eb4f22b68b28fbae1ff479296389",
         "refs/heads/support/aiida-0.12.x": "0d8cf36dfbe41818240be5973f6e0b8817c97ac9",
         "refs/pull/1/head": "674052f9279896aac1eb75adc7c3ec3d97716ab0",
         "refs/pull/14/head": "36c723a62f2d966b9baeb18b9584c51df16ee7a8",
@@ -394,13 +394,16 @@
         "refs/pull/56/head": "b1ff9e6b14f070f3dcf8423ca0b4fa17b4b7f766",
         "refs/pull/57/head": "e5aba5a83f5616b0774c666902441c2fb06c652e",
         "refs/pull/58/head": "3c5a10c44cdece203720b40347af6a77e9c6e329",
-        "refs/pull/58/merge": "e59a5d9ebadcf130a207b0a320ae24ccae095e26",
+        "refs/pull/59/head": "8b558e1dbf6402ce16198381ecc5fbab438a1316",
+        "refs/pull/59/merge": "2a279854401a4631d035a8598875e3ec2f1593fb",
         "refs/pull/6/head": "e23e6d654a4d3f9cd56fca0e9897e6398f16a86a",
         "refs/pull/7/head": "ececdcedbdfcd92050f807506d1d249f646e4538",
         "refs/pull/9/head": "e40b1d3f5d92a0e7595ad3db7956b4b409c48ab2",
         "refs/tags/v20.09.0": "f20ce4af4d23c45bafecaec3d7ebaeab71fb98f6",
         "refs/tags/v20.09.0^{}": "f3b25933b05cad4586eb9e036b0d2f67862e7dbc",
-        "refs/tags/v20.11.0": "3ac6ecc5101eecef107875250aff292ca8d0a397"
+        "refs/tags/v20.11.0": "3ac6ecc5101eecef107875250aff292ca8d0a397",
+        "refs/tags/v21.02.0": "7f780061457f027eeabe7946bd42d7bd26c0e276",
+        "refs/tags/v21.02.0^{}": "91b3c1f898d5eb4f22b68b28fbae1ff479296389"
       },
       "hosted_on": "github.com",
       "name": "home",
