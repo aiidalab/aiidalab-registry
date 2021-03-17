@@ -1,0 +1,55 @@
+aiidalab-lsmo:
+  categories:
+  - classical
+  - quantum
+  git_url: https://github.com/lsmo-epfl/aiidalab-epfl-lsmo.git
+  metadata:
+    $ref: https://raw.githubusercontent.com/lsmo-epfl/aiidalab-epfl-lsmo/master/metadata.json
+aiidalab-optimade:
+  categories:
+  - utilities
+  git_url: https://github.com/aiidalab/aiidalab-optimade.git
+  metadata:
+    $ref: https://raw.githubusercontent.com/aiidalab/aiidalab-optimade/master/metadata.json
+aiidalab-widgets-base:
+  categories:
+  - utilities
+  git_url: https://github.com/aiidalab/aiidalab-widgets-base.git
+  metadata:
+    $ref: https://raw.githubusercontent.com/aiidalab/aiidalab-widgets-base/master/metadata.json
+home:
+  categories:
+  - setup
+  git_url: https://github.com/aiidalab/aiidalab-home
+  metadata:
+    $ref: https://raw.githubusercontent.com/aiidalab/aiidalab-home/master/metadata.json
+nanoribbons:
+  categories:
+  - quantum
+  git_url: https://github.com/nanotech-empa/aiidalab-empa-nanoribbons
+  metadata:
+    $ref: https://raw.githubusercontent.com/nanotech-empa/aiidalab-empa-nanoribbons/master/metadata.json
+quantum-espresso:
+  categories:
+  - quantum
+  git_url: https://github.com/aiidalab/aiidalab-qe.git
+  metadata:
+    $ref: https://aiidalab.github.io/aiidalab-qe/metadata.json
+scanning_probe:
+  categories:
+  - quantum
+  git_url: https://github.com/nanotech-empa/aiidalab-empa-scanning-probe
+  metadata:
+    $ref: https://raw.githubusercontent.com/nanotech-empa/aiidalab-empa-scanning-probe/master/metadata.json
+surfaces:
+  categories:
+  - quantum
+  git_url: https://github.com/nanotech-empa/aiidalab-empa-surfaces
+  metadata:
+    $ref: https://raw.githubusercontent.com/nanotech-empa/aiidalab-empa-surfaces/master/metadata.json
+tb-mfh:
+  categories:
+  - quantum
+  git_url: https://github.com/nanotech-empa/aiidalab-empa-tb-mfh
+  metadata:
+    $ref: https://raw.githubusercontent.com/nanotech-empa/aiidalab-empa-tb-mfh/master/metadata.json
