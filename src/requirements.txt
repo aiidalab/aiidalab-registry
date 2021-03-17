@@ -1,0 +1,8 @@
+CacheControl==0.12.6
+Jinja2==2.11.2
+dacite==1.6.0
+dulwich==0.20.15
+jsonref==0.2
+jsonschema[format]==3.2.0
+requests==2.24.0
+ruamel.yaml==0.16.12
