@@ -80,7 +80,7 @@ def write_schemas(schemas, dest):
 
 
 @singledispatch
-def build_from_config(config: Config):
+def build_from_config(config: Config, validate: bool = True):
     """Build the app registry website (including schema files) from the configuration.
 
     This function poses an alternative to a more comprehensive build script and allows
@@ -115,7 +115,7 @@ def build_from_config(config: Config):
     )
 
     # Generate the aggregated apps metadata registry.
-    apps_meta = generate_apps_meta(data=data, schema=schemas.apps_meta)
+    apps_meta = generate_apps_meta(data=data, schema=schemas.apps_meta if validate else None)
 
     # Remove previous build (if present).
 
@@ -132,11 +132,11 @@ def build_from_config(config: Config):
 
 
 @build_from_config.register
-def _(config: Mapping):
-    build_from_config(Config.from_mapping(config))
+def _(config: Mapping, *args, **kwargs):
+    build_from_config(Config.from_mapping(config), *args, **kwargs)
 
 
 @build_from_config.register(str)
 @build_from_config.register(Path)
-def _(config: Union[str, Path]):
-    build_from_config(Config.from_path(config))
+def _(config: Union[str, Path], *args, **kwargs):
+    build_from_config(Config.from_path(config), *args, **kwargs)
