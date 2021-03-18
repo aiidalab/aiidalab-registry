@@ -115,7 +115,9 @@ def build_from_config(config: Config, validate: bool = True):
     )
 
     # Generate the aggregated apps metadata registry.
-    apps_meta = generate_apps_meta(data=data, schema=schemas.apps_meta if validate else None)
+    apps_meta = generate_apps_meta(
+        data=data, schema=schemas.apps_meta if validate else None
+    )
 
     # Remove previous build (if present).
 
