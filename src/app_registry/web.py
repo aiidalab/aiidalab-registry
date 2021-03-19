@@ -112,6 +112,7 @@ def build_from_config(config: Config, validate: bool = True):
         apps=load_json(Path(config.schemas.apps)),
         categories=load_json(Path(config.schemas.categories)),
         apps_meta=load_json(Path(config.schemas.apps_meta)),
+        metadata=load_json(Path(config.schemas.metadata)),
     )
 
     # Generate the aggregated apps metadata registry.
