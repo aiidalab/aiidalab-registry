@@ -129,7 +129,7 @@ def build_from_config(config: Config, validate: bool = True):
 
     # Copy static data (if configured).
     if config.build.static_src:
-        shutil.copytree(config.build.static_src, Path(config.build.html) / "static")
+        shutil.copytree(config.build.static_src, Path(config.build.html))
 
     # Build the html pages.
     build_html(apps_meta, dest=Path(config.build.html))
