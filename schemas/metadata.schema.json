@@ -34,6 +34,10 @@
                   "type": "string",
                   "format": "uri"
                 },
+                "git_url": {
+                  "type": "string",
+                  "format": "uri"
+                },
                 "requires": {
                   "type": "object",
                   "patternProperties": {
