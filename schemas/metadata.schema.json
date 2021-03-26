@@ -41,7 +41,11 @@
                 "requires": {
                   "type": "object",
                   "patternProperties": {
-                    ".*": {"$ref": "#/definitions/Requirements"}
+                    ".*": {"$oneOf": [
+                        {"$ref": "#/definitions/Dependencies"},
+                        {"$ref": "#/definitions/Requirements"}
+                      ]
+                    }
                   }
                 }
             },
@@ -50,6 +54,15 @@
                 "title"
             ],
             "title": "Welcome"
+        },
+        "Dependencies": {
+          "type": "object",
+          "properties": {
+            "jupyter-requirements": {
+              "$ref": "#/definitions/Requirements"},
+            "python-requirements": {
+              "$ref": "#/definitions/Requirements"}
+          }
         },
         "Requirements": {
           "type": "array",
