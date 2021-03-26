@@ -40,6 +40,7 @@ def test_validate_metadata_schema(metadata_schema):
 
 
 @pytest.mark.usefixtures("mock_schema_endpoints")
+@pytest.mark.usefixtures("mock_hello_world_app_metadata_endpoint")
 def test_validate_apps_yaml_schema(validate, apps_schema, apps_yaml, valid_categories):
     validate(instance=apps_yaml, schema=apps_schema)
 

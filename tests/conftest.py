@@ -53,3 +53,19 @@ def mock_schema_endpoints(
         "https://aiidalab.github.io/aiidalab-registry/schemas/v2/categories.schema.json",
         text=json.dumps(categories_schema),
     )
+
+
+@pytest.fixture
+def mock_hello_world_app_metadata_endpoint(requests_mock):
+    requests_mock.get(
+        "https://raw.githubusercontent.com/aiidalab/aiidalab-hello-world/apps-registry-schema-v2/metadata.json",
+        text="""
+{
+    "title": "Hello World App",
+    "description": "This is an AiiDA lab hello world app created with the aiidalab-app-cutter.",
+    "authors": "The AiiDA lab Team",
+    "logo": "img/logo.png",
+    "state": "development"
+}
+        """,
+    )
