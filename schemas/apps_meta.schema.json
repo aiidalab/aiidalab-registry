@@ -70,11 +70,11 @@
                         "https"
                     ]
                 },
-                "versions": {
+                "releases": {
                   "type": "object",
                   "propertyNames": {"pattern": ".*"},
                   "patternProperties": {
-                    ".*": {"$ref": "#/definitions/Version"}
+                    ".*": {"$ref": "#/definitions/Release"}
                   }
                 }
             },
@@ -106,7 +106,7 @@
               ".*": {"$ref": "https://aiidalab.github.io/aiidalab-registry/schemas/v2/categories.schema.json#/definitions/Category"}
             }
         },
-        "Version": {
+        "Release": {
           "properties": {
             "dependencies": {"$ref": "https://aiidalab.github.io/aiidalab-registry/schemas/v2/metadata.schema.json#/definitions/Dependencies"}
           }

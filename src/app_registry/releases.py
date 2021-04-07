@@ -28,7 +28,7 @@ def _get_current_branch(repo):
     return branch.strip()
 
 
-def _get_versions_for_channel(repo, channel):
+def _get_releases_for_channel(repo, channel):
     branch_ref = f"refs/remotes/origin/{channel}"
     if branch_ref.encode() in repo.refs:  # channel is branch
         yield from run(
@@ -119,25 +119,25 @@ def _clone_repo(git_url):
         yield Repo(tmp_dir)
 
 
-def find_versions_and_dependencies(app_metadata):
+def find_releases_and_dependencies(app_metadata):
     git_url = app_metadata["git_url"]
     requires = app_metadata["metadata"].get("requires", {})
 
     with _clone_repo(git_url) as repo:
         channel = urlsplit(git_url).fragment or _get_current_branch(repo)
-        versions = list(_get_versions_for_channel(repo, channel))
+        releases = list(_get_releases_for_channel(repo, channel))
 
         parsed_dependencies = {
-            version: dict(_parse_dependencies(repo.path, version))
-            for version in versions
+            release: dict(_parse_dependencies(repo.path, release))
+            for release in releases
         }
 
         explicit_dependencies = {
-            version: dict(_find_matching_dependencies(requires, version))
-            for version in versions
+            release: dict(_find_matching_dependencies(requires, release))
+            for release in releases
         }
 
-    for version in versions:
-        # For each version, return the explicit dependencies or
+    for release in releases:
+        # For each release, return the explicit dependencies or
         # the parsed dependencies with preference for the former.
-        yield version, explicit_dependencies[version] or parsed_dependencies[version]
+        yield release, explicit_dependencies[release] or parsed_dependencies[release]

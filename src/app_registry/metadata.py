@@ -8,7 +8,7 @@ from collections import OrderedDict
 import jsonschema
 
 from . import util
-from .dependencies import find_versions_and_dependencies
+from .releases import find_releases_and_dependencies
 
 
 logger = logging.getLogger(__name__)
@@ -38,9 +38,9 @@ def fetch_app_data(app_data, app_name):
     app_data["metadata"] = complete_metadata(app_name, app_data["metadata"], git_url)
     if git_url:
         app_data["gitinfo"] = util.get_git_branches(git_url)
-        app_data["versions"] = {
-            version: {"dependencies": dependencies}
-            for version, dependencies in find_versions_and_dependencies(app_data)
+        app_data["releases"] = {
+            release: {"dependencies": dependencies}
+            for release, dependencies in find_releases_and_dependencies(app_data)
         }
     if hosted_on:
         app_data["hosted_on"] = hosted_on
