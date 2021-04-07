@@ -4,6 +4,7 @@
 import logging
 import os
 from collections import OrderedDict
+from urllib.parse import urldefrag
 
 import jsonschema
 
@@ -38,8 +39,13 @@ def fetch_app_data(app_data, app_name):
     app_data["metadata"] = complete_metadata(app_name, app_data["metadata"], git_url)
     if git_url:
         app_data["gitinfo"] = util.get_git_branches(git_url)
+        app_data["path"] = f"${{AIIDALAB_APPS}}/{app_name}/"
         app_data["releases"] = {
-            release: {"dependencies": dependencies}
+            release: {
+                "dependencies": dependencies,
+                "install_command": f"rm -rf ${{AIIDALAB_APPS}}/{app_name}/ && git clone --depth 1 --branch={release} {urldefrag(git_url).url} ${{AIIDALAB_APPS}}/{app_name}/",
+                "uninstall_command": f"rm -rf ${{AIIDALAB_APPS}}/{app_name}/",
+            }
             for release, dependencies in find_releases_and_dependencies(app_data)
         }
     if hosted_on:

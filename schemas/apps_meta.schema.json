@@ -70,6 +70,9 @@
                         "https"
                     ]
                 },
+                "path": {
+                  "type": "string"
+                },
                 "releases": {
                   "type": "object",
                   "propertyNames": {"pattern": ".*"},
@@ -108,7 +111,9 @@
         },
         "Release": {
           "properties": {
-            "dependencies": {"$ref": "https://aiidalab.github.io/aiidalab-registry/schemas/v2/metadata.schema.json#/definitions/Dependencies"}
+            "dependencies": {"$ref": "https://aiidalab.github.io/aiidalab-registry/schemas/v2/metadata.schema.json#/definitions/Dependencies"},
+            "install_command": { "type": "string"},
+            "uninstall_command": { "type": "string"}
           }
         }
     }
