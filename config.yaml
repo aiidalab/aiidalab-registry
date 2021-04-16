@@ -3,11 +3,10 @@ data:
   apps:  apps.yaml
   categories: categories.yaml
 schemas:
-  apps: schemas/apps.schema.json
-  categories: schemas/categories.schema.json
-  apps_meta: schemas/apps_meta.schema.json
-  metadata: schemas/metadata.schema.json
+  apps: src/static/schemas/v2/apps.schema.json
+  categories: src/static/schemas/v2/categories.schema.json
+  apps_meta: src/static/schemas/v2/apps_meta.schema.json
+  metadata: src/static/schemas/v2/metadata.schema.json
 build:
   html: src/build/html
   static_src: src/static
-  schema_prefix: schemas/v2

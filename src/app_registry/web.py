@@ -7,7 +7,6 @@ import logging
 import shutil
 from collections.abc import Mapping
 from copy import deepcopy
-from dataclasses import asdict
 from functools import singledispatch
 from pathlib import Path
 from typing import Union
@@ -69,16 +68,6 @@ def build_html(apps_meta, dest):
     logger.info(f"  - {outfile.relative_to(dest)}")
 
 
-def write_schemas(schemas, dest):
-    """Serialize and write schemas to path."""
-    logger.info("[schemas]")
-    dest.mkdir(parents=True, exist_ok=True)
-    for name, schema in asdict(schemas).items():
-        schema_path = dest / f"{name}.schema.json"
-        logger.info(f"  - {schema_path.relative_to(dest)}")
-        schema_path.write_text(json.dumps(schema, indent=2))
-
-
 @singledispatch
 def build_from_config(config: Config, validate: bool = True):
     """Build the app registry website (including schema files) from the configuration.
@@ -99,7 +88,6 @@ def build_from_config(config: Config, validate: bool = True):
         build:
           html: build/html  # where to build the page (will be overwritten!)
           static_src: src/static  # static content to be copied
-          schema_prefix: schemas/v1  # a prefix for the schema paths
     """
 
     # Parse the apps and categories data from the paths given in the configuration.
@@ -134,9 +122,6 @@ def build_from_config(config: Config, validate: bool = True):
 
     # Build the html pages.
     build_html(apps_meta, dest=Path(config.build.html))
-
-    # Write-out JSON-schema files.
-    write_schemas(schemas=schemas, dest=Path(config.build.schemas))
 
 
 @build_from_config.register

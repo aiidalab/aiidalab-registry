@@ -5,16 +5,10 @@ import pytest
 import jsonschema
 
 import app_registry
-from app_registry import yaml
 
 
 ROOT = Path(__file__).parent.parent.resolve()
 CONFIG_YAML = ROOT.joinpath("config.yaml")
-
-
-@pytest.fixture
-def config_yaml():
-    return yaml.load(CONFIG_YAML)
 
 
 @pytest.fixture

@@ -5,7 +5,10 @@ from pathlib import Path
 import jsonschema
 import pytest
 
+from app_registry import yaml
+
 ROOT = Path(__file__).parent.parent.resolve()
+CONFIG_YAML = ROOT.joinpath("config.yaml")
 
 
 @pytest.fixture
@@ -14,23 +17,28 @@ def validate():
 
 
 @pytest.fixture
-def apps_schema():
-    return json.loads(ROOT.joinpath("schemas/apps.schema.json").read_text())
+def config_yaml():
+    return yaml.load(CONFIG_YAML)
 
 
 @pytest.fixture
-def apps_meta_schema():
-    return json.loads(ROOT.joinpath("schemas/apps_meta.schema.json").read_text())
+def apps_schema(config_yaml):
+    return json.loads(ROOT.joinpath(config_yaml["schemas"]["apps"]).read_text())
 
 
 @pytest.fixture
-def categories_schema():
-    return json.loads(ROOT.joinpath("schemas/categories.schema.json").read_text())
+def apps_meta_schema(config_yaml):
+    return json.loads(ROOT.joinpath(config_yaml["schemas"]["apps_meta"]).read_text())
 
 
 @pytest.fixture
-def metadata_schema():
-    return json.loads(ROOT.joinpath("schemas/metadata.schema.json").read_text())
+def categories_schema(config_yaml):
+    return json.loads(ROOT.joinpath(config_yaml["schemas"]["categories"]).read_text())
+
+
+@pytest.fixture
+def metadata_schema(config_yaml):
+    return json.loads(ROOT.joinpath(config_yaml["schemas"]["metadata"]).read_text())
 
 
 @pytest.fixture

@@ -7,7 +7,6 @@ from .metadata import generate_apps_meta
 from .version import __version__
 from .web import build_from_config
 from .web import build_html
-from .web import write_schemas
 
 
 __all__ = [
@@ -17,5 +16,4 @@ __all__ = [
     "build_from_config",
     "build_html",
     "generate_apps_meta",
-    "write_schemas",
 ]
