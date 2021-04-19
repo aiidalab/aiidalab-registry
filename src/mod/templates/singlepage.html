@@ -13,13 +13,13 @@
     <div class="submenu-entry">
         <div class="submenu-img">
             {% if logo %}
-                <img src="{{ logo }}" alt="{{ metainfo.title }}">
+                <img src="{{ logo }}" alt="{{ metadata.title }}">
             {% else %}
-                <img src="../static/favicon.png" alt="{{ metainfo.title }}">
+                <img src="../static/favicon.png" alt="{{ metadata.title }}">
             {% endif %}
         </div>
         <div class="app-card-text">
-            <h1>{{ metainfo.title }}</h1>
+            <h1>{{ metadata.title }}</h1>
             <p class="sub-header">
             {% if categories %}
                 {% for category in categories %}
@@ -40,15 +40,15 @@
         </p>
     </div>
 
-    {% if metainfo.external_url %}
+    {% if metadata.external_url %}
         <p>
-            <strong>App homepage</strong>: <a href="{{ metainfo.external_url }}" target="_blank">Go to app homepage</a>
+            <strong>App homepage</strong>: <a href="{{ metadata.external_url }}" target="_blank">Go to app homepage</a>
         <p>
     {% endif %}
 
-    {% if metainfo.documentation_url %}
+    {% if metadata.documentation_url %}
         <p>
-            <strong>Documentation</strong>: <a href="{{ metainfo.documentation_url }}" target="_blank">Go to app documentation</a>
+            <strong>Documentation</strong>: <a href="{{ metadata.documentation_url }}" target="_blank">Go to app documentation</a>
         <p>
     {% else %}
         <p>
@@ -59,19 +59,19 @@
     <h2>
         Detailed information
     </h2>
-    {% if metainfo %}
+    {% if metadata %}
     <div id='description'>
         <p>
-            <strong>Author(s)</strong>: {{ metainfo.authors }}
+            <strong>Author(s)</strong>: {{ metadata.authors }}
         </p>
         <p>
-            <strong>Short description</strong>: {{ metainfo.description }}
+            <strong>Short description</strong>: {{ metadata.description }}
         </p>
         <p>
             <strong>Package name (for pip)</strong>: <code>aiidalab-{{ name }}</code>
         </p>
         <p>
-            <strong>Most recent version</strong>: {{ metainfo.version }}
+            <strong>Most recent version</strong>: {{ metadata.version }}
         </p>
 
     </div>

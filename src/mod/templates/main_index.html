@@ -19,14 +19,14 @@
             <div class="submenu-img">
                 <a href="{{ app.subpage }}">
                 {% if app.logo %}
-                    <img src="{{ app.logo }}" alt="{{ app.metainfo.title }}">
+                    <img src="{{ app.logo }}" alt="{{ app.metadata.title }}">
                 {% else %}
-                    <img src="static/favicon.png" alt="{{ app.metainfo.title }}">
+                    <img src="static/favicon.png" alt="{{ app.metadata.title }}">
                 {% endif %}
                 </a>
             </div>
             <div class="submenu-text">
-                <h2><a href="{{ app.subpage }}">{{ app.metainfo.title }}</a>
+                <h2><a href="{{ app.subpage }}">{{ app.metadata.title }}</a>
                 {% if app.categories %}
                     {% for category in app.categories %}
                         <span class="category">{{ categories[category]["title"] }}</span> 
@@ -36,12 +36,12 @@
                 <p class="packagename">Package name: aiidalab-{{ app_name }}
                     {% if app.hosted_on %} (hosted on <a href="{{ app.git_url }}">{{ app.hosted_on }}</a>){% endif %}
                 </p>
-                <p class="currentstate">Current state: {{ app.metainfo.state }}
-                    {% if app.metainfo.version %} (version {{ app.metainfo.version }}){% endif %}
+                <p class="currentstate">Current state: {{ app.metadata.state }}
+                    {% if app.metadata.version %} (version {{ app.metadata.version }}){% endif %}
                 </p>
 
-                {% if app.metainfo.description %}
-                    <p class=description>{{app.metainfo.description}}</p>
+                {% if app.metadata.description %}
+                    <p class=description>{{app.metadata.description}}</p>
                 {% endif %}
 
                 <p>
@@ -51,7 +51,7 @@
                 {% endif %}
                 </p>
 
-                <!-- Summaryinfo has not yet been introduced to the AiiDA Lab app registry -->
+                <!-- Summaryinfo has not yet been introduced to the AiiDAlab app registry -->
                 {% if app.summaryinfo %}
                     <p class="summaryinfo">
                         {% for summaryinfoelem in app.summaryinfo %}
