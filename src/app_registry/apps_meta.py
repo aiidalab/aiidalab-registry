@@ -71,6 +71,7 @@ def generate_apps_meta(data, schema=None):
     }
     logger.info("Fetching app data...")
     for app_name in sorted(data.apps.keys()):
+        assert util.get_html_app_fname(app_name) == f"{app_name}.html"
         logger.info(f"  - {app_name}")
         app_data = fetch_app_data(data.apps[app_name], app_name)
         app_data["name"] = app_name
