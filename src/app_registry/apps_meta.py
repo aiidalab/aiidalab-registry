@@ -41,10 +41,6 @@ def fetch_app_data(app_data, app_name):
     if hosted_on:
         app_data["hosted_on"] = hosted_on
 
-    # Get logo URL, if it has been specified
-    if "logo" in app_data["metainfo"]:
-        app_data["logo"] = app_data["metainfo"]["logo"]
-
     return app_data
 
 

@@ -5,7 +5,7 @@
     "definitions": {
         "Welcome": {
             "type": "object",
-            "additionalProperties": false,
+            "additionalProperties": true,
             "properties": {
                 "title": {
                     "type": "string"
@@ -17,9 +17,6 @@
                     "type": "string"
                 },
                 "version": {
-                    "type": "string"
-                },
-                "logo": {
                     "type": "string"
                 },
                 "state": {

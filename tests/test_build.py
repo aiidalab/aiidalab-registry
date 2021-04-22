@@ -46,26 +46,26 @@ def app_logo(requests_mock, app_logo_url, app_logo_img):
 
 
 @pytest.fixture
-def app_metadata(requests_mock, app_logo):
+def app_metadata(requests_mock):
     """Create metadata content for a test app."""
     return {
         "description": "A test app that does not really exist.",
         "title": "Test App",
         "version": "1.0.0",
         "authors": "AiiDAlab team",
-        "logo": app_logo.url,
         "state": "development",
     }
 
 
 @pytest.fixture
-def apps_yaml(requests_mock, app_git_url, app_metadata):
+def apps_yaml(requests_mock, app_git_url, app_metadata, app_logo):
     """Create apps.yaml content with one test app entry."""
     apps_yaml = {
         "test": {
             "git_url": app_git_url,
             "metadata": app_metadata,
             "categories": ["utilities"],
+            "logo": app_logo.url,
         }
     }
     requests_mock.get(app_git_url)

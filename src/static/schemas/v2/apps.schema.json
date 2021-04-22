@@ -36,6 +36,10 @@
                     "items": {
                         "type": "string"
                     }
+                },
+                "logo": {
+                  "type": "string",
+                  "format": "uri"
                 }
             },
             "required": [
