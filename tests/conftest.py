@@ -42,22 +42,9 @@ def metadata_schema(config_yaml):
 
 
 @pytest.fixture
-def mock_schema_endpoints(
-    requests_mock, apps_schema, apps_meta_schema, categories_schema, metadata_schema
-):
-    requests_mock.get(
-        "https://aiidalab.github.io/aiidalab-registry/schemas/v2/apps.schema.json",
-        text=json.dumps(apps_schema),
-    )
-    requests_mock.get(
-        "https://aiidalab.github.io/aiidalab-registry/schemas/v2/metadata.schema.json",
-        text=json.dumps(metadata_schema),
-    )
-    requests_mock.get(
-        "https://aiidalab.github.io/aiidalab-registry/schemas/v2/apps_meta.schema.json",
-        text=json.dumps(apps_meta_schema),
-    )
-    requests_mock.get(
-        "https://aiidalab.github.io/aiidalab-registry/schemas/v2/categories.schema.json",
-        text=json.dumps(categories_schema),
-    )
+def mock_schema_endpoints(requests_mock):
+    schemas_path = ROOT.joinpath("src/static/schemas")
+    schemas_endpoint = "https://aiidalab.github.io/aiidalab-registry/schemas"
+    for schema in schemas_path.glob("**/*.schema.json"):
+        endpoint = f"{schemas_endpoint}/{schema.relative_to(schemas_path)}"
+        requests_mock.get(endpoint, text=schema.read_text())

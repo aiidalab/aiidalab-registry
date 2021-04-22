@@ -29,7 +29,7 @@
                     ]
                 },
                 "metadata": {
-                  "$ref": "https://aiidalab.github.io/aiidalab-registry/schemas/v2/metadata.schema.json#/definitions/AppMetadata"
+                  "$ref": "https://aiidalab.github.io/aiidalab-registry/schemas/v1/metadata.schema.json#/definitions/Welcome"
                 },
                 "categories": {
                     "type": "array",

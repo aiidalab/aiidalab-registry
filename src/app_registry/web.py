@@ -8,6 +8,7 @@ import shutil
 from collections.abc import Mapping
 from copy import deepcopy
 from functools import singledispatch
+from itertools import chain
 from pathlib import Path
 from typing import Union
 
@@ -16,21 +17,21 @@ from jinja2 import PackageLoader
 from jinja2 import select_autoescape
 
 from . import yaml
+from .apps_meta import generate_apps_meta
 from .config import Config
 from .core import AppRegistryData
 from .core import AppRegistrySchemas
-from .metadata import generate_apps_meta
 from .util import load_json
 
 
 logger = logging.getLogger(__name__)
 
 
-def build_html(apps_meta, dest):
-    """Generate the app registry website at the dest path"""
+def build_html(apps_meta, root):
+    """Generate the app registry website at the root path."""
 
-    # Create dest directory if needed
-    dest.mkdir(parents=True, exist_ok=True)
+    # Create root directory if needed
+    root.mkdir(parents=True, exist_ok=True)
 
     # Load template environment
     env = Environment(
@@ -41,35 +42,48 @@ def build_html(apps_meta, dest):
     main_index_template = env.get_template("main_index.html")
 
     # Make single-entry page based on singlepage.html
-    logger.info("[apps]")
-    dest.joinpath("apps").mkdir()
+    root.joinpath("apps").mkdir()
     for app_name, app_data in apps_meta["apps"].items():
         subpage_name = app_data["subpage"]
-        subpage_abspath = dest / subpage_name
+        subpage_abspath = root / subpage_name
+        subpage_abspath.parent.mkdir()
 
         app_html = singlepage_template.render(
             category_map=apps_meta["categories"], **app_data
         )
         with codecs.open(subpage_abspath, "w", "utf-8") as f:
             f.write(app_html)
-        logger.info(f"  - {subpage_name}")
+        yield subpage_abspath
 
     # Make index page based on main_index.html
-    logger.info("[main index]")
     rendered = main_index_template.render(**apps_meta)
-    outfile = dest / "index.html"
+    outfile = root / "index.html"
     outfile.write_text(rendered, encoding="utf-8")
-    logger.info(f"  - {outfile.relative_to(dest)}")
+    yield outfile
 
-    # Save json data for the app manager
-    outfile = dest / "apps_meta.json"
-    rendered = json.dumps(deepcopy(apps_meta), ensure_ascii=False, indent=2)
+
+def build_api_v1(apps_meta, base_path):
+    outfile = base_path / "apps_meta.json"
+    rendered = json.dumps(deepcopy(apps_meta), ensure_ascii=False)
     outfile.write_text(rendered, encoding="utf-8")
-    logger.info(f"  - {outfile.relative_to(dest)}")
+    yield outfile
+
+
+def build_api_v2(apps_meta, base_path):
+    # write individual apps metadata files
+    base_path.mkdir(parents=True, exist_ok=True)
+
+    for key, value in apps_meta["apps"].items():
+        outfile = base_path / f"{key}.metadata.json"
+        rendered = json.dumps(deepcopy(value["metainfo"]), ensure_ascii=False)
+        outfile.write_text(rendered, encoding="utf-8")
+        yield outfile
 
 
 @singledispatch
-def build_from_config(config: Config, validate: bool = True):
+def build_from_config(
+    config: Config, validate_output: bool = True, validate_input: bool = False
+):
     """Build the app registry website (including schema files) from the configuration.
 
     This function poses an alternative to a more comprehensive build script and allows
@@ -105,23 +119,31 @@ def build_from_config(config: Config, validate: bool = True):
     )
 
     # Validate the app registry data against the provided schemas.
-    if validate:
+    if validate_input:
         data.validate(schemas)
 
     # Generate the aggregated apps metadata registry.
     apps_meta = generate_apps_meta(
-        data=data, schema=schemas.apps_meta if validate else None
+        data=data, schema=schemas.apps_meta if validate_output else None
     )
 
+    root = Path(config.build.html)
+
     # Remove previous build (if present).
-    shutil.rmtree(Path(config.build.html), ignore_errors=True)
+    shutil.rmtree(root, ignore_errors=True)
 
     # Copy static data (if configured).
     if config.build.static_src:
-        shutil.copytree(config.build.static_src, Path(config.build.html))
+        shutil.copytree(config.build.static_src, root)
 
-    # Build the html pages.
-    build_html(apps_meta, dest=Path(config.build.html))
+    for outfile in chain(
+        # Build the html pages.
+        build_html(apps_meta, root=root),
+        # Build the API endpoints.
+        build_api_v1(apps_meta, base_path=root),
+        build_api_v2(apps_meta, base_path=root / "api" / "v2"),
+    ):
+        logger.info(f"  - {outfile.relative_to(root)}")
 
 
 @build_from_config.register

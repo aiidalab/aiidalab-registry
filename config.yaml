@@ -4,9 +4,9 @@ data:
   categories: categories.yaml
 schemas:
   apps: src/static/schemas/v2/apps.schema.json
-  categories: src/static/schemas/v2/categories.schema.json
-  apps_meta: src/static/schemas/v2/apps_meta.schema.json
-  metadata: src/static/schemas/v2/metadata.schema.json
+  categories: src/static/schemas/v1/categories.schema.json
+  apps_meta: src/static/schemas/v1/apps_meta.schema.json
+  metadata: src/static/schemas/v1/metadata.schema.json
 build:
   html: src/build/html
   static_src: src/static
