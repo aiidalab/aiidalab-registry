@@ -62,7 +62,7 @@
                   "type": "string"
                 },
                 "metainfo": {
-                    "$ref": "https://aiidalab.github.io/aiidalab-registry/schemas/v1/metadata.schema.json#/definitions/Welcome"
+                    "$ref": "https://aiidalab.github.io/aiidalab-registry/schemas/v2/metadata.schema.json#/definitions/AppMetadata"
                 },
                 "gitinfo": {
                     "$ref": "#/definitions/AppGitinfo"

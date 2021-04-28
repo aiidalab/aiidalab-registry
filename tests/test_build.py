@@ -90,17 +90,17 @@ def app_registry_data(apps_yaml, categories_yaml):
 
 
 @pytest.fixture
-def app_registry_schemas(apps_schema, categories_schema):
+def app_registry_schemas(schemas):
     """Create app registry schema content."""
     return app_registry.AppRegistrySchemas(
-        apps=apps_schema, categories=categories_schema
+        apps=schemas.apps, categories=schemas.categories
     )
 
 
 @pytest.mark.usefixtures("mock_schema_endpoints")
-def test_generate_apps_meta(app_registry_data, apps_meta_schema):
+def test_generate_apps_meta(app_registry_data, schemas):
     apps_meta = app_registry.generate_apps_meta(
-        data=app_registry_data, schema=apps_meta_schema
+        data=app_registry_data, schema=schemas.apps_meta
     )
     # Very basic validation here, the apps_meta.json file is already validated via the schema:
     assert "apps" in apps_meta
@@ -119,10 +119,10 @@ def test_generate_apps_meta(app_registry_data, apps_meta_schema):
 
 
 @pytest.mark.usefixtures("mock_schema_endpoints")
-def test_get_logo_url(app_registry_data, app_logo_url, apps_meta_schema):
+def test_get_logo_url(app_registry_data, app_logo_url, schemas):
     """Test whether the logo url is correctly resolved."""
     apps_meta = app_registry.generate_apps_meta(
-        data=app_registry_data, schema=apps_meta_schema
+        data=app_registry_data, schema=schemas.apps_meta
     )
     assert apps_meta["apps"]["test"]["logo"] == app_logo_url
     r = requests.get(app_logo_url)

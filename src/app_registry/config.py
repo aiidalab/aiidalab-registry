@@ -4,11 +4,11 @@
 An app registry can optionally be managed with a configuration file.
 """
 
-from pathlib import Path
-from typing import Union
+from collections.abc import Mapping
 from dataclasses import dataclass
 from dataclasses import field
-from collections.abc import Mapping
+from pathlib import Path
+from typing import Union
 
 from dacite import from_dict
 
@@ -30,10 +30,7 @@ class DataConfig:
 class SchemasConfig:
     """Paths to the schema files."""
 
-    apps: str
-    categories: str
-    apps_meta: str
-    metadata: str
+    path: str
 
 
 @dataclass

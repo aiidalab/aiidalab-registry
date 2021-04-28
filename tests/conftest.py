@@ -1,10 +1,11 @@
-import json
 from functools import partial
 from pathlib import Path
 
 import jsonschema
 import pytest
 
+from app_registry import AppRegistrySchemas
+from app_registry.config import Config
 from app_registry import yaml
 
 ROOT = Path(__file__).parent.parent.resolve()
@@ -22,23 +23,13 @@ def config_yaml():
 
 
 @pytest.fixture
-def apps_schema(config_yaml):
-    return json.loads(ROOT.joinpath(config_yaml["schemas"]["apps"]).read_text())
+def config():
+    return Config.from_path(CONFIG_YAML)
 
 
 @pytest.fixture
-def apps_meta_schema(config_yaml):
-    return json.loads(ROOT.joinpath(config_yaml["schemas"]["apps_meta"]).read_text())
-
-
-@pytest.fixture
-def categories_schema(config_yaml):
-    return json.loads(ROOT.joinpath(config_yaml["schemas"]["categories"]).read_text())
-
-
-@pytest.fixture
-def metadata_schema(config_yaml):
-    return json.loads(ROOT.joinpath(config_yaml["schemas"]["metadata"]).read_text())
+def schemas(config):
+    return AppRegistrySchemas.from_path(Path(config.schemas.path))
 
 
 @pytest.fixture

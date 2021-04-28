@@ -21,7 +21,6 @@ from .apps_meta import generate_apps_meta
 from .config import Config
 from .core import AppRegistryData
 from .core import AppRegistrySchemas
-from .util import load_json
 
 
 logger = logging.getLogger(__name__)
@@ -96,9 +95,7 @@ def build_from_config(
           apps:  apps.yaml
           categories: categories.yaml
         schemas:
-          apps: schemas/apps.schema.json
-          categories: schemas/categories.schema.json
-          apps_meta: schemas/apps_meta.schema.json
+          path: src/static/schemas/v2
         build:
           html: build/html  # where to build the page (will be overwritten!)
           static_src: src/static  # static content to be copied
@@ -110,13 +107,8 @@ def build_from_config(
         categories=yaml.load(Path(config.data.categories)),
     )
 
-    # Parse the schemas from paths given in the configuration.
-    schemas = AppRegistrySchemas(
-        apps=load_json(Path(config.schemas.apps)),
-        categories=load_json(Path(config.schemas.categories)),
-        apps_meta=load_json(Path(config.schemas.apps_meta)),
-        metadata=load_json(Path(config.schemas.metadata)),
-    )
+    # Parse the schemas from path specified in the configuration.
+    schemas = AppRegistrySchemas.from_path(Path(config.schemas.path))
 
     # Validate the app registry data against the provided schemas.
     if validate_input:
