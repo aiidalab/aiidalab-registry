@@ -62,14 +62,14 @@ def build_html(apps_meta, root):
     yield outfile
 
 
-def build_api_v1(apps_meta, base_path):
+def build_api_v0(apps_meta, base_path):
     outfile = base_path / "apps_meta.json"
     rendered = json.dumps(deepcopy(apps_meta), ensure_ascii=False)
     outfile.write_text(rendered, encoding="utf-8")
     yield outfile
 
 
-def build_api_v2(apps_meta, base_path):
+def build_api_v1(apps_meta, base_path):
     # write individual apps metadata files
     base_path.mkdir(parents=True, exist_ok=True)
 
@@ -131,8 +131,8 @@ def build_from_config(
         # Build the html pages.
         build_html(apps_meta, root=root),
         # Build the API endpoints.
-        build_api_v1(apps_meta, base_path=root),
-        build_api_v2(apps_meta, base_path=root / "api" / "v2"),
+        build_api_v0(apps_meta, base_path=root),
+        build_api_v1(apps_meta, base_path=root / "api" / "v1"),
     ):
         logger.info(f"  - {outfile.relative_to(root)}")
 

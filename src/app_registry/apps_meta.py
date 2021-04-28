@@ -76,7 +76,7 @@ def generate_apps_meta(data):
         app_data = fetch_app_data(data.apps[app_name], app_name)
         app_data["name"] = app_name
         app_data["subpage"] = f"apps/{app_name}/index.html"
-        app_data["meta_url"] = f"api/v2/apps/{app_name}.metadata.json"
+        app_data["meta_url"] = f"api/v1/apps/{app_name}.metadata.json"
         apps_meta["apps"][app_name] = app_data
 
     return apps_meta
