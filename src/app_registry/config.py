@@ -41,7 +41,6 @@ class BuildConfig:
     """Configuration fields related to building the registry website."""
 
     html: str = "./html"
-    schemas: str = None
     static_src: str = None
 
 
