@@ -63,6 +63,11 @@ def build_html(apps_meta, root):
 
 
 def build_api_v0(apps_meta, base_path):
+    """Build tree for API endpoint v0."""
+    # Create base path if necessary.
+    base_path.mkdir(parents=True, exist_ok=True)
+
+    # Write apps_meta.json file.
     outfile = base_path / "apps_meta.json"
     rendered = json.dumps(deepcopy(apps_meta), ensure_ascii=False)
     outfile.write_text(rendered, encoding="utf-8")
@@ -70,9 +75,12 @@ def build_api_v0(apps_meta, base_path):
 
 
 def build_api_v1(apps_meta, base_path):
-    # write individual apps metadata files
+    """Build tree for API endpoint v1."""
+
+    # Create base path if necessary.
     base_path.mkdir(parents=True, exist_ok=True)
 
+    # Write individual apps metadata files.
     for key, value in apps_meta["apps"].items():
         outfile = base_path / f"{key}.metadata.json"
         rendered = json.dumps(deepcopy(value["metainfo"]), ensure_ascii=False)

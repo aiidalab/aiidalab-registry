@@ -26,10 +26,27 @@ def _mock_schemas_endpoints(schemas_path):
         yield
 
 
-@click.command()
-@click.option("--config", type=click.Path(), default=ROOT.joinpath("config.yaml"))
-@click.option("--validate/--no-validate", is_flag=True, default=True, show_default=True)
-@click.option("-m", "--mock-schemas-endpoints", "mock_schemas", is_flag=True)
+@click.command(help="Build the app store website and API endpoints.")
+@click.option(
+    "--config",
+    type=click.Path(),
+    default=ROOT.joinpath("config.yaml"),
+    help="Path to the configuration file. Defaults to 'config.yaml' within the repository root.",
+)
+@click.option(
+    "--validate/--no-validate",
+    is_flag=True,
+    default=True,
+    show_default=True,
+    help="Validate inputs and outputs against the published or local schemas.",
+)
+@click.option(
+    "-m",
+    "--mock-schemas-endpoints",
+    "mock_schemas",
+    is_flag=True,
+    help="Mock the schemas endpoints such that the local versions are used insted of the published ones.",
+)
 def cli(config, validate, mock_schemas):
     config = Config.from_path(config)
     maybe_mock = (
