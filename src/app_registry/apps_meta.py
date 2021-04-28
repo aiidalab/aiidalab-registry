@@ -54,8 +54,8 @@ def validate_apps_meta(apps_meta, apps_meta_schema):
             assert category in apps_meta["categories"]
 
 
-def generate_apps_meta(data, schema=None):
-    """Generate (and optionally validate) the comprehensive app registry metadata.
+def generate_apps_meta(data):
+    """Generate the comprehensive app registry index.
 
     This function produces the apps_meta file, a comprehensive metadata directory that
     combines the apps data and additionally fetched data (such as the git info).
@@ -78,8 +78,5 @@ def generate_apps_meta(data, schema=None):
         app_data["subpage"] = f"apps/{app_name}/index.html"
         app_data["meta_url"] = f"api/v2/apps/{app_name}.metadata.json"
         apps_meta["apps"][app_name] = app_data
-
-    if schema:
-        validate_apps_meta(apps_meta, schema)
 
     return apps_meta

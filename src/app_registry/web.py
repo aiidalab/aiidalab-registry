@@ -18,6 +18,7 @@ from jinja2 import select_autoescape
 
 from . import yaml
 from .apps_meta import generate_apps_meta
+from .apps_meta import validate_apps_meta
 from .config import Config
 from .core import AppRegistryData
 from .core import AppRegistrySchemas
@@ -101,23 +102,21 @@ def build_from_config(
           static_src: src/static  # static content to be copied
     """
 
+    # Parse the schemas from path specified in the configuration.
+    schemas = AppRegistrySchemas.from_path(Path(config.schemas.path))
+
     # Parse the apps and categories data from the paths given in the configuration.
     data = AppRegistryData(
         apps=yaml.load(Path(config.data.apps)),
         categories=yaml.load(Path(config.data.categories)),
     )
-
-    # Parse the schemas from path specified in the configuration.
-    schemas = AppRegistrySchemas.from_path(Path(config.schemas.path))
-
-    # Validate the app registry data against the provided schemas.
     if validate_input:
         data.validate(schemas)
 
     # Generate the aggregated apps metadata registry.
-    apps_meta = generate_apps_meta(
-        data=data, schema=schemas.apps_meta if validate_output else None
-    )
+    apps_meta = generate_apps_meta(data=data)
+    if validate_output:
+        validate_apps_meta(apps_meta, schemas.apps_meta)
 
     root = Path(config.build.html)
 
