@@ -2,7 +2,6 @@
 """Generate the aggregated registry metadata from the registry data."""
 
 import logging
-import os
 from collections import OrderedDict
 
 import jsonschema
@@ -34,15 +33,13 @@ def fetch_app_data(app_data, app_name):
     if "categories" not in app_data:
         logger.info("  >> WARNING: No categories specified.")
 
-    app_data["metadata"] = complete_metadata(app_name, app_data["metadata"], git_url)
+    app_data["metainfo"] = complete_metadata(
+        app_name, app_data.pop("metadata"), git_url
+    )
     if git_url:
         app_data["gitinfo"] = util.get_git_branches(git_url)
     if hosted_on:
         app_data["hosted_on"] = hosted_on
-
-    # Get logo URL, if it has been specified
-    if "logo" in app_data["metadata"]:
-        app_data["logo"] = app_data["metadata"]["logo"]
 
     return app_data
 
@@ -57,8 +54,8 @@ def validate_apps_meta(apps_meta, apps_meta_schema):
             assert category in apps_meta["categories"]
 
 
-def generate_apps_meta(data, schema=None):
-    """Generate (and optionally validate) the comprehensive app registry metadata.
+def generate_apps_meta(data):
+    """Generate the comprehensive app registry index.
 
     This function produces the apps_meta file, a comprehensive metadata directory that
     combines the apps data and additionally fetched data (such as the git info).
@@ -74,13 +71,12 @@ def generate_apps_meta(data, schema=None):
     }
     logger.info("Fetching app data...")
     for app_name in sorted(data.apps.keys()):
+        assert util.get_html_app_fname(app_name) == f"{app_name}.html"
         logger.info(f"  - {app_name}")
         app_data = fetch_app_data(data.apps[app_name], app_name)
         app_data["name"] = app_name
-        app_data["subpage"] = os.path.join("apps", util.get_html_app_fname(app_name))
+        app_data["subpage"] = f"apps/{app_name}/index.html"
+        app_data["meta_url"] = ""
         apps_meta["apps"][app_name] = app_data
-
-    if schema:
-        validate_apps_meta(apps_meta, schema)
 
     return apps_meta

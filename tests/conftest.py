@@ -1,10 +1,11 @@
-import json
 from functools import partial
 from pathlib import Path
 
 import jsonschema
 import pytest
 
+from app_registry import AppRegistrySchemas
+from app_registry.config import Config
 from app_registry import yaml
 
 ROOT = Path(__file__).parent.parent.resolve()
@@ -22,42 +23,19 @@ def config_yaml():
 
 
 @pytest.fixture
-def apps_schema(config_yaml):
-    return json.loads(ROOT.joinpath(config_yaml["schemas"]["apps"]).read_text())
+def config():
+    return Config.from_path(CONFIG_YAML)
 
 
 @pytest.fixture
-def apps_meta_schema(config_yaml):
-    return json.loads(ROOT.joinpath(config_yaml["schemas"]["apps_meta"]).read_text())
+def schemas(config):
+    return AppRegistrySchemas.from_path(Path(config.schemas.path))
 
 
 @pytest.fixture
-def categories_schema(config_yaml):
-    return json.loads(ROOT.joinpath(config_yaml["schemas"]["categories"]).read_text())
-
-
-@pytest.fixture
-def metadata_schema(config_yaml):
-    return json.loads(ROOT.joinpath(config_yaml["schemas"]["metadata"]).read_text())
-
-
-@pytest.fixture
-def mock_schema_endpoints(
-    requests_mock, apps_schema, apps_meta_schema, categories_schema, metadata_schema
-):
-    requests_mock.get(
-        "https://aiidalab.github.io/aiidalab-registry/schemas/v2/apps.schema.json",
-        text=json.dumps(apps_schema),
-    )
-    requests_mock.get(
-        "https://aiidalab.github.io/aiidalab-registry/schemas/v2/metadata.schema.json",
-        text=json.dumps(metadata_schema),
-    )
-    requests_mock.get(
-        "https://aiidalab.github.io/aiidalab-registry/schemas/v2/apps_meta.schema.json",
-        text=json.dumps(apps_meta_schema),
-    )
-    requests_mock.get(
-        "https://aiidalab.github.io/aiidalab-registry/schemas/v2/categories.schema.json",
-        text=json.dumps(categories_schema),
-    )
+def mock_schema_endpoints(requests_mock):
+    schemas_path = ROOT.joinpath("src/static/schemas")
+    schemas_endpoint = "https://aiidalab.github.io/aiidalab-registry/schemas"
+    for schema in schemas_path.glob("**/*.schema.json"):
+        endpoint = f"{schemas_endpoint}/{schema.relative_to(schemas_path)}"
+        requests_mock.get(endpoint, text=schema.read_text())

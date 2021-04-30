@@ -63,28 +63,11 @@
         },
         "Schemas": {
             "type": "object",
-            "additionalProperties": false,
             "properties": {
-                "apps": {
-                    "type": "string"
-                },
-                "categories": {
-                    "type": "string"
-                },
-                "apps_meta": {
-                    "type": "string"
-                },
-                "metadata": {
-                    "type": "string"
-                }
-            },
-            "required": [
-                "apps",
-                "apps_meta",
-                "categories",
-                "metadata"
-            ],
-            "title": "Schemas"
+              "path": {
+                "type": "string"
+              }
+            }
         }
     }
 }

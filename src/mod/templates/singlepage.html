@@ -1,25 +1,25 @@
 {% extends "base.html" %} 
 
 {% block css %}
-    <link rel="stylesheet" href="../static/css/style.css">
-    <link rel="shortcut icon" type="image/png" href="../static/favicon.png">
+    <link rel="stylesheet" href="../../static/css/style.css">
+    <link rel="shortcut icon" type="image/png" href="../../static/favicon.png">
 {% endblock css %}
 
 {% block body %}
 <main>
     <p></p>
-    <p class="go-back"><a href="../index.html">&lt; Go back to the app summary</a></p>
+    <p class="go-back"><a href="../../index.html">&lt; Go back to the app summary</a></p>
 
     <div class="submenu-entry">
         <div class="submenu-img">
             {% if logo %}
-                <img src="{{ logo }}" alt="{{ metadata.title }}">
+                <img src="{{ logo }}" alt="{{ metainfo.title }}">
             {% else %}
-                <img src="../static/favicon.png" alt="{{ metadata.title }}">
+                <img src="../../static/favicon.png" alt="{{ metainfo.title }}">
             {% endif %}
         </div>
         <div class="app-card-text">
-            <h1>{{ metadata.title }}</h1>
+            <h1>{{ metainfo.title }}</h1>
             <p class="sub-header">
             {% if categories %}
                 {% for category in categories %}
@@ -40,15 +40,15 @@
         </p>
     </div>
 
-    {% if metadata.external_url %}
+    {% if metainfo.external_url %}
         <p>
-            <strong>App homepage</strong>: <a href="{{ metadata.external_url }}" target="_blank">Go to app homepage</a>
+            <strong>App homepage</strong>: <a href="{{ metainfo.external_url }}" target="_blank">Go to app homepage</a>
         <p>
     {% endif %}
 
-    {% if metadata.documentation_url %}
+    {% if metainfo.documentation_url %}
         <p>
-            <strong>Documentation</strong>: <a href="{{ metadata.documentation_url }}" target="_blank">Go to app documentation</a>
+            <strong>Documentation</strong>: <a href="{{ metainfo.documentation_url }}" target="_blank">Go to app documentation</a>
         <p>
     {% else %}
         <p>
@@ -59,19 +59,19 @@
     <h2>
         Detailed information
     </h2>
-    {% if metadata %}
+    {% if metainfo %}
     <div id='description'>
         <p>
-            <strong>Author(s)</strong>: {{ metadata.authors }}
+            <strong>Author(s)</strong>: {{ metainfo.authors }}
         </p>
         <p>
-            <strong>Short description</strong>: {{ metadata.description }}
+            <strong>Short description</strong>: {{ metainfo.description }}
         </p>
         <p>
             <strong>Package name (for pip)</strong>: <code>aiidalab-{{ name }}</code>
         </p>
         <p>
-            <strong>Most recent version</strong>: {{ metadata.version }}
+            <strong>Most recent version</strong>: {{ metainfo.version }}
         </p>
 
     </div>
@@ -79,8 +79,6 @@
     <div id='description'>
         <p>
             Unable to retrieve meta information for this app.
-            Ask the app developers to provide a <code>metadata.json</code>
-            file in the app source code.
         </p>
     </div>
     {% endif %}
@@ -91,5 +89,5 @@
 
 {# Needed because of the different relative path #}
 {% block footer_images %}
-<div style="text-align: center;"><img src="../static/img/MARVEL.png" style="width: 134px;height: 70px;">&nbsp;&nbsp;&nbsp;&nbsp;<img src="../static/img/MaX.png" style="width: 250px;height: 70px;"></div>
+<div style="text-align: center;"><img src="../../static/img/MARVEL.png" style="width: 134px;height: 70px;">&nbsp;&nbsp;&nbsp;&nbsp;<img src="../../static/img/MaX.png" style="width: 250px;height: 70px;"></div>
 {% endblock footer_images %}
