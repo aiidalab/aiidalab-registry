@@ -107,6 +107,16 @@ $ python src/build.py
 The continuous-integration workflow is implemented with GitHub actions, which runs the pre-commit hooks, unit, integration, and validation tests.
 In addition, all commits on the `main` branch are automatically deployed to GitHub pages.
 
+### Versioning and migrations
+
+* The public registry API specification is maintained under `src/static/api/openapi-v{version}.yaml`.
+* The public registry API is published at `api/v{version}/` and is considered user-facing.
+* The versioning of the API is semantic and all versions within one major version are backwards-compatible.
+* The schemas for JSON files and responses are maintained within the repository at `src/static/schemas/v{version}/` and the tree version number should correspond to the API with the same major version number.
+* The schemas are considered implementation detail, but updates must still be made with care as the public API relies on some of the schemas.
+* Should the number of apps maintained within this registry grow substantially, a re-implementation of the registry as a database application with RESTful API server should be considered. Such a re-implementation would likely require a migration to a new server (see next point).
+* For a migration to a different server both the old and the new registry should be kept online concurrently during a reasonable transition phase.
+
 ## Acknowledgements
 
 This work is supported by the [MARVEL National Centre for Competency in Research](<http://nccr-marvel.ch>)
