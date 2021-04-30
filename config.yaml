@@ -3,7 +3,7 @@ data:
   apps:  apps.yaml
   categories: categories.yaml
 schemas:
-  path: src/static/schemas/v2
+  path: src/static/schemas/v1
 build:
   html: src/build/html
   static_src: src/static
