@@ -43,14 +43,7 @@
                     ]
                 },
                 "meta_url": {
-                    "type": "string",
-                    "format": "uri",
-                    "qt-uri-protocols": [
-                        "https"
-                    ],
-                    "qt-uri-extensions": [
-                        ".json"
-                    ]
+                    "type": "string"
                 },
                 "categories": {
                     "type": "array",
