@@ -12,28 +12,22 @@
                         "type": "string"
                     }
                 },
-                "git_url": {
-                    "type": "string",
-                    "format": "uri",
-                    "qt-uri-extensions": [
-                        ".git"
-                    ],
-                    "qt-uri-protocols": [
-                        "https"
-                    ]
-                },
                 "logo": {
                     "type": "string",
                     "format": "uri"
                 },
                 "metadata": {
                     "$ref": "https://aiidalab.github.io/aiidalab-registry/schemas/v1/metadata.schema.json#/definitions/Welcome"
+                },
+                "releases": {
+                    "$ref": "#definitions/ReleaseSpecifications"
                 }
             },
             "additionalProperties": false,
             "required": [
-                "git_url",
-                "metadata"
+                "metadata",
+                "logo",
+                "releases"
             ],
             "title": "AiiDAlab apps registry app entry"
         },
@@ -49,6 +43,41 @@
                 "pattern": "^[A-Za-z][A-Za-z0-9-_]*$"
             },
             "title": "Schema for the AiiDAlab apps registry."
+        },
+        "ReleaseSpecification": {
+            "type": "object",
+            "properties": {
+                "environment": {
+                    "$ref": "https://aiidalab.github.io/aiidalab-registry/schemas/v1/environment.schema.json#definitions/Environment"
+                },
+                "url": {
+                    "$ref": "#definitions/ReleaseSpecificationUrl"
+                },
+                "version": {
+                    "type": "string"
+                }
+            },
+            "additionalProperties": false,
+            "required": [
+                "url"
+            ]
+        },
+        "ReleaseSpecificationUrl": {
+            "type": "string",
+            "format": "uri"
+        },
+        "ReleaseSpecifications": {
+            "type": "array",
+            "items": {
+                "oneOf": [
+                    {
+                        "$ref": "#definitions/ReleaseSpecification"
+                    },
+                    {
+                        "$ref": "#definitions/ReleaseSpecificationUrl"
+                    }
+                ]
+            }
         }
     }
 }
