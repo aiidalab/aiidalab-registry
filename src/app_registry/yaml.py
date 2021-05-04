@@ -16,10 +16,15 @@ class JsonYamlLoader(jsonref.JsonLoader):
     safe_yaml = YAML(typ="safe")
 
     def __call__(self, uri, **kwargs):
-        if Path(urlsplit(uri).path).suffix in (".yml", ".yaml"):
-            response = REQUESTS.get(uri)
-            response.raise_for_status()
-            return self.safe_yaml.load(response.content)
+        uri_split = urlsplit(uri)
+        if Path(uri_split.path).suffix in (".yml", ".yaml"):
+            if uri_split.scheme == "file":
+                content = Path(uri_split.path).read_bytes()
+            else:
+                response = REQUESTS.get(uri)
+                response.raise_for_status()
+                content = response.content
+            return self.safe_yaml.load(content)
         else:
             return super().__call__(uri, **kwargs)
 

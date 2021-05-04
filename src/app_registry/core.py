@@ -12,9 +12,12 @@ from .util import load_json
 class AppRegistrySchemas:
     """The app registry JSON-schema objects."""
 
+    app: dict
     apps: dict
+    apps_index: dict
     apps_meta: dict
     categories: dict
+    environment: dict
     metadata: dict
 
     @classmethod
