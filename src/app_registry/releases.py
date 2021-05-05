@@ -10,8 +10,6 @@ from urllib.parse import urlsplit
 from urllib.parse import urlunsplit
 
 import requests
-from packaging.specifiers import InvalidSpecifier
-from packaging.specifiers import SpecifierSet
 
 from .environment import Environment
 from .git_util import GitPath
@@ -59,41 +57,6 @@ def _get_release_commits(repo, release_line):
         else:  # ref must be committish (commit)
             if selected(ref):
                 yield ref, ref
-
-
-def _fully_qualified_dependencies(dependencies):
-    if isinstance(dependencies, list):
-        yield "python-requirements", dependencies
-    else:
-        yield from dependencies.items()
-
-
-class _RegexMatchSpecifierSet:
-    """Interpret 'invalid' specifier sets as regular expression pattern."""
-
-    def __init__(self, specifiers=""):
-        self.specifiers = specifiers
-
-    def __contains__(self, version):
-        return re.match(self.specifiers, version) is not None
-
-
-def _specifier_set(specifiers=""):
-    try:
-        return SpecifierSet(specifiers=specifiers, prereleases=True)
-    except InvalidSpecifier:
-        return _RegexMatchSpecifierSet(specifiers=specifiers)
-
-
-def _find_matching_dependencies(requires, version):
-    matches = [spec for spec in requires if version in _specifier_set(spec)]
-    if len(matches) > 1:
-        raise ValueError(
-            f"The explicit dependency specification for version '{version}' is ambiguous; "
-            f"multiple matching specifiers: {matches}"
-        )
-    elif len(matches) == 1:
-        yield from _fully_qualified_dependencies(requires[matches[0]])
 
 
 def _release_from_path(path, environment_dirs):
