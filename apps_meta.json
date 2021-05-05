@@ -633,7 +633,7 @@
       },
       "gitinfo": {
         "HEAD": "d11d9eb56e988fd55a0d6a799e99de0eac8a72ce",
-        "refs/heads/develop": "fb973dc6e46dfabafac8d6b8d8d8b3952814df3f",
+        "refs/heads/develop": "d11d9eb56e988fd55a0d6a799e99de0eac8a72ce",
         "refs/heads/master": "d11d9eb56e988fd55a0d6a799e99de0eac8a72ce",
         "refs/heads/openbis-test": "e2b65a7e05d2d2c06efd37567e8b4cf023d4f7ee",
         "refs/heads/support/aiida-0.12.x": "2a9c1e676552b61b6f314ab39c4ff2dfa089cd3e",
