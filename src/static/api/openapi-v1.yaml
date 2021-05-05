@@ -33,7 +33,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: https://aiidalab.github.io/aiidalab-registry/schemas/v1/app.schema.json
+                $ref: https://aiidalab.github.io/aiidalab-registry/schemas/v1/app.schema.json#/definitions/App
   /apps_meta.json:
     get:
       deprecated: true
