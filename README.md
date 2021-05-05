@@ -26,12 +26,12 @@ Apps are added to the registry by adding an entry to the `apps.yaml` file within
         authors: A. Doe, B. Doe
         external_url: https://github.com/aiidalab/aiidalab-hello-world
         documentation_url: https://github.com/aiidalab/aiidalab-hello-world#readme
-        logo: https://raw.githubusercontent.com/aiidalab/aiidalab-widgets-base/master/miscellaneous/logos/aiidalab.png
         state: stable
+      logo: https://raw.githubusercontent.com/aiidalab/aiidalab-widgets-base/master/miscellaneous/logos/aiidalab.png
       categories:
         - tutorials
-      git_url:
-        https://github.com/aiidalab/aiidalab-hello-world.git
+      releases:
+        - git+https://github.com/aiidalab/aiidalab-hello-world.git
     ```
 
     **Note**: Only the metadata fields `title` and `description` are mandatory.
@@ -64,9 +64,8 @@ my-big-map-app:
 | Key | Requirement | Description |
 |:---:|:---:|:---|
 | `metadata` | **Mandatory** | General description of the app (see below). |
-| `git_url` | **Mandatory** | Link to the source code git repository. |
+| `releases` | **Mandatory** | List the source(s) for releases, e.g., a git repository. |
 | `categories` | Optional | If provided, must be one of the valid categories specified in [`categories.yaml`](https://github.com/aiidalab/aiidalab-registry/blob/main/categories.yaml). |
-
 
 ### Valid keys for app metadata:
 
@@ -75,10 +74,99 @@ my-big-map-app:
 | `title` | **Mandatory** | The title will be displayed in the list of apps in the application manager. |
 | `description` | **Mandatory** | The description will be displayed on the detail page of your app. |
 | `authors` | Optional | Comma-separated list of authors. |
-| `logo` | Optional | Url to a logo file (png or jpg). |
 | `state` | Optional | One of<br>- `registered`: lowest level - app may not yet be in a working state. Use this to secure a specific name.<br>- `development`: app is under active development, expect the occasional bug.<br>- `stable`: app can be used in production. |
 | `documentation_url` | Optional | The link to the online documentation of the app (e.g. on [Read The Docs](https://readthedocs.org/)). |
 | `external_url` | Optional | General homepage for your app. |
+
+#### Release specification
+
+Releases are specified in the form of a list, where each list entry corresponds to one or more tagged commits of a git repository branch.
+In case that it corresponds to multiple commits, the release entry is called a *release line*.
+Typically, most app developers would want to take that approach since it avoids the need to update the registry with each new release: simply push a new tagged commit and the version will be released on AiiDAlab.
+This is an example for such a *release line* entry:
+```yaml
+hello-world:
+  releases:
+  - git+https://github.com/aiidalab/aiidalab-hello-world.git
+```
+
+Note that the above example is short-hand for:
+```yaml
+hello-world:
+  releases:
+  - url: git+https://github.com/aiidalab/aiidalab-hello-world.git
+```
+Specifying a release entry as dictionary allows us to override the environment specification (see next section).
+
+By default, a release pointing to a git repository expands to all *tagged* commits on the default branch.
+However, it is possible to more closely control, which commits exactly should be included into the release line.
+For this, we use the the following syntax:
+```
+<url>           ::= <base url> [ #<release line> ] ;
+<release line>  ::= [ <ref> ] [ :[ <rev selection> ] ] ;
+```
+This means that we can select the exact git reference our release line corresponds to.
+This can be either a branch, a tag, or a specific commit.
+For branches, we can furthermore select a range of commits using the standard [git revision selection syntax](https://git-scm.com/book/en/v2/Git-Tools-Revision-Selection), e.g., to exclude earlier commits.
+Here are a few examples:
+
+```yaml
+hello-world:
+  releases:
+  # All tagged commits on the repository's default branch:
+  - git+https://github.com/aiidalab/aiidalab-hello-world.git
+  # All tagged commits on the repository's develop branch:
+  - git+https://github.com/aiidalab/aiidalab-hello-world.git#develop
+  # Specifically the commit tagged with `v1.0.0`:
+  - git+https://github.com/aiidalab/aiidalab-hello-world.git#v1.0.0
+  # All tagged commits on the `master` branch from `v0.1.0` (exclusive) onwards:
+  - git+https://github.com/aiidalab/aiidalab-hello-world.git#master:v0.1.0..
+  # All tagged commits on the `master` branch from `v0.1.0` (inclusive) onwards:
+  - git+https://github.com/aiidalab/aiidalab-hello-world.git#master:v0.1.0^..
+  # All tagged commits on the `master` branch from `v0.1.0` (exclusive) until `v1.0.0`:
+  - git+https://github.com/aiidalab/aiidalab-hello-world.git#master:v0.1.0..v1.0.0
+```
+
+#### Environment specification
+
+The environment specification is typically directly parsed from the app repository, similar to how [repo2docker](https://repo2docker.readthedocs.io) parses repositories to derive instructions to create a docker image.
+In the current version, the following files are parsed:
+
+ - `requirements.txt` - The Python requirements listed in that file must be installed within the Python kernel executing the app.
+ - `jupyter-requirements.txt` - The Python requirements listed in that file must be installed within the Python environment that runs the Jupyter server.
+
+The jupyter-requirements typically include packages that install Jupyter-extensions such as ipywidgets.
+Most often the extension package must be installed in both the Jupyter-environment and the Python environment and must therefore be listed in both `jupyter-requirements.txt` and (!) `requirements.txt` with the same version.
+
+The above listed files are parsed either from a hidden sub-directory called `.aiidalab/` or the repository root directory in that order.
+This means for the purpose of the AiiDAlab environment specification, a file `.aiidalab/requirements.txt` would be preferentially parsed over the `./requirements.txt`.
+If a `.aiidalab` directory exists, only files within that directory are parsed.
+
+To override the environment specification for one or more versions, simply add an explicit specification to the release.
+For example, to override the environment specification for version v1.0.0:
+```yaml
+hello-world:
+  releases:
+  # The tagged commits on the default branch will use the parsed environment specification:
+  - git+https://github.com/aiidalab/aiidalab-hello-world.git
+  # The environment specification for version v1.0.0 is overriden:
+  - url: git+https://github.com/aiidalab/aiidalab-hello-world.git#v1.0.0
+    environment:
+      python-requirements:
+        - aiidalab>=20.02.0b2
+        - some-missing-requirement
+```
+
+This is useful to retoractively override environment specifications if the in-repository specification via the requirements-files is incorrect or incomplete.
+
+Tip: For individual releases, the same approach can also be used to override the version number, in case that it should deviate from the tag name.
+Example:
+```yaml
+hello-world:
+  releases:
+  - url: git+https://github.com/aiidalab/aiidalab-hello-world.git#v1.0.0
+    version: 1.0.0
+```  
 
 ## Information for maintainers
 

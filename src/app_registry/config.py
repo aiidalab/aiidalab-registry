@@ -8,6 +8,7 @@ from collections.abc import Mapping
 from dataclasses import dataclass
 from dataclasses import field
 from pathlib import Path
+from typing import List
 from typing import Union
 
 from dacite import from_dict
@@ -34,6 +35,13 @@ class SchemasConfig:
 
 
 @dataclass
+class EnvironmentsConfig:
+    """(Sub-) directories to be considered for parsing app environments."""
+
+    dirs: List[str] = field(default_factory=lambda: ["."])
+
+
+@dataclass
 class BuildConfig:
     """Configuration fields related to building the registry website."""
 
@@ -47,6 +55,7 @@ class Config:
 
     data: DataConfig
     schemas: SchemasConfig
+    environments: EnvironmentsConfig
     build: BuildConfig = field(default_factory=BuildConfig)
     api_version: str = "v1"
 

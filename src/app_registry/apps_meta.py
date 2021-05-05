@@ -3,45 +3,71 @@
 
 import logging
 from collections import OrderedDict
+from urllib.parse import urlsplit
+from urllib.parse import urlunsplit
+from copy import deepcopy
 
 import jsonschema
 
+from . import git_util
 from . import util
 
 
 logger = logging.getLogger(__name__)
 
 
-def complete_metadata(app_name, metadata, git_url):
-    """Fill-in any missing data for a given app metadata."""
+def generate_metainfo(app_name, metadata, git_url):
+    """Generate the metainfo object from the app metadata."""
+    metainfo = {
+        key: metadata[key]
+        for key in (
+            "authors",
+            "description",
+            "documentation_url",
+            "external_url",
+            "requires",
+            "state",
+            "title",
+            "version",
+        )
+        if key in metadata
+    }
 
-    metadata.setdefault("state", "registered")
-    metadata.setdefault("title", app_name)
-    if git_url:
-        metadata.setdefault("authors", util.get_git_author(git_url))
-    return metadata
+    metainfo.setdefault("state", "registered")
+    metainfo.setdefault("title", app_name)
+    metainfo.setdefault("authors", git_util.get_git_author(git_url))
+    return metainfo
+
+
+def extract_git_url_from_releases(releases):
+    for release in releases:
+        split = urlsplit(release if isinstance(release, str) else release["url"])
+        if split.scheme == "git+https":
+            return urlunsplit(split._replace(scheme="https"))
+    raise ValueError("Unable to determine git_url!")
 
 
 def fetch_app_data(app_data, app_name):
     """Fetch additional data for the given app data."""
 
-    # Get Git URL, fail build if git_url is not found or wrong
-    git_url = app_data.get("git_url", "")
-    hosted_on = util.get_hosted_on(git_url) if git_url else None
-
     # Check if categories are specified, warn if not
     if "categories" not in app_data:
         logger.info("  >> WARNING: No categories specified.")
+        app_data["categories"] = []
 
-    app_data["metainfo"] = complete_metadata(
-        app_name, app_data.pop("metadata"), git_url
-    )
-    if git_url:
-        app_data["gitinfo"] = util.get_git_branches(git_url)
+    # Get Git URL, fail build if git_url is not found or wrong
+    app_data["git_url"] = extract_git_url_from_releases(app_data.pop("releases"))
+
+    hosted_on = util.get_hosted_on(app_data["git_url"])
     if hosted_on:
         app_data["hosted_on"] = hosted_on
+    app_data["gitinfo"] = git_util.get_git_branches(app_data["git_url"])
 
-    return app_data
+    app_data["metainfo"] = generate_metainfo(
+        app_name, app_data.pop("metadata"), app_data["git_url"]
+    )
+
+    return deepcopy(app_data)
 
 
 def validate_apps_meta(apps_meta, apps_meta_schema):
@@ -70,13 +96,13 @@ def generate_apps_meta(data):
         "categories": data.categories,
     }
     logger.info("Fetching app data...")
-    for app_name in sorted(data.apps.keys()):
-        assert util.get_html_app_fname(app_name) == f"{app_name}.html"
-        logger.info(f"  - {app_name}")
-        app_data = fetch_app_data(data.apps[app_name], app_name)
-        app_data["name"] = app_name
-        app_data["subpage"] = f"apps/{app_name}/index.html"
+    for app_id in sorted(data.apps.keys()):
+        assert util.get_html_app_fname(app_id) == f"{app_id}.html"
+        logger.info(f"  - {app_id}")
+        app_data = fetch_app_data(data.apps[app_id], app_id)
+        app_data["name"] = app_id
+        app_data["subpage"] = f"apps/{app_id}/index.html"
         app_data["meta_url"] = ""
-        apps_meta["apps"][app_name] = app_data
+        apps_meta["apps"][app_id] = app_data
 
     return apps_meta
