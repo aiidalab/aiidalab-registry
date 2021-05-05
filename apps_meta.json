@@ -626,15 +626,15 @@
       "metainfo": {
         "description": "App to run scanning probe microscopy simulations.",
         "title": "Empa nanotech@surfaces Laboratory - Scanning Probe Microscopy",
-        "version": "1.4.2",
+        "version": "1.4.3",
         "logo": "miscellaneous/logos/empa.png",
         "authors": "nanotech@surfaces laboratory, Empa",
         "state": "stable"
       },
       "gitinfo": {
-        "HEAD": "a15087944414cb90ff321f72f35dbedaf3a5edce",
-        "refs/heads/develop": "5d843bc2acc22e123c4fb48d9b1401d5364d802a",
-        "refs/heads/master": "a15087944414cb90ff321f72f35dbedaf3a5edce",
+        "HEAD": "d11d9eb56e988fd55a0d6a799e99de0eac8a72ce",
+        "refs/heads/develop": "fb973dc6e46dfabafac8d6b8d8d8b3952814df3f",
+        "refs/heads/master": "d11d9eb56e988fd55a0d6a799e99de0eac8a72ce",
         "refs/heads/openbis-test": "e2b65a7e05d2d2c06efd37567e8b4cf023d4f7ee",
         "refs/heads/support/aiida-0.12.x": "2a9c1e676552b61b6f314ab39c4ff2dfa089cd3e",
         "refs/pull/1/head": "6c71a75202811fd76d654d62e2b917ef5ce7882d",
@@ -642,6 +642,7 @@
         "refs/pull/3/head": "7a522dca0309d1b05e329e14687fc8d0e821276d",
         "refs/pull/4/head": "0e16007cde1db1071bfded77ac3287b011793fcc",
         "refs/pull/5/head": "27e11b0dd5f23ef18355df0561358ea935478515",
+        "refs/pull/6/head": "8ebc9831a20b6411c49f42daab433c5264e7d5ac",
         "refs/tags/v0.1": "c69eac1056bb672272d962cc48e4dc7242dde375",
         "refs/tags/v0.2": "1bd53e71e729a700b84ee8241ddf0ac6a89b725a",
         "refs/tags/v1.0": "e62587b6480b2a8e3e107db859f10b144f6e7c24",
@@ -650,7 +651,8 @@
         "refs/tags/v1.3": "17b0a4c191b2ac52b77cb782830ff35bf8a0993a",
         "refs/tags/v1.4.0": "ee1389f6eb260a3d5bee4bc9d78d7c572d4e9ecf",
         "refs/tags/v1.4.1": "b4ff37e09984a1a0087cf4a36a2140a24be2236b",
-        "refs/tags/v1.4.2": "a15087944414cb90ff321f72f35dbedaf3a5edce"
+        "refs/tags/v1.4.2": "a15087944414cb90ff321f72f35dbedaf3a5edce",
+        "refs/tags/v1.4.3": "d11d9eb56e988fd55a0d6a799e99de0eac8a72ce"
       },
       "hosted_on": "github.com",
       "logo": "https://raw.githubusercontent.com/nanotech-empa/aiidalab-empa-scanning-probe/master/miscellaneous/logos/empa.png",
