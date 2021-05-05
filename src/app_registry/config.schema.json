@@ -2,34 +2,8 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$ref": "#/definitions/Welcome",
     "definitions": {
-        "Welcome": {
-            "type": "object",
-            "additionalProperties": false,
-            "properties": {
-                "data": {
-                    "$ref": "#/definitions/Data"
-                },
-                "schemas": {
-                    "$ref": "#/definitions/Schemas"
-                },
-                "build": {
-                    "$ref": "#/definitions/Build"
-                },
-                "api_version": {
-                    "type": "string"
-                }
-            },
-            "required": [
-                "api_version",
-                "build",
-                "data",
-                "schemas"
-            ],
-            "title": "Welcome"
-        },
         "Build": {
             "type": "object",
-            "additionalProperties": false,
             "properties": {
                 "html": {
                     "type": "string"
@@ -41,12 +15,12 @@
                     "type": "string"
                 }
             },
+            "additionalProperties": false,
             "required": [],
             "title": "Build"
         },
         "Data": {
             "type": "object",
-            "additionalProperties": false,
             "properties": {
                 "apps": {
                     "type": "string"
@@ -55,6 +29,7 @@
                     "type": "string"
                 }
             },
+            "additionalProperties": false,
             "required": [
                 "apps",
                 "categories"
@@ -64,13 +39,38 @@
         "Schemas": {
             "type": "object",
             "properties": {
-              "path": {
-                "type": "string"
-              }
+                "path": {
+                    "type": "string"
+                }
             },
             "required": [
-              "path"
+                "path"
             ]
+        },
+        "Welcome": {
+            "type": "object",
+            "properties": {
+                "api_version": {
+                    "type": "string"
+                },
+                "build": {
+                    "$ref": "#/definitions/Build"
+                },
+                "data": {
+                    "$ref": "#/definitions/Data"
+                },
+                "schemas": {
+                    "$ref": "#/definitions/Schemas"
+                }
+            },
+            "additionalProperties": false,
+            "required": [
+                "api_version",
+                "build",
+                "data",
+                "schemas"
+            ],
+            "title": "Welcome"
         }
     }
 }

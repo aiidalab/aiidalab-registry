@@ -10,3 +10,9 @@ repos:
     hooks:
     - id: flake8
       args: [--count, --show-source, --statistics]
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: 'v3.4.0'
+    hooks:
+    - id: pretty-format-json
+      args: [--autofix, --no-ensure-ascii, --indent=4, --top-keys, '$schema,$id,type,properties']

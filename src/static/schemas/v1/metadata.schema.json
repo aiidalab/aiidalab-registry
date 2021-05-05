@@ -3,53 +3,59 @@
     "$id": "https://aiidalab.github.io/aiidalab-registry/schemas/v1/metadata.schema.json",
     "$ref": "#/definitions/Welcome",
     "definitions": {
+        "Requirements": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "title": "Requirements"
+        },
         "Welcome": {
             "type": "object",
-            "additionalProperties": true,
             "properties": {
-                "title": {
+                "authors": {
                     "type": "string"
                 },
                 "description": {
                     "type": "string"
                 },
-                "authors": {
+                "documentation_url": {
+                    "type": "string",
+                    "format": "uri"
+                },
+                "external_url": {
+                    "type": "string",
+                    "format": "uri"
+                },
+                "requires": {
+                    "type": "object",
+                    "patternProperties": {
+                        ".*": {
+                            "$ref": "#/definitions/Requirements"
+                        }
+                    }
+                },
+                "state": {
+                    "type": "string",
+                    "enum": [
+                        "registered",
+                        "development",
+                        "stable"
+                    ]
+                },
+                "title": {
                     "type": "string"
                 },
                 "version": {
                     "type": "string"
-                },
-                "state": {
-                  "type": "string",
-                  "enum": ["registered", "development", "stable"]
-                },
-                "documentation_url": {
-                  "type": "string",
-                  "format": "uri"
-                },
-                "external_url": {
-                  "type": "string",
-                  "format": "uri"
-                },
-                "requires": {
-                  "type": "object",
-                  "patternProperties": {
-                    ".*": {"$ref": "#/definitions/Requirements"}
-                  }
                 }
             },
+            "additionalProperties": true,
             "required": [
                 "description",
                 "title"
             ],
             "title": "Welcome"
-        },
-        "Requirements": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "title": "Requirements"
         }
     }
 }
