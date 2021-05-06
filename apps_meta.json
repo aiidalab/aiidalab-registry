@@ -186,9 +186,8 @@
         }
       },
       "gitinfo": {
-        "HEAD": "74b4f5752db910aed67bb5b8f292579bd9b91c73",
-        "refs/heads/add-ipytree": "1c0eac3696efd2239275d7053115a6ae0881149b",
-        "refs/heads/develop": "74b4f5752db910aed67bb5b8f292579bd9b91c73",
+        "HEAD": "0b9f4e34d30f1a817d8b4d7c4729c44a548abd95",
+        "refs/heads/develop": "0b9f4e34d30f1a817d8b4d7c4729c44a548abd95",
         "refs/heads/feature/eln-integration": "49d5a5a2119fa5c6b24f48683ffbfbcc38674e7e",
         "refs/heads/feature/pinhole-camera": "73a03707da3d9624e833cbe75fa2591ec795a9b7",
         "refs/heads/master": "6fe5b06c263eb220ca14563b7ec539981fe5cd83",
@@ -270,9 +269,8 @@
         "refs/pull/193/merge": "8f4d33ce3f6d59958609e8869569d6700c596682",
         "refs/pull/195/head": "278ebbf59d52f08e02808db707438b9c04642afe",
         "refs/pull/196/head": "1c0eac3696efd2239275d7053115a6ae0881149b",
-        "refs/pull/196/merge": "63d5014afa710712ef496b30fba2cba14e7da0e3",
         "refs/pull/197/head": "126e0419eb9f36eda0c9ae9b95e7442819157f47",
-        "refs/pull/197/merge": "82bd36b62bb45381b80eb7362f7e526463d40557",
+        "refs/pull/197/merge": "cee801d989a2747ef3d01f652c150ddf7770e9bf",
         "refs/pull/23/head": "fce2a53931b6879f2786268da4a40e8c57065b1b",
         "refs/pull/25/head": "441e73c4b3e662e11cfa813e96f93258b7f6314e",
         "refs/pull/26/head": "50fe68e0df999825419b162cdb2419dc24ad12bd",
@@ -632,15 +630,15 @@
       "metainfo": {
         "description": "App to run scanning probe microscopy simulations.",
         "title": "Empa nanotech@surfaces Laboratory - Scanning Probe Microscopy",
-        "version": "1.4.3",
+        "version": "1.4.4",
         "logo": "miscellaneous/logos/empa.png",
         "authors": "nanotech@surfaces laboratory, Empa",
         "state": "stable"
       },
       "gitinfo": {
-        "HEAD": "d11d9eb56e988fd55a0d6a799e99de0eac8a72ce",
-        "refs/heads/develop": "d11d9eb56e988fd55a0d6a799e99de0eac8a72ce",
-        "refs/heads/master": "d11d9eb56e988fd55a0d6a799e99de0eac8a72ce",
+        "HEAD": "80b2664d6ef9bb6d751629001f07f9f578fb31d7",
+        "refs/heads/develop": "80b2664d6ef9bb6d751629001f07f9f578fb31d7",
+        "refs/heads/master": "80b2664d6ef9bb6d751629001f07f9f578fb31d7",
         "refs/heads/openbis-test": "e2b65a7e05d2d2c06efd37567e8b4cf023d4f7ee",
         "refs/heads/support/aiida-0.12.x": "2a9c1e676552b61b6f314ab39c4ff2dfa089cd3e",
         "refs/pull/1/head": "6c71a75202811fd76d654d62e2b917ef5ce7882d",
@@ -649,6 +647,7 @@
         "refs/pull/4/head": "0e16007cde1db1071bfded77ac3287b011793fcc",
         "refs/pull/5/head": "27e11b0dd5f23ef18355df0561358ea935478515",
         "refs/pull/6/head": "8ebc9831a20b6411c49f42daab433c5264e7d5ac",
+        "refs/pull/7/head": "b4a6f55a99ce53b8bb3043b8c99d2abd8ff61454",
         "refs/tags/v0.1": "c69eac1056bb672272d962cc48e4dc7242dde375",
         "refs/tags/v0.2": "1bd53e71e729a700b84ee8241ddf0ac6a89b725a",
         "refs/tags/v1.0": "e62587b6480b2a8e3e107db859f10b144f6e7c24",
@@ -658,7 +657,8 @@
         "refs/tags/v1.4.0": "ee1389f6eb260a3d5bee4bc9d78d7c572d4e9ecf",
         "refs/tags/v1.4.1": "b4ff37e09984a1a0087cf4a36a2140a24be2236b",
         "refs/tags/v1.4.2": "a15087944414cb90ff321f72f35dbedaf3a5edce",
-        "refs/tags/v1.4.3": "d11d9eb56e988fd55a0d6a799e99de0eac8a72ce"
+        "refs/tags/v1.4.3": "d11d9eb56e988fd55a0d6a799e99de0eac8a72ce",
+        "refs/tags/v1.4.4": "80b2664d6ef9bb6d751629001f07f9f578fb31d7"
       },
       "hosted_on": "github.com",
       "logo": "https://raw.githubusercontent.com/nanotech-empa/aiidalab-empa-scanning-probe/master/miscellaneous/logos/empa.png",
