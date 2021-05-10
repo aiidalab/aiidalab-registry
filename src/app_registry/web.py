@@ -1,14 +1,17 @@
 # -*- coding: utf-8 -*-
 """Generate the app registry website."""
 
+import json
 import logging
 import os
 import shutil
-from copy import deepcopy
 from collections.abc import Mapping
+from copy import deepcopy
 from functools import singledispatch
 from itertools import chain
 from pathlib import Path
+from subprocess import CalledProcessError
+from subprocess import run
 from typing import Union
 
 from . import api
@@ -25,7 +28,9 @@ logger = logging.getLogger(__name__)
 def copy_static_tree(base_path, static_src):
     for root, dirs, files in os.walk(static_src):
         # Create directory
-        base_path.joinpath(Path(root).relative_to(static_src)).mkdir()
+        base_path.joinpath(Path(root).relative_to(static_src)).mkdir(
+            parents=True, exist_ok=True
+        )
 
         # Copy all files
         for filename in files:
@@ -70,8 +75,23 @@ def build_from_config(
 
     root = Path(config.build.html)
 
-    # Remove previous build (if present).
+    # Remove previous build (if present) and re-create root directory.
     shutil.rmtree(root, ignore_errors=True)
+    root.mkdir(parents=True, exist_ok=True)
+
+    # Prepare environment command
+    def scan_environment(url):
+        try:
+            return json.loads(
+                run(
+                    f"{config.environments.cmd} {url}",
+                    shell=True,
+                    check=True,
+                    capture_output=True,
+                ).stdout
+            )
+        except CalledProcessError as error:
+            raise RuntimeError(f"Failed to parse environment for '{url}': {error}")
 
     # Build the website and API endpoints.
     for outfile in chain(
@@ -88,7 +108,7 @@ def build_from_config(
         api.build_api_v1(
             base_path=root / "api" / "v1",
             data=deepcopy(data),
-            env_dirs=config.environments.dirs,
+            scan_environment=scan_environment,
         ),
     ):
         logger.info(f"  - {outfile.relative_to(root)}")

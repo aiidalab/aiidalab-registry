@@ -42,8 +42,8 @@ def generate_metainfo(app_name, metadata, git_url):
 def extract_git_url_from_releases(releases):
     for release in releases:
         split = urlsplit(release if isinstance(release, str) else release["url"])
-        if split.scheme == "git+https":
-            return urlunsplit(split._replace(scheme="https"))
+        if split.scheme == "git+https" and split.path.endswith("@:"):
+            return urlunsplit(split._replace(scheme="https", path=split.path[:-2]))
     raise ValueError("Unable to determine git_url!")
 
 

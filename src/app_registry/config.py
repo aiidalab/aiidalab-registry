@@ -8,7 +8,6 @@ from collections.abc import Mapping
 from dataclasses import dataclass
 from dataclasses import field
 from pathlib import Path
-from typing import List
 from typing import Union
 
 from dacite import from_dict
@@ -36,9 +35,14 @@ class SchemasConfig:
 
 @dataclass
 class EnvironmentsConfig:
-    """(Sub-) directories to be considered for parsing app environments."""
+    """Configuration on how to determine the environment specification.
 
-    dirs: List[str] = field(default_factory=lambda: ["."])
+    The cmd attribute should contain a shell command, that takes an app
+    repository URL as first argument and prints the environment specification
+    in JSON format to STDOUT.
+    """
+
+    cmd: str
 
 
 @dataclass

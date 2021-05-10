@@ -5,9 +5,7 @@ data:
 schemas:
   path: src/static/schemas/v1
 environments:
-  dirs:
-  - ./.aiidalab/
-  - ./
+  cmd: "repo2env --dirs .aiidalab/ --dirs ./ "
 build:
   html: src/build/html
   static_src: src/static

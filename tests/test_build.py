@@ -11,7 +11,7 @@ import app_registry
 
 @pytest.fixture
 def app_git_url():
-    return "https://github.com/aiidalab/aiidalab-hello-world.git"
+    return "https://github.com/aiidalab/aiidalab-hello-world.git@:"
 
 
 @pytest.fixture
