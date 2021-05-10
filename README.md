@@ -54,7 +54,6 @@ hello-world:
     title: AiiDAlab hello world app
     description:
       $ref: https://raw.githubusercontent.com/aiidalab/aiidalab-hello-world/master/metadata.yaml#description
-my-big-map-app:
 ```
 
 *The app store will assume that external references are in JSON format unless the referenced path ends with `.yaml` or `.yml`.*
