@@ -2,6 +2,7 @@
 """Generate the aggregated registry metadata from the registry data."""
 
 import logging
+import re
 from collections import OrderedDict
 from urllib.parse import urlsplit
 from urllib.parse import urlunsplit
@@ -42,8 +43,9 @@ def generate_metainfo(app_name, metadata, git_url):
 def extract_git_url_from_releases(releases):
     for release in releases:
         split = urlsplit(release if isinstance(release, str) else release["url"])
-        if split.scheme == "git+https" and split.path.endswith("@:"):
-            return urlunsplit(split._replace(scheme="https", path=split.path[:-2]))
+        if split.scheme == "git+https" and re.match(r".+?@(.*):", split.path):
+            adjusted_path = re.sub("(.+?)@(.*):", r"\1#\2", split.path)
+            return urlunsplit(split._replace(scheme="https", path=adjusted_path))
     raise ValueError("Unable to determine git_url!")
 
 
