@@ -66,15 +66,12 @@
         },
         "Environments": {
             "properties": {
-                "dirs": {
-                    "type": "array",
-                    "items": {
-                        "type": "string"
-                    }
+                "cmd": {
+                    "type": "string"
                 }
             },
             "required": [
-                "dirs"
+                "cmd"
             ]
         },
         "Schemas": {

@@ -31,10 +31,12 @@ def validate_api_v0(base_path, schemas):
     )
 
 
-def build_api_v1(base_path, data, env_dirs):
+def build_api_v1(base_path, data, scan_environment):
     """Build tree for API endpoint v1."""
     # Compile the apps index
-    apps_index, apps_data = generate_apps_index(data=data, env_dirs=env_dirs)
+    apps_index, apps_data = generate_apps_index(
+        data=data, scan_environment=scan_environment
+    )
 
     # Create base path if necessary.
     base_path.mkdir(parents=True, exist_ok=True)

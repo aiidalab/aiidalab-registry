@@ -4,5 +4,6 @@ dacite==1.6.0
 dulwich==0.20.15
 jsonref==0.2
 jsonschema[format]==3.2.0
+repo2env @ https://github.com/aiidalab/repo2env.git
 requests==2.24.0
 ruamel.yaml==0.16.12

@@ -30,19 +30,19 @@ def _complete_metadata(app_metadata):
             del app_metadata[key]
 
 
-def _fetch_app_data(app_id, app_data, env_dirs):
+def _fetch_app_data(app_id, app_data, scan_environment):
     # Gather all release data.
     app_data["name"] = _determine_app_name(app_id)
     app_data["releases"] = {
         version: asdict(release)
-        for version, release in gather_releases(app_data, env_dirs)
+        for version, release in gather_releases(app_data, scan_environment)
     }
     app_data.setdefault("categories", [])
     _complete_metadata(app_data["metadata"])
     return app_data
 
 
-def generate_apps_index(data, env_dirs):
+def generate_apps_index(data, scan_environment):
     """Generate the comprehensive app index.
 
     This index is built from the apps data and includes additional information
@@ -59,7 +59,7 @@ def generate_apps_index(data, env_dirs):
     for app_id in sorted(data.apps.keys()):
         logger.info(f"  - {app_id}")
         apps_data[app_id] = _fetch_app_data(
-            app_id, deepcopy(data.apps[app_id]), env_dirs
+            app_id, deepcopy(data.apps[app_id]), scan_environment
         )
         index["apps"][app_id] = {
             key: apps_data[app_id][key] for key in ("categories", "name")
