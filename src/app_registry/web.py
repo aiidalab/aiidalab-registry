@@ -1,24 +1,22 @@
 # -*- coding: utf-8 -*-
 """Generate the app registry website."""
 
-import codecs
 import json
 import logging
+import os
 import shutil
 from collections.abc import Mapping
 from copy import deepcopy
 from functools import singledispatch
 from itertools import chain
 from pathlib import Path
+from subprocess import CalledProcessError
+from subprocess import run
 from typing import Union
 
-from jinja2 import Environment
-from jinja2 import PackageLoader
-from jinja2 import select_autoescape
-
+from . import api
 from . import yaml
-from .apps_meta import generate_apps_meta
-from .apps_meta import validate_apps_meta
+from .html import build_html
 from .config import Config
 from .core import AppRegistryData
 from .core import AppRegistrySchemas
@@ -27,51 +25,19 @@ from .core import AppRegistrySchemas
 logger = logging.getLogger(__name__)
 
 
-def build_html(apps_meta, root):
-    """Generate the app registry website at the root path."""
-
-    # Create root directory if needed
-    root.mkdir(parents=True, exist_ok=True)
-
-    # Load template environment
-    env = Environment(
-        loader=PackageLoader("mod"),
-        autoescape=select_autoescape(["html", "xml"]),
-    )
-    singlepage_template = env.get_template("singlepage.html")
-    main_index_template = env.get_template("main_index.html")
-
-    # Make single-entry page based on singlepage.html
-    root.joinpath("apps").mkdir()
-    for app_name, app_data in apps_meta["apps"].items():
-        subpage_name = app_data["subpage"]
-        subpage_abspath = root / subpage_name
-        subpage_abspath.parent.mkdir()
-
-        app_html = singlepage_template.render(
-            category_map=apps_meta["categories"], **app_data
+def copy_static_tree(base_path, static_src):
+    for root, dirs, files in os.walk(static_src):
+        # Create directory
+        base_path.joinpath(Path(root).relative_to(static_src)).mkdir(
+            parents=True, exist_ok=True
         )
-        with codecs.open(subpage_abspath, "w", "utf-8") as f:
-            f.write(app_html)
-        yield subpage_abspath
 
-    # Make index page based on main_index.html
-    rendered = main_index_template.render(**apps_meta)
-    outfile = root / "index.html"
-    outfile.write_text(rendered, encoding="utf-8")
-    yield outfile
-
-
-def build_api_v0(apps_meta, base_path):
-    """Build tree for API endpoint v0."""
-    # Create base path if necessary.
-    base_path.mkdir(parents=True, exist_ok=True)
-
-    # Write apps_meta.json file.
-    outfile = base_path / "apps_meta.json"
-    rendered = json.dumps(deepcopy(apps_meta), ensure_ascii=False)
-    outfile.write_text(rendered, encoding="utf-8")
-    yield outfile
+        # Copy all files
+        for filename in files:
+            src = Path(root).joinpath(filename)
+            dst = base_path.joinpath(Path(root).relative_to(static_src), filename)
+            dst.write_bytes(src.read_bytes())
+            yield dst
 
 
 @singledispatch
@@ -107,27 +73,49 @@ def build_from_config(
     if validate_input:
         data.validate(schemas)
 
-    # Generate the aggregated apps metadata registry.
-    apps_meta = generate_apps_meta(data=data)
-    if validate_output:
-        validate_apps_meta(apps_meta, schemas.apps_meta)
-
     root = Path(config.build.html)
 
-    # Remove previous build (if present).
+    # Remove previous build (if present) and re-create root directory.
     shutil.rmtree(root, ignore_errors=True)
+    root.mkdir(parents=True, exist_ok=True)
 
-    # Copy static data (if configured).
-    if config.build.static_src:
-        shutil.copytree(config.build.static_src, root)
+    # Prepare environment command
+    def scan_environment(url):
+        try:
+            return json.loads(
+                run(
+                    f"{config.environments.cmd} {url}",
+                    shell=True,
+                    check=True,
+                    capture_output=True,
+                ).stdout
+            )
+        except CalledProcessError as error:
+            raise RuntimeError(f"Failed to parse environment for '{url}': {error}")
 
+    # Build the website and API endpoints.
     for outfile in chain(
+        # Copy static files (if configured)
+        (
+            copy_static_tree(base_path=root, static_src=config.build.static_src)
+            if config.build.static_src
+            else ()
+        ),
         # Build the html pages.
-        build_html(apps_meta, root=root),
+        build_html(base_path=root, data=deepcopy(data)),
         # Build the API endpoints.
-        build_api_v0(apps_meta, base_path=root),
+        api.build_api_v0(base_path=root, data=deepcopy(data)),
+        api.build_api_v1(
+            base_path=root / "api" / "v1",
+            data=deepcopy(data),
+            scan_environment=scan_environment,
+        ),
     ):
         logger.info(f"  - {outfile.relative_to(root)}")
+
+    if validate_output:
+        api.validate_api_v0(base_path=root, schemas=schemas)
+        api.validate_api_v1(base_path=root / "api" / "v1", schemas=schemas)
 
 
 @build_from_config.register

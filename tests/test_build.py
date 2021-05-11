@@ -11,7 +11,7 @@ import app_registry
 
 @pytest.fixture
 def app_git_url():
-    return "https://github.com/aiidalab/aiidalab-hello-world.git"
+    return "https://github.com/aiidalab/aiidalab-hello-world.git@:"
 
 
 @pytest.fixture
@@ -62,7 +62,7 @@ def apps_yaml(requests_mock, app_git_url, app_metadata, app_logo):
     """Create apps.yaml content with one test app entry."""
     apps_yaml = {
         "test": {
-            "git_url": app_git_url,
+            "releases": [f"git+{app_git_url}"],
             "metadata": app_metadata,
             "categories": ["utilities"],
             "logo": app_logo.url,

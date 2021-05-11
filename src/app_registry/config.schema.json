@@ -1,7 +1,35 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$ref": "#/definitions/Welcome",
+    "$ref": "#/definitions/AppRegistryConfiguration",
     "definitions": {
+        "AppRegistryConfiguration": {
+            "type": "object",
+            "properties": {
+                "api_version": {
+                    "type": "string"
+                },
+                "build": {
+                    "$ref": "#/definitions/Build"
+                },
+                "data": {
+                    "$ref": "#/definitions/Data"
+                },
+                "environments": {
+                    "$ref": "#/definitions/Environments"
+                },
+                "schemas": {
+                    "$ref": "#/definitions/Schemas"
+                }
+            },
+            "additionalProperties": false,
+            "required": [
+                "api_version",
+                "build",
+                "data",
+                "schemas"
+            ],
+            "title": "AppRegistryConfiguration"
+        },
         "Build": {
             "type": "object",
             "properties": {
@@ -36,6 +64,16 @@
             ],
             "title": "Data"
         },
+        "Environments": {
+            "properties": {
+                "cmd": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "cmd"
+            ]
+        },
         "Schemas": {
             "type": "object",
             "properties": {
@@ -46,31 +84,6 @@
             "required": [
                 "path"
             ]
-        },
-        "Welcome": {
-            "type": "object",
-            "properties": {
-                "api_version": {
-                    "type": "string"
-                },
-                "build": {
-                    "$ref": "#/definitions/Build"
-                },
-                "data": {
-                    "$ref": "#/definitions/Data"
-                },
-                "schemas": {
-                    "$ref": "#/definitions/Schemas"
-                }
-            },
-            "additionalProperties": false,
-            "required": [
-                "api_version",
-                "build",
-                "data",
-                "schemas"
-            ],
-            "title": "Welcome"
         }
     }
 }

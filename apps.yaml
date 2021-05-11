@@ -2,62 +2,72 @@ aiidalab-lsmo:
   categories:
   - classical
   - quantum
-  git_url: https://github.com/lsmo-epfl/aiidalab-epfl-lsmo.git
   logo: https://raw.githubusercontent.com/lsmo-epfl/aiidalab-epfl-lsmo/master/miscellaneous/logos/LSMO.png
   metadata:
     $ref: https://raw.githubusercontent.com/lsmo-epfl/aiidalab-epfl-lsmo/master/metadata.json
+  releases:
+    - "git+https://github.com/lsmo-epfl/aiidalab-epfl-lsmo.git@:"
 aiidalab-optimade:
   categories:
   - utilities
-  git_url: https://github.com/aiidalab/aiidalab-optimade.git
   logo: https://raw.githubusercontent.com/aiidalab/aiidalab-optimade/master/img/optimade-no-text-transparent-bg.png
   metadata:
     $ref: https://raw.githubusercontent.com/aiidalab/aiidalab-optimade/master/metadata.json
+  releases:
+  - "git+https://github.com/aiidalab/aiidalab-optimade.git@:"
 aiidalab-widgets-base:
   categories:
   - utilities
-  git_url: https://github.com/aiidalab/aiidalab-widgets-base.git
   logo: https://raw.githubusercontent.com/aiidalab/aiidalab-widgets-base/master/miscellaneous/logos/aiidalab.png
   metadata:
     $ref: https://raw.githubusercontent.com/aiidalab/aiidalab-widgets-base/master/metadata.json
+  releases:
+  - "git+https://github.com/aiidalab/aiidalab-widgets-base.git@:"
 home:
   categories:
   - setup
-  git_url: https://github.com/aiidalab/aiidalab-home
+  logo: https://raw.githubusercontent.com/aiidalab/aiidalab-widgets-base/master/miscellaneous/logos/aiidalab.png
+  releases:
+  - "git+https://github.com/aiidalab/aiidalab-home@:"
   metadata:
     $ref: https://raw.githubusercontent.com/aiidalab/aiidalab-home/master/metadata.json
 nanoribbons:
   categories:
   - quantum
-  git_url: https://github.com/nanotech-empa/aiidalab-empa-nanoribbons
   logo: https://raw.githubusercontent.com/nanotech-empa/aiidalab-empa-nanoribbons/master/miscellaneous/logos/empa.png
   metadata:
     $ref: https://raw.githubusercontent.com/nanotech-empa/aiidalab-empa-nanoribbons/master/metadata.json
+  releases:
+  - "git+https://github.com/nanotech-empa/aiidalab-empa-nanoribbons@:"
 quantum-espresso:
   categories:
   - quantum
-  git_url: https://github.com/aiidalab/aiidalab-qe.git
   logo: https://aiidalab.github.io/aiidalab-qe/miscellaneous/logos/QE.jpg
   metadata:
     $ref: https://aiidalab.github.io/aiidalab-qe/metadata.json
+  releases:
+  - "git+https://github.com/aiidalab/aiidalab-qe.git@:"
 scanning_probe:
   categories:
   - quantum
-  git_url: https://github.com/nanotech-empa/aiidalab-empa-scanning-probe
   logo: https://raw.githubusercontent.com/nanotech-empa/aiidalab-empa-scanning-probe/master/miscellaneous/logos/empa.png
   metadata:
     $ref: https://raw.githubusercontent.com/nanotech-empa/aiidalab-empa-scanning-probe/master/metadata.json
+  releases:
+  - "git+https://github.com/nanotech-empa/aiidalab-empa-scanning-probe@:"
 surfaces:
   categories:
   - quantum
-  git_url: https://github.com/nanotech-empa/aiidalab-empa-surfaces
   logo: https://raw.githubusercontent.com/nanotech-empa/aiidalab-empa-surfaces/master/miscellaneous/logos/empa.png
   metadata:
     $ref: https://raw.githubusercontent.com/nanotech-empa/aiidalab-empa-surfaces/master/metadata.json
+  releases:
+  - "git+https://github.com/nanotech-empa/aiidalab-empa-surfaces@:"
 tb-mfh:
   categories:
   - quantum
-  git_url: https://github.com/nanotech-empa/aiidalab-empa-tb-mfh
   logo: https://raw.githubusercontent.com/nanotech-empa/aiidalab-empa-tb-mfh/master/miscellaneous/logos/empa.png
   metadata:
     $ref: https://raw.githubusercontent.com/nanotech-empa/aiidalab-empa-tb-mfh/master/metadata.json
+  releases:
+  - "git+https://github.com/nanotech-empa/aiidalab-empa-tb-mfh@:"

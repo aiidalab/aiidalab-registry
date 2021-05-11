@@ -34,6 +34,18 @@ class SchemasConfig:
 
 
 @dataclass
+class EnvironmentsConfig:
+    """Configuration on how to determine the environment specification.
+
+    The cmd attribute should contain a shell command, that takes an app
+    repository URL as first argument and prints the environment specification
+    in JSON format to STDOUT.
+    """
+
+    cmd: str
+
+
+@dataclass
 class BuildConfig:
     """Configuration fields related to building the registry website."""
 
@@ -47,6 +59,7 @@ class Config:
 
     data: DataConfig
     schemas: SchemasConfig
+    environments: EnvironmentsConfig
     build: BuildConfig = field(default_factory=BuildConfig)
     api_version: str = "v1"
 

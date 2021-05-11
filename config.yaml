@@ -4,6 +4,8 @@ data:
   categories: categories.yaml
 schemas:
   path: src/static/schemas/v1
+environments:
+  cmd: "repo2env --dirs .aiidalab/ --dirs ./ "
 build:
   html: src/build/html
   static_src: src/static
