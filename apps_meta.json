@@ -639,15 +639,15 @@
       "metainfo": {
         "description": "App to run scanning probe microscopy simulations.",
         "title": "Empa nanotech@surfaces Laboratory - Scanning Probe Microscopy",
-        "version": "1.4.5",
+        "version": "1.4.6",
         "logo": "miscellaneous/logos/empa.png",
         "authors": "nanotech@surfaces laboratory, Empa",
         "state": "stable"
       },
       "gitinfo": {
-        "HEAD": "766a46ea64bd1429768bf1070b2c1ac19931f7f4",
-        "refs/heads/develop": "766a46ea64bd1429768bf1070b2c1ac19931f7f4",
-        "refs/heads/master": "766a46ea64bd1429768bf1070b2c1ac19931f7f4",
+        "HEAD": "29fc8d3846bab7e1f6f99f07c08b272671792dcd",
+        "refs/heads/develop": "29fc8d3846bab7e1f6f99f07c08b272671792dcd",
+        "refs/heads/master": "29fc8d3846bab7e1f6f99f07c08b272671792dcd",
         "refs/heads/openbis-test": "e2b65a7e05d2d2c06efd37567e8b4cf023d4f7ee",
         "refs/heads/support/aiida-0.12.x": "2a9c1e676552b61b6f314ab39c4ff2dfa089cd3e",
         "refs/pull/1/head": "6c71a75202811fd76d654d62e2b917ef5ce7882d",
@@ -669,7 +669,8 @@
         "refs/tags/v1.4.2": "a15087944414cb90ff321f72f35dbedaf3a5edce",
         "refs/tags/v1.4.3": "d11d9eb56e988fd55a0d6a799e99de0eac8a72ce",
         "refs/tags/v1.4.4": "80b2664d6ef9bb6d751629001f07f9f578fb31d7",
-        "refs/tags/v1.4.5": "766a46ea64bd1429768bf1070b2c1ac19931f7f4"
+        "refs/tags/v1.4.5": "766a46ea64bd1429768bf1070b2c1ac19931f7f4",
+        "refs/tags/v1.4.6": "29fc8d3846bab7e1f6f99f07c08b272671792dcd"
       },
       "hosted_on": "github.com",
       "logo": "https://raw.githubusercontent.com/nanotech-empa/aiidalab-empa-scanning-probe/master/miscellaneous/logos/empa.png",
