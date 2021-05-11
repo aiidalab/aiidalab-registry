@@ -165,7 +165,7 @@ hello-world:
   # The environment specification for version v1.0.0 is overriden:
   - url: git+https://github.com/aiidalab/aiidalab-hello-world.git@v1.0.0
     environment:
-      python-requirements:
+      python_requirements:
         - aiidalab>=20.02.0b2
         - some-missing-requirement
 ```
