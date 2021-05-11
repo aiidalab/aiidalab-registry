@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "https://aiidalab.github.io/aiidalab-registry/schemas/v1/app.schema.json",
+    "$id": "https://raw.githubusercontent.com/aiidalab/aiidalab-registry/master/src/static/schemas/v1/app.schema.json",
     "$ref": "#/definitions/App",
     "definitions": {
         "App": {
@@ -20,7 +20,7 @@
                     ]
                 },
                 "metadata": {
-                    "$ref": "https://aiidalab.github.io/aiidalab-registry/schemas/v1/metadata.schema.json#/definitions/Welcome"
+                    "$ref": "metadata.schema.json#/definitions/Welcome"
                 },
                 "name": {
                     "type": "string"
@@ -49,7 +49,7 @@
         "Release": {
             "properties": {
                 "environment": {
-                    "$ref": "https://aiidalab.github.io/aiidalab-registry/schemas/v1/environment.schema.json#/definitions/Environment"
+                    "$ref": "environment.schema.json#/definitions/Environment"
                 },
                 "url": {
                     "type": "string"
