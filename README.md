@@ -4,7 +4,7 @@ This repository contains the **source code** of the official App registry for th
 
 <p align="center">
  <a href="http://aiidalab.github.io/aiidalab-registry" rel="Go to AiiDAlab app registry">
-  <img src="make_ghpages/static/gotobutton.svg">
+  <img src="src/static/static/gotobutton.svg">
  </a>
 </p>
 
