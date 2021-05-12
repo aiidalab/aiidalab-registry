@@ -35,7 +35,7 @@ def schemas(config):
 @pytest.fixture
 def mock_schema_endpoints(requests_mock):
     schemas_path = ROOT.joinpath("src/static/schemas")
-    schemas_endpoint = "https://aiidalab.github.io/aiidalab-registry/schemas"
+    schemas_endpoint = "https://raw.githubusercontent.com/aiidalab/aiidalab-registry/master/src/static/schemas"
     for schema in schemas_path.glob("**/*.schema.json"):
         endpoint = f"{schemas_endpoint}/{schema.relative_to(schemas_path)}"
         requests_mock.get(endpoint, text=schema.read_text())
