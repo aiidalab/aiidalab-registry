@@ -46,7 +46,13 @@ quantum-espresso:
   metadata:
     $ref: https://aiidalab.github.io/aiidalab-qe/metadata.json
   releases:
-  - "git+https://github.com/aiidalab/aiidalab-qe.git@:"
+  - git+https://github.com/aiidalab/aiidalab-qe.git@master:v20.11.0^..
+  - url: "git+https://github.com/aiidalab/aiidalab-qe.git@master:v20.11.0^..v20.12.0"
+    environment:
+      python_requirements:
+      - aiida-core~=1.0
+      - aiida-quantumespresso~=3.2
+      - aiidalab-widgets-base~=1.0b
 scanning_probe:
   categories:
   - quantum
