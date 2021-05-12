@@ -1,6 +1,6 @@
 # AiiDAlab Application Registry
 
-This repository contains the **source code** of the official App registry for the [AiiDAlab](https://www.materialscloud.org/aiidalab).
+This repository contains the **source code** and **database** of the official App registry for [AiiDAlab](https://www.materialscloud.org/aiidalab).
 
 <p align="center">
  <a href="http://aiidalab.github.io/aiidalab-registry" rel="Go to AiiDAlab app registry">
@@ -105,6 +105,7 @@ hello-world:
 ```
 Typically, most app developers would want to take that approach since it avoids the need to update the registry with each new release: simply push a new tagged commit and the version will be released on AiiDAlab.
 If the branch name is omitted, it will fall back to the default branch name, e.g. if 'master' is the default branch, `@:` is equivalent to `@master:`.
+Note that we need to place the release url in quotes if it ends with a colon (`:`), otherwise YAML will interpret it as a dictionary key.
 
 You can use the standard [git revision selection syntax](https://git-scm.com/book/en/v2/Git-Tools-Revision-Selection) to further reduce the selected commits on a release line.
 For example, `@master:v1.0.0..` means "select all tagged commits on the master branch after v1.0.0".
@@ -115,9 +116,9 @@ Here a few more examples, demonstrating all potential release specifications:
 hello-world:
   releases:
   # All tagged commits on the repository's default branch:
-  - git+https://github.com/aiidalab/aiidalab-hello-world.git@:
+  - "git+https://github.com/aiidalab/aiidalab-hello-world.git@:"
   # All tagged commits on the repository's develop branch:
-  - git+https://github.com/aiidalab/aiidalab-hello-world.git@develop:
+  - "git+https://github.com/aiidalab/aiidalab-hello-world.git@develop:"
   # Specifically the commit tagged with `v1.0.0`:
   - git+https://github.com/aiidalab/aiidalab-hello-world.git@v1.0.0
   # All tagged commits on the `master` branch from `v0.1.0` (exclusive) onwards:
@@ -137,12 +138,12 @@ hello-world:
 #### Environment specification
 
 The environment specification is typically directly parsed from the app repository, similar to how [repo2docker](https://repo2docker.readthedocs.io) parses repositories to derive instructions to create a docker image.
-This app store uses the repo2env tool to automatically parse the environment specification for a specific app release.
+This app store uses the [repo2env](https://github.com/aiidalab/repo2env) tool to automatically parse the environment specification for a specific app release.
 
 In the current version, the following files are parsed:
 
  - `setup.cfg` - The Python requirements listed in that file must be installed within the Python kernel executing the app.
- - `requirements.txt` (only if setup.cfg does not specify requirements) - The Python requirements listed in that file must be installed within the Python kernel executing the app.
+ - `requirements.txt` (only if `setup.cfg` does not specify requirements) - The Python requirements listed in that file must be installed within the Python kernel executing the app.
 
 The above listed files are parsed either from a hidden sub-directory called `.aiidalab/` or the repository root directory in that order.
 This means for the purpose of the AiiDAlab environment specification, a file `.aiidalab/requirements.txt` would be preferentially parsed over the `./requirements.txt`.
@@ -161,7 +162,7 @@ For example, to override the environment specification for version v1.0.0:
 hello-world:
   releases:
   # The tagged commits on the default branch will use the parsed environment specification:
-  - git+https://github.com/aiidalab/aiidalab-hello-world.git@:
+  - "git+https://github.com/aiidalab/aiidalab-hello-world.git@:"
   # The environment specification for version v1.0.0 is overriden:
   - url: git+https://github.com/aiidalab/aiidalab-hello-world.git@v1.0.0
     environment:
@@ -170,7 +171,7 @@ hello-world:
         - some-missing-requirement
 ```
 
-This is useful to retoractively override environment specifications if the in-repository specification via the requirements-files is incorrect or incomplete.
+This is useful to retoractively override environment specifications if the in-repository specification is incorrect or incomplete.
 
 Tip: For individual releases, the same approach can also be used to override the version number, in case that it should deviate from the tag name.
 Example:
@@ -216,14 +217,17 @@ In addition, all commits on the `main` branch are automatically deployed to GitH
 * The schemas for JSON files and responses are maintained within the repository at `src/static/schemas/v{version}/` and the tree version number should correspond to the API with the same major version number.
 * The schemas are considered implementation detail, but updates must still be made with care as the public API relies on some of the schemas.
 * Should the number of apps maintained within this registry grow substantially, a re-implementation of the registry as a database application with RESTful API server should be considered. Such a re-implementation would likely require a migration to a new server (see next point).
-* For a migration to a different server both the old and the new registry should be kept online concurrently during a reasonable transition phase.
+* For a migration to a different server both the old and the new registry should be kept online concurrently during a reasonably long transition phase.
 
 ## Acknowledgements
 
-This work is supported by the [MARVEL National Centre for Competency in Research](<http://nccr-marvel.ch>)
-funded by the [Swiss National Science Foundation](<http://www.snf.ch/en>), as well as by the [MaX
-European Centre of Excellence](<http://www.max-centre.eu/>) funded by the Horizon 2020 EINFRA-5 program,
-Grant No. 676598.
+This work is supported by the [MARVEL National Centre for Competency in Research](<http://nccr-marvel.ch>) funded by the [Swiss National Science Foundation](<http://www.snf.ch/en>),
+the MARKETPLACE project funded by [Horizon 2020](https://ec.europa.eu/programmes/horizon2020/) under the H2020-NMBP-25-2017 call (Grant No. 760173),
+as well as by
+the [MaX European Centre of Excellence](<http://www.max-centre.eu/>) funded by the Horizon 2020 EINFRA-5 program (Grant No. 676598).
 
-![MARVEL](make_ghpages/static/img/MARVEL.png)
-![MaX](make_ghpages/static/img/MaX.png)
+<div style="text-align:center">
+ <img src="src/static/static/img/MARVEL.png" alt="MARVEL" height="100px">
+ <img src="src/static/static/img/MaX.png" alt="MaX" height="100px">
+ <img src="src/static/static/img/MarketPlace.png" alt="MarketPlace" height="100px">
+</div>
