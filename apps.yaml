@@ -44,7 +44,7 @@ quantum-espresso:
   - quantum
   logo: https://aiidalab.github.io/aiidalab-qe/miscellaneous/logos/QE.jpg
   metadata:
-    $ref: https://aiidalab.github.io/aiidalab-qe/metadata.json
+    $ref: https://raw.githubusercontent.com/aiidalab/aiidalab-qe/master/metadata.yaml
   releases:
   - git+https://github.com/aiidalab/aiidalab-qe.git@master:v20.11.0^..
   - url: "git+https://github.com/aiidalab/aiidalab-qe.git@master:v20.11.0^..v20.12.0"
