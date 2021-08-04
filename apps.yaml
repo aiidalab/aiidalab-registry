@@ -16,7 +16,7 @@ aiidalab-optimade:
     $ref: https://raw.githubusercontent.com/CasperWA/voila-optimade-client/integrate-aiidalab-app/.aiidalab/metadata.yaml
   releases:
     # TODO: Update branch after testing.
-  - "git+https://github.com/CasperWA/voila-optimade-client.git@integrate-aiidalab-app:"
+  - "git+https://github.com/CasperWA/voila-optimade-client.git@integrate-aiidalab-app:2021.8.4rc0+aiidalab^.."
   - "git+https://github.com/aiidalab/aiidalab-optimade.git@:"
 aiidalab-widgets-base:
   categories:
