@@ -55,7 +55,33 @@ def _get_release_commits(repo, release_line):
         # A rev selection is provided, we fetch the full rev list for the given
         # selection.  For example: '@main:v1..v2' means all commits from v1
         # (exclusive) to v2 (inclusive).
-        selected_commits = repo.rev_list(match.groupdict()["rev_selection"])
+
+        rev_selection = match.groupdict()["rev_selection"]
+
+        # While the git rev-list command supports listing revisions for a
+        # single ref, in this context we only support rev selections for a
+        # range, not for individual refs.
+        if ".." not in match.groupdict()["rev_selection"]:
+            raise ValueError(
+                "The rev_selection '{rev_selection}' must specify a range, "
+                "that means must contain the range operator '..'."
+            )
+
+        # Incomplete revision selections such as `@main:v1..` must be expanded to
+        # `@main:v1..main`. Therefore, we first determine the branch ref for the
+        # given rev:
+        for ref in [f"refs/heads/{rev}", f"refs/remotes/origin/{rev}"]:
+            if ref.encode() in repo.refs:
+                break
+        else:
+            raise RuntimeError(f"Revision '{rev}' not a valid branch name.")
+
+        # Transform a potentially incomplete rev_selection into one that
+        # contains the branch ref. For example `v1..` is expanded to
+        # `v1..{ref}`, where `{ref}` is replaced with the actual reference.
+        start, _, stop = rev_selection.rpartition("..")
+        selected_commits = repo.rev_list(f"{start or ref}..{stop or ref}")
+
         for tag in repo.get_merged_tags(rev):
             commit = repo.get_commit_for_tag(tag)
             if commit in selected_commits:
