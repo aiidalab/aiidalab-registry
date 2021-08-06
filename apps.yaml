@@ -12,12 +12,9 @@ aiidalab-optimade:
   - utilities
   logo: https://raw.githubusercontent.com/CasperWA/voila-optimade-client/232f11d39076b328e07c8bb6928c3a6847523f6c/img/optimade-no-text-transparent-bg.png
   metadata:
-    # TODO: Switch URL to "develop" branch after testing.
-    $ref: https://raw.githubusercontent.com/CasperWA/voila-optimade-client/integrate-aiidalab-app/.aiidalab/metadata.yaml
+    $ref: https://raw.githubusercontent.com/CasperWA/voila-optimade-client/develop/.aiidalab/metadata.yaml
   releases:
-    # TODO: Update branch after testing.
-  - "git+https://github.com/CasperWA/voila-optimade-client.git@integrate-aiidalab-app:2021.8.4rc0+aiidalab^.."
-  - "git+https://github.com/aiidalab/aiidalab-optimade.git@:"
+  - "git+https://github.com/CasperWA/voila-optimade-client.git@2021.8.6^.."
 aiidalab-widgets-base:
   categories:
   - utilities
