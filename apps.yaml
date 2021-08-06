@@ -14,7 +14,7 @@ aiidalab-optimade:
   metadata:
     $ref: https://raw.githubusercontent.com/CasperWA/voila-optimade-client/develop/.aiidalab/metadata.yaml
   releases:
-  - "git+https://github.com/CasperWA/voila-optimade-client.git@2021.8.6^.."
+  - "git+https://github.com/CasperWA/voila-optimade-client.git@develop:2021.8.6^.."
   - "git+https://github.com/aiidalab/aiidalab-optimade.git@:"
 aiidalab-widgets-base:
   categories:
