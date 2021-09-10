@@ -34,7 +34,7 @@ def test_validate_schemas(schemas):
 def test_validate_apps_yaml_schema(
     requests_mock, apps_yaml, validate, schemas, valid_categories
 ):
-    matcher = re.compile(r"\/metadata\.json$")
+    matcher = re.compile(r"\/metadata\.(json|ya?ml)$")
     requests_mock.register_uri("GET", matcher, real_http=True)
     validate(instance=apps_yaml, schema=schemas.apps)
 

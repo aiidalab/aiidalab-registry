@@ -63,8 +63,7 @@
             ]
         },
         "ReleaseSpecificationUrl": {
-            "type": "string",
-            "format": "uri"
+            "type": "string"
         },
         "ReleaseSpecifications": {
             "type": "array",
