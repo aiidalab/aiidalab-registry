@@ -212,6 +212,7 @@ In addition, all commits on the `main` branch are automatically deployed to GitH
 ### Versioning and migrations
 
 * The public registry API specification is maintained under `src/static/api/openapi-v{version}.yaml`.
+  Explore the [interactive version](https://petstore.swagger.io/?url=https://aiidalab.github.io/aiidalab-registry/api/openapi-v1.yaml).
 * The public registry API is published at `api/v{version}/` and is considered user-facing.
 * The versioning of the API is semantic and all versions within one major version are backwards-compatible.
 * The schemas for JSON files and responses are maintained within the repository at `src/static/schemas/v{version}/` and the tree version number should correspond to the API with the same major version number.
