@@ -6,9 +6,9 @@ from dataclasses import replace
 from urllib.parse import urlsplit
 from urllib.parse import urlunsplit
 
-from repo2env import Environment
-from repo2env import fetch_from_url
-from repo2env.git_util import GitRepo
+from aiidalab.environment import Environment
+from aiidalab.fetch import fetch_from_url
+from aiidalab.git_util import GitRepo
 
 
 @dataclass

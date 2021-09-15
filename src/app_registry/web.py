@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 """Generate the app registry website."""
 
-import json
 import logging
 import os
 import shutil
@@ -10,9 +9,10 @@ from copy import deepcopy
 from functools import singledispatch
 from itertools import chain
 from pathlib import Path
-from subprocess import CalledProcessError
-from subprocess import run
 from typing import Union
+
+from aiidalab.fetch import fetch_from_url
+from aiidalab.environment import Environment
 
 from . import api
 from . import yaml
@@ -81,17 +81,11 @@ def build_from_config(
 
     # Prepare environment command
     def scan_environment(url):
-        try:
-            return json.loads(
-                run(
-                    f"{config.environments.cmd} {url}",
-                    shell=True,
-                    check=True,
-                    capture_output=True,
-                ).stdout
-            )
-        except CalledProcessError as error:
-            raise RuntimeError(f"Failed to parse environment for '{url}': {error}")
+        search_dirs = [".aiidalab/", "./"]
+        with fetch_from_url(url) as repo:
+            for path in (repo.joinpath(dir_) for dir_ in search_dirs):
+                if path.is_dir():
+                    return Environment.scan(path)
 
     # Build the website and API endpoints.
     for outfile in chain(
