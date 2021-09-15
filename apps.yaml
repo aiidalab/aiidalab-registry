@@ -1,80 +1,132 @@
 aiidalab-lsmo:
-  categories:
-  - classical
-  - quantum
-  logo: https://raw.githubusercontent.com/lsmo-epfl/aiidalab-epfl-lsmo/master/miscellaneous/logos/LSMO.png
-  metadata:
-    $ref: https://raw.githubusercontent.com/lsmo-epfl/aiidalab-epfl-lsmo/master/metadata.json
   releases:
-    - "git+https://github.com/lsmo-epfl/aiidalab-epfl-lsmo.git@:"
+    - url: 'git+https://github.com/lsmo-epfl/aiidalab-epfl-lsmo.git@:'
+      metadata:
+        logo: https://raw.githubusercontent.com/lsmo-epfl/aiidalab-epfl-lsmo/master/miscellaneous/logos/LSMO.png
+        categories:
+        - classical
+        - quantum
+        description: Applications from the LSMO group
+        title: LSMO apps
 aiidalab-optimade:
-  categories:
-  - utilities
-  logo: https://raw.githubusercontent.com/CasperWA/voila-optimade-client/232f11d39076b328e07c8bb6928c3a6847523f6c/img/optimade-no-text-transparent-bg.png
-  metadata:
-    $ref: https://raw.githubusercontent.com/CasperWA/voila-optimade-client/develop/.aiidalab/metadata.yaml
   releases:
-  - "git+https://github.com/CasperWA/voila-optimade-client.git@develop:2021.8.6^.."
-  - "git+https://github.com/aiidalab/aiidalab-optimade.git@:"
+    - url: 'git+https://github.com/CasperWA/voila-optimade-client.git@develop:2021.8.6^..'
+      metadata:
+        categories:
+        - utilities
+        logo: https://raw.githubusercontent.com/CasperWA/voila-optimade-client/232f11d39076b328e07c8bb6928c3a6847523f6c/img/optimade-no-text-transparent-bg.png
+        title: OPTIMADE Client
+        authors: Casper Welzel Andersen
+        description: |
+          AiiDAlab app to query for and import structures from OPTIMADE providers
+          (COD, Materials Cloud, NoMaD, Materials Project, OQMD, and more ...).
+        external_url: https://www.optimade.org
+        documentation_url: https://github.com/CasperWA/voila-optimade-client#readme
+        state: stable
+    - url: 'git+https://github.com/aiidalab/aiidalab-optimade.git@:'
+      metadata:
+        categories:
+        - utilities
+        logo: https://raw.githubusercontent.com/CasperWA/voila-optimade-client/232f11d39076b328e07c8bb6928c3a6847523f6c/img/optimade-no-text-transparent-bg.png
+        title: OPTIMADE Client
+        authors: Casper Welzel Andersen
+        description: |
+          AiiDAlab app to query for and import structures from OPTIMADE providers
+          (COD, Materials Cloud, NoMaD, Materials Project, OQMD, and more ...).
+        external_url: https://www.optimade.org
+        documentation_url: https://github.com/CasperWA/voila-optimade-client#readme
+        state: stable
 aiidalab-widgets-base:
-  categories:
-  - utilities
-  logo: https://raw.githubusercontent.com/aiidalab/aiidalab-widgets-base/master/miscellaneous/logos/aiidalab.png
-  metadata:
-    $ref: https://raw.githubusercontent.com/aiidalab/aiidalab-widgets-base/master/metadata.json
   releases:
-  - "git+https://github.com/aiidalab/aiidalab-widgets-base.git@:"
+    - url: 'git+https://github.com/aiidalab/aiidalab-widgets-base.git@:'
+      metadata:
+        categories:
+        - utilities
+        logo: https://raw.githubusercontent.com/aiidalab/aiidalab-widgets-base/master/miscellaneous/logos/aiidalab.png
+        title: AiiDAlab Base Widgets
+        description: Reusable widgets for applications in the AiiDAlab.
+        authors: AiiDA Team
+        state: stable
 home:
-  categories:
-  - setup
-  logo: https://raw.githubusercontent.com/aiidalab/aiidalab-widgets-base/master/miscellaneous/logos/aiidalab.png
   releases:
-  - "git+https://github.com/aiidalab/aiidalab-home@:"
-  metadata:
-    $ref: https://raw.githubusercontent.com/aiidalab/aiidalab-home/master/metadata.json
+    - url: 'git+https://github.com/aiidalab/aiidalab-home@:'
+      metadata:
+        categories:
+        - setup
+        logo: https://raw.githubusercontent.com/aiidalab/aiidalab-widgets-base/master/miscellaneous/logos/aiidalab.png
+        title: Home
+        description: AiiDAlab Home
+        authors: Aliaksandr Yakutovich, Ole Schuett, Casper Welzel Andersen, Leopold Talirz,
+          Edward Ditler
 nanoribbons:
-  categories:
-  - quantum
-  logo: https://raw.githubusercontent.com/nanotech-empa/aiidalab-empa-nanoribbons/master/miscellaneous/logos/empa.png
-  metadata:
-    $ref: https://raw.githubusercontent.com/nanotech-empa/aiidalab-empa-nanoribbons/master/metadata.json
   releases:
-  - "git+https://github.com/nanotech-empa/aiidalab-empa-nanoribbons@:"
+    - url: 'git+https://github.com/nanotech-empa/aiidalab-empa-nanoribbons@:'
+      metadata:
+        categories:
+        - quantum
+        logo: https://raw.githubusercontent.com/nanotech-empa/aiidalab-empa-nanoribbons/master/miscellaneous/logos/empa.png
+        authors: nanotech@surfaces laboratory, Empa
+        description: Tools for graphene nanoribbons, developed at the nanotech@surfaces
+          laboratory, Empa
+        title: Empa nanotech@surfaces Laboratory - Graphene nanoribbons
 quantum-espresso:
-  categories:
-  - quantum
-  logo: https://aiidalab.github.io/aiidalab-qe/miscellaneous/logos/QE.jpg
-  metadata:
-    $ref: https://raw.githubusercontent.com/aiidalab/aiidalab-qe/master/metadata.yaml
   releases:
-  - git+https://github.com/aiidalab/aiidalab-qe.git@master:v20.11.0^..
-  - url: "git+https://github.com/aiidalab/aiidalab-qe.git@master:v20.11.0^..v20.12.0"
-    environment:
-      python_requirements:
-      - aiida-core~=1.0
-      - aiida-quantumespresso~=3.2
-      - aiidalab-widgets-base~=1.0b
+    - url: 'git+https://github.com/aiidalab/aiidalab-qe.git@master:v20.11.0^..'
+      metadata:
+        categories:
+        - quantum
+        logo: https://aiidalab.github.io/aiidalab-qe/miscellaneous/logos/QE.jpg
+        title: Quantum ESPRESSO
+        authors: Carl Simon Adorf, Aliaksandr Yakutovich, Marnik Bercx
+        description: Perform Quantum ESPRESSO calculations
+        external_url: https://github.com/aiidalab/aiidalab-qe
+        documentation_url: https://github.com/aiidalab/aiidalab-qe#readme
+        state: development
+    - url: 'git+https://github.com/aiidalab/aiidalab-qe.git@master:v20.11.0^..v20.12.0'
+      environment:
+        python_requirements:
+        - aiida-core~=1.0
+        - aiida-quantumespresso~=3.2
+        - aiidalab-widgets-base~=1.0b
+      metadata:
+        categories:
+        - quantum
+        logo: https://aiidalab.github.io/aiidalab-qe/miscellaneous/logos/QE.jpg
+        title: Quantum ESPRESSO
+        authors: Carl Simon Adorf, Aliaksandr Yakutovich, Marnik Bercx
+        description: Perform Quantum ESPRESSO calculations
+        external_url: https://github.com/aiidalab/aiidalab-qe
+        documentation_url: https://github.com/aiidalab/aiidalab-qe#readme
+        state: development
 scanning_probe:
-  categories:
-  - quantum
-  logo: https://raw.githubusercontent.com/nanotech-empa/aiidalab-empa-scanning-probe/master/miscellaneous/logos/empa.png
-  metadata:
-    $ref: https://raw.githubusercontent.com/nanotech-empa/aiidalab-empa-scanning-probe/master/metadata.json
   releases:
-  - "git+https://github.com/nanotech-empa/aiidalab-empa-scanning-probe@:"
+    - url: 'git+https://github.com/nanotech-empa/aiidalab-empa-scanning-probe@:'
+      metadata:
+        categories:
+        - quantum
+        logo: https://raw.githubusercontent.com/nanotech-empa/aiidalab-empa-scanning-probe/master/miscellaneous/logos/empa.png
+        description: App to run scanning probe microscopy simulations.
+        title: Empa nanotech@surfaces Laboratory - Scanning Probe Microscopy
+        authors: nanotech@surfaces laboratory, Empa
+        state: stable
 surfaces:
-  categories:
-  - quantum
-  logo: https://raw.githubusercontent.com/nanotech-empa/aiidalab-empa-surfaces/master/miscellaneous/logos/empa.png
-  metadata:
-    $ref: https://raw.githubusercontent.com/nanotech-empa/aiidalab-empa-surfaces/master/metadata.json
   releases:
-  - "git+https://github.com/nanotech-empa/aiidalab-empa-surfaces@:"
+    - url: 'git+https://github.com/nanotech-empa/aiidalab-empa-surfaces@:'
+      metadata:
+        categories:
+        - quantum
+        logo: https://raw.githubusercontent.com/nanotech-empa/aiidalab-empa-surfaces/master/miscellaneous/logos/empa.png
+        description: Tools for on-surface chemistry, developed at the nanotech@surfaces
+          laboratory, Empa
+        title: Empa nanotech@surfaces Laboratory - On-Surface Chemistry
 tb-mfh:
-  categories:
-  - quantum
-  logo: https://raw.githubusercontent.com/nanotech-empa/aiidalab-empa-tb-mfh/master/miscellaneous/logos/empa.png
-  metadata:
-    $ref: https://raw.githubusercontent.com/nanotech-empa/aiidalab-empa-tb-mfh/master/metadata.json
   releases:
-  - "git+https://github.com/nanotech-empa/aiidalab-empa-tb-mfh@:"
+    - url: 'git+https://github.com/nanotech-empa/aiidalab-empa-tb-mfh@:'
+      metadata:
+        categories:
+        - quantum
+        logo: https://raw.githubusercontent.com/nanotech-empa/aiidalab-empa-tb-mfh/master/miscellaneous/logos/empa.png
+        authors: nanotech@surfaces laboratory, Empa
+        description: App to run mean-field Hubbard tight-binding calculations.
+        title: Empa nanotech@surfaces Laboratory - MFH TB for nanographenes
+        state: development
