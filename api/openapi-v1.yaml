@@ -2,9 +2,7 @@ openapi: 3.0.1
 info:
   title: AiiDAlab apps registry API
   description: API to query for registered AiiDAlab apps.
-  version: '1.0'
-servers:
-  - url: 'https://aiidalab.github.io/aiidalab-registry'
+  version: '1.1'
 paths:
   /api/v1/apps_index.json:
     get:
@@ -34,14 +32,3 @@ paths:
             application/json:
               schema:
                 $ref: https://aiidalab.github.io/aiidalab-registry/schemas/v1/app.schema.json#/definitions/App
-  /apps_meta.json:
-    get:
-      deprecated: true
-      description: Full index and metadata for all apps.
-      responses:
-        '200':
-          description: OK
-          content:
-            application/json:
-              schema:
-                $ref: https://aiidalab.github.io/aiidalab-registry/schemas/v1/apps_meta.schema.json#/definitions/Welcome
