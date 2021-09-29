@@ -1,6 +1,6 @@
 aiidalab-lsmo:
   releases:
-    - url: 'git+https://github.com/lsmo-epfl/aiidalab-epfl-lsmo.git@:'
+    - url: 'git+https://github.com/lsmo-epfl/aiidalab-epfl-lsmo.git@master:'
       metadata:
         logo: https://raw.githubusercontent.com/lsmo-epfl/aiidalab-epfl-lsmo/master/miscellaneous/logos/LSMO.png
         categories:
@@ -38,7 +38,7 @@ aiidalab-optimade:
         state: stable
 aiidalab-widgets-base:
   releases:
-    - url: 'git+https://github.com/aiidalab/aiidalab-widgets-base.git@:'
+    - url: 'git+https://github.com/aiidalab/aiidalab-widgets-base.git@master:'
       metadata:
         categories:
         - utilities
@@ -49,7 +49,7 @@ aiidalab-widgets-base:
         state: stable
 home:
   releases:
-    - url: 'git+https://github.com/aiidalab/aiidalab-home@:'
+    - url: 'git+https://github.com/aiidalab/aiidalab-home@master:'
       metadata:
         categories:
         - setup
@@ -60,7 +60,7 @@ home:
           Edward Ditler
 nanoribbons:
   releases:
-    - url: 'git+https://github.com/nanotech-empa/aiidalab-empa-nanoribbons@:'
+    - url: 'git+https://github.com/nanotech-empa/aiidalab-empa-nanoribbons@master:'
       metadata:
         categories:
         - quantum
@@ -100,7 +100,7 @@ quantum-espresso:
         state: development
 scanning_probe:
   releases:
-    - url: 'git+https://github.com/nanotech-empa/aiidalab-empa-scanning-probe@:'
+    - url: 'git+https://github.com/nanotech-empa/aiidalab-empa-scanning-probe@master:'
       metadata:
         categories:
         - quantum
@@ -111,7 +111,7 @@ scanning_probe:
         state: stable
 surfaces:
   releases:
-    - url: 'git+https://github.com/nanotech-empa/aiidalab-empa-surfaces@:'
+    - url: 'git+https://github.com/nanotech-empa/aiidalab-empa-surfaces@master:'
       metadata:
         categories:
         - quantum
@@ -121,7 +121,7 @@ surfaces:
         title: Empa nanotech@surfaces Laboratory - On-Surface Chemistry
 tb-mfh:
   releases:
-    - url: 'git+https://github.com/nanotech-empa/aiidalab-empa-tb-mfh@:'
+    - url: 'git+https://github.com/nanotech-empa/aiidalab-empa-tb-mfh@master:'
       metadata:
         categories:
         - quantum
