@@ -1,0 +1,18 @@
+{% set app_registry_url = "http://aiidateam.github.io/aiida-registry" %}
+{% set aiidalab_url = "https://www.materialscloud.org/aiidalab" %}
+
+{% extends "base.html" %}
+{% block footer %}
+{{ super() }}
+This <a href="{{ app_registry_url }}">AiiDAlab registry</a> is maintained by the <a href="{{ aiidalab_url }}">AiiDAlab</a> team.
+<br>
+<p>
+This work is supported by the <a href="http://nccr-marvel.ch" target="_blank">MARVEL National Centre for Competence in Research</a> 
+funded by the <a href="http://www.snf.ch/en" target="_blank">Swiss National Science Foundation</a>, as well as by the 
+<a href="http://www.max-centre.eu" target="_blank">MaX European Centre of Excellence</a> 
+funded by the Horizon 2020 EINFRA-5 program, Grant No. 676598.<br>
+</p>
+{% block footer_images %}
+<div style="text-align: center;"><img src="static/img/MARVEL.png" style="width: 134px;height: 70px;">&nbsp;&nbsp;&nbsp;&nbsp;<img src="static/img/MaX.png" style="width: 250px;height: 70px;"></div>
+{% endblock footer_images %}
+{% endblock footer %}
