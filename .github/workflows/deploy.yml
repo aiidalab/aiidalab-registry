@@ -42,7 +42,7 @@ jobs:
       continue-on-error: true  # for expected error condition, see below
       run: |
         rm -rfv "${GITHUB_WORKSPACE}/*"
-        cp -r ${{ runner.temp }}/html/* "${GITHUB_WORKSPACE}"/
+        cp -r ${{ runner.temp }}/build/* "${GITHUB_WORKSPACE}"/
         git add -A .
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
