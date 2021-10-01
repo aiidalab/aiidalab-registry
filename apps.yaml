@@ -130,3 +130,15 @@ tb-mfh:
         description: App to run mean-field Hubbard tight-binding calculations.
         title: Empa nanotech@surfaces Laboratory - MFH TB for nanographenes
         state: development
+sssp:
+  releases:
+    - url: 'git+https://github.com/aiidalab/aiidalab-sssp@main:'
+      metadata:
+        categories:
+        - quantum
+        logo: https://raw.githubusercontent.com/aiidalab/aiidalab-sssp/main/miscellaneous/logo-sssp.png
+        authors: Jusong Yu, EPFL
+        description: AiiDAlab app to run pseudopotential verification.
+        title: SSSP verification
+        state: development
+
