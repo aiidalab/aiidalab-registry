@@ -133,4 +133,6 @@ tb-mfh:
 sssp:
   releases:
     - url: 'git+https://github.com/aiidalab/aiidalab-sssp@main:'
-
+empa-molecules:
+  releases:
+    - url: 'git+https://github.com/nanotech-empa/aiidalab-empa-molecules.git@master:'
