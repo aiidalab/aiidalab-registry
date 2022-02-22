@@ -1,1 +1,1 @@
-aiidalab==21.10.0
+aiidalab==22.02.0
