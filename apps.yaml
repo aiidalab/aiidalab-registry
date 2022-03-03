@@ -8,34 +8,6 @@ aiidalab-lsmo:
         - quantum
         description: Applications from the LSMO group
         title: LSMO apps
-aiidalab-optimade:
-  releases:
-    - url: 'git+https://github.com/CasperWA/voila-optimade-client.git@develop:2021.8.6^..'
-      metadata:
-        categories:
-        - utilities
-        logo: https://raw.githubusercontent.com/CasperWA/voila-optimade-client/232f11d39076b328e07c8bb6928c3a6847523f6c/img/optimade-no-text-transparent-bg.png
-        title: OPTIMADE Client
-        authors: Casper Welzel Andersen
-        description: |
-          AiiDAlab app to query for and import structures from OPTIMADE providers
-          (COD, Materials Cloud, NoMaD, Materials Project, OQMD, and more ...).
-        external_url: https://www.optimade.org
-        documentation_url: https://github.com/CasperWA/voila-optimade-client#readme
-        state: stable
-    - url: 'git+https://github.com/aiidalab/aiidalab-optimade.git@:'
-      metadata:
-        categories:
-        - utilities
-        logo: https://raw.githubusercontent.com/CasperWA/voila-optimade-client/232f11d39076b328e07c8bb6928c3a6847523f6c/img/optimade-no-text-transparent-bg.png
-        title: OPTIMADE Client
-        authors: Casper Welzel Andersen
-        description: |
-          AiiDAlab app to query for and import structures from OPTIMADE providers
-          (COD, Materials Cloud, NoMaD, Materials Project, OQMD, and more ...).
-        external_url: https://www.optimade.org
-        documentation_url: https://github.com/CasperWA/voila-optimade-client#readme
-        state: stable
 aiidalab-widgets-base:
   releases:
     - url: 'git+https://github.com/aiidalab/aiidalab-widgets-base.git@master:'
