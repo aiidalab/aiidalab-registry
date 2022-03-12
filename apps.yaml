@@ -105,6 +105,14 @@ tb-mfh:
 sssp:
   releases:
     - url: 'git+https://github.com/aiidalab/aiidalab-sssp@main:'
+      metadata:
+        categories:
+        - quantum
+        logo: https://raw.githubusercontent.com/aiidalab/aiidalab-sssp/main/miscellaneous/logo-sssp.png
+        authors: Jusong Yu, EPFL
+        description: AiiDAlab app to run pseudopotential verification.
+        title: SSSP toolbox
+        state: development
 empa-molecules:
   releases:
     - url: 'git+https://github.com/nanotech-empa/aiidalab-empa-molecules.git@master:'
