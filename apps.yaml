@@ -44,25 +44,6 @@ nanoribbons:
 quantum-espresso:
   releases:
     - url: 'git+https://github.com/aiidalab/aiidalab-qe.git@master:v22.05.0^..'
-      metadata:
-        state: development
-    - url: 'git+https://github.com/aiidalab/aiidalab-qe.git@master:v20.11.0^..v22.05.0'
-      metadata:
-        categories:
-        - quantum
-        logo: https://aiidalab.github.io/aiidalab-qe/miscellaneous/logos/QE.jpg
-        title: Quantum ESPRESSO
-        authors: Carl Simon Adorf, Aliaksandr Yakutovich, Marnik Bercx
-        description: Perform Quantum ESPRESSO calculations
-        external_url: https://github.com/aiidalab/aiidalab-qe
-        documentation_url: https://github.com/aiidalab/aiidalab-qe#readme
-        state: development
-    - url: 'git+https://github.com/aiidalab/aiidalab-qe.git@master:v20.11.0^..v20.12.0'
-      environment:
-        python_requirements:
-        - aiida-core~=1.0
-        - aiida-quantumespresso~=3.2
-        - aiidalab-widgets-base~=1.0
 scanning_probe:
   releases:
     - url: 'git+https://github.com/nanotech-empa/aiidalab-empa-scanning-probe@master:'
