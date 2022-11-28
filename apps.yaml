@@ -90,3 +90,9 @@ sssp:
 empa-molecules:
   releases:
     - url: 'git+https://github.com/nanotech-empa/aiidalab-empa-molecules.git@master:'
+mp-uc3:
+  releases:
+    - url: 'git+https://github.com/daniel-sintef/aiidalab-uc3.git@main:'
+aurora:
+  releases:
+    - url: 'git+https://github.com/epfl-theos/aiidalab-aurora@main:'
