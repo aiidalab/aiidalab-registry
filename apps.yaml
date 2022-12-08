@@ -21,7 +21,7 @@ aiidalab-widgets-base:
         state: stable
 home:
   releases:
-    - url: 'git+https://github.com/aiidalab/aiidalab-home@master:'
+    - url: 'git+https://github.com/aiidalab/aiidalab-home@main:'
       metadata:
         categories:
         - setup
