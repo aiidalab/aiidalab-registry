@@ -65,6 +65,14 @@ surfaces:
         description: Tools for on-surface chemistry, developed at the nanotech@surfaces
           laboratory, Empa
         title: Empa nanotech@surfaces Laboratory - On-Surface Chemistry
+    - url: 'git+https://github.com/nanotech-empa/aiidalab-empa-surfaces@support/aiida-1.x:v0.7.5^..'
+      metadata:
+        categories:
+        - quantum
+        logo: https://raw.githubusercontent.com/nanotech-empa/aiidalab-empa-surfaces/master/miscellaneous/logos/empa.png
+        description: Tools for on-surface chemistry, developed at the nanotech@surfaces
+          laboratory, Empa
+        title: Empa nanotech@surfaces Laboratory - On-Surface Chemistry
 tb-mfh:
   releases:
     - url: 'git+https://github.com/nanotech-empa/aiidalab-empa-tb-mfh@master:'
