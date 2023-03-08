@@ -8,6 +8,7 @@ aiidalab-lsmo:
         - quantum
         description: Applications from the LSMO group
         title: LSMO apps
+        external_url: https://github.com/lsmo-epfl/aiidalab-epfl-lsmo.git
 aiidalab-widgets-base:
   releases:
     - url: 'git+https://github.com/aiidalab/aiidalab-widgets-base.git@master:'
@@ -19,6 +20,7 @@ aiidalab-widgets-base:
         description: Reusable widgets for applications in the AiiDAlab.
         authors: AiiDA Team
         state: stable
+        external_url: https://github.com/aiidalab/aiidalab-widgets-base.git
 home:
   releases:
     - url: 'git+https://github.com/aiidalab/aiidalab-home@main:'
@@ -30,6 +32,7 @@ home:
         description: AiiDAlab Home
         authors: Aliaksandr Yakutovich, Ole Schuett, Casper Welzel Andersen, Leopold Talirz,
           Edward Ditler
+        external_url: https://github.com/aiidalab/aiidalab-home
 nanoribbons:
   releases:
     - url: 'git+https://github.com/nanotech-empa/aiidalab-empa-nanoribbons@master:'
@@ -41,6 +44,7 @@ nanoribbons:
         description: Tools for graphene nanoribbons, developed at the nanotech@surfaces
           laboratory, Empa
         title: Empa nanotech@surfaces Laboratory - Graphene nanoribbons
+        external_url: https://github.com/nanotech-empa/aiidalab-empa-nanoribbons
 quantum-espresso:
   releases:
     - url: 'git+https://github.com/aiidalab/aiidalab-qe.git@master:v22.05.0^..'
@@ -55,6 +59,7 @@ scanning_probe:
         title: Empa nanotech@surfaces Laboratory - Scanning Probe Microscopy
         authors: nanotech@surfaces laboratory, Empa
         state: stable
+        external_url: https://github.com/nanotech-empa/aiidalab-empa-scanning-probe
 surfaces:
   releases:
     - url: 'git+https://github.com/nanotech-empa/aiidalab-empa-surfaces@master:'
@@ -65,6 +70,7 @@ surfaces:
         description: Tools for on-surface chemistry, developed at the nanotech@surfaces
           laboratory, Empa
         title: Empa nanotech@surfaces Laboratory - On-Surface Chemistry
+        external_url: https://github.com/nanotech-empa/aiidalab-empa-surfaces
     - url: 'git+https://github.com/nanotech-empa/aiidalab-empa-surfaces@support/aiida-1.x:v0.7.5^..'
       metadata:
         categories:
@@ -73,6 +79,7 @@ surfaces:
         description: Tools for on-surface chemistry, developed at the nanotech@surfaces
           laboratory, Empa
         title: Empa nanotech@surfaces Laboratory - On-Surface Chemistry
+        external_url: https://github.com/nanotech-empa/aiidalab-empa-surfaces
 tb-mfh:
   releases:
     - url: 'git+https://github.com/nanotech-empa/aiidalab-empa-tb-mfh@master:'
@@ -84,6 +91,7 @@ tb-mfh:
         description: App to run mean-field Hubbard tight-binding calculations.
         title: Empa nanotech@surfaces Laboratory - MFH TB for nanographenes
         state: development
+        external_url: https://github.com/nanotech-empa/aiidalab-empa-tb-mfh
 sssp:
   releases:
     - url: 'git+https://github.com/aiidalab/aiidalab-sssp@main:'
@@ -95,6 +103,7 @@ sssp:
         description: AiiDAlab app to run pseudopotential verification.
         title: SSSP toolbox
         state: development
+        external_url: https://github.com/aiidalab/aiidalab-sssp
 empa-molecules:
   releases:
     - url: 'git+https://github.com/nanotech-empa/aiidalab-empa-molecules.git@main:'
