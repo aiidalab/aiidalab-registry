@@ -1,10 +1,11 @@
 {% set app_registry_url = "https://aiidalab.github.io/aiidalab-registry" %}
 {% set aiidalab_url = "https://www.materialscloud.org/aiidalab" %}
+{% set aiidalab_team_url = "https://www.aiidalab.net/about/" %}
 
 {% extends "base.html" %}
 {% block footer %}
 {{ super() }}
-This <a href="{{ app_registry_url }}">AiiDAlab registry</a> page is maintained by the <a href="{{ aiidalab_url }}">AiiDAlab</a> team.
+This <a href="{{ app_registry_url }}">AiiDAlab registry</a> page is maintained by the <a href="{{ set aiidalab_team_url }}">AiiDAlab team</a>.
 <br>
 The app list shown is automatically generated from the <a href="https://github.com/aiidalab/aiidalab-registry/blob/master/apps.yaml">apps.yml</a> file in this repository.
 <p>
