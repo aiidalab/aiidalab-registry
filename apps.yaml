@@ -35,7 +35,7 @@ home:
         external_url: https://github.com/aiidalab/aiidalab-home
 nanoribbons:
   releases:
-    - url: 'git+https://github.com/nanotech-empa/aiidalab-empa-nanoribbons@master:'
+    - url: 'git+https://github.com/nanotech-empa/aiidalab-empa-nanoribbons@master:v1.4.0^..'
       metadata:
         categories:
         - quantum
