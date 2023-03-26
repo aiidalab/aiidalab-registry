@@ -1,6 +1,6 @@
 aiidalab-lsmo:
   releases:
-    - url: 'git+https://github.com/lsmo-epfl/aiidalab-epfl-lsmo.git@master:'
+    - url: 'git+https://github.com/lsmo-epfl/aiidalab-epfl-lsmo.git@master:v21.10.0^..'
       metadata:
         logo: https://raw.githubusercontent.com/lsmo-epfl/aiidalab-epfl-lsmo/master/miscellaneous/logos/LSMO.png
         categories:
