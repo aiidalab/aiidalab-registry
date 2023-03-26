@@ -100,7 +100,7 @@ empa-molecules:
     - url: 'git+https://github.com/nanotech-empa/aiidalab-empa-molecules.git@main:'
 mp-uc3:
   releases:
-    - url: 'git+https://github.com/daniel-sintef/aiidalab-uc3.git@main:'
+    - url: 'git+https://github.com/daniel-sintef/aiidalab-uc3.git@main:v0.6.0^..'
 aurora:
   releases:
     - url: 'git+https://github.com/epfl-theos/aiidalab-aurora@main:'
