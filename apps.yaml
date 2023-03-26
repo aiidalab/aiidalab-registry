@@ -50,7 +50,7 @@ quantum-espresso:
     - url: 'git+https://github.com/aiidalab/aiidalab-qe.git@master:v22.05.0^..'
 scanning_probe:
   releases:
-    - url: 'git+https://github.com/nanotech-empa/aiidalab-empa-scanning-probe@master:'
+    - url: 'git+https://github.com/nanotech-empa/aiidalab-empa-scanning-probe@master:v1.8.0^..'
       metadata:
         categories:
         - quantum
