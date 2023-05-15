@@ -71,7 +71,7 @@ surfaces:
     #       laboratory, Empa
     #     title: Empa nanotech@surfaces Laboratory - On-Surface Chemistry
     #     external_url: https://github.com/nanotech-empa/aiidalab-empa-surfaces
-    - url: 'git+https://github.com/nanotech-empa/aiidalab-empa-surfaces@master:v1.0.0b0^..'
+    - url: 'git+https://github.com/nanotech-empa/aiidalab-empa-surfaces@master:v1.0.0b1^..'
 tb-mfh:
   releases:
     - url: 'git+https://github.com/nanotech-empa/aiidalab-empa-tb-mfh@master:'
