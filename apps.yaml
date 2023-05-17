@@ -47,7 +47,7 @@ nanoribbons:
         external_url: https://github.com/nanotech-empa/aiidalab-empa-nanoribbons
 quantum-espresso:
   releases:
-    - url: 'git+https://github.com/aiidalab/aiidalab-qe.git@master:v22.05.0^..'
+    - url: 'git+https://github.com/aiidalab/aiidalab-qe.git@*:v22.05.0^..'
 scanning_probe:
   releases:
     - url: 'git+https://github.com/nanotech-empa/aiidalab-empa-scanning-probe@master:v1.8.0^..'
