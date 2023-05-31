@@ -35,7 +35,7 @@ home:
         external_url: https://github.com/aiidalab/aiidalab-home
 nanoribbons:
   releases:
-    - url: 'git+https://github.com/nanotech-empa/aiidalab-empa-nanoribbons@master:v1.4.0^..'
+    - url: 'git+https://github.com/nanotech-empa/aiidalab-empa-nanoribbons@support/aiida-1.x:v1.4.0^..'
       metadata:
         categories:
         - quantum
@@ -45,6 +45,7 @@ nanoribbons:
           laboratory, Empa
         title: Empa nanotech@surfaces Laboratory - Graphene nanoribbons
         external_url: https://github.com/nanotech-empa/aiidalab-empa-nanoribbons
+    - url: 'git+https://github.com/nanotech-empa/aiidalab-empa-nanoribbons@main:v2.0.0b1^..'
 quantum-espresso:
   releases:
     - url: 'git+https://github.com/aiidalab/aiidalab-qe.git@*:v22.05.0^..'
