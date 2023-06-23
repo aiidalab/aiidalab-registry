@@ -99,7 +99,7 @@ sssp:
         external_url: https://github.com/aiidalab/aiidalab-sssp
 empa-molecules:
   releases:
-    - url: 'git+https://github.com/nanotech-empa/aiidalab-empa-molecules.git@main:'
+    - url: 'git+https://github.com/nanotech-empa/aiidalab-empa-molecules.git@main:v23.06.1^..'
 mp-uc3:
   releases:
     - url: 'git+https://github.com/daniel-sintef/aiidalab-uc3.git@main:v0.6.0^..'
