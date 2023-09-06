@@ -106,3 +106,6 @@ mp-uc3:
 aurora:
   releases:
     - url: 'git+https://github.com/epfl-theos/aiidalab-aurora@main:'
+aiidalab-ispg:
+  releases:
+    - url: 'git+https://github.com/ispg-group/aiidalab-ispg@main:'
