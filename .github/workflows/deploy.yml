@@ -9,6 +9,7 @@ on:
       - master
   schedule:
     - cron: 25/20 * * * *
+  workflow_dispatch:
 
 jobs:
   test-and-deploy:
