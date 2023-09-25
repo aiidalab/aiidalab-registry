@@ -32,7 +32,7 @@ $ ./build.sh
 The continuous-integration workflow is implemented with GitHub actions, which runs the pre-commit hooks and tests whether the registry can be built.
 In addition, all commits on the `main` branch are automatically deployed to GitHub pages.
 
-To manually trigger the CI workflow to deploy the registry, go to the [Actions tab](https://github.com/aiidalab/aiidalab-registry/actions) and click on the "Run workflow" button of deploy workflow.
+To manually trigger the CI workflow to deploy the registry, go to the [Actions tab](https://github.com/aiidalab/aiidalab-registry/actions) and click on the "Run workflow" button of the deploy workflow.
 
 ### Versioning and migrations
 
