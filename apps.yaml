@@ -106,3 +106,6 @@ mp-uc3:
 aurora:
   releases:
     - url: 'git+https://github.com/epfl-theos/aiidalab-aurora@main:'
+mfa-cscs:
+  releases:
+    - url: 'git+https://github.com/aiidalab/aiidalab-mfa-cscs@main:'
