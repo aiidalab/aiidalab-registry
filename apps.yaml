@@ -109,3 +109,6 @@ aurora:
 mfa-cscs:
   releases:
     - url: 'git+https://github.com/aiidalab/aiidalab-mfa-cscs@main:'
+flexpart:
+  releases:
+    - url: 'git+https://github.com/C2SM/FLEXPART_AiiDAlab.git@main:'
