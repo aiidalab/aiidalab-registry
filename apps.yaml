@@ -112,10 +112,3 @@ mfa-cscs:
 aiida-archive-inspect:
   releases:
     - url: 'git+https://github.com/superstar54/aiida-archive-inspect@main:'
-      metadata:
-        categories:
-        - utilities
-        authors: Xing Wang, PSI
-        description: An app to import a AiiDA archive file and inspect it.
-        title: AiiDA archive inspector
-        state: development
