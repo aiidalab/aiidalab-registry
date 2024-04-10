@@ -112,3 +112,6 @@ mfa-cscs:
 aiida-archive-inspect:
   releases:
     - url: 'git+https://github.com/superstar54/aiida-archive-inspect@main:'
+flexpart:
+  releases:
+    - url: 'git+https://github.com/C2SM/aiidalab-flexpart.git@main:'
