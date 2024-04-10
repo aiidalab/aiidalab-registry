@@ -114,4 +114,4 @@ aiida-archive-inspect:
     - url: 'git+https://github.com/superstar54/aiida-archive-inspect@main:'
 flexpart:
   releases:
-    - url: 'git+https://github.com/C2SM/FLEXPART_AiiDAlab.git@main:'
+    - url: 'git+https://github.com/C2SM/aiidalab_flexpart.git@main:'
