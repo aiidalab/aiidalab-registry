@@ -9,18 +9,6 @@ aiidalab-lsmo:
         description: Applications from the LSMO group
         title: LSMO apps
         external_url: https://github.com/lsmo-epfl/aiidalab-epfl-lsmo.git
-aiidalab-widgets-base:
-  releases:
-    - url: 'git+https://github.com/aiidalab/aiidalab-widgets-base.git@master:'
-      metadata:
-        categories:
-        - utilities
-        logo: https://raw.githubusercontent.com/aiidalab/aiidalab-widgets-base/master/miscellaneous/logos/aiidalab.png
-        title: AiiDAlab Base Widgets
-        description: Reusable widgets for applications in the AiiDAlab.
-        authors: AiiDA Team
-        state: stable
-        external_url: https://github.com/aiidalab/aiidalab-widgets-base.git
 home:
   releases:
     - url: 'git+https://github.com/aiidalab/aiidalab-home@main:'
