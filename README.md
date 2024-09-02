@@ -1,6 +1,6 @@
 # AiiDAlab Application Registry
 
-This repository contains the **database** of the official App registry for [AiiDAlab](https://www.materialscloud.org/aiidalab).
+This repository contains the **database** of the official App registry for [AiiDAlab](https://aiidalab.net).
 
 <p align="center">
  <a href="http://aiidalab.github.io/aiidalab-registry" rel="Go to AiiDAlab app registry">
@@ -10,7 +10,7 @@ This repository contains the **database** of the official App registry for [AiiD
 
 ## How to add an app to the registry
 
-Simply propose a change to the [apps.yaml](https://github.com/aiidalab/aiidalab-registry/blob/master/apps.yaml) file in this repository and add an entry for your app, for example:
+Propose a change to the [apps.yaml](https://github.com/aiidalab/aiidalab-registry/blob/master/apps.yaml) file in this repository and add an entry for your app, for example:
 
 ```yaml
 hello-world:
@@ -23,7 +23,7 @@ Please see the [AiiDAlab documentation](https://aiidalab.readthedocs.io/en/lates
 
 ## Information for maintainers
 
-To generate the website, simply execute the following script:
+To generate the website, execute the following script:
 
 ```console
 $ ./build.sh
@@ -47,10 +47,10 @@ To manually trigger the CI workflow to deploy the registry, go to the [Actions t
 
 ## Acknowledgements
 
-This work is supported by the [MARVEL National Centre for Competency in Research](<http://nccr-marvel.ch>) funded by the [Swiss National Science Foundation](<http://www.snf.ch/en>),
+This work is supported by the [MARVEL National Centre for Competency in Research](https://nccr-marvel.ch/) funded by the [Swiss National Science Foundation](https://www.snf.ch/en),
 the MARKETPLACE project funded by [Horizon 2020](https://ec.europa.eu/programmes/horizon2020/) under the H2020-NMBP-25-2017 call (Grant No. 760173),
 as well as by
-the [MaX European Centre of Excellence](<http://www.max-centre.eu/>) funded by the Horizon 2020 EINFRA-5 program (Grant No. 676598).
+the [MaX European Centre of Excellence](https://www.max-centre.eu/) funded by the Horizon 2020 EINFRA-5 program (Grant No. 676598).
 
 <div style="text-align:center">
  <img src="src/static/static/img/MARVEL.png" alt="MARVEL" height="100px">

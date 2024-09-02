@@ -1,3 +1,2 @@
-aiidalab==23.3.1
-pre-commit==3.6.0
-packaging<22
+aiidalab[registry]==24.9.0
+pre-commit>=3.6.0
