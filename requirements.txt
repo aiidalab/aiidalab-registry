@@ -1,2 +1,2 @@
-aiidalab[registry]==24.7.0
-pre-commit==3.6.0
+aiidalab[registry]==24.9.0
+pre-commit>=3.6.0
