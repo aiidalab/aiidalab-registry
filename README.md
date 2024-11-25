@@ -47,13 +47,20 @@ To manually trigger the CI workflow to deploy the registry, go to the [Actions t
 
 ## Acknowledgements
 
-This work is supported by the [MARVEL National Centre for Competency in Research](<http://nccr-marvel.ch>) funded by the [Swiss National Science Foundation](<http://www.snf.ch/en>),
-the MARKETPLACE project funded by [Horizon 2020](https://ec.europa.eu/programmes/horizon2020/) under the H2020-NMBP-25-2017 call (Grant No. 760173),
-as well as by
-the [MaX European Centre of Excellence](<http://www.max-centre.eu/>) funded by the Horizon 2020 EINFRA-5 program (Grant No. 676598).
+We acknowledge support from:
+* [MARVEL National Centre for Competency in Research](https://nccr-marvel.ch/) funded by the [Swiss National Science Foundation](https://www.snf.ch/en).
+* [BIG-MAP project](https://www.big-map.eu) funded by the Horizon 2020 research and innovation programme (Grant No. 957189).
+* [MARKETPLACE project](https://www.the-marketplace-project.eu/) funded by Horizon 2020 under the H2020-NMBP-25-2017 call (Grant No. 760173).
+* [MaX European Centre of Excellence](https://www.max-centre.eu/) funded by the Horizon 2020 EINFRA-5 program (Grant No. 676598).
+* [DOME 4.0 project](https://dome40.eu/) funded by the EU Horizon 2020 Research and Innovation Programme (Grant No. 953163)
 
-<div style="text-align:center">
- <img src="src/static/static/img/MARVEL.png" alt="MARVEL" height="100px">
- <img src="src/static/static/img/MaX.png" alt="MaX" height="100px">
- <img src="src/static/static/img/MarketPlace.png" alt="MarketPlace" height="100px">
+
+<div style="display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center; gap: 50px; text-align: center;">
+ <img src="src/static/static/img/MARVEL.png" alt="MARVEL" height="75px">
+ <img src="src/static/static/img/MaX.png" alt="MaX" height="75px">
+ <img src="src/static/static/img/MarketPlace.png" alt="MarketPlace" height="75px">
+ <img src="src/static/static/img/bigmap_logo.png" alt="BIG-MAP" height="75px">
+ <img src="src/static/static/img/EU_flag.png" alt="EU" height="75px">
+ <img src="src/static/static/img/DOME_4.0.png" alt="DOME 4.0" height="75px">
 </div>
+

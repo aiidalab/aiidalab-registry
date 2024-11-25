@@ -9,12 +9,23 @@ This <a href="{{ app_registry_url }}">AiiDAlab registry</a> page is maintained b
 <br>
 The app list shown is automatically generated from the <a href="https://github.com/aiidalab/aiidalab-registry/blob/main/apps.yaml">apps.yml</a> file in this repository.
 <p>
-This work is supported by the <a href="http://nccr-marvel.ch" target="_blank">MARVEL National Centre for Competence in Research</a> 
-funded by the <a href="http://www.snf.ch/en" target="_blank">Swiss National Science Foundation</a>, as well as by the 
-<a href="http://www.max-centre.eu" target="_blank">MaX European Centre of Excellence</a> 
-funded by the Horizon 2020 EINFRA-5 program, Grant No. 676598.<br>
+This work is supported by the following projects and organizations:
+<ul>
+  <li><a href="http://nccr-marvel.ch" target="_blank">MARVEL National Centre for Competence in Research</a> funded by the <a href="http://www.snf.ch/en" target="_blank">Swiss National Science Foundation</a>.</li>
+  <li><a href="https://www.big-map.eu" target="_blank">BIG-MAP project</a> funded by the Horizon 2020 research and innovation programme (Grant No. 957189).</li>
+  <li><a href="https://www.the-marketplace-project.eu/" target="_blank">MARKETPLACE project</a> funded by Horizon 2020 under the H2020-NMBP-25-2017 call (Grant No. 760173).</li>
+  <li><a href="http://www.max-centre.eu" target="_blank">MaX European Centre of Excellence</a> funded by the Horizon 2020 EINFRA-5 program (Grant No. 676598).</li>
+  <li><a href="https://dome40.eu/" target="_blank">DOME 4.0 project</a> funded by the EU Horizon 2020 Research and Innovation Programme (Grant No. 953163).</li>
+</ul>
 </p>
 {% block footer_images %}
-<div style="text-align: center;"><img src="static/img/MARVEL.png" style="width: 134px;height: 70px;">&nbsp;&nbsp;&nbsp;&nbsp;<img src="static/img/MaX.png" style="width: 250px;height: 70px;"></div>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center; gap: 50px; text-align: center;">
+  <img src="static/img/MARVEL.png" alt="MARVEL" height="75px">
+  <img src="static/img/MaX.png" alt="MaX" height="75px">
+  <img src="static/img/MarketPlace.png" alt="MarketPlace" height="75px">
+  <img src="static/img/bigmap_logo.png" alt="BIG-MAP" height="75px">
+  <img src="static/img/EU_flag.png" alt="EU" height="75px">
+  <img src="static/img/DOME_4.0.png" alt="DOME 4.0" height="75px">
+</div>
 {% endblock footer_images %}
 {% endblock footer %}
