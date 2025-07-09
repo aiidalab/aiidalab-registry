@@ -14,3 +14,6 @@ tutorials:
 utilities:
   description: Utility apps for everyday tasks.
   title: Utilities
+experiments:
+  description: Apps to perform analysis of experimental data.
+  title: Experiments
