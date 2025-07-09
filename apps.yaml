@@ -119,6 +119,7 @@ lns-app:
   releases:
     - url: 'git+https://github.com/mikibonacci/LNS-app.git@main:'
       metadata:
+        logo: https://raw.githubusercontent.com/aiidalab/aiidalab-widgets-base/master/miscellaneous/logos/aiidalab.png
         authors: LMS and LNS labs from PSI
         state: development
         categories:
