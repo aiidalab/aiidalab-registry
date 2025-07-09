@@ -115,3 +115,15 @@ aiida-archive-inspect:
 flexpart:
   releases:
     - url: 'git+https://github.com/C2SM/aiidalab-flexpart.git@main:'
+lns-app:
+  releases:
+    - url: 'git+https://github.com/mikibonacci/LNS-app.git@main:'
+      metadata:
+        authors: LMS and LNS labs from PSI
+        state: development
+        categories:
+        - experiments
+        - quantum
+        description: App to analyse experimental neutron scattering data
+        title: LNS app
+        external_url: https://github.com/mikibonacci/LNS-app
