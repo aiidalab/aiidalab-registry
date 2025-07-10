@@ -17,3 +17,6 @@ utilities:
 experiments:
   description: Apps to perform analysis of experimental data.
   title: Experiments
+dataanalysis:
+  description: Apps providing data analysis and post-processing capabilities.
+  title: Data analysis

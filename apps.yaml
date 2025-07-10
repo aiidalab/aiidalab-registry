@@ -119,12 +119,12 @@ lns-app:
   releases:
     - url: 'git+https://github.com/mikibonacci/LNS-app.git@main:'
       metadata:
-        logo: https://raw.githubusercontent.com/aiidalab/aiidalab-widgets-base/master/miscellaneous/logos/aiidalab.png
-        authors: LMS and LNS labs from PSI
+        logo: '/home/bonacc_m/Downloads/PSI_logo.png'
+        authors: LMS and LNS laboratories, Paul Scherrer Institute PSI, Switzerland
         state: development
         categories:
         - experiments
-        - quantum
-        description: App to analyse experimental neutron scattering data
-        title: LNS app
+        - dataanalysis
+        description: App to analyse experimental neutron scattering data from the SINQ neutron spallation source at PSI, including among others the MJOLNIR software
+        title: Data analysis tools for neutrons at PSI
         external_url: https://github.com/mikibonacci/LNS-app
