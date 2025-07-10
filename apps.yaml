@@ -119,7 +119,7 @@ lns-app:
   releases:
     - url: 'git+https://github.com/mikibonacci/LNS-app.git@main:'
       metadata:
-        logo: '/home/bonacc_m/Downloads/PSI_logo.png'
+        logo: https://raw.githubusercontent.com/mikibonacci/LNS-app/main/static/PSI_logo.png
         authors: LMS and LNS laboratories, Paul Scherrer Institute PSI, Switzerland
         state: development
         categories:
