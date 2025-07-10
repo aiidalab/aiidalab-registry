@@ -127,4 +127,5 @@ lns-app:
         - dataanalysis
         description: App to analyse experimental neutron scattering data from the SINQ neutron spallation source at PSI, including among others the MJOLNIR software
         title: Data analysis tools for neutrons at PSI
+        documentation_url: https://mjolnir.readthedocs.io/en/latest/index.html
         external_url: https://github.com/mikibonacci/LNS-app
