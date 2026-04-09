@@ -21,18 +21,6 @@ aiidalab-widgets-base:
         authors: AiiDA Team
         state: stable
         external_url: https://github.com/aiidalab/aiidalab-widgets-base.git
-home:
-  releases:
-    - url: 'git+https://github.com/aiidalab/aiidalab-home@main:'
-      metadata:
-        categories:
-        - setup
-        logo: https://raw.githubusercontent.com/aiidalab/aiidalab-widgets-base/master/miscellaneous/logos/aiidalab.png
-        title: Home
-        description: AiiDAlab Home
-        authors: Aliaksandr Yakutovich, Ole Schuett, Casper Welzel Andersen, Leopold Talirz,
-          Edward Ditler
-        external_url: https://github.com/aiidalab/aiidalab-home
 nanoribbons:
   releases:
     - url: 'git+https://github.com/nanotech-empa/aiidalab-empa-nanoribbons@support/aiida-1.x:v1.4.0^..'
