@@ -117,3 +117,6 @@ lns-app:
         title: Data analysis tools for neutrons at PSI
         documentation_url: https://mjolnir.readthedocs.io/en/latest/index.html
         external_url: https://github.com/mikibonacci/LNS-app
+chemshell:
+  releases:
+    - url: 'git+https://github.com/stfc/aiidalab-chemshell.git@main:v0.1.0^..'
