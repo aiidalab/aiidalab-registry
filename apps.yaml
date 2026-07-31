@@ -120,3 +120,6 @@ lns-app:
 chemshell:
   releases:
     - url: 'git+https://github.com/stfc/aiidalab-chemshell.git@main:v0.1.0^..'
+quadrupolar-simulator:
+  releases:
+    - url: 'git+https://github.com/moritzgubler/aiidaConverseNMR.git@main:'
