@@ -11,7 +11,7 @@ aiidalab-lsmo:
         external_url: https://github.com/lsmo-epfl/aiidalab-epfl-lsmo.git
 aiidalab-widgets-base:
   releases:
-    - url: 'git+https://github.com/aiidalab/aiidalab-widgets-base.git@master:'
+    - url: 'git+https://github.com/aiidalab/aiidalab-widgets-base.git@master:v1.0.0^..v2.5.0'
       metadata:
         categories:
         - utilities
@@ -21,6 +21,9 @@ aiidalab-widgets-base:
         authors: AiiDA Team
         state: stable
         external_url: https://github.com/aiidalab/aiidalab-widgets-base.git
+    - url: 'git+https://github.com/aiidalab/aiidalab-widgets-base.git@support/2.5.x:v2.5.0..'
+    - url: 'git+https://github.com/aiidalab/aiidalab-widgets-base.git@support/2.2.x:v2.2.0..'
+    - url: 'git+https://github.com/aiidalab/aiidalab-widgets-base.git@support/2.0.x:v2.0.0..'
 nanoribbons:
   releases:
     - url: 'git+https://github.com/nanotech-empa/aiidalab-empa-nanoribbons@support/aiida-1.x:v1.4.0^..'

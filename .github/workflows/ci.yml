@@ -29,3 +29,6 @@ jobs:
 
     - name: Build GH pages
       run: bash build.sh
+
+    -name: Smoke tests
+      run: pytest smoke_tests.py
