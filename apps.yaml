@@ -123,3 +123,6 @@ lns-app:
 chemshell:
   releases:
     - url: 'git+https://github.com/stfc/aiidalab-chemshell.git@main:v0.1.0^..'
+aiidalab-mlip:
+  releases:
+    - url: 'git+https://github.com/stfc/aiidalab-mlip.git@main:'
