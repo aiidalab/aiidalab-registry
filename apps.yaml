@@ -126,3 +126,6 @@ chemshell:
 aiidalab-mlip:
   releases:
     - url: 'git+https://github.com/stfc/aiidalab-mlip.git@main:'
+dl_poly:
+  releases:
+    - url: 'git+https://github.com/stfc/aiidalab-dlpoly.git@main:v0.2.0^..'
