@@ -1,4 +1,4 @@
-aiidalab[registry]==26.06.1
-pytest~=9.1.0
+aiidalab[registry]==26.10.0
+pytest~=9.2.0
 ruamel.yaml~=0.16
 pre-commit>=3.6.0
